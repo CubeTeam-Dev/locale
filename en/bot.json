@@ -9,5 +9,5 @@
   "ping.fields.botInfo.value": "**Uptime:** {uptimeStr}\n**Servers:** {guildsCount}\n**Shards:** {shardsCount}",
   "ping.fields.responseTime.name": "Response Time",
   "ping.fields.responseTime.value": "**Total:** {total}ms",
-  "ping.footer.text": "Requested by {user}"
+  "footer.executor.text": "Requested by {user}"
 }

@@ -110,6 +110,58 @@
           }
         }
       }
+    },
+    "auto_purge": {
+      "description": "Manage the auto-purge feature.",
+      "options": {
+        "set": {
+          "description": "Set up auto-purge.",
+          "options": {
+            "channel": {
+              "description": "Channel to set up auto-purge in"
+            },
+            "limit": {
+              "description": "Number of messages to delete"
+            },
+            "interval": {
+              "description": "Delete interval (e.g. 5s, 2m, 1h)"
+            }
+          }
+        },
+        "remove": {
+          "description": "Remove auto-purge.",
+          "options": {
+            "channel": {
+              "description": "Channel to remove auto-purge from"
+            }
+          }
+        }
+      }
+    },
+    "auto_react": {
+      "description": "Manage automatic reactions in the channel.",
+      "set": {
+        "description": "Set automatic reactions.",
+        "options": {
+          "channel": {
+            "description": "Channel to set auto reactions"
+          },
+          "emojis": {
+            "description": "Emojis to use for automatic reactions"
+          }
+        }
+      },
+      "remove": {
+        "description": "Remove automatic reactions.",
+        "options": {
+          "channel": {
+            "description": "Channel to remove automatic reactions"
+          },
+          "emojis": {
+            "description": "Emojis to remove automatic reactions"
+          }
+        }
+      }
     }
   },
   "context": {
@@ -176,6 +228,8 @@
   },
   "modules": {
     "globalchat": {
+      "topic": "c.global \n*Please do not delete*\nPlease follow the guidelines at https://cubeteam.app/gc-guideline\nNote: The 🔧 at the end of a name indicates that the person is a Global Chat moderator. If it is not present, they are a regular user.",
+      "connect_reason": "GlobalChat connect",
       "error": {
         "nsfw": "Global Chat is prohibited in NSFW channels.",
         "muted": "You do not have permission to speak in Global Chat\nClick [here](https://discord.gg/Se5QqQwj4h) to unmute.",
@@ -202,7 +256,10 @@
   },
   "common": {
     "error": {
-      "api": "❌ Error occurred during API request."
+      "api": "❌ Error occurred during API request.",
+      "channel_not_found": "❌ Channel not found.",
+      "guild_only": "❌ This command can only be used within a server channel.",
+      "must_text_or_news_channel": "❌ Channel must be a Text Channel or News Channel."
     },
     "yes": "Yes",
     "no": "No",

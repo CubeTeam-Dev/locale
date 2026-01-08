@@ -162,6 +162,9 @@
           }
         }
       }
+    },
+    "ping": {
+      "description": "Ping the bot."
     }
   },
   "context": {
@@ -227,6 +230,12 @@
     }
   },
   "modules": {
+    "auto_react": {
+      "success": {
+        "set": "✅ Automatic reactions have been set.",
+        "remove": "✅ Automatic reactions have been removed."
+      }
+    },
     "globalchat": {
       "topic": "c.global \n*Please do not delete*\nPlease follow the guidelines at https://cubeteam.app/gc-guideline\nNote: The 🔧 at the end of a name indicates that the person is a Global Chat moderator. If it is not present, they are a regular user.",
       "connect_reason": "GlobalChat connect",
@@ -256,7 +265,10 @@
   },
   "common": {
     "error": {
-      "api": "❌ APIリクエスト中にエラーが発生しました。"
+      "api": "❌ APIリクエスト中にエラーが発生しました。",
+      "channel_not_found": "❌ Channel not found.",
+      "guild_only": "❌ This command can only be used within a server channel.",
+      "must_text_or_news_channel": "❌ Channel must be a Text Channel or News Channel."
     },
     "yes": "はい",
     "no": "いいえ",

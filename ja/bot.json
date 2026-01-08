@@ -12,84 +12,84 @@
   "footer.executor.text": "実行者: {user}",
   "commands": {
     "settings": {
-      "description": "Settings related commands",
+      "description": "設定関連のコマンド",
       "options": {
         "auto_translate": {
-          "description": "Configure auto translation",
+          "description": "自動翻訳の設定",
           "options": {
             "enabled": {
-              "description": "Whether to enable auto translation"
+              "description": "自動翻訳を有効にするか"
             },
             "target_lang": {
-              "description": "Target language code (e.g. JA, EN, FR, DE, ES)"
+              "description": "翻訳先の言語コード (例: JA, EN, FR, DE, ES)"
             },
             "channel": {
-              "description": "Channel to set auto translation"
+              "description": "自動翻訳を設定するチャンネル"
             }
           }
         },
         "global_connect": {
-          "description": "Connect to Global Chat"
+          "description": "グローバルチャットに接続します"
         },
         "global_disconnect": {
-          "description": "Disconnect from Global Chat"
+          "description": "グローバルチャットから切断します"
         },
         "language": {
-          "description": "Change server language settings",
+          "description": "このサーバーにおけるBotの言語設定を変更します",
           "options": {
             "lang": {
-              "description": "Language code (ISO 639-1)"
+              "description": "言語コード (ISO 639-1)"
             }
           }
         }
       }
     },
     "lock": {
-      "description": "Lock the channel",
+      "description": "チャンネルをロックする",
       "options": {
         "channel": {
-          "description": "Channel to lock"
+          "description": "ロックするチャンネル"
         }
       }
     },
     "unlock": {
-      "description": "Unlock the channel",
+      "description": "チャンネルのロックを解除する",
       "options": {
         "channel": {
-          "description": "Channel to unlock"
+          "description": "ロックを解除するチャンネル"
         }
       }
     },
     "slowmode": {
-      "description": "Set slowmode in the channel.",
+      "description": "チャンネルに低速モードを設定します。",
       "options": {
         "time": {
-          "description": "Slowmode duration (e.g. 5s, 2m, 1h)"
+          "description": "低速モードの時間（例：5s、2m、1h）"
         }
       }
     },
     "sticky": {
-      "description": "Set sticky message in the channel.",
+      "description": "チャンネルにピン留めメッセージを設定します。",
       "options": {
         "set": {
-          "description": "Set a sticky message.",
+          "description": "ピン留めメッセージを設定する。",
           "options": {
             "content": {
-              "description": "Message to stick"
+              "description": "ピン留めするメッセージ"
             },
             "attachment": {
-              "description": "Image to stick"
+              "description": "ピン留めする画像"
             },
             "channel": {
-              "description": "Channel to stick"
+              "description": "ピン留めを設定するチャンネル"
             }
           }
         },
         "delete": {
-          "description": "Delete a sticky message.",
+          "description": "ピン留めメッセージを削除する。",
           "options": {
             "channel": {
-              "description": "Channel to delete sticky message from"
+              "description": "ピン留めメッセージを削除するチャンネル"
             }
           }
         }
@@ -98,7 +98,7 @@
   },
   "context": {
     "Translate": {
-      "name": "Translate"
+      "name": "翻訳"
     }
   },
   "settings.error.wrong_channel": "このコマンドはテキストチャンネルまたはアナウンスチャンネルで実行する必要があります。",

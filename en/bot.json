@@ -112,24 +112,49 @@
       }
     },
     "auto_purge": {
-      "description": "自動削除機能の監理をします。",
+      "description": "Manage automatic deletion feature.",
       "set": {
-        "description": "自動削除を設定します。",
+        "description": "Set automatic deletion.",
         "options": {
           "channel": {
-            "description": "自動削除を設定するチャンネル"
+            "description": "Channel to set auto purge"
           },
           "limit": {
-            "description": "削除するメッセージの数"
+            "description": "Number of messages to delete."
           },
           "interval": {
-            "description": "削除の間隔（例: 5s, 2m, 1h）"
+            "description": "Interval for deletion (e.g., 5s, 2m, 1h)."
           }
         }
       },
       "remove": {
         "channel": {
-          "description": "自動削除を解除するチャンネル"
+          "description": "Channel to remove automatic deletion."
+        }
+      }
+    },
+    "auto_react": {
+      "description": "Manage automatic reactions in the channel.",
+      "set": {
+        "description": "Set automatic reactions.",
+        "options": {
+          "channel": {
+            "description": "Channel to set auto reactions"
+          },
+          "emojis": {
+            "description": "Emojis to use for automatic reactions"
+          }
+        }
+      },
+      "remove": {
+        "description": "Remove automatic reactions.",
+        "options": {
+          "channel": {
+            "description": "Channel to remove automatic reactions"
+          },
+          "emojis": {
+            "description": "Emojis to remove automatic reactions"
+          }
         }
       }
     }

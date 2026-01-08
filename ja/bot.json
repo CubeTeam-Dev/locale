@@ -210,7 +210,6 @@
     },
     "slowmode": {
       "error": {
-        "invalid_format": "❌無効な時間形式です。例: 5s, 2m, 1h",
         "range": "❌低速モードの長さは0秒から21600秒（6時間）の間でなければなりません。",
         "guild_only": "❌このコマンドはサーバー内でのみ使用できます。"
       },
@@ -234,6 +233,12 @@
       "success": {
         "set": "✅ Automatic reactions have been set.",
         "remove": "✅ Automatic reactions have been removed."
+      }
+    },
+    "auto_purge": {
+      "success": {
+        "set": "✅ Auto-purge has been set.",
+        "remove": "✅ Auto-purge has been removed."
       }
     },
     "globalchat": {
@@ -268,7 +273,8 @@
       "api": "❌ APIリクエスト中にエラーが発生しました。",
       "channel_not_found": "❌ Channel not found.",
       "guild_only": "❌ This command can only be used within a server channel.",
-      "must_text_or_news_channel": "❌ Channel must be a Text Channel or News Channel."
+      "must_text_or_news_channel": "❌ Channel must be a Text Channel or News Channel.",
+      "invalid_format": "❌ Invalid time format. Example: 5s, 2m, 1h"
     },
     "yes": "はい",
     "no": "いいえ",

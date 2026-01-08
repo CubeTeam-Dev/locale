@@ -177,6 +177,7 @@
   "modules": {
     "globalchat": {
       "topic": "c.global \n*Please do not delete*\nPlease follow the guidelines at https://cubeteam.app/gc-guideline\nNote: The 🔧 at the end of a name indicates that the person is a Global Chat moderator. If it is not present, they are a regular user.",
+      "connect_reason": "GlobalChat connect",
       "error": {
         "nsfw": "Global Chat is prohibited in NSFW channels.",
         "muted": "You do not have permission to speak in Global Chat\nClick [here](https://discord.gg/Se5QqQwj4h) to unmute.",

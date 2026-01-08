@@ -10,15 +10,75 @@
   "ping.fields.responseTime.name": "Response Time",
   "ping.fields.responseTime.value": "**Total:** {total}ms",
   "footer.executor.text": "Requested by {user}",
-  "settings.description": "Settings related commands",
-  "settings.auto_translate.description": "Configure auto translation",
-  "settings.auto_translate.options.enabled.description": "Whether to enable auto translation",
-  "settings.auto_translate.options.target_lang.description": "Target language code (e.g. JA, EN, FR, DE, ES)",
-  "settings.auto_translate.options.channel.description": "Channel to set auto translation",
-  "settings.global_connect.description": "Connect to global chat",
-  "settings.global_disconnect.description": "Disconnect from global chat",
-  "settings.language.description": "Change server language settings",
-  "settings.language.options.lang.description": "Language code (ISO 639-1)",
+  "commands": {
+    "settings": {
+      "description": "Settings related commands",
+      "options": {
+        "auto_translate": {
+          "description": "Configure auto translation",
+          "options": {
+            "enabled": { "description": "Whether to enable auto translation" },
+            "target_lang": {
+              "description": "Target language code (e.g. JA, EN, FR, DE, ES)"
+            },
+            "channel": { "description": "Channel to set auto translation" }
+          }
+        },
+        "global_connect": { "description": "Connect to Global Chat" },
+        "global_disconnect": { "description": "Disconnect from Global Chat" },
+        "language": {
+          "description": "Change server language settings",
+          "options": {
+            "lang": { "description": "Language code (ISO 639-1)" }
+          }
+        }
+      }
+    },
+    "lock": {
+      "description": "Lock the channel",
+      "options": {
+        "channel": { "description": "Channel to lock" }
+      }
+    },
+    "unlock": {
+      "description": "Unlock the channel",
+      "options": {
+        "channel": { "description": "Channel to unlock" }
+      }
+    },
+    "slowmode": {
+      "description": "Set slowmode in the channel.",
+      "options": {
+        "time": { "description": "Slowmode duration (e.g. 5s, 2m, 1h)" }
+      }
+    },
+    "sticky": {
+      "description": "Set sticky message in the channel.",
+      "options": {
+        "set": {
+          "description": "Set a sticky message.",
+          "options": {
+            "content": { "description": "Message to stick" },
+            "attachment": { "description": "Image to stick" },
+            "channel": { "description": "Channel to stick" }
+          }
+        },
+        "delete": {
+          "description": "Delete a sticky message.",
+          "options": {
+            "channel": {
+              "description": "Channel to delete sticky message from"
+            }
+          }
+        }
+      }
+    }
+  },
+  "context": {
+    "Translate": {
+      "name": "Translate"
+    }
+  },
   "settings.error.wrong_channel": "This command must be executed in a Text Channel or News Channel.",
   "settings.auto_translate.success": "Updated auto translation settings.",
   "settings.global_connect.failure": "Failed to connect to Global Chat\nError ID: {errorId}",
@@ -27,32 +87,18 @@
   "settings.global_disconnect.success": "Disconnected from Global Chat.",
   "settings.language.failure": "Failed to update language settings\nError ID: {errorId}",
   "settings.language.success": "Updated language settings to **{lang}**.",
-  "manage.lock.description": "Lock the channel",
-  "manage.lock.options.channel.description": "Channel to lock",
   "manage.lock.error.guild_only": "❌ This command can only be used within a server.",
   "manage.lock.success": "🔒 Channel locked.",
-  "manage.unlock.description": "Unlock the channel",
-  "manage.unlock.options.channel.description": "Channel to unlock",
   "manage.unlock.error.guild_only": "❌ This command can only be used within a server.",
   "manage.unlock.success": "🔓 Channel unlocked.",
-  "manage.slowmode.description": "Set slowmode in the channel.",
-  "manage.slowmode.options.time.description": "Slowmode duration (e.g. 5s, 2m, 1h)",
   "manage.slowmode.error.invalid_format": "❌ Invalid time format. Example: 5s, 2m, 1h",
   "manage.slowmode.error.range": "❌ Slowmode duration must be between 0 seconds and 21600 seconds (6 hours).",
   "manage.slowmode.error.guild_only": "❌ This command can only be used within a server channel.",
   "manage.slowmode.success": "✅ Set slowmode to {value}{unit}.",
-  "manage.sticky.description": "Set sticky message in the channel.",
-  "manage.sticky.set.description": "Set a sticky message.",
-  "manage.sticky.set.options.content.description": "Message to stick",
-  "manage.sticky.set.options.attachment.description": "Image to stick",
-  "manage.sticky.set.options.channel.description": "Channel to stick",
-  "manage.sticky.delete.description": "Delete a sticky message.",
-  "manage.sticky.delete.options.channel.description": "Channel to delete sticky message from",
   "manage.sticky.error.cannot_send": "Cannot send messages to this channel.",
   "manage.sticky.set.success": "Set sticky message.",
   "manage.sticky.error.channel_not_found": "Channel not found.",
   "manage.sticky.delete.success": "Deleted sticky message.",
-  "context.translate.name": "Translate",
   "context.translate.original_button": "Go to original message",
   "modules.globalchat.error.nsfw": "Global Chat is prohibited in NSFW channels.",
   "modules.globalchat.error.muted": "You do not have permission to speak in Global Chat\nClick [here](https://discord.gg/Se5QqQwj4h) to unmute.",

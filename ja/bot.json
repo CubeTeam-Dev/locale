@@ -9,5 +9,5 @@
   "ping.fields.botInfo.value": "**起動時間:** {uptimeStr}\n**サーバー数:** {guildsCount}\n**シャード数:** {shardsCount}",
   "ping.fields.responseTime.name": "応答時間",
   "ping.fields.responseTime.value": "**合計:** {total}ms",
-  "ping.footer.text": "実行者: {user}"
+  "footer.executor.text": "実行者: {user}"
 }

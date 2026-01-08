@@ -256,7 +256,10 @@
   },
   "common": {
     "error": {
-      "api": "❌ Error occurred during API request."
+      "api": "❌ Error occurred during API request.",
+      "channel_not_found": "❌ Channel not found.",
+      "guild_only": "❌ This command can only be used within a server channel.",
+      "must_text_or_news_channel": "❌ Channel must be a Text Channel or News Channel."
     },
     "yes": "Yes",
     "no": "No",

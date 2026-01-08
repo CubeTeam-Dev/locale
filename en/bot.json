@@ -112,24 +112,29 @@
       }
     },
     "auto_purge": {
-      "description": "自動削除機能の監理をします。",
-      "set": {
-        "description": "自動削除を設定します。",
-        "options": {
-          "channel": {
-            "description": "自動削除を設定するチャンネル"
-          },
-          "limit": {
-            "description": "削除するメッセージの数"
-          },
-          "interval": {
-            "description": "削除の間隔（例: 5s, 2m, 1h）"
+      "description": "Manage the auto-purge feature.",
+      "options": {
+        "set": {
+          "description": "Set up auto-purge.",
+          "options": {
+            "channel": {
+              "description": "Channel to set up auto-purge in"
+            },
+            "limit": {
+              "description": "Number of messages to delete"
+            },
+            "interval": {
+              "description": "Delete interval (e.g. 5s, 2m, 1h)"
+            }
           }
-        }
-      },
-      "remove": {
-        "channel": {
-          "description": "自動削除を解除するチャンネル"
+        },
+        "remove": {
+          "description": "Remove auto-purge.",
+          "options": {
+            "channel": {
+              "description": "Channel to remove auto-purge from"
+            }
+          }
         }
       }
     }

@@ -24,7 +24,7 @@ Crowdinアカウントを作成した上で、参加したい言語を選択し�
 もしあなたが使用したい言語がCrowdinプロジェクトに存在しない場合は、ぜひ新しい言語の追加を提案してください。
 提案は、以下のいずれかの方法で受け付けています。
 
-- CubeTeam公式 [Discord サーバー](https://discord.gg/Se5QqQwj4h)での提案  
+- CubeTeam公式 [Discord サーバー](https://discord.gg/Se5QqQwj4h)での提案
 - GitHub Issue でのリクエスト
 
 ## ライセンスと利用ポリシー

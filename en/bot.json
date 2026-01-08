@@ -162,6 +162,9 @@
           }
         }
       }
+    },
+    "ping": {
+      "description": "Ping the bot."
     }
   },
   "context": {

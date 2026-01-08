@@ -1,15 +1,31 @@
 {
-  "ping.title": "🏓 Ping Information",
-  "ping.description": "Various latency and bot information",
-  "ping.fields.networkLatency.name": "Network Latency",
-  "ping.fields.networkLatency.value": "**WebSocket:** {wsLatency}ms\n**REST API:** {restLatency}ms\n**Status:** {pingStatus}",
-  "ping.fields.shardInfo.name": "Shard Info",
-  "ping.fields.shardInfo.value": "**Shard ID:** {shardId}\n**Latency:** {wsLatency}ms\n**Status:** {status}",
-  "ping.fields.botInfo.name": "Bot Info",
-  "ping.fields.botInfo.value": "**Uptime:** {uptimeStr}\n**Servers:** {guildsCount}\n**Shards:** {shardsCount}",
-  "ping.fields.responseTime.name": "Response Time",
-  "ping.fields.responseTime.value": "**Total:** {total}ms",
-  "footer.executor.text": "Requested by {user}",
+  "ping": {
+    "title": "🏓 Ping Information",
+    "description": "Various latency and bot information",
+    "fields": {
+      "networkLatency": {
+        "name": "Network Latency",
+        "value": "**WebSocket:** {wsLatency}ms\n**REST API:** {restLatency}ms\n**Status:** {pingStatus}"
+      },
+      "shardInfo": {
+        "name": "Shard Info",
+        "value": "**Shard ID:** {shardId}\n**Latency:** {wsLatency}ms\n**Status:** {status}"
+      },
+      "botInfo": {
+        "name": "Bot Info",
+        "value": "**Uptime:** {uptimeStr}\n**Servers:** {guildsCount}\n**Shards:** {shardsCount}"
+      },
+      "responseTime": {
+        "name": "Response Time",
+        "value": "**Total:** {total}ms"
+      }
+    }
+  },
+  "footer": {
+    "executor": {
+      "text": "Requested by {user}"
+    }
+  },
   "commands": {
     "settings": {
       "description": "Settings related commands",
@@ -17,19 +33,29 @@
         "auto_translate": {
           "description": "Configure auto translation",
           "options": {
-            "enabled": { "description": "Whether to enable auto translation" },
+            "enabled": {
+              "description": "Whether to enable auto translation"
+            },
             "target_lang": {
               "description": "Target language code (e.g. JA, EN, FR, DE, ES)"
             },
-            "channel": { "description": "Channel to set auto translation" }
+            "channel": {
+              "description": "Channel to set auto translation"
+            }
           }
         },
-        "global_connect": { "description": "Connect to Global Chat" },
-        "global_disconnect": { "description": "Disconnect from Global Chat" },
+        "global_connect": {
+          "description": "Connect to Global Chat"
+        },
+        "global_disconnect": {
+          "description": "Disconnect from Global Chat"
+        },
         "language": {
           "description": "Change server language settings",
           "options": {
-            "lang": { "description": "Language code (ISO 639-1)" }
+            "lang": {
+              "description": "Language code (ISO 639-1)"
+            }
           }
         }
       }
@@ -37,19 +63,25 @@
     "lock": {
       "description": "Lock the channel",
       "options": {
-        "channel": { "description": "Channel to lock" }
+        "channel": {
+          "description": "Channel to lock"
+        }
       }
     },
     "unlock": {
       "description": "Unlock the channel",
       "options": {
-        "channel": { "description": "Channel to unlock" }
+        "channel": {
+          "description": "Channel to unlock"
+        }
       }
     },
     "slowmode": {
       "description": "Set slowmode in the channel.",
       "options": {
-        "time": { "description": "Slowmode duration (e.g. 5s, 2m, 1h)" }
+        "time": {
+          "description": "Slowmode duration (e.g. 5s, 2m, 1h)"
+        }
       }
     },
     "sticky": {
@@ -58,9 +90,15 @@
         "set": {
           "description": "Set a sticky message.",
           "options": {
-            "content": { "description": "Message to stick" },
-            "attachment": { "description": "Image to stick" },
-            "channel": { "description": "Channel to stick" }
+            "content": {
+              "description": "Message to stick"
+            },
+            "attachment": {
+              "description": "Image to stick"
+            },
+            "channel": {
+              "description": "Channel to stick"
+            }
           }
         },
         "delete": {
@@ -77,107 +115,171 @@
   "context": {
     "Translate": {
       "name": "Translate"
+    },
+    "translate": {
+      "original_button": "Go to original message"
     }
   },
-  "settings.error.wrong_channel": "This command must be executed in a Text Channel or News Channel.",
-  "settings.auto_translate.success": "Updated auto translation settings.",
-  "settings.global_connect.failure": "Failed to connect to Global Chat\nError ID: {errorId}",
-  "settings.global_connect.success": "Connected to Global Chat!",
-  "settings.global_disconnect.failure": "Failed to disconnect from Global Chat\nError ID: {errorId}",
-  "settings.global_disconnect.success": "Disconnected from Global Chat.",
-  "settings.language.failure": "Failed to update language settings\nError ID: {errorId}",
-  "settings.language.success": "Updated language settings to **{lang}**.",
-  "manage.lock.error.guild_only": "❌ This command can only be used within a server.",
-  "manage.lock.success": "🔒 Channel locked.",
-  "manage.unlock.error.guild_only": "❌ This command can only be used within a server.",
-  "manage.unlock.success": "🔓 Channel unlocked.",
-  "manage.slowmode.error.invalid_format": "❌ Invalid time format. Example: 5s, 2m, 1h",
-  "manage.slowmode.error.range": "❌ Slowmode duration must be between 0 seconds and 21600 seconds (6 hours).",
-  "manage.slowmode.error.guild_only": "❌ This command can only be used within a server channel.",
-  "manage.slowmode.success": "✅ Set slowmode to {value}{unit}.",
-  "manage.sticky.error.cannot_send": "Cannot send messages to this channel.",
-  "manage.sticky.set.success": "Set sticky message.",
-  "manage.sticky.error.channel_not_found": "Channel not found.",
-  "manage.sticky.delete.success": "Deleted sticky message.",
-  "context.translate.original_button": "Go to original message",
-  "modules.globalchat.error.nsfw": "Global Chat is prohibited in NSFW channels.",
-  "modules.globalchat.error.muted": "You do not have permission to speak in Global Chat\nClick [here](https://discord.gg/Se5QqQwj4h) to unmute.",
-  "modules.globalchat.error.blacklist_word": "Contains blacklisted words.",
-  "modules.globalchat.error.blacklist_url": "Contains blacklisted URLs.",
-  "modules.globalchat.error.spam": "Message detected as spam. Please wait a while and try again.",
-  "modules.globalchat.error.too_many_mentions": "Too many mentions.",
-  "modules.globalchat.error.too_many_emojis": "Too many emojis.",
-  "modules.globalchat.error.ai_moderation": "Message blocked by AI moderation. Please rephrase and try again.",
-  "modules.globalchat.error.nsfw_channel": "Sending messages in NSFW channels is prohibited.",
-  "modules.globalchat.components.user_info": "User Info",
-  "modules.globalchat.components.channel_info": "Channel Info",
-  "modules.globalchat.components.guild_info": "Server Info",
-  "modules.globalchat.components.delete": "Delete",
-  "modules.globalchat.components.mute": "Mute",
-  "modules.globalchat.components.mute_spam": "Mute (Spam)",
-  "modules.sticky.footer": "Cube Sticky",
-  "common.error.api": "❌ Error occurred during API request.",
-  "common.yes": "Yes",
-  "common.no": "No",
-  "common.none": "None",
-  "common.reason": "No reason provided",
-  "common.unit.seconds": "seconds",
-  "common.unit.hours": "hours",
-  "permissions.AddReactions": "Add Reactions",
-  "permissions.Administrator": "Administrator",
-  "permissions.AttachFiles": "Attach Files",
-  "permissions.BanMembers": "Ban Members",
-  "permissions.ChangeNickname": "Change Nickname",
-  "permissions.Connect": "Connect",
-  "permissions.CreateEvents": "Create Events",
-  "permissions.CreateGuildExpressions": "Create Expressions",
-  "permissions.CreateInstantInvite": "Create Invite",
-  "permissions.CreatePrivateThreads": "Create Private Threads",
-  "permissions.CreatePublicThreads": "Create Public Threads",
-  "permissions.DeafenMembers": "Deafen Members",
-  "permissions.EmbedLinks": "Embed Links",
-  "permissions.KickMembers": "Kick Members",
-  "permissions.ManageChannels": "Manage Channels",
-  "permissions.ManageGuildExpressions": "Manage Expressions",
-  "permissions.ManageEvents": "Manage Events",
-  "permissions.ManageGuild": "Manage Server",
-  "permissions.ManageMessages": "Manage Messages",
-  "permissions.ManageNicknames": "Manage Nicknames",
-  "permissions.ManageRoles": "Manage Roles",
-  "permissions.ManageThreads": "Manage Threads",
-  "permissions.ManageWebhooks": "Manage Webhooks",
-  "permissions.MentionEveryone": "Mention Everyone",
-  "permissions.ModerateMembers": "Timeout Members",
-  "permissions.MoveMembers": "Move Members",
-  "permissions.MuteMembers": "Mute Members",
-  "permissions.PinMessages": "Pin Messages",
-  "permissions.PrioritySpeaker": "Priority Speaker",
-  "permissions.ReadMessageHistory": "Read Message History",
-  "permissions.RequestToSpeak": "Request to Speak",
-  "permissions.SendMessages": "Send Messages",
-  "permissions.SendMessagesInThreads": "Send Messages in Threads",
-  "permissions.SendPolls": "Send Polls",
-  "permissions.SendTTSMessages": "Send TTS Messages",
-  "permissions.SendVoiceMessages": "Send Voice Messages",
-  "permissions.Speak": "Speak",
-  "permissions.Stream": "Video",
-  "permissions.UseApplicationCommands": "Use Application Commands",
-  "permissions.UseEmbeddedActivities": "Use Activities",
-  "permissions.UseExternalApps": "Use External Apps",
-  "permissions.UseExternalEmojis": "Use External Emojis",
-  "permissions.UseExternalSounds": "Use External Sounds",
-  "permissions.UseExternalStickers": "Use External Stickers",
-  "permissions.UseSoundboard": "Use Soundboard",
-  "permissions.UseVAD": "Use Voice Activity",
-  "permissions.ViewAuditLog": "View Audit Log",
-  "permissions.ViewChannel": "View Channels",
-  "permissions.ViewCreatorMonetizationAnalytics": "View Creator Analytics",
-  "permissions.ViewGuildInsights": "View Server Insights",
-  "events.interaction.error.mod_only": "❌ This command is for Moderators only.",
-  "events.interaction.error.dev_only": "❌ This command is for Developers only.",
-  "events.interaction.error.admin_only": "❌ This command is for Admins only.",
-  "events.interaction.error.user_perms_missing": "❌ You do not have permission to execute this command.",
-  "events.interaction.error.bot_perms_missing": "❌ The bot does not have permission to execute this command.",
-  "events.interaction.error.bot_perms_title": "Bot requires the following permissions",
-  "events.message.error.execution": "Error occurred while executing command.\nError ID: {errorId}"
+  "settings": {
+    "error": {
+      "wrong_channel": "This command must be executed in a Text Channel or News Channel."
+    },
+    "auto_translate": {
+      "success": "Updated auto translation settings."
+    },
+    "global_connect": {
+      "failure": "Failed to connect to Global Chat\nError ID: {errorId}",
+      "success": "Connected to Global Chat!"
+    },
+    "global_disconnect": {
+      "failure": "Failed to disconnect from Global Chat\nError ID: {errorId}",
+      "success": "Disconnected from Global Chat."
+    },
+    "language": {
+      "failure": "Failed to update language settings\nError ID: {errorId}",
+      "success": "Updated language settings to **{lang}**."
+    }
+  },
+  "manage": {
+    "lock": {
+      "error": {
+        "guild_only": "❌ This command can only be used within a server."
+      },
+      "success": "🔒 Channel locked."
+    },
+    "unlock": {
+      "error": {
+        "guild_only": "❌ This command can only be used within a server."
+      },
+      "success": "🔓 Channel unlocked."
+    },
+    "slowmode": {
+      "error": {
+        "invalid_format": "❌ Invalid time format. Example: 5s, 2m, 1h",
+        "range": "❌ Slowmode duration must be between 0 seconds and 21600 seconds (6 hours).",
+        "guild_only": "❌ This command can only be used within a server channel."
+      },
+      "success": "✅ Set slowmode to {value}{unit}."
+    },
+    "sticky": {
+      "error": {
+        "cannot_send": "Cannot send messages to this channel.",
+        "channel_not_found": "Channel not found."
+      },
+      "set": {
+        "success": "Set sticky message."
+      },
+      "delete": {
+        "success": "Deleted sticky message."
+      }
+    }
+  },
+  "modules": {
+    "globalchat": {
+      "error": {
+        "nsfw": "Global Chat is prohibited in NSFW channels.",
+        "muted": "You do not have permission to speak in Global Chat\nClick [here](https://discord.gg/Se5QqQwj4h) to unmute.",
+        "blacklist_word": "Contains blacklisted words.",
+        "blacklist_url": "Contains blacklisted URLs.",
+        "spam": "Message detected as spam. Please wait a while and try again.",
+        "too_many_mentions": "Too many mentions.",
+        "too_many_emojis": "Too many emojis.",
+        "ai_moderation": "Message blocked by AI moderation. Please rephrase and try again.",
+        "nsfw_channel": "Sending messages in NSFW channels is prohibited."
+      },
+      "components": {
+        "user_info": "User Info",
+        "channel_info": "Channel Info",
+        "guild_info": "Server Info",
+        "delete": "Delete",
+        "mute": "Mute",
+        "mute_spam": "Mute (Spam)"
+      }
+    },
+    "sticky": {
+      "footer": "Cube Sticky"
+    }
+  },
+  "common": {
+    "error": {
+      "api": "❌ Error occurred during API request."
+    },
+    "yes": "Yes",
+    "no": "No",
+    "none": "None",
+    "reason": "No reason provided",
+    "unit": {
+      "seconds": "seconds",
+      "hours": "hours"
+    }
+  },
+  "permissions": {
+    "AddReactions": "Add Reactions",
+    "Administrator": "Administrator",
+    "AttachFiles": "Attach Files",
+    "BanMembers": "Ban Members",
+    "ChangeNickname": "Change Nickname",
+    "Connect": "Connect",
+    "CreateEvents": "Create Events",
+    "CreateGuildExpressions": "Create Expressions",
+    "CreateInstantInvite": "Create Invite",
+    "CreatePrivateThreads": "Create Private Threads",
+    "CreatePublicThreads": "Create Public Threads",
+    "DeafenMembers": "Deafen Members",
+    "EmbedLinks": "Embed Links",
+    "KickMembers": "Kick Members",
+    "ManageChannels": "Manage Channels",
+    "ManageGuildExpressions": "Manage Expressions",
+    "ManageEvents": "Manage Events",
+    "ManageGuild": "Manage Server",
+    "ManageMessages": "Manage Messages",
+    "ManageNicknames": "Manage Nicknames",
+    "ManageRoles": "Manage Roles",
+    "ManageThreads": "Manage Threads",
+    "ManageWebhooks": "Manage Webhooks",
+    "MentionEveryone": "Mention Everyone",
+    "ModerateMembers": "Timeout Members",
+    "MoveMembers": "Move Members",
+    "MuteMembers": "Mute Members",
+    "PinMessages": "Pin Messages",
+    "PrioritySpeaker": "Priority Speaker",
+    "ReadMessageHistory": "Read Message History",
+    "RequestToSpeak": "Request to Speak",
+    "SendMessages": "Send Messages",
+    "SendMessagesInThreads": "Send Messages in Threads",
+    "SendPolls": "Send Polls",
+    "SendTTSMessages": "Send TTS Messages",
+    "SendVoiceMessages": "Send Voice Messages",
+    "Speak": "Speak",
+    "Stream": "Video",
+    "UseApplicationCommands": "Use Application Commands",
+    "UseEmbeddedActivities": "Use Activities",
+    "UseExternalApps": "Use External Apps",
+    "UseExternalEmojis": "Use External Emojis",
+    "UseExternalSounds": "Use External Sounds",
+    "UseExternalStickers": "Use External Stickers",
+    "UseSoundboard": "Use Soundboard",
+    "UseVAD": "Use Voice Activity",
+    "ViewAuditLog": "View Audit Log",
+    "ViewChannel": "View Channels",
+    "ViewCreatorMonetizationAnalytics": "View Creator Analytics",
+    "ViewGuildInsights": "View Server Insights"
+  },
+  "events": {
+    "interaction": {
+      "error": {
+        "mod_only": "❌ This command is for Moderators only.",
+        "dev_only": "❌ This command is for Developers only.",
+        "admin_only": "❌ This command is for Admins only.",
+        "user_perms_missing": "❌ You do not have permission to execute this command.",
+        "bot_perms_missing": "❌ The bot does not have permission to execute this command.",
+        "bot_perms_title": "Bot requires the following permissions"
+      }
+    },
+    "message": {
+      "error": {
+        "execution": "Error occurred while executing command.\nError ID: {errorId}"
+      }
+    }
+  }
 }

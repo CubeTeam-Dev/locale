@@ -1,15 +1,31 @@
 {
-  "ping.title": "🏓 Ping情報",
-  "ping.description": "各種レイテンシとBot情報",
-  "ping.fields.networkLatency.name": "ネットワーク遅延",
-  "ping.fields.networkLatency.value": "**WebSocket:** {wsLatency}ms\n**REST API:** {restLatency}ms\n**ステータス:** {pingStatus}",
-  "ping.fields.shardInfo.name": "シャード情報",
-  "ping.fields.shardInfo.value": "**シャードID:** {shardId}\n**遅延:** {wsLatency}ms\n**ステータス:** {status}",
-  "ping.fields.botInfo.name": "Bot情報",
-  "ping.fields.botInfo.value": "**起動時間:** {uptimeStr}\n**サーバー数:** {guildsCount}\n**シャード数:** {shardsCount}",
-  "ping.fields.responseTime.name": "応答時間",
-  "ping.fields.responseTime.value": "**合計:** {total}ms",
-  "footer.executor.text": "実行者: {user}",
+  "ping": {
+    "title": "🏓 Ping情報",
+    "description": "各種レイテンシとBot情報",
+    "fields": {
+      "networkLatency": {
+        "name": "ネットワーク遅延",
+        "value": "**WebSocket:** {wsLatency}ms\n**REST API:** {restLatency}ms\n**ステータス:** {pingStatus}"
+      },
+      "shardInfo": {
+        "name": "シャード情報",
+        "value": "**シャードID:** {shardId}\n**遅延:** {wsLatency}ms\n**ステータス:** {status}"
+      },
+      "botInfo": {
+        "name": "Bot情報",
+        "value": "**起動時間:** {uptimeStr}\n**サーバー数:** {guildsCount}\n**シャード数:** {shardsCount}"
+      },
+      "responseTime": {
+        "name": "応答時間",
+        "value": "**合計:** {total}ms"
+      }
+    }
+  },
+  "footer": {
+    "executor": {
+      "text": "実行者: {user}"
+    }
+  },
   "commands": {
     "settings": {
       "description": "設定関連のコマンド",
@@ -99,107 +115,171 @@
   "context": {
     "Translate": {
       "name": "翻訳"
+    },
+    "translate": {
+      "original_button": "元のメッセージに移動"
     }
   },
-  "settings.error.wrong_channel": "このコマンドはテキストチャンネルまたはアナウンスチャンネルで実行する必要があります。",
-  "settings.auto_translate.success": "自動翻訳の設定を更新しました。",
-  "settings.global_connect.failure": "グローバルチャットの接続に失敗しました。\nエラーID: `{errorId}`",
-  "settings.global_connect.success": "グローバルチャットに接続しました！",
-  "settings.global_disconnect.failure": "グローバルチャットからの切断に失敗しました。\nエラーID: `{errorId}`",
-  "settings.global_disconnect.success": "グローバルチャットから切断しました。",
-  "settings.language.failure": "言語設定の変更に失敗しました。\nエラーID: `{errorId}`",
-  "settings.language.success": "言語設定を**{lang}**に更新しました。",
-  "manage.lock.error.guild_only": "❌このコマンドはサーバー内でのみ使用できます。",
-  "manage.lock.success": "🔒チャンネルをロックしました。",
-  "manage.unlock.error.guild_only": "❌このコマンドはサーバー内でのみ使用できます。",
-  "manage.unlock.success": "🔓 チャンネルのロックを解除しました。",
-  "manage.slowmode.error.invalid_format": "❌無効な時間形式です。例: 5s, 2m, 1h",
-  "manage.slowmode.error.range": "❌低速モードの長さは0秒から21600秒（6時間）の間でなければなりません。",
-  "manage.slowmode.error.guild_only": "❌このコマンドはサーバー内でのみ使用できます。",
-  "manage.slowmode.success": "✅ 低速モードを {value}{unit} に設定しました。",
-  "manage.sticky.error.cannot_send": "このチャンネルにはメッセージを送信できません。",
-  "manage.sticky.set.success": "ピン留めメッセージを設定する。",
-  "manage.sticky.error.channel_not_found": "チャンネルが見つかりません。",
-  "manage.sticky.delete.success": "ピン留めメッセージを削除しました。",
-  "context.translate.original_button": "元のメッセージに移動",
-  "modules.globalchat.error.nsfw": "NSFWチャンネルでのグローバルチャットの使用は禁止されています。",
-  "modules.globalchat.error.muted": "あなたはグローバルチャットで発言する権限がありません。\nミュート解除は[こちら](https://discord.gg/Se5QqQwj4h)",
-  "modules.globalchat.error.blacklist_word": "ブラックリストの単語が含まれています。",
-  "modules.globalchat.error.blacklist_url": "ブラックリストに登録された URL が含まれています。",
-  "modules.globalchat.error.spam": "メッセージがスパムとして検出されました。しばらくしてからもう一度お試しください。",
-  "modules.globalchat.error.too_many_mentions": "メンションが多すぎます。",
-  "modules.globalchat.error.too_many_emojis": "絵文字が多すぎます。",
-  "modules.globalchat.error.ai_moderation": "AIモデレーションによってメッセージがブロックされました。言葉を変えてもう一度お試しください。",
-  "modules.globalchat.error.nsfw_channel": "NSFWチャンネルでのメッセージ送信は禁止されています。",
-  "modules.globalchat.components.user_info": "ユーザー情報",
-  "modules.globalchat.components.channel_info": "チャンネル情報",
-  "modules.globalchat.components.guild_info": "サーバー情報",
-  "modules.globalchat.components.delete": "削除",
-  "modules.globalchat.components.mute": "ミュート",
-  "modules.globalchat.components.mute_spam": "ミュート (スパム)",
-  "modules.sticky.footer": "ピン留めメッセージ",
-  "common.error.api": "❌ APIリクエスト中にエラーが発生しました。",
-  "common.yes": "はい",
-  "common.no": "いいえ",
-  "common.none": "なし",
-  "common.reason": "理由が入力されていません",
-  "common.unit.seconds": "秒",
-  "common.unit.hours": "時間",
-  "permissions.AddReactions": "リアクションを追加",
-  "permissions.Administrator": "管理者",
-  "permissions.AttachFiles": "ファイルを添付",
-  "permissions.BanMembers": "メンバーをBAN",
-  "permissions.ChangeNickname": "ニックネームを変更する",
-  "permissions.Connect": "接続",
-  "permissions.CreateEvents": "イベントの作成",
-  "permissions.CreateGuildExpressions": "エクスプレッションを作成",
-  "permissions.CreateInstantInvite": "招待を作成",
-  "permissions.CreatePrivateThreads": "プライベートスレッドの作成",
-  "permissions.CreatePublicThreads": "公開スレッドの作成",
-  "permissions.DeafenMembers": "メンバーのスピーカーをミュート",
-  "permissions.EmbedLinks": "埋め込みリンク",
-  "permissions.KickMembers": "メンバーをキック",
-  "permissions.ManageChannels": "チャンネルの管理",
-  "permissions.ManageGuildExpressions": "絵文字の管理",
-  "permissions.ManageEvents": "イベントの管理",
-  "permissions.ManageGuild": "サーバー管理",
-  "permissions.ManageMessages": "メッセージの管理",
-  "permissions.ManageNicknames": "ニックネームを管理",
-  "permissions.ManageRoles": "ロールの管理",
-  "permissions.ManageThreads": "スレッドと投稿の管理",
-  "permissions.ManageWebhooks": "ウェブフックの管理",
-  "permissions.MentionEveryone": "@everyone、@here、全てのロールにメンション",
-  "permissions.ModerateMembers": "メンバーをタイムアウト",
-  "permissions.MoveMembers": "メンバーを移動",
-  "permissions.MuteMembers": "メンバーをミュート",
-  "permissions.PinMessages": "メッセージをピン留め",
-  "permissions.PrioritySpeaker": "優先スピーカー",
-  "permissions.ReadMessageHistory": "メッセージ履歴を読む",
-  "permissions.RequestToSpeak": "発言リクエスト",
-  "permissions.SendMessages": "メッセージの送信と投稿の作成",
-  "permissions.SendMessagesInThreads": "スレッドと投稿でメッセージを送信",
-  "permissions.SendPolls": "投票の作成",
-  "permissions.SendTTSMessages": "テキスト読み上げメッセージを送信する",
-  "permissions.SendVoiceMessages": "ボイスメッセージを送信",
-  "permissions.Speak": "発言",
-  "permissions.Stream": "WEB カメラ",
-  "permissions.UseApplicationCommands": "アプリコマンドを使う",
-  "permissions.UseEmbeddedActivities": "ユーザーアクティビティ",
-  "permissions.UseExternalApps": "外部のアプリを使用",
-  "permissions.UseExternalEmojis": "外部の絵文字を使用する",
-  "permissions.UseExternalSounds": "外部のサウンドの使用",
-  "permissions.UseExternalStickers": "外部のスタンプを使用する",
-  "permissions.UseSoundboard": "サウンドボードを使用",
-  "permissions.UseVAD": "音声アクティビティを使用する",
-  "permissions.ViewAuditLog": "監査ログを表示",
-  "permissions.ViewChannel": "チャンネルを見る",
-  "permissions.ViewCreatorMonetizationAnalytics": "クリエイター分析を表示",
-  "permissions.ViewGuildInsights": "サーバーインサイトを表示",
-  "events.interaction.error.mod_only": "❌このコマンドはモデレーター専用です。",
-  "events.interaction.error.dev_only": "❌このコマンドは開発者専用です。",
-  "events.interaction.error.admin_only": "❌このコマンドは管理者専用です。",
-  "events.interaction.error.user_perms_missing": "❌このコマンドを実行する権限がありません。",
-  "events.interaction.error.bot_perms_missing": "❌Botにこのコマンドを実行する権限がありません。",
-  "events.interaction.error.bot_perms_title": "Botには以下の権限が必要です",
-  "events.message.error.execution": "コマンドの実行中にエラーが発生しました。\nエラーID: {errorId}"
+  "settings": {
+    "error": {
+      "wrong_channel": "このコマンドはテキストチャンネルまたはアナウンスチャンネルで実行する必要があります。"
+    },
+    "auto_translate": {
+      "success": "自動翻訳の設定を更新しました。"
+    },
+    "global_connect": {
+      "failure": "グローバルチャットの接続に失敗しました。\nエラーID: `{errorId}`",
+      "success": "グローバルチャットに接続しました！"
+    },
+    "global_disconnect": {
+      "failure": "グローバルチャットからの切断に失敗しました。\nエラーID: `{errorId}`",
+      "success": "グローバルチャットから切断しました。"
+    },
+    "language": {
+      "failure": "言語設定の変更に失敗しました。\nエラーID: `{errorId}`",
+      "success": "言語設定を**{lang}**に更新しました。"
+    }
+  },
+  "manage": {
+    "lock": {
+      "error": {
+        "guild_only": "❌このコマンドはサーバー内でのみ使用できます。"
+      },
+      "success": "🔒チャンネルをロックしました。"
+    },
+    "unlock": {
+      "error": {
+        "guild_only": "❌このコマンドはサーバー内でのみ使用できます。"
+      },
+      "success": "🔓 チャンネルのロックを解除しました。"
+    },
+    "slowmode": {
+      "error": {
+        "invalid_format": "❌無効な時間形式です。例: 5s, 2m, 1h",
+        "range": "❌低速モードの長さは0秒から21600秒（6時間）の間でなければなりません。",
+        "guild_only": "❌このコマンドはサーバー内でのみ使用できます。"
+      },
+      "success": "✅ 低速モードを {value}{unit} に設定しました。"
+    },
+    "sticky": {
+      "error": {
+        "cannot_send": "このチャンネルにはメッセージを送信できません。",
+        "channel_not_found": "チャンネルが見つかりません。"
+      },
+      "set": {
+        "success": "ピン留めメッセージを設定する。"
+      },
+      "delete": {
+        "success": "ピン留めメッセージを削除しました。"
+      }
+    }
+  },
+  "modules": {
+    "globalchat": {
+      "error": {
+        "nsfw": "NSFWチャンネルでのグローバルチャットの使用は禁止されています。",
+        "muted": "あなたはグローバルチャットで発言する権限がありません。\nミュート解除は[こちら](https://discord.gg/Se5QqQwj4h)",
+        "blacklist_word": "ブラックリストの単語が含まれています。",
+        "blacklist_url": "ブラックリストに登録された URL が含まれています。",
+        "spam": "メッセージがスパムとして検出されました。しばらくしてからもう一度お試しください。",
+        "too_many_mentions": "メンションが多すぎます。",
+        "too_many_emojis": "絵文字が多すぎます。",
+        "ai_moderation": "AIモデレーションによってメッセージがブロックされました。言葉を変えてもう一度お試しください。",
+        "nsfw_channel": "NSFWチャンネルでのメッセージ送信は禁止されています。"
+      },
+      "components": {
+        "user_info": "ユーザー情報",
+        "channel_info": "チャンネル情報",
+        "guild_info": "サーバー情報",
+        "delete": "削除",
+        "mute": "ミュート",
+        "mute_spam": "ミュート (スパム)"
+      }
+    },
+    "sticky": {
+      "footer": "ピン留めメッセージ"
+    }
+  },
+  "common": {
+    "error": {
+      "api": "❌ APIリクエスト中にエラーが発生しました。"
+    },
+    "yes": "はい",
+    "no": "いいえ",
+    "none": "なし",
+    "reason": "理由が入力されていません",
+    "unit": {
+      "seconds": "秒",
+      "hours": "時間"
+    }
+  },
+  "permissions": {
+    "AddReactions": "リアクションを追加",
+    "Administrator": "管理者",
+    "AttachFiles": "ファイルを添付",
+    "BanMembers": "メンバーをBAN",
+    "ChangeNickname": "ニックネームを変更する",
+    "Connect": "接続",
+    "CreateEvents": "イベントの作成",
+    "CreateGuildExpressions": "エクスプレッションを作成",
+    "CreateInstantInvite": "招待を作成",
+    "CreatePrivateThreads": "プライベートスレッドの作成",
+    "CreatePublicThreads": "公開スレッドの作成",
+    "DeafenMembers": "メンバーのスピーカーをミュート",
+    "EmbedLinks": "埋め込みリンク",
+    "KickMembers": "メンバーをキック",
+    "ManageChannels": "チャンネルの管理",
+    "ManageGuildExpressions": "絵文字の管理",
+    "ManageEvents": "イベントの管理",
+    "ManageGuild": "サーバー管理",
+    "ManageMessages": "メッセージの管理",
+    "ManageNicknames": "ニックネームを管理",
+    "ManageRoles": "ロールの管理",
+    "ManageThreads": "スレッドと投稿の管理",
+    "ManageWebhooks": "ウェブフックの管理",
+    "MentionEveryone": "@everyone、@here、全てのロールにメンション",
+    "ModerateMembers": "メンバーをタイムアウト",
+    "MoveMembers": "メンバーを移動",
+    "MuteMembers": "メンバーをミュート",
+    "PinMessages": "メッセージをピン留め",
+    "PrioritySpeaker": "優先スピーカー",
+    "ReadMessageHistory": "メッセージ履歴を読む",
+    "RequestToSpeak": "発言リクエスト",
+    "SendMessages": "メッセージの送信と投稿の作成",
+    "SendMessagesInThreads": "スレッドと投稿でメッセージを送信",
+    "SendPolls": "投票の作成",
+    "SendTTSMessages": "テキスト読み上げメッセージを送信する",
+    "SendVoiceMessages": "ボイスメッセージを送信",
+    "Speak": "発言",
+    "Stream": "WEB カメラ",
+    "UseApplicationCommands": "アプリコマンドを使う",
+    "UseEmbeddedActivities": "ユーザーアクティビティ",
+    "UseExternalApps": "外部のアプリを使用",
+    "UseExternalEmojis": "外部の絵文字を使用する",
+    "UseExternalSounds": "外部のサウンドの使用",
+    "UseExternalStickers": "外部のスタンプを使用する",
+    "UseSoundboard": "サウンドボードを使用",
+    "UseVAD": "音声アクティビティを使用する",
+    "ViewAuditLog": "監査ログを表示",
+    "ViewChannel": "チャンネルを見る",
+    "ViewCreatorMonetizationAnalytics": "クリエイター分析を表示",
+    "ViewGuildInsights": "サーバーインサイトを表示"
+  },
+  "events": {
+    "interaction": {
+      "error": {
+        "mod_only": "❌このコマンドはモデレーター専用です。",
+        "dev_only": "❌このコマンドは開発者専用です。",
+        "admin_only": "❌このコマンドは管理者専用です。",
+        "user_perms_missing": "❌このコマンドを実行する権限がありません。",
+        "bot_perms_missing": "❌Botにこのコマンドを実行する権限がありません。",
+        "bot_perms_title": "Botには以下の権限が必要です"
+      }
+    },
+    "message": {
+      "error": {
+        "execution": "コマンドの実行中にエラーが発生しました。\nエラーID: {errorId}"
+      }
+    }
+  }
 }

@@ -112,57 +112,57 @@
       }
     },
     "auto_purge": {
-      "description": "Manage the auto-purge feature.",
+      "description": "自動削除機能を管理します。",
       "set": {
-        "description": "Set up auto-purge.",
+        "description": "自動削除を設定します。",
         "options": {
           "channel": {
-            "description": "Channel to set up auto-purge in"
+            "description": "自動削除を設定するチャンネル"
           },
           "limit": {
-            "description": "Number of messages to delete"
+            "description": "削除するメッセージ数"
           },
           "interval": {
-            "description": "Delete interval (e.g. 5s, 2m, 1h)"
+            "description": "削除する間隔 (例: 5s, 2m, 1h)"
           }
         }
       },
       "remove": {
-        "description": "Remove auto-purge.",
+        "description": "自動削除の設定を解除します。",
         "options": {
           "channel": {
-            "description": "Channel to remove auto-purge from"
+            "description": "自動削除を解除するチャンネル"
           }
         }
       }
     },
     "auto_react": {
-      "description": "Manage automatic reactions in the channel.",
+      "description": "チャンネルの自動リアクションを管理します。",
       "set": {
-        "description": "Set automatic reactions.",
+        "description": "自動リアクションを設定します",
         "options": {
           "channel": {
-            "description": "Channel to set auto reactions"
+            "description": "自動リアクションを設定するチャンネル"
           },
           "emojis": {
-            "description": "Emojis to use for automatic reactions"
+            "description": "自動リアクションに使用する絵文字"
           }
         }
       },
       "remove": {
-        "description": "Remove automatic reactions.",
+        "description": "自動リアクションを解除します",
         "options": {
           "channel": {
-            "description": "Channel to remove automatic reactions"
+            "description": "自動リアクションを除去するチャンネル"
           },
           "emojis": {
-            "description": "Emojis to remove automatic reactions"
+            "description": "自動リアクションから削除する絵文字"
           }
         }
       }
     },
     "ping": {
-      "description": "Ping the bot."
+      "description": "ボットにPingをかける。"
     }
   },
   "context": {
@@ -229,19 +229,19 @@
   "modules": {
     "auto_react": {
       "success": {
-        "set": "✅ Automatic reactions have been set.",
-        "remove": "✅ Automatic reactions have been removed."
+        "set": "✅ 自動リアクションを設定しました。",
+        "remove": "✅ 自動リアクションを解除しました。"
       }
     },
     "auto_purge": {
       "success": {
-        "set": "✅ Auto-purge has been set.",
+        "set": "✅ 自動削除を設定しました。",
         "remove": "✅ Auto-purge has been removed."
       }
     },
     "globalchat": {
       "topic": "c.global \n*Please do not delete*\nPlease follow the guidelines at https://cubeteam.app/gc-guideline\nNote: The 🔧 at the end of a name indicates that the person is a Global Chat moderator. If it is not present, they are a regular user.",
-      "connect_reason": "GlobalChat connect",
+      "connect_reason": "グローバルチャット接続",
       "error": {
         "nsfw": "NSFWチャンネルでのグローバルチャットの使用は禁止されています。",
         "muted": "あなたはグローバルチャットで発言する権限がありません。\nミュート解除は[こちら](https://discord.gg/Se5QqQwj4h)",
@@ -269,10 +269,10 @@
   "common": {
     "error": {
       "api": "❌ APIリクエスト中にエラーが発生しました。",
-      "channel_not_found": "❌ Channel not found.",
-      "guild_only": "❌ This command can only be used within a server channel.",
+      "channel_not_found": "❌ チャンネルが見つかりません。",
+      "guild_only": "❌このコマンドはサーバー内でのみ使用できます。",
       "must_text_or_news_channel": "❌ Channel must be a Text Channel or News Channel.",
-      "invalid_format": "❌ Invalid time format. Example: 5s, 2m, 1h"
+      "invalid_format": "❌無効な時間形式です。例: 5s, 2m, 1h"
     },
     "yes": "はい",
     "no": "いいえ",

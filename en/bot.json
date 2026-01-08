@@ -162,6 +162,9 @@
           }
         }
       }
+    },
+    "ping": {
+      "description": "Ping the bot."
     }
   },
   "context": {
@@ -207,7 +210,6 @@
     },
     "slowmode": {
       "error": {
-        "invalid_format": "❌ Invalid time format. Example: 5s, 2m, 1h",
         "range": "❌ Slowmode duration must be between 0 seconds and 21600 seconds (6 hours).",
         "guild_only": "❌ This command can only be used within a server channel."
       },
@@ -227,6 +229,18 @@
     }
   },
   "modules": {
+    "auto_react": {
+      "success": {
+        "set": "✅ Automatic reactions have been set.",
+        "remove": "✅ Automatic reactions have been removed."
+      }
+    },
+    "auto_purge": {
+      "success": {
+        "set": "✅ Auto-purge has been set.",
+        "remove": "✅ Auto-purge has been removed."
+      }
+    },
     "globalchat": {
       "topic": "c.global \n*Please do not delete*\nPlease follow the guidelines at https://cubeteam.app/gc-guideline\nNote: The 🔧 at the end of a name indicates that the person is a Global Chat moderator. If it is not present, they are a regular user.",
       "connect_reason": "GlobalChat connect",
@@ -259,7 +273,8 @@
       "api": "❌ Error occurred during API request.",
       "channel_not_found": "❌ Channel not found.",
       "guild_only": "❌ This command can only be used within a server channel.",
-      "must_text_or_news_channel": "❌ Channel must be a Text Channel or News Channel."
+      "must_text_or_news_channel": "❌ Channel must be a Text Channel or News Channel.",
+      "invalid_format": "❌ Invalid time format. Example: 5s, 2m, 1h"
     },
     "yes": "Yes",
     "no": "No",

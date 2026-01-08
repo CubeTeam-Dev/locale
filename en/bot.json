@@ -4,7 +4,7 @@
   "ping.fields.networkLatency.name": "Network Latency",
   "ping.fields.networkLatency.value": "**WebSocket:** {wsLatency}ms\n**REST API:** {restLatency}ms\n**Status:** {pingStatus}",
   "ping.fields.shardInfo.name": "Shard Info",
-  "ping.fields.shardInfo.value": "**Shard ID:** {shardId}\n**Latency:** {wsLatency}ms\n**Status:** 🟢 Online",
+  "ping.fields.shardInfo.value": "**Shard ID:** {shardId}\n**Latency:** {wsLatency}ms\n**Status:** {status}",
   "ping.fields.botInfo.name": "Bot Info",
   "ping.fields.botInfo.value": "**Uptime:** {uptimeStr}\n**Servers:** {guildsCount}\n**Shards:** {shardsCount}",
   "ping.fields.responseTime.name": "Response Time",

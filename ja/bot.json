@@ -1,13 +1,13 @@
 {
-  "ping.title": "🏓 Ping Information",
-  "ping.description": "Various latency and bot information",
-  "ping.fields.networkLatency.name": "Network Latency",
-  "ping.fields.networkLatency.value": "**WebSocket:** {wsLatency}ms\n**REST API:** {restLatency}ms\n**Status:** {pingStatus}",
-  "ping.fields.shardInfo.name": "Shard Info",
-  "ping.fields.shardInfo.value": "**Shard ID:** {shardId}\n**Latency:** {wsLatency}ms\n**Status:** {status}",
-  "ping.fields.botInfo.name": "Bot Info",
-  "ping.fields.botInfo.value": "**Uptime:** {uptimeStr}\n**Servers:** {guildsCount}\n**Shards:** {shardsCount}",
-  "ping.fields.responseTime.name": "Response Time",
-  "ping.fields.responseTime.value": "**Total:** {total}ms",
-  "ping.footer.text": "Requested by {user}"
+  "ping.title": "🏓 Ping情報",
+  "ping.description": "各種レイテンシとBot情報",
+  "ping.fields.networkLatency.name": "ネットワーク遅延",
+  "ping.fields.networkLatency.value": "**WebSocket:** {wsLatency}ms\n**REST API:** {restLatency}ms\n**ステータス:** {pingStatus}",
+  "ping.fields.shardInfo.name": "シャード情報",
+  "ping.fields.shardInfo.value": "**シャードID:** {shardId}\n**遅延:** {wsLatency}ms\n**ステータス:** {status}",
+  "ping.fields.botInfo.name": "Bot情報",
+  "ping.fields.botInfo.value": "**起動時間:** {uptimeStr}\n**サーバー数:** {guildsCount}\n**シャード数:** {shardsCount}",
+  "ping.fields.responseTime.name": "応答時間",
+  "ping.fields.responseTime.value": "**トータル:** {total}ms",
+  "ping.footer.text": "実行者: {user}"
 }

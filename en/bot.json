@@ -137,6 +137,31 @@
           }
         }
       }
+    },
+    "auto_react": {
+      "description": "Manage automatic reactions in the channel.",
+      "set": {
+        "description": "Set automatic reactions.",
+        "options": {
+          "channel": {
+            "description": "Channel to set auto reactions"
+          },
+          "emojis": {
+            "description": "Emojis to use for automatic reactions"
+          }
+        }
+      },
+      "remove": {
+        "description": "Remove automatic reactions.",
+        "options": {
+          "channel": {
+            "description": "Channel to remove automatic reactions"
+          },
+          "emojis": {
+            "description": "Emojis to remove automatic reactions"
+          }
+        }
+      }
     }
   },
   "context": {

@@ -112,48 +112,28 @@
       }
     },
     "auto_purge": {
-      "description": "Manage automatic deletion feature.",
-      "set": {
-        "description": "Set automatic deletion.",
-        "options": {
-          "channel": {
-            "description": "Channel to set auto purge"
-          },
-          "limit": {
-            "description": "Number of messages to delete."
-          },
-          "interval": {
-            "description": "Interval for deletion (e.g., 5s, 2m, 1h)."
+      "description": "Manage the auto-purge feature.",
+      "options": {
+        "set": {
+          "description": "Set up auto-purge.",
+          "options": {
+            "channel": {
+              "description": "Channel to set up auto-purge in"
+            },
+            "limit": {
+              "description": "Number of messages to delete"
+            },
+            "interval": {
+              "description": "Delete interval (e.g. 5s, 2m, 1h)"
+            }
           }
-        }
-      },
-      "remove": {
-        "channel": {
-          "description": "Channel to remove automatic deletion."
-        }
-      }
-    },
-    "auto_react": {
-      "description": "Manage automatic reactions in the channel.",
-      "set": {
-        "description": "Set automatic reactions.",
-        "options": {
-          "channel": {
-            "description": "Channel to set auto reactions"
-          },
-          "emojis": {
-            "description": "Emojis to use for automatic reactions"
-          }
-        }
-      },
-      "remove": {
-        "description": "Remove automatic reactions.",
-        "options": {
-          "channel": {
-            "description": "Channel to remove automatic reactions"
-          },
-          "emojis": {
-            "description": "Emojis to remove automatic reactions"
+        },
+        "remove": {
+          "description": "Remove auto-purge.",
+          "options": {
+            "channel": {
+              "description": "Channel to remove auto-purge from"
+            }
           }
         }
       }

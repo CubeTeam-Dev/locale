@@ -23,7 +23,7 @@
   },
   "footer": {
     "executor": {
-      "text": "実行者: {user}"
+      "text": "実行: {user}"
     }
   },
   "commands": {
@@ -110,6 +110,58 @@
           }
         }
       }
+    },
+    "auto_purge": {
+      "description": "Manage the auto-purge feature.",
+      "options": {
+        "set": {
+          "description": "Set up auto-purge.",
+          "options": {
+            "channel": {
+              "description": "Channel to set up auto-purge in"
+            },
+            "limit": {
+              "description": "Number of messages to delete"
+            },
+            "interval": {
+              "description": "Delete interval (e.g. 5s, 2m, 1h)"
+            }
+          }
+        },
+        "remove": {
+          "description": "Remove auto-purge.",
+          "options": {
+            "channel": {
+              "description": "Channel to remove auto-purge from"
+            }
+          }
+        }
+      }
+    },
+    "auto_react": {
+      "description": "Manage automatic reactions in the channel.",
+      "set": {
+        "description": "Set automatic reactions.",
+        "options": {
+          "channel": {
+            "description": "Channel to set auto reactions"
+          },
+          "emojis": {
+            "description": "Emojis to use for automatic reactions"
+          }
+        }
+      },
+      "remove": {
+        "description": "Remove automatic reactions.",
+        "options": {
+          "channel": {
+            "description": "Channel to remove automatic reactions"
+          },
+          "emojis": {
+            "description": "Emojis to remove automatic reactions"
+          }
+        }
+      }
     }
   },
   "context": {
@@ -176,6 +228,8 @@
   },
   "modules": {
     "globalchat": {
+      "topic": "c.global \n*Please do not delete*\nPlease follow the guidelines at https://cubeteam.app/gc-guideline\nNote: The 🔧 at the end of a name indicates that the person is a Global Chat moderator. If it is not present, they are a regular user.",
+      "connect_reason": "GlobalChat connect",
       "error": {
         "nsfw": "NSFWチャンネルでのグローバルチャットの使用は禁止されています。",
         "muted": "あなたはグローバルチャットで発言する権限がありません。\nミュート解除は[こちら](https://discord.gg/Se5QqQwj4h)",

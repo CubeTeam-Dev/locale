@@ -236,11 +236,11 @@
     "auto_purge": {
       "success": {
         "set": "✅ 自動削除を設定しました。",
-        "remove": "✅ Auto-purge has been removed."
+        "remove": "✅ 自動削除を解除しました"
       }
     },
     "globalchat": {
-      "topic": "c.global \n*Please do not delete*\nPlease follow the guidelines at https://cubeteam.app/gc-guideline\nNote: The 🔧 at the end of a name indicates that the person is a Global Chat moderator. If it is not present, they are a regular user.",
+      "topic": "c.global \n**削除しないでください**\nガイドラインは https://cubeteam.app/gc-guideline を参照してください。\n注意：名前の最後に🔧が付いている場合、その人はグローバルチャットのモデレーターです。付いていない場合は通常のユーザーです。",
       "connect_reason": "グローバルチャット接続",
       "error": {
         "nsfw": "NSFWチャンネルでのグローバルチャットの使用は禁止されています。",
@@ -271,7 +271,7 @@
       "api": "❌ APIリクエスト中にエラーが発生しました。",
       "channel_not_found": "❌ チャンネルが見つかりません。",
       "guild_only": "❌このコマンドはサーバー内でのみ使用できます。",
-      "must_text_or_news_channel": "❌ Channel must be a Text Channel or News Channel.",
+      "must_text_or_news_channel": "❌チャンネルはテキストチャンネルまたはアナウンスチャンネルでなければなりません。",
       "invalid_format": "❌無効な時間形式です。例: 5s, 2m, 1h"
     },
     "yes": "はい",

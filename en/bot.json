@@ -184,7 +184,8 @@
     },
     "global_disconnect": {
       "failure": "Failed to disconnect from Global Chat\nError ID: {errorId}",
-      "success": "Disconnected from Global Chat."
+      "success": "Disconnected from Global Chat.",
+      "webhook_exists": "Webhook already exists."
     },
     "language": {
       "failure": "Failed to update language settings\nError ID: {errorId}",

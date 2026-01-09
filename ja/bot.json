@@ -162,7 +162,7 @@
       }
     },
     "ping": {
-      "description": "ボットにPingをかける。"
+      "description": "Ping値を表示します"
     }
   },
   "context": {

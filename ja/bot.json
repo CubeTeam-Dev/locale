@@ -87,24 +87,24 @@
     "sticky": {
       "description": "チャンネルにピン留めメッセージを設定します。",
       "set": {
-        "description": "Set a sticky message.",
+        "description": "ピン留めメッセージを設定する。",
         "options": {
           "content": {
-            "description": "Message to stick"
+            "description": "ピン留めするメッセージ"
           },
           "attachment": {
-            "description": "Image to stick"
+            "description": "ピン留めする画像"
           },
           "channel": {
-            "description": "Channel to stick"
+            "description": "ピン留めを設定するチャンネル"
           }
         }
       },
       "delete": {
-        "description": "Delete a sticky message.",
+        "description": "ピン留めメッセージを削除する。",
         "options": {
           "channel": {
-            "description": "Channel to delete sticky message from"
+            "description": "ピン留めメッセージを削除するチャンネル"
           }
         }
       }
@@ -181,12 +181,12 @@
     "global_connect": {
       "failure": "グローバルチャットの接続に失敗しました。\nエラーID: `{errorId}`",
       "success": "グローバルチャットに接続しました！",
-      "webhook_exists": "Webhook already exists."
+      "webhook_exists": "Webhookはすでに存在します。"
     },
     "global_disconnect": {
       "failure": "グローバルチャットからの切断に失敗しました。\nエラーID: `{errorId}`",
       "success": "グローバルチャットから切断しました。",
-      "webhook_delete_failure": "Failed to delete webhook.\nPlease delete the webhook manually."
+      "webhook_delete_failure": "Webhookの削除に失敗しました。\n手動でWebhookを削除してください。"
     },
     "language": {
       "failure": "言語設定の変更に失敗しました。\nエラーID: `{errorId}`",

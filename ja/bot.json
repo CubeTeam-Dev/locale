@@ -29,33 +29,31 @@
   "commands": {
     "settings": {
       "description": "設定関連のコマンド",
-      "options": {
-        "auto_translate": {
-          "description": "自動翻訳の設定",
-          "options": {
-            "enabled": {
-              "description": "自動翻訳を有効にするか"
-            },
-            "target_lang": {
-              "description": "翻訳先の言語コード (例: JA, EN, FR, DE, ES)"
-            },
-            "channel": {
-              "description": "自動翻訳を設定するチャンネル"
-            }
+      "auto_translate": {
+        "description": "Configure auto translation",
+        "options": {
+          "enabled": {
+            "description": "Whether to enable auto translation"
+          },
+          "target_lang": {
+            "description": "Target language code (e.g. JA, EN, FR, DE, ES)"
+          },
+          "channel": {
+            "description": "Channel to set auto translation"
           }
-        },
-        "global_connect": {
-          "description": "グローバルチャットに接続します"
-        },
-        "global_disconnect": {
-          "description": "グローバルチャットから切断します"
-        },
-        "language": {
-          "description": "このサーバーにおけるBotの言語設定を変更します",
-          "options": {
-            "lang": {
-              "description": "言語コード (ISO 639-1)"
-            }
+        }
+      },
+      "global_connect": {
+        "description": "Connect to Global Chat"
+      },
+      "global_disconnect": {
+        "description": "Disconnect from Global Chat"
+      },
+      "language": {
+        "description": "Change server language settings",
+        "options": {
+          "lang": {
+            "description": "Language code (ISO 639-1)"
           }
         }
       }

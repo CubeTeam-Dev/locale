@@ -86,27 +86,25 @@
     },
     "sticky": {
       "description": "チャンネルにピン留めメッセージを設定します。",
-      "options": {
-        "set": {
-          "description": "ピン留めメッセージを設定する。",
-          "options": {
-            "content": {
-              "description": "ピン留めするメッセージ"
-            },
-            "attachment": {
-              "description": "ピン留めする画像"
-            },
-            "channel": {
-              "description": "ピン留めを設定するチャンネル"
-            }
+      "set": {
+        "description": "ピン留めメッセージを設定する。",
+        "options": {
+          "content": {
+            "description": "ピン留めするメッセージ"
+          },
+          "attachment": {
+            "description": "ピン留めする画像"
+          },
+          "channel": {
+            "description": "ピン留めを設定するチャンネル"
           }
-        },
-        "delete": {
-          "description": "ピン留めメッセージを削除する。",
-          "options": {
-            "channel": {
-              "description": "ピン留めメッセージを削除するチャンネル"
-            }
+        }
+      },
+      "delete": {
+        "description": "ピン留めメッセージを削除する。",
+        "options": {
+          "channel": {
+            "description": "ピン留めメッセージを削除するチャンネル"
           }
         }
       }
@@ -182,11 +180,13 @@
     },
     "global_connect": {
       "failure": "グローバルチャットの接続に失敗しました。\nエラーID: `{errorId}`",
-      "success": "グローバルチャットに接続しました！"
+      "success": "グローバルチャットに接続しました！",
+      "webhook_exists": "Webhookはすでに存在します。"
     },
     "global_disconnect": {
       "failure": "グローバルチャットからの切断に失敗しました。\nエラーID: `{errorId}`",
-      "success": "グローバルチャットから切断しました。"
+      "success": "グローバルチャットから切断しました。",
+      "webhook_delete_failure": "Webhookの削除に失敗しました。\n手動でWebhookを削除してください。"
     },
     "language": {
       "failure": "言語設定の変更に失敗しました。\nエラーID: `{errorId}`",
@@ -273,7 +273,7 @@
       "guild_only": "❌このコマンドはサーバー内でのみ使用できます。",
       "must_text_or_news_channel": "❌チャンネルはテキストチャンネルまたはアナウンスチャンネルでなければなりません。",
       "invalid_format": "❌無効な時間形式です。例: 5s, 2m, 1h",
-      "blacklisted": "❌ You are blacklisted."
+      "blacklisted": "❌ ブラックリストに登録されています。"
     },
     "yes": "はい",
     "no": "いいえ",

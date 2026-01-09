@@ -180,12 +180,13 @@
     },
     "global_connect": {
       "failure": "Failed to connect to Global Chat\nError ID: {errorId}",
-      "success": "Connected to Global Chat!"
+      "success": "Connected to Global Chat!",
+      "webhook_exists": "Webhook already exists."
     },
     "global_disconnect": {
       "failure": "Failed to disconnect from Global Chat\nError ID: {errorId}",
       "success": "Disconnected from Global Chat.",
-      "webhook_exists": "Webhook already exists."
+      "webhook_delete_failure": "Failed to delete webhook.\nPlease delete the webhook manually."
     },
     "language": {
       "failure": "Failed to update language settings\nError ID: {errorId}",

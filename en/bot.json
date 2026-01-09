@@ -86,27 +86,25 @@
     },
     "sticky": {
       "description": "Set sticky message in the channel.",
-      "options": {
-        "set": {
-          "description": "Set a sticky message.",
-          "options": {
-            "content": {
-              "description": "Message to stick"
-            },
-            "attachment": {
-              "description": "Image to stick"
-            },
-            "channel": {
-              "description": "Channel to stick"
-            }
+      "set": {
+        "description": "Set a sticky message.",
+        "options": {
+          "content": {
+            "description": "Message to stick"
+          },
+          "attachment": {
+            "description": "Image to stick"
+          },
+          "channel": {
+            "description": "Channel to stick"
           }
-        },
-        "delete": {
-          "description": "Delete a sticky message.",
-          "options": {
-            "channel": {
-              "description": "Channel to delete sticky message from"
-            }
+        }
+      },
+      "delete": {
+        "description": "Delete a sticky message.",
+        "options": {
+          "channel": {
+            "description": "Channel to delete sticky message from"
           }
         }
       }

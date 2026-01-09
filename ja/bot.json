@@ -23,7 +23,7 @@
   },
   "footer": {
     "executor": {
-      "text": "実行者: {user}"
+      "text": "実行: {user}"
     }
   },
   "commands": {
@@ -110,6 +110,59 @@
           }
         }
       }
+    },
+    "auto_purge": {
+      "description": "自動削除機能を管理します。",
+      "set": {
+        "description": "自動削除を設定します。",
+        "options": {
+          "channel": {
+            "description": "自動削除を設定するチャンネル"
+          },
+          "limit": {
+            "description": "削除するメッセージ数"
+          },
+          "interval": {
+            "description": "削除する間隔 (例: 5s, 2m, 1h)"
+          }
+        }
+      },
+      "remove": {
+        "description": "自動削除の設定を解除します。",
+        "options": {
+          "channel": {
+            "description": "自動削除を解除するチャンネル"
+          }
+        }
+      }
+    },
+    "auto_react": {
+      "description": "チャンネルの自動リアクションを管理します。",
+      "set": {
+        "description": "自動リアクションを設定します",
+        "options": {
+          "channel": {
+            "description": "自動リアクションを設定するチャンネル"
+          },
+          "emojis": {
+            "description": "自動リアクションに使用する絵文字"
+          }
+        }
+      },
+      "remove": {
+        "description": "自動リアクションを解除します",
+        "options": {
+          "channel": {
+            "description": "自動リアクションを除去するチャンネル"
+          },
+          "emojis": {
+            "description": "自動リアクションから削除する絵文字"
+          }
+        }
+      }
+    },
+    "ping": {
+      "description": "Ping値を表示します"
     }
   },
   "context": {
@@ -155,7 +208,6 @@
     },
     "slowmode": {
       "error": {
-        "invalid_format": "❌無効な時間形式です。例: 5s, 2m, 1h",
         "range": "❌低速モードの長さは0秒から21600秒（6時間）の間でなければなりません。",
         "guild_only": "❌このコマンドはサーバー内でのみ使用できます。"
       },
@@ -175,7 +227,21 @@
     }
   },
   "modules": {
+    "auto_react": {
+      "success": {
+        "set": "✅ 自動リアクションを設定しました。",
+        "remove": "✅ 自動リアクションを解除しました。"
+      }
+    },
+    "auto_purge": {
+      "success": {
+        "set": "✅ 自動削除を設定しました。",
+        "remove": "✅ 自動削除を解除しました"
+      }
+    },
     "globalchat": {
+      "topic": "c.global \n**削除しないでください**\nガイドラインは https://cubeteam.app/gc-guideline を参照してください。\n注意：名前の最後に🔧が付いている場合、その人はグローバルチャットのモデレーターです。付いていない場合は通常のユーザーです。",
+      "connect_reason": "グローバルチャット接続",
       "error": {
         "nsfw": "NSFWチャンネルでのグローバルチャットの使用は禁止されています。",
         "muted": "あなたはグローバルチャットで発言する権限がありません。\nミュート解除は[こちら](https://discord.gg/Se5QqQwj4h)",
@@ -202,7 +268,11 @@
   },
   "common": {
     "error": {
-      "api": "❌ APIリクエスト中にエラーが発生しました。"
+      "api": "❌ APIリクエスト中にエラーが発生しました。",
+      "channel_not_found": "❌ チャンネルが見つかりません。",
+      "guild_only": "❌このコマンドはサーバー内でのみ使用できます。",
+      "must_text_or_news_channel": "❌チャンネルはテキストチャンネルまたはアナウンスチャンネルでなければなりません。",
+      "invalid_format": "❌無効な時間形式です。例: 5s, 2m, 1h"
     },
     "yes": "はい",
     "no": "いいえ",

@@ -140,7 +140,7 @@
           "channel": {
             "description": "Channel to set auto reactions"
           },
-          "emojis": {
+          "emoji": {
             "description": "Emojis to use for automatic reactions"
           }
         }
@@ -151,7 +151,7 @@
           "channel": {
             "description": "Channel to remove automatic reactions"
           },
-          "emojis": {
+          "emoji": {
             "description": "Emojis to remove automatic reactions"
           }
         }

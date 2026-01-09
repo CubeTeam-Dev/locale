@@ -272,7 +272,8 @@
       "channel_not_found": "❌ チャンネルが見つかりません。",
       "guild_only": "❌このコマンドはサーバー内でのみ使用できます。",
       "must_text_or_news_channel": "❌チャンネルはテキストチャンネルまたはアナウンスチャンネルでなければなりません。",
-      "invalid_format": "❌無効な時間形式です。例: 5s, 2m, 1h"
+      "invalid_format": "❌無効な時間形式です。例: 5s, 2m, 1h",
+      "blacklisted": "❌ You are blacklisted."
     },
     "yes": "はい",
     "no": "いいえ",

@@ -140,8 +140,8 @@
           "channel": {
             "description": "自動リアクションを設定するチャンネル"
           },
-          "emojis": {
-            "description": "自動リアクションに使用する絵文字"
+          "emoji": {
+            "description": "Emojis to use for automatic reactions"
           }
         }
       },
@@ -151,8 +151,8 @@
           "channel": {
             "description": "自動リアクションを除去するチャンネル"
           },
-          "emojis": {
-            "description": "自動リアクションから削除する絵文字"
+          "emoji": {
+            "description": "Emojis to remove automatic reactions"
           }
         }
       }

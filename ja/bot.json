@@ -180,11 +180,13 @@
     },
     "global_connect": {
       "failure": "グローバルチャットの接続に失敗しました。\nエラーID: `{errorId}`",
-      "success": "グローバルチャットに接続しました！"
+      "success": "グローバルチャットに接続しました！",
+      "webhook_exists": "Webhook already exists."
     },
     "global_disconnect": {
       "failure": "グローバルチャットからの切断に失敗しました。\nエラーID: `{errorId}`",
-      "success": "グローバルチャットから切断しました。"
+      "success": "グローバルチャットから切断しました。",
+      "webhook_delete_failure": "Failed to delete webhook.\nPlease delete the webhook manually."
     },
     "language": {
       "failure": "言語設定の変更に失敗しました。\nエラーID: `{errorId}`",

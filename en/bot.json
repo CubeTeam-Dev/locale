@@ -29,33 +29,31 @@
   "commands": {
     "settings": {
       "description": "Settings related commands",
-      "options": {
-        "auto_translate": {
-          "description": "Configure auto translation",
-          "options": {
-            "enabled": {
-              "description": "Whether to enable auto translation"
-            },
-            "target_lang": {
-              "description": "Target language code (e.g. JA, EN, FR, DE, ES)"
-            },
-            "channel": {
-              "description": "Channel to set auto translation"
-            }
+      "auto_translate": {
+        "description": "Configure auto translation",
+        "options": {
+          "enabled": {
+            "description": "Whether to enable auto translation"
+          },
+          "target_lang": {
+            "description": "Target language code (e.g. JA, EN, FR, DE, ES)"
+          },
+          "channel": {
+            "description": "Channel to set auto translation"
           }
-        },
-        "global_connect": {
-          "description": "Connect to Global Chat"
-        },
-        "global_disconnect": {
-          "description": "Disconnect from Global Chat"
-        },
-        "language": {
-          "description": "Change server language settings",
-          "options": {
-            "lang": {
-              "description": "Language code (ISO 639-1)"
-            }
+        }
+      },
+      "global_connect": {
+        "description": "Connect to Global Chat"
+      },
+      "global_disconnect": {
+        "description": "Disconnect from Global Chat"
+      },
+      "language": {
+        "description": "Change server language settings",
+        "options": {
+          "lang": {
+            "description": "Language code (ISO 639-1)"
           }
         }
       }

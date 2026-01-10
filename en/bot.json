@@ -256,6 +256,7 @@
     "role": {
       "role_hierarchy": "❌ Role hierarchy error. Please check role hierarchy and permissions.",
       "failed_get_member": "Failed to get member information.",
+      "not_found_required_role": "❌ 'target' is set to 'require', but 'required_role' is not provided.",
       "give": {
         "success": "✅ Successfully gave role to {user}.",
         "cant_find_role_or_member": "❌ We couldn't find the role or member.",

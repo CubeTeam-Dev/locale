@@ -27,6 +27,67 @@
     }
   },
   "commands": {
+    "role": {
+      "description": "Role related commands",
+      "give": {
+        "description": "Give a role to a user",
+        "options": {
+          "member": {
+            "description": "Member to give role to"
+          },
+          "role": {
+            "description": "Role to give"
+          }
+        }
+      },
+      "remove": {
+        "description": "Remove a role from a user",
+        "options": {
+          "member": {
+            "description": "Member to remove role from"
+          },
+          "role": {
+            "description": "Role to remove"
+          }
+        }
+      },
+      "list": {
+        "description": "List roles",
+        "options": {
+          "page": {
+            "description": "Page number"
+          }
+        }
+      },
+      "members": {
+        "description": "List members with roles",
+        "options": {
+          "role": {
+            "description": "Role to list members with"
+          },
+          "page": {
+            "description": "Page number"
+          }
+        }
+      },
+      "multiple": {
+        "description": "Bulk Role Operations",
+        "options": {
+          "role": {
+            "description": "Role to give or remove"
+          },
+          "type": {
+            "description": "Type of Operation (give or remove)"
+          },
+          "target": {
+            "description": "Target of Operation (all, human, bot, require)"
+          },
+          "required_role": {
+            "description": "Required role(You need to require the target)"
+          }
+        }
+      }
+    },
     "settings": {
       "description": "設定関連のコマンド",
       "auto_translate": {
@@ -192,6 +253,39 @@
     }
   },
   "manage": {
+    "role": {
+      "role_hierarchy": "❌ Role hierarchy error. Please check role hierarchy and permissions.",
+      "failed_get_member": "Failed to get member information.",
+      "give": {
+        "success": "✅ Successfully gave role to {user}.",
+        "cant_find_role_or_member": "❌ We couldn't find the role or member.",
+        "failed_add_role": "❌ Failed to give role to {user}.\nPlease check role hierarchy and permissions."
+      },
+      "remove": {
+        "success": "✅ Successfully removed role from {user}.",
+        "cant_find_role_or_member": "❌ We couldn't find the role or member.",
+        "failed_remove_role": "❌ Failed to remove role from {user}.\nPlease check role hierarchy and permissions."
+      },
+      "list": {
+        "title": "Role List",
+        "cant_find": "❌ Sorry, we couldn't find any roles.",
+        "footer": "Page {page} / {total}"
+      },
+      "members": {
+        "title": "Members with Role",
+        "cant_find": "❌ Sorry, we couldn't find any members with this role.",
+        "footer": "Page {page} / {total}",
+        "cant_find_role": "❌ We couldn't find the role."
+      },
+      "multiple": {
+        "success": {
+          "give": "✅ Successfully gave role to {count} members.",
+          "remove": "✅ Successfully removed role from {count} members."
+        },
+        "failed_give_role": "❌ Failed to give role to {count} members.\nPlease check role hierarchy and permissions.",
+        "failed_remove_role": "❌ Failed to remove role from {count} members.\nPlease check role hierarchy and permissions."
+      }
+    },
     "lock": {
       "error": {
         "guild_only": "❌このコマンドはサーバー内でのみ使用できます。"

@@ -28,62 +28,62 @@
   },
   "commands": {
     "role": {
-      "description": "Role related commands",
+      "description": "ロール関連コマンド",
       "give": {
-        "description": "Give a role to a user",
+        "description": "ユーザーにロールを付与",
         "options": {
           "member": {
-            "description": "Member to give role to"
+            "description": "ロールを与えるメンバー"
           },
           "role": {
-            "description": "Role to give"
+            "description": "与えるロール"
           }
         }
       },
       "remove": {
-        "description": "Remove a role from a user",
+        "description": "ユーザーのロールを削除",
         "options": {
           "member": {
-            "description": "Member to remove role from"
+            "description": "ロールを削除するメンバー"
           },
           "role": {
-            "description": "Role to remove"
+            "description": "削除するロール"
           }
         }
       },
       "list": {
-        "description": "List roles",
+        "description": "ロールの一覧",
         "options": {
           "page": {
-            "description": "Page number"
+            "description": "ページ番号"
           }
         }
       },
       "members": {
-        "description": "List members with roles",
+        "description": "ロールを持つメンバーの一覧",
         "options": {
           "role": {
-            "description": "Role to list members with"
+            "description": "メンバー一覧を表示するロール"
           },
           "page": {
-            "description": "Page number"
+            "description": "ページ番号"
           }
         }
       },
       "multiple": {
-        "description": "Bulk Role Operations",
+        "description": "ロール一括操作",
         "options": {
           "role": {
-            "description": "Role to give or remove"
+            "description": "付与するか削除するロール"
           },
           "type": {
-            "description": "Type of Operation (give or remove)"
+            "description": "操作の種類（付与または削除）"
           },
           "target": {
-            "description": "Target of Operation (all, human, bot, require)"
+            "description": "操作対象（all, human, bot, require）"
           },
           "required_role": {
-            "description": "Required role(You need to require the target)"
+            "description": "必要な役割（targetをrequireにする必要があります）"
           }
         }
       }
@@ -254,36 +254,36 @@
   },
   "manage": {
     "role": {
-      "role_hierarchy": "❌ Role hierarchy error. Please check role hierarchy and permissions.",
-      "failed_get_member": "Failed to get member information.",
+      "role_hierarchy": "❌ ロールの順序が正しくありません。ロールの順序と権限を確認してください。",
+      "failed_get_member": "メンバー情報の取得に失敗しました。",
       "give": {
-        "success": "✅ Successfully gave role to {user}.",
-        "cant_find_role_or_member": "❌ We couldn't find the role or member.",
-        "failed_add_role": "❌ Failed to give role to {user}.\nPlease check role hierarchy and permissions."
+        "success": "✅ {user} にロールを与えました。",
+        "cant_find_role_or_member": "❌ ロールまたはメンバーが見つかりませんでした。",
+        "failed_add_role": "❌ {user}にロールを与えられませんでした。\nロールの順序と権限を確認してください。"
       },
       "remove": {
-        "success": "✅ Successfully removed role from {user}.",
-        "cant_find_role_or_member": "❌ We couldn't find the role or member.",
-        "failed_remove_role": "❌ Failed to remove role from {user}.\nPlease check role hierarchy and permissions."
+        "success": "✅ {user} からロールを削除しました。",
+        "cant_find_role_or_member": "❌ ロールまたはメンバーが見つかりませんでした。",
+        "failed_remove_role": "❌ {user}からロールを削除できませんでした。\nロールの順序と権限を確認してください。"
       },
       "list": {
-        "title": "Role List",
-        "cant_find": "❌ Sorry, we couldn't find any roles.",
-        "footer": "Page {page} / {total}"
+        "title": "ロールリスト",
+        "cant_find": "❌ ロールが見つかりませんでした。",
+        "footer": "現在のページ: {page} / {total}"
       },
       "members": {
-        "title": "Members with Role",
-        "cant_find": "❌ Sorry, we couldn't find any members with this role.",
-        "footer": "Page {page} / {total}",
-        "cant_find_role": "❌ We couldn't find the role."
+        "title": "ロールを持つメンバーリスト",
+        "cant_find": "❌ この役割を持つメンバーが見つかりませんでした。",
+        "footer": "現在のページ: {page} / {total}",
+        "cant_find_role": "❌ ロールが見つかりませんでした。"
       },
       "multiple": {
         "success": {
-          "give": "✅ Successfully gave role to {count} members.",
-          "remove": "✅ Successfully removed role from {count} members."
+          "give": "✅ {count}人のメンバーにロールを与えました。",
+          "remove": "✅ {count}人のメンバーからロールを削除しました。"
         },
-        "failed_give_role": "❌ Failed to give role to {count} members.\nPlease check role hierarchy and permissions.",
-        "failed_remove_role": "❌ Failed to remove role from {count} members.\nPlease check role hierarchy and permissions."
+        "failed_give_role": "❌ {count}人のメンバーにロールを与えられませんでした。\nロールの順序と権限を確認してください。",
+        "failed_remove_role": "❌ {count}人のメンバーからロールを削除できませんでした。\nロールの順序と権限を確認してください。"
       }
     },
     "lock": {
@@ -366,7 +366,7 @@
       "must_text_or_news_channel": "❌チャンネルはテキストチャンネルまたはアナウンスチャンネルでなければなりません。",
       "invalid_format": "❌無効な時間形式です。例: 5s, 2m, 1h",
       "blacklisted": "❌ ブラックリストに登録されています。",
-      "no_permission": "❌ This command requires {permission} permission."
+      "no_permission": "❌ このコマンドを実行するには {permission} 権限が必要です。"
     },
     "yes": "はい",
     "no": "いいえ",

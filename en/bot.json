@@ -261,13 +261,13 @@
         "success": "✅ Successfully gave role to {user}.",
         "cant_find_role_or_member": "❌ We couldn't find the role or member.",
         "failed_add_role": "❌ Failed to give role to {user}.\nPlease check role hierarchy and permissions.",
-        "user_have_role": "❌ {user} already has the role."
+        "already_has_role": "❌ {user} already has the role."
       },
       "remove": {
         "success": "✅ Successfully removed role from {user}.",
         "cant_find_role_or_member": "❌ We couldn't find the role or member.",
         "failed_remove_role": "❌ Failed to remove role from {user}.\nPlease check role hierarchy and permissions.",
-        "user_dont_have_role": "❌ {user} doesn't have the role."
+        "not_has_role": "❌ {user} doesn't have the role."
       },
       "list": {
         "title": "Role List",

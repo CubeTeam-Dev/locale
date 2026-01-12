@@ -260,12 +260,14 @@
       "give": {
         "success": "✅ {user} にロールを与えました。",
         "cant_find_role_or_member": "❌ ロールまたはメンバーが見つかりませんでした。",
-        "failed_add_role": "❌ {user}にロールを与えられませんでした。\nロールの順序と権限を確認してください。"
+        "failed_add_role": "❌ {user}にロールを与えられませんでした。\nロールの順序と権限を確認してください。",
+        "already_has_role": "❌ {user} already has the role."
       },
       "remove": {
         "success": "✅ {user} からロールを削除しました。",
         "cant_find_role_or_member": "❌ ロールまたはメンバーが見つかりませんでした。",
-        "failed_remove_role": "❌ {user}からロールを削除できませんでした。\nロールの順序と権限を確認してください。"
+        "failed_remove_role": "❌ {user}からロールを削除できませんでした。\nロールの順序と権限を確認してください。",
+        "not_has_role": "❌ {user} doesn't have the role."
       },
       "list": {
         "title": "ロールリスト",

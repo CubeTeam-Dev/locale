@@ -4,7 +4,7 @@ on:
   push:
     branches: ['main']
     paths:
-      - '/en/*.json'
+      - 'en/*.json'
 
 jobs:
   upload-sources:

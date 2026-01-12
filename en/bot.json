@@ -238,17 +238,17 @@
       "success": "Updated auto translation settings."
     },
     "global_connect": {
-      "failure": "Failed to connect to Global Chat\nError ID: {errorId}",
+      "failure": "Failed to connect to Global Chat\nError ID: `{errorId}`",
       "success": "Connected to Global Chat!",
       "webhook_exists": "Webhook already exists."
     },
     "global_disconnect": {
-      "failure": "Failed to disconnect from Global Chat\nError ID: {errorId}",
+      "failure": "Failed to disconnect from Global Chat\nError ID: `{errorId}`",
       "success": "Disconnected from Global Chat.",
       "webhook_delete_failure": "Failed to delete webhook.\nPlease delete the webhook manually."
     },
     "language": {
-      "failure": "Failed to update language settings\nError ID: {errorId}",
+      "failure": "Failed to update language settings\nError ID: `{errorId}`",
       "success": "Updated language settings to **{lang}**."
     }
   },
@@ -257,7 +257,7 @@
       "role_hierarchy": "❌ Role hierarchy error. Please check role hierarchy and permissions.",
       "failed_get_member": "Failed to get member information.",
       "not_found_required_role": "❌ 'target' is set to 'require', but 'required_role' is not provided.",
-      "fetch_failed": "Failed to fetch role information.",
+      "fetch_failed": "Failed to fetch role information.\nError ID: `{errorId}`",
       "give": {
         "success": "✅ Successfully gave role to {user}.",
         "cant_find_role_or_member": "❌ We couldn't find the role or member.",
@@ -446,7 +446,7 @@
     },
     "message": {
       "error": {
-        "execution": "Error occurred while executing command.\nError ID: {errorId}"
+        "execution": "Error occurred while executing command.\nError ID: `{errorId}`"
       }
     }
   }

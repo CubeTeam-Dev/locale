@@ -15,7 +15,7 @@
   "keywords": [],
   "license": "ISC",
   "scripts": {
-    "format": "biome format .",
+    "format": "biome format --write .",
     "check": "biome check .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

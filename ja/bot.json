@@ -257,6 +257,7 @@
       "role_hierarchy": "❌ ロールの順序が正しくありません。ロールの順序と権限を確認してください。",
       "failed_get_member": "メンバー情報の取得に失敗しました。",
       "not_found_required_role": "❌ 「target」が「require」に設定されていますが、「required_role」が指定されていません。",
+      "fetch_failed": "ロール情報の取得に失敗しました\nエラーID: `{errorId}`",
       "give": {
         "success": "✅ {user} にロールを与えました。",
         "cant_find_role_or_member": "❌ ロールまたはメンバーが見つかりませんでした。",

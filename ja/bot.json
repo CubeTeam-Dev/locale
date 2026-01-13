@@ -116,6 +116,21 @@
           "lang": {
             "description": "言語コード (ISO 639-1)"
           }
+        },
+        "role_keeper": {
+          "description": "Configure Role Keeper settings",
+          "options": {
+            "enabled": {
+              "description": "Whether to enable Role Keeper"
+            },
+            "manage_permissions": {
+              "description": "Whether to preserve roles with server management, channel management, and role management permissions"
+            },
+            "moderation_permissions": {
+              "description": "Whether to preserve roles with ban, kick, timeout, message management, and thread management permissions"
+            }
+          },
+          "success": "Role Keeper settings have been updated."
         }
       }
     },
@@ -324,8 +339,8 @@
   },
   "utility": {
     "translate": {
-      "no_content": "❌ No content to translate.",
-      "original_button": "Go to original message"
+      "no_content": "❌ 翻訳する内容がありません",
+      "original_button": "元のメッセージに移動"
     }
   },
   "modules": {

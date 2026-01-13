@@ -27,35 +27,94 @@
     }
   },
   "commands": {
+    "role": {
+      "description": "Role related commands",
+      "give": {
+        "description": "Give a role to a user",
+        "options": {
+          "member": {
+            "description": "Member to give role to"
+          },
+          "role": {
+            "description": "Role to give"
+          }
+        }
+      },
+      "remove": {
+        "description": "Remove a role from a user",
+        "options": {
+          "member": {
+            "description": "Member to remove role from"
+          },
+          "role": {
+            "description": "Role to remove"
+          }
+        }
+      },
+      "list": {
+        "description": "List roles",
+        "options": {
+          "page": {
+            "description": "Page number"
+          }
+        }
+      },
+      "members": {
+        "description": "List members with roles",
+        "options": {
+          "role": {
+            "description": "Role to list members with"
+          },
+          "page": {
+            "description": "Page number"
+          }
+        }
+      },
+      "multiple": {
+        "description": "Bulk Role Operations",
+        "options": {
+          "role": {
+            "description": "Role to give or remove"
+          },
+          "type": {
+            "description": "Type of Operation (give or remove)"
+          },
+          "target": {
+            "description": "Target of Operation (all, human, bot, require)"
+          },
+          "required_role": {
+            "description": "Required role(You need to require the target)"
+          }
+        }
+      }
+    },
     "settings": {
       "description": "Settings related commands",
-      "options": {
-        "auto_translate": {
-          "description": "Configure auto translation",
-          "options": {
-            "enabled": {
-              "description": "Whether to enable auto translation"
-            },
-            "target_lang": {
-              "description": "Target language code (e.g. JA, EN, FR, DE, ES)"
-            },
-            "channel": {
-              "description": "Channel to set auto translation"
-            }
+      "auto_translate": {
+        "description": "Configure auto translation",
+        "options": {
+          "enabled": {
+            "description": "Whether to enable auto translation"
+          },
+          "target_lang": {
+            "description": "Target language code (e.g. JA, EN, FR, DE, ES)"
+          },
+          "channel": {
+            "description": "Channel to set auto translation"
           }
-        },
-        "global_connect": {
-          "description": "Connect to Global Chat"
-        },
-        "global_disconnect": {
-          "description": "Disconnect from Global Chat"
-        },
-        "language": {
-          "description": "Change server language settings",
-          "options": {
-            "lang": {
-              "description": "Language code (ISO 639-1)"
-            }
+        }
+      },
+      "global_connect": {
+        "description": "Connect to Global Chat"
+      },
+      "global_disconnect": {
+        "description": "Disconnect from Global Chat"
+      },
+      "language": {
+        "description": "Change server language settings",
+        "options": {
+          "lang": {
+            "description": "Language code (ISO 639-1)"
           }
         },
         "role_keeper": {
@@ -101,54 +160,50 @@
     },
     "sticky": {
       "description": "Set sticky message in the channel.",
-      "options": {
-        "set": {
-          "description": "Set a sticky message.",
-          "options": {
-            "content": {
-              "description": "Message to stick"
-            },
-            "attachment": {
-              "description": "Image to stick"
-            },
-            "channel": {
-              "description": "Channel to stick"
-            }
+      "set": {
+        "description": "Set a sticky message.",
+        "options": {
+          "content": {
+            "description": "Message to stick"
+          },
+          "attachment": {
+            "description": "Image to stick"
+          },
+          "channel": {
+            "description": "Channel to stick"
           }
-        },
-        "delete": {
-          "description": "Delete a sticky message.",
-          "options": {
-            "channel": {
-              "description": "Channel to delete sticky message from"
-            }
+        }
+      },
+      "delete": {
+        "description": "Delete a sticky message.",
+        "options": {
+          "channel": {
+            "description": "Channel to delete sticky message from"
           }
         }
       }
     },
     "auto_purge": {
       "description": "Manage the auto-purge feature.",
-      "options": {
-        "set": {
-          "description": "Set up auto-purge.",
-          "options": {
-            "channel": {
-              "description": "Channel to set up auto-purge in"
-            },
-            "limit": {
-              "description": "Number of messages to delete"
-            },
-            "interval": {
-              "description": "Delete interval (e.g. 5s, 2m, 1h)"
-            }
+      "set": {
+        "description": "Set up auto-purge.",
+        "options": {
+          "channel": {
+            "description": "Channel to set up auto-purge in"
+          },
+          "limit": {
+            "description": "Number of messages to delete"
+          },
+          "interval": {
+            "description": "Delete interval (e.g. 5s, 2m, 1h)"
           }
-        },
-        "remove": {
-          "description": "Remove auto-purge.",
-          "options": {
-            "channel": {
-              "description": "Channel to remove auto-purge from"
-            }
+        }
+      },
+      "remove": {
+        "description": "Remove auto-purge.",
+        "options": {
+          "channel": {
+            "description": "Channel to remove auto-purge from"
           }
         }
       }
@@ -161,7 +216,7 @@
           "channel": {
             "description": "Channel to set auto reactions"
           },
-          "emojis": {
+          "emoji": {
             "description": "Emojis to use for automatic reactions"
           }
         }
@@ -172,7 +227,7 @@
           "channel": {
             "description": "Channel to remove automatic reactions"
           },
-          "emojis": {
+          "emoji": {
             "description": "Emojis to remove automatic reactions"
           }
         }
@@ -198,19 +253,58 @@
       "success": "Updated auto translation settings."
     },
     "global_connect": {
-      "failure": "Failed to connect to Global Chat\nError ID: {errorId}",
-      "success": "Connected to Global Chat!"
+      "failure": "Failed to connect to Global Chat\nError ID: `{errorId}`",
+      "success": "Connected to Global Chat!",
+      "webhook_exists": "Webhook already exists."
     },
     "global_disconnect": {
-      "failure": "Failed to disconnect from Global Chat\nError ID: {errorId}",
-      "success": "Disconnected from Global Chat."
+      "failure": "Failed to disconnect from Global Chat\nError ID: `{errorId}`",
+      "success": "Disconnected from Global Chat.",
+      "webhook_delete_failure": "Failed to delete webhook.\nPlease delete the webhook manually."
     },
     "language": {
-      "failure": "Failed to update language settings\nError ID: {errorId}",
+      "failure": "Failed to update language settings\nError ID: `{errorId}`",
       "success": "Updated language settings to **{lang}**."
     }
   },
   "manage": {
+    "role": {
+      "role_hierarchy": "❌ Role hierarchy error. Please check role hierarchy and permissions.",
+      "failed_get_member": "Failed to get member information.",
+      "not_found_required_role": "❌ 'target' is set to 'require', but 'required_role' is not provided.",
+      "fetch_failed": "Failed to fetch role information.\nError ID: `{errorId}`",
+      "give": {
+        "success": "✅ Successfully gave role to {user}.",
+        "cant_find_role_or_member": "❌ We couldn't find the role or member.",
+        "failed_add_role": "❌ Failed to give role to {user}.\nPlease check role hierarchy and permissions.",
+        "already_has_role": "ℹ️ {user} already has the role."
+      },
+      "remove": {
+        "success": "✅ Successfully removed role from {user}.",
+        "cant_find_role_or_member": "❌ We couldn't find the role or member.",
+        "failed_remove_role": "❌ Failed to remove role from {user}.\nPlease check role hierarchy and permissions.",
+        "not_has_role": "ℹ️ {user} doesn't have the role."
+      },
+      "list": {
+        "title": "Role List",
+        "cant_find": "❌ Sorry, we couldn't find any roles.",
+        "footer": "Page {page} / {total}"
+      },
+      "members": {
+        "title": "Members with Role",
+        "cant_find": "❌ Sorry, we couldn't find any members with this role.",
+        "footer": "Page {page} / {total}",
+        "cant_find_role": "❌ We couldn't find the role."
+      },
+      "multiple": {
+        "success": {
+          "give": "✅ Successfully gave role to {count} members.",
+          "remove": "✅ Successfully removed role from {count} members."
+        },
+        "failed_give_role": "❌ Failed to give role to {count} members.\nPlease check role hierarchy and permissions.",
+        "failed_remove_role": "❌ Failed to remove role from {count} members.\nPlease check role hierarchy and permissions."
+      }
+    },
     "lock": {
       "error": {
         "guild_only": "❌ This command can only be used within a server."
@@ -241,6 +335,12 @@
       "delete": {
         "success": "Deleted sticky message."
       }
+    }
+  },
+  "utility": {
+    "translate": {
+      "no_content": "❌ No content to translate.",
+      "original_button": "Go to original message"
     }
   },
   "modules": {
@@ -289,7 +389,9 @@
       "channel_not_found": "❌ Channel not found.",
       "guild_only": "❌ This command can only be used within a server channel.",
       "must_text_or_news_channel": "❌ Channel must be a Text Channel or News Channel.",
-      "invalid_format": "❌ Invalid time format. Example: 5s, 2m, 1h"
+      "invalid_format": "❌ Invalid time format. Example: 5s, 2m, 1h",
+      "blacklisted": "❌ You are blacklisted.",
+      "no_permission": "❌ This command requires {permission} permission."
     },
     "yes": "Yes",
     "no": "No",
@@ -365,7 +467,7 @@
     },
     "message": {
       "error": {
-        "execution": "Error occurred while executing command.\nError ID: {errorId}"
+        "execution": "Error occurred while executing command.\nError ID: `{errorId}`"
       }
     }
   }

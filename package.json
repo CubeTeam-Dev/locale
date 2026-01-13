@@ -1,0 +1,26 @@
+{
+  "name": "locale",
+  "version": "1.0.1",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CubeTeam-Dev/locale.git"
+  },
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/CubeTeam-Dev/locale/issues"
+  },
+  "description": "[![Crowdin](https://badges.crowdin.net/cubeteam/localized.svg)](https://crowdin.com/project/cubeteam)",
+  "homepage": "https://github.com/CubeTeam-Dev/locale#readme",
+  "keywords": [],
+  "license": "ISC",
+  "scripts": {
+    "format": "prettier --write .",
+    "check": "prettier --check .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  }
+}

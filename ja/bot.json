@@ -322,6 +322,12 @@
       }
     }
   },
+  "utility": {
+    "translate": {
+      "no_content": "❌ No content to translate.",
+      "original_button": "Go to original message"
+    }
+  },
   "modules": {
     "auto_react": {
       "success": {

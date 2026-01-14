@@ -129,8 +129,7 @@
             "moderation_permissions": {
               "description": "Whether to preserve roles with ban, kick, timeout, message management, and thread management permissions"
             }
-          },
-          "success": "Role Keeper settings have been updated."
+          }
         }
       }
     },
@@ -265,6 +264,9 @@
     "language": {
       "failure": "Failed to update language settings\nError ID: `{errorId}`",
       "success": "Updated language settings to **{lang}**."
+    },
+    "role_keeper": {
+      "success": "Role Keeper settings have been updated."
     }
   },
   "manage": {

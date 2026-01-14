@@ -90,6 +90,20 @@
     },
     "settings": {
       "description": "Settings related commands",
+      "role_keeper": {
+        "description": "Configure Role Keeper settings",
+        "options": {
+          "enabled": {
+            "description": "Whether to enable Role Keeper"
+          },
+          "manage_permissions": {
+            "description": "Whether to preserve roles with server management, channel management, and role management permissions"
+          },
+          "moderation_permissions": {
+            "description": "Whether to preserve roles with ban, kick, timeout, message management, and thread management permissions"
+          }
+        }
+      },
       "auto_translate": {
         "description": "Configure auto translation",
         "options": {
@@ -115,20 +129,6 @@
         "options": {
           "lang": {
             "description": "Language code (ISO 639-1)"
-          }
-        },
-        "role_keeper": {
-          "description": "Configure Role Keeper settings",
-          "options": {
-            "enabled": {
-              "description": "Whether to enable Role Keeper"
-            },
-            "manage_permissions": {
-              "description": "Whether to preserve roles with server management, channel management, and role management permissions"
-            },
-            "moderation_permissions": {
-              "description": "Whether to preserve roles with ban, kick, timeout, message management, and thread management permissions"
-            }
           }
         }
       }

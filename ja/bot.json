@@ -90,6 +90,20 @@
     },
     "settings": {
       "description": "設定関連のコマンド",
+      "role_keeper": {
+        "description": "Configure Role Keeper settings",
+        "options": {
+          "enabled": {
+            "description": "Whether to enable Role Keeper"
+          },
+          "manage_permissions": {
+            "description": "Whether to preserve roles with server management, channel management, and role management permissions"
+          },
+          "moderation_permissions": {
+            "description": "Whether to preserve roles with ban, kick, timeout, message management, and thread management permissions"
+          }
+        }
+      },
       "auto_translate": {
         "description": "自動翻訳の設定",
         "options": {
@@ -250,6 +264,9 @@
     "language": {
       "failure": "言語設定の変更に失敗しました。\nエラーID: `{errorId}`",
       "success": "言語設定を**{lang}**に更新しました。"
+    },
+    "role_keeper": {
+      "success": "Role Keeper settings have been updated."
     }
   },
   "manage": {
@@ -320,6 +337,12 @@
       "delete": {
         "success": "ピン留めメッセージを削除しました。"
       }
+    }
+  },
+  "utility": {
+    "translate": {
+      "no_content": "❌ 翻訳する内容がありません",
+      "original_button": "元のメッセージに移動"
     }
   },
   "modules": {

@@ -97,10 +97,10 @@
             "description": "ロールキーパーを有効にするか"
           },
           "manage_permissions": {
-            "description": "サーバー管理、ロール管理、チャンネル管理権限のいずれかが付与されているロールを除外するか"
+            "description": "Exclude roles with Manage Server, Manage Roles, or Manage Channels perms (default: true)"
           },
           "moderation_permissions": {
-            "description": "メンバーをBAN、メンバーをキック、メンバーをタイムアウト、メッセージを管理、スレッドを管理権限のいずれかが付与されているロールを除外するか"
+            "description": "Exclude roles with Ban, Kick, Timeout, Manage Msgs/Threads perms (default: true)"
           }
         }
       },

@@ -130,6 +130,20 @@
           "lang": {
             "description": "言語コード (ISO 639-1)"
           }
+        },
+        "role_keeper": {
+          "description": "Configure Role Keeper settings",
+          "options": {
+            "enabled": {
+              "description": "Whether to enable Role Keeper"
+            },
+            "manage_permissions": {
+              "description": "Whether to exclude roles with Manage Server, Manage Roles, or Manage Channels permissions(True by default)"
+            },
+            "moderation_permissions": {
+              "description": "Whether to exclude roles with Ban Members, Kick Members, Timeout Members, Manage Messages, or Manage Threads permissions(True by default)"
+            }
+          }
         }
       }
     },

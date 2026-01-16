@@ -27,6 +27,53 @@
     }
   },
   "commands": {
+    "ban": {
+      "description": "Ban a user",
+      "options": {
+        "user": {
+          "description": "User to ban"
+        },
+        "reason": {
+          "description": "Reason for ban"
+        }
+      }
+    },
+    "unban": {
+      "description": "Unban a user",
+      "options": {
+        "user": {
+          "description": "User to unban"
+        },
+        "reason": {
+          "description": "Reason for unban"
+        }
+      }
+    },
+    "kick": {
+      "description": "Kick a user",
+      "options": {
+        "user": {
+          "description": "User to kick"
+        },
+        "reason": {
+          "description": "Reason for kick"
+        }
+      }
+    },
+    "timeout": {
+      "description": "Timeout a user",
+      "options": {
+        "user": {
+          "description": "User to timeout"
+        },
+        "reason": {
+          "description": "Reason for timeout"
+        },
+        "duration": {
+          "description": "Duration of timeout"
+        }
+      }
+    },
     "role": {
       "description": "Role related commands",
       "give": {
@@ -284,6 +331,26 @@
     }
   },
   "manage": {
+    "ban": {
+      "success": "Successfully banned {user}.",
+      "failed": "Failed to ban {user}.\nError ID: `{errorId}`"
+    },
+    "unban": {
+      "success": "Successfully unbanned {user}.",
+      "failed": "Failed to unban {user}.\nError ID: `{errorId}`"
+    },
+    "kick": {
+      "success": "Successfully kicked {user}.",
+      "failed": "Failed to kick {user}.\nError ID: `{errorId}`"
+    },
+    "timeout": {
+      "success": "Successfully timeouted {user}.",
+      "failed": "Failed to timeout {user}.\nError ID: `{errorId}`"
+    },
+    "untimeout": {
+      "success": "Successfully untimeouted {user}.",
+      "failed": "Failed to untimeout {user}.\nError ID: `{errorId}`"
+    },
     "role": {
       "role_hierarchy": "❌ Role hierarchy error. Please check role hierarchy and permissions.",
       "failed_get_member": "Failed to get member information.",
@@ -412,7 +479,7 @@
     "yes": "Yes",
     "no": "No",
     "none": "None",
-    "reason": "No reason provided",
+    "reason": "Actioned by {user}",
     "unit": {
       "seconds": "seconds",
       "hours": "hours"

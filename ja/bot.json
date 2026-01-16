@@ -27,6 +27,64 @@
     }
   },
   "commands": {
+    "ban": {
+      "description": "Ban a user",
+      "options": {
+        "user": {
+          "description": "User to ban"
+        },
+        "reason": {
+          "description": "Reason for ban"
+        }
+      }
+    },
+    "unban": {
+      "description": "Unban a user",
+      "options": {
+        "user": {
+          "description": "User to unban"
+        },
+        "reason": {
+          "description": "Reason for unban"
+        }
+      }
+    },
+    "kick": {
+      "description": "Kick a user",
+      "options": {
+        "user": {
+          "description": "User to kick"
+        },
+        "reason": {
+          "description": "Reason for kick"
+        }
+      }
+    },
+    "timeout": {
+      "description": "Timeout a user",
+      "options": {
+        "user": {
+          "description": "User to timeout"
+        },
+        "reason": {
+          "description": "Reason for timeout"
+        },
+        "duration": {
+          "description": "Duration of timeout"
+        }
+      }
+    },
+    "untimeout": {
+      "description": "Untimeout a user",
+      "options": {
+        "user": {
+          "description": "User to untimeout"
+        },
+        "reason": {
+          "description": "Reason for untimeout"
+        }
+      }
+    },
     "role": {
       "description": "ロール関連コマンド",
       "give": {
@@ -97,10 +155,10 @@
             "description": "ロールキーパーを有効にするか"
           },
           "manage_permissions": {
-            "description": "Exclude roles with Manage Server, Manage Roles, or Manage Channels perms (default: true)"
+            "description": "サーバー管理、ロール管理、チャンネル管理権限のいずれかが付与されているロールを除外するか"
           },
           "moderation_permissions": {
-            "description": "Exclude roles with Ban, Kick, Timeout, Manage Msgs/Threads perms (default: true)"
+            "description": "メンバーをBAN、メンバーをキック、メンバーをタイムアウト、メッセージを管理、スレッドを管理権限のいずれかが付与されているロールを除外するか"
           }
         }
       },
@@ -284,6 +342,26 @@
     }
   },
   "manage": {
+    "ban": {
+      "success": "Successfully banned {user}.",
+      "failed": "Failed to ban {user}.\nError ID: `{errorId}`"
+    },
+    "unban": {
+      "success": "Successfully unbanned {user}.",
+      "failed": "Failed to unban {user}.\nError ID: `{errorId}`"
+    },
+    "kick": {
+      "success": "Successfully kicked {user}.",
+      "failed": "Failed to kick {user}.\nError ID: `{errorId}`"
+    },
+    "timeout": {
+      "success": "Successfully timeouted {user}.",
+      "failed": "Failed to timeout {user}.\nError ID: `{errorId}`"
+    },
+    "untimeout": {
+      "success": "Successfully untimeouted {user}.",
+      "failed": "Failed to untimeout {user}.\nError ID: `{errorId}`"
+    },
     "role": {
       "role_hierarchy": "❌ ロールの順序が正しくありません。ロールの順序と権限を確認してください。",
       "failed_get_member": "メンバー情報の取得に失敗しました。",

@@ -74,6 +74,17 @@
         }
       }
     },
+    "untimeout": {
+      "description": "Untimeout a user",
+      "options": {
+        "user": {
+          "description": "User to untimeout"
+        },
+        "reason": {
+          "description": "Reason for untimeout"
+        }
+      }
+    },
     "role": {
       "description": "Role related commands",
       "give": {

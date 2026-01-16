@@ -91,16 +91,16 @@
     "settings": {
       "description": "設定関連のコマンド",
       "role_keeper": {
-        "description": "Configure Role Keeper settings",
+        "description": "ロールキーパーの設定を管理します。",
         "options": {
           "enabled": {
-            "description": "Whether to enable Role Keeper"
+            "description": "ロールキーパーを有効にするか"
           },
           "manage_permissions": {
-            "description": "Whether to preserve roles with server management, channel management, and role management permissions"
+            "description": "Exclude roles with Manage Server, Manage Roles, or Manage Channels perms (default: true)"
           },
           "moderation_permissions": {
-            "description": "Whether to preserve roles with ban, kick, timeout, message management, and thread management permissions"
+            "description": "Exclude roles with Ban, Kick, Timeout, Manage Msgs/Threads perms (default: true)"
           }
         }
       },
@@ -129,6 +129,20 @@
         "options": {
           "lang": {
             "description": "言語コード (ISO 639-1)"
+          }
+        },
+        "role_keeper": {
+          "description": "Configure Role Keeper settings",
+          "options": {
+            "enabled": {
+              "description": "Whether to enable Role Keeper"
+            },
+            "manage_permissions": {
+              "description": "Whether to exclude roles with Manage Server, Manage Roles, or Manage Channels permissions(True by default)"
+            },
+            "moderation_permissions": {
+              "description": "Whether to exclude roles with Ban Members, Kick Members, Timeout Members, Manage Messages, or Manage Threads permissions(True by default)"
+            }
           }
         }
       }
@@ -266,7 +280,7 @@
       "success": "言語設定を**{lang}**に更新しました。"
     },
     "role_keeper": {
-      "success": "Role Keeper settings have been updated."
+      "success": "ロールキーパーの設定が更新されました。"
     }
   },
   "manage": {

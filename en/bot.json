@@ -97,10 +97,10 @@
             "description": "Whether to enable Role Keeper"
           },
           "manage_permissions": {
-            "description": "Whether to exclude roles with Manage Server, Manage Roles, or Manage Channels permissions"
+            "description": "Exclude roles with Manage Server, Manage Roles, or Manage Channels perms (default: true)"
           },
           "moderation_permissions": {
-            "description": "Whether to exclude roles with Ban Members, Kick Members, Timeout Members, Manage Messages, or Manage Threads permissions"
+            "description": "Exclude roles with Ban, Kick, Timeout, Manage Msgs/Threads perms (default: true)"
           }
         }
       },

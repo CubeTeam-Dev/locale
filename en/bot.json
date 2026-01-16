@@ -90,6 +90,20 @@
     },
     "settings": {
       "description": "Settings related commands",
+      "role_keeper": {
+        "description": "Configure Role Keeper settings",
+        "options": {
+          "enabled": {
+            "description": "Whether to enable Role Keeper"
+          },
+          "manage_permissions": {
+            "description": "Whether to exclude roles with Manage Server, Manage Roles, or Manage Channels permissions"
+          },
+          "moderation_permissions": {
+            "description": "Whether to exclude roles with Ban Members, Kick Members, Timeout Members, Manage Messages, or Manage Threads permissions"
+          }
+        }
+      },
       "auto_translate": {
         "description": "Configure auto translation",
         "options": {

@@ -103,7 +103,7 @@
           "description": "Reason for timeout"
         },
         "duration": {
-          "description": "Duration of timeout"
+          "description": "Duration of timeout (e.g. 1s, 5m, 1h, 3d)"
         }
       }
     },

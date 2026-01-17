@@ -28,93 +28,93 @@
   },
   "commands": {
     "move": {
-      "description": "Move a member to another voice channel.",
+      "description": "メンバーを別のボイスチャンネルに移動します。",
       "one": {
-        "description": "Move a member to another voice channel.",
+        "description": "メンバーを別のボイスチャンネルに移動します。",
         "options": {
           "member": {
-            "description": "Member to move"
+            "description": "移動するメンバー"
           },
           "channel": {
-            "description": "Channel to move to"
+            "description": "移動先のチャンネル"
           }
         }
       },
       "all": {
-        "description": "Move all members in a voice channel to another voice channel.",
+        "description": "ボイスチャンネル内のすべてのメンバーを別のボイスチャンネルに移動します。",
         "options": {
           "channel": {
-            "description": "Channel to move to"
+            "description": "移動先のチャンネル"
           }
         }
       },
       "multiple": {
-        "description": "Move multiple members to another voice channel.",
+        "description": "特定のボイスチャンネル内のすべてのメンバーを別のボイスチャンネルに移動します。",
         "options": {
           "from_channel": {
-            "description": "Channel to move members from"
+            "description": "移動前のチャンネル"
           },
           "to_channel": {
-            "description": "Channel to move members to"
+            "description": "移動先のチャンネル"
           }
         }
       }
     },
     "ban": {
-      "description": "Ban a user",
+      "description": "ユーザーをBANする",
       "options": {
         "user": {
-          "description": "User to ban"
+          "description": "BANするユーザー"
         },
         "reason": {
-          "description": "Reason for ban"
+          "description": "BANの理由"
         }
       }
     },
     "unban": {
-      "description": "Unban a user",
+      "description": "ユーザーのBANを解除",
       "options": {
         "user": {
-          "description": "User to unban"
+          "description": "BANを解除するユーザー"
         },
         "reason": {
-          "description": "Reason for unban"
+          "description": "BAN解除の理由"
         }
       }
     },
     "kick": {
-      "description": "Kick a user",
+      "description": "ユーザーをキックします",
       "options": {
         "user": {
-          "description": "User to kick"
+          "description": "キックするユーザー"
         },
         "reason": {
-          "description": "Reason for kick"
+          "description": "キックの理由"
         }
       }
     },
     "timeout": {
-      "description": "Timeout a user",
+      "description": "ユーザーをタイムアウトします",
       "options": {
         "user": {
-          "description": "User to timeout"
+          "description": "タイムアウトするユーザー"
         },
         "reason": {
-          "description": "Reason for timeout"
+          "description": "タイムアウトの理由"
         },
         "duration": {
-          "description": "Duration of timeout"
+          "description": "タイムアウト時間（例：1s、5m、1h、3d）"
         }
       }
     },
     "untimeout": {
-      "description": "Untimeout a user",
+      "description": "ユーザーのタイムアウトを解除します",
       "options": {
         "user": {
-          "description": "User to untimeout"
+          "description": "タイムアウトを解除するユーザー"
         },
         "reason": {
-          "description": "Reason for untimeout"
+          "description": "タイムアウト解除の理由"
         }
       }
     },
@@ -188,10 +188,10 @@
             "description": "ロールキーパーを有効にするか"
           },
           "manage_permissions": {
-            "description": "サーバー管理、ロール管理、チャンネル管理権限のいずれかが付与されているロールを除外するか"
+            "description": "サーバー管理、ロール管理、チャンネル管理権限のいずれかが付与されているロールを除外するか(デフォルト: 有効)"
           },
           "moderation_permissions": {
-            "description": "メンバーをBAN、メンバーをキック、メンバーをタイムアウト、メッセージを管理、スレッドを管理権限のいずれかが付与されているロールを除外するか"
+            "description": "BAN、キック、タイムアウト、メッセージ、スレッド管理権限のいずれかが付与されているロールを除外するか(デフォルト: 有効)"
           }
         }
       },
@@ -223,16 +223,16 @@
           }
         },
         "role_keeper": {
-          "description": "Configure Role Keeper settings",
+          "description": "ロールキーパーの設定を管理します。",
           "options": {
             "enabled": {
-              "description": "Whether to enable Role Keeper"
+              "description": "ロールキーパーを有効にするか"
             },
             "manage_permissions": {
-              "description": "Whether to exclude roles with Manage Server, Manage Roles, or Manage Channels permissions(True by default)"
+              "description": "サーバー管理、ロール管理、チャンネル管理権限のいずれかが付与されているロールを除外するか(デフォルト: 有効)"
             },
             "moderation_permissions": {
-              "description": "Whether to exclude roles with Ban Members, Kick Members, Timeout Members, Manage Messages, or Manage Threads permissions(True by default)"
+              "description": "メンバーをBAN、メンバーをキック、メンバーをタイムアウト、メッセージを管理、スレッドを管理権限のいずれかが付与されているロールを除外するか(デフォルト: 有効)"
             }
           }
         }
@@ -377,34 +377,34 @@
   "manage": {
     "move": {
       "error": {
-        "not_in_voice": "{user} is not in a voice channel.",
-        "channel_not_voice": "{channel} is not a voice channel.",
-        "channel_not_found": "Channel is not found.",
-        "user_not_found": "User is not found."
+        "not_in_voice": "{user} はボイスチャンネルに接続していません。",
+        "channel_not_voice": "{channel} はボイスチャンネルではありません。",
+        "channel_not_found": "チャンネルが見つかりませんでした。",
+        "user_not_found": "ユーザーが見つかりません。"
       },
-      "success": "Successfully moved {user} to {channel}.",
-      "multi_success_one": "Successfully moved {count} user to {channel}.",
-      "multi_success_other": "Successfully moved {count} users to {channel}."
+      "success": "{user} を {channel} に移動しました。",
+      "multi_success_one": "{count}人のユーザーを {channel} に移動しました。",
+      "multi_success_other": "{count}人のユーザーを {channel} に移動しました。"
     },
     "ban": {
-      "success": "Successfully banned {user}.",
-      "failed": "Failed to ban {user}.\nError ID: `{errorId}`"
+      "success": "{user} をBANしました。",
+      "failed": "{user}のBANに失敗しました。\nエラーID: `{errorId}`"
     },
     "unban": {
-      "success": "Successfully unbanned {user}.",
-      "failed": "Failed to unban {user}.\nError ID: `{errorId}`"
+      "success": "{user} のBANを解除しました。",
+      "failed": "{user}のBAN解除に失敗しました。\nエラーID: `{errorId}`"
     },
     "kick": {
-      "success": "Successfully kicked {user}.",
-      "failed": "Failed to kick {user}.\nError ID: `{errorId}`"
+      "success": "{user} をキックしました。",
+      "failed": "{user}のキックに失敗しました。\nエラーID: `{errorId}`"
     },
     "timeout": {
-      "success": "Successfully timeouted {user}.",
-      "failed": "Failed to timeout {user}.\nError ID: `{errorId}`"
+      "success": "{user} をタイムアウトしました。",
+      "failed": "{user}のタイムアウトに失敗しました。\nエラーID: `{errorId}`"
     },
     "untimeout": {
-      "success": "Successfully untimeouted {user}.",
-      "failed": "Failed to untimeout {user}.\nError ID: `{errorId}`"
+      "success": "{user} のタイムアウトを解除しました。",
+      "failed": "{user}のタイムアウト解除に失敗しました。\nエラーID: `{errorId}`"
     },
     "role": {
       "role_hierarchy": "❌ ロールの順序が正しくありません。ロールの順序と権限を確認してください。",
@@ -534,7 +534,7 @@
     "yes": "はい",
     "no": "いいえ",
     "none": "なし",
-    "reason": "理由が入力されていません",
+    "reason": "{user}による実行",
     "unit": {
       "seconds": "秒",
       "hours": "時間"

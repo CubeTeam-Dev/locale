@@ -27,6 +27,97 @@
     }
   },
   "commands": {
+    "move": {
+      "description": "メンバーを別のボイスチャンネルに移動します。",
+      "one": {
+        "description": "メンバーを別のボイスチャンネルに移動します。",
+        "options": {
+          "member": {
+            "description": "移動するメンバー"
+          },
+          "channel": {
+            "description": "移動先のチャンネル"
+          }
+        }
+      },
+      "all": {
+        "description": "ボイスチャンネル内のすべてのメンバーを別のボイスチャンネルに移動します。",
+        "options": {
+          "channel": {
+            "description": "移動先のチャンネル"
+          }
+        }
+      },
+      "multiple": {
+        "description": "特定のボイスチャンネル内のすべてのメンバーを別のボイスチャンネルに移動します。",
+        "options": {
+          "from_channel": {
+            "description": "移動前のチャンネル"
+          },
+          "to_channel": {
+            "description": "移動先のチャンネル"
+          }
+        }
+      }
+    },
+    "ban": {
+      "description": "ユーザーをBANする",
+      "options": {
+        "user": {
+          "description": "BANするユーザー"
+        },
+        "reason": {
+          "description": "BANの理由"
+        }
+      }
+    },
+    "unban": {
+      "description": "ユーザーのBANを解除",
+      "options": {
+        "user": {
+          "description": "BANを解除するユーザー"
+        },
+        "reason": {
+          "description": "BAN解除の理由"
+        }
+      }
+    },
+    "kick": {
+      "description": "ユーザーをキックします",
+      "options": {
+        "user": {
+          "description": "キックするユーザー"
+        },
+        "reason": {
+          "description": "キックの理由"
+        }
+      }
+    },
+    "timeout": {
+      "description": "ユーザーをタイムアウトします",
+      "options": {
+        "user": {
+          "description": "タイムアウトするユーザー"
+        },
+        "reason": {
+          "description": "タイムアウトの理由"
+        },
+        "duration": {
+          "description": "タイムアウト時間（例：1s、5m、1h、3d）"
+        }
+      }
+    },
+    "untimeout": {
+      "description": "ユーザーのタイムアウトを解除します",
+      "options": {
+        "user": {
+          "description": "タイムアウトを解除するユーザー"
+        },
+        "reason": {
+          "description": "タイムアウト解除の理由"
+        }
+      }
+    },
     "role": {
       "description": "ロール関連コマンド",
       "give": {
@@ -97,10 +188,10 @@
             "description": "ロールキーパーを有効にするか"
           },
           "manage_permissions": {
-            "description": "Exclude roles with Manage Server, Manage Roles, or Manage Channels perms (default: true)"
+            "description": "サーバー管理、ロール管理、チャンネル管理権限のいずれかが付与されているロールを除外するか(デフォルト: 有効)"
           },
           "moderation_permissions": {
-            "description": "Exclude roles with Ban, Kick, Timeout, Manage Msgs/Threads perms (default: true)"
+            "description": "BAN、キック、タイムアウト、メッセージ、スレッド管理権限のいずれかが付与されているロールを除外するか(デフォルト: 有効)"
           }
         }
       },
@@ -132,16 +223,16 @@
           }
         },
         "role_keeper": {
-          "description": "Configure Role Keeper settings",
+          "description": "ロールキーパーの設定を管理します。",
           "options": {
             "enabled": {
-              "description": "Whether to enable Role Keeper"
+              "description": "ロールキーパーを有効にするか"
             },
             "manage_permissions": {
-              "description": "Whether to exclude roles with Manage Server, Manage Roles, or Manage Channels permissions(True by default)"
+              "description": "サーバー管理、ロール管理、チャンネル管理権限のいずれかが付与されているロールを除外するか(デフォルト: 有効)"
             },
             "moderation_permissions": {
-              "description": "Whether to exclude roles with Ban Members, Kick Members, Timeout Members, Manage Messages, or Manage Threads permissions(True by default)"
+              "description": "メンバーをBAN、メンバーをキック、メンバーをタイムアウト、メッセージを管理、スレッドを管理権限のいずれかが付与されているロールを除外するか(デフォルト: 有効)"
             }
           }
         }
@@ -284,6 +375,37 @@
     }
   },
   "manage": {
+    "move": {
+      "error": {
+        "not_in_voice": "{user} はボイスチャンネルに接続していません。",
+        "channel_not_voice": "{channel} はボイスチャンネルではありません。",
+        "channel_not_found": "チャンネルが見つかりませんでした。",
+        "user_not_found": "ユーザーが見つかりません。"
+      },
+      "success": "{user} を {channel} に移動しました。",
+      "multi_success_one": "{count}人のユーザーを {channel} に移動しました。",
+      "multi_success_other": "{count}人のユーザーを {channel} に移動しました。"
+    },
+    "ban": {
+      "success": "{user} をBANしました。",
+      "failed": "{user}のBANに失敗しました。\nエラーID: `{errorId}`"
+    },
+    "unban": {
+      "success": "{user} のBANを解除しました。",
+      "failed": "{user}のBAN解除に失敗しました。\nエラーID: `{errorId}`"
+    },
+    "kick": {
+      "success": "{user} をキックしました。",
+      "failed": "{user}のキックに失敗しました。\nエラーID: `{errorId}`"
+    },
+    "timeout": {
+      "success": "{user} をタイムアウトしました。",
+      "failed": "{user}のタイムアウトに失敗しました。\nエラーID: `{errorId}`"
+    },
+    "untimeout": {
+      "success": "{user} のタイムアウトを解除しました。",
+      "failed": "{user}のタイムアウト解除に失敗しました。\nエラーID: `{errorId}`"
+    },
     "role": {
       "role_hierarchy": "❌ ロールの順序が正しくありません。ロールの順序と権限を確認してください。",
       "failed_get_member": "メンバー情報の取得に失敗しました。",
@@ -412,7 +534,7 @@
     "yes": "はい",
     "no": "いいえ",
     "none": "なし",
-    "reason": "理由が入力されていません",
+    "reason": "{user}による実行",
     "unit": {
       "seconds": "秒",
       "hours": "時間"

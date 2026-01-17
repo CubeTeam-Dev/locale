@@ -27,6 +27,39 @@
     }
   },
   "commands": {
+    "move": {
+      "description": "Move a member to another voice channel.",
+      "one": {
+        "description": "Move a member to another voice channel.",
+        "options": {
+          "member": {
+            "description": "Member to move"
+          },
+          "channel": {
+            "description": "Channel to move to"
+          }
+        }
+      },
+      "all": {
+        "description": "Move all members in a voice channel to another voice channel.",
+        "options": {
+          "channel": {
+            "description": "Channel to move to"
+          }
+        }
+      },
+      "multiple": {
+        "description": "Move multiple members to another voice channel.",
+        "options": {
+          "from_channel": {
+            "description": "Channel to move members from"
+          },
+          "to_channel": {
+            "description": "Channel to move members to"
+          }
+        }
+      }
+    },
     "ban": {
       "description": "Ban a user",
       "options": {
@@ -342,6 +375,17 @@
     }
   },
   "manage": {
+    "move": {
+      "error": {
+        "not_in_voice": "{user} is not in a voice channel.",
+        "channel_not_voice": "{channel} is not a voice channel.",
+        "channel_not_found": "Channel is not found.",
+        "user_not_found": "User is not found."
+      },
+      "success": "Successfully moved {user} to {channel}.",
+      "multi_success_one": "Successfully moved {count} user to {channel}.",
+      "multi_success_other": "Successfully moved {count} users to {channel}."
+    },
     "ban": {
       "success": "Successfully banned {user}.",
       "failed": "Failed to ban {user}.\nError ID: `{errorId}`"

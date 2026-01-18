@@ -612,5 +612,12 @@
         "execution": "Error occurred while executing command.\nError ID: `{errorId}`"
       }
     }
+  },
+  "dev": {
+    "connect": {
+      "content": "**Account Linking**\nYou'll need to link your account to purchase subscriptions and manage your credits.\nLink your account using the button below.",
+      "button": "Link Account"
+    },
+    "account_linked": "Account linked successfully!"
   }
 }

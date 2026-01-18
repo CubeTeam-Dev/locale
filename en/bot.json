@@ -602,6 +602,7 @@
         "mod_only": "❌ This command is for Moderators only.",
         "dev_only": "❌ This command is for Developers only.",
         "admin_only": "❌ This command is for Admins only.",
+        "support_only": "❌ This command is for Support only.",
         "user_perms_missing": "❌ You do not have permission to execute this command.",
         "bot_perms_missing": "❌ The bot does not have permission to execute this command.",
         "bot_perms_title": "Bot requires the following permissions"

@@ -538,7 +538,11 @@
     "unit": {
       "seconds": "seconds",
       "hours": "hours"
-    }
+    },
+    "terms_no_agree": "You must agree to the Terms of Service and Privacy Policy to use this bot.\n\nTerms of Service: https://cubeteam.app/terms\nPrivacy Policy: https://cubeteam.app/privacy-policy",
+    "terms_agreed_success": "You agree to the terms of use.",
+    "terms_agreed_error": "Failed to agree to the terms of use.",
+    "terms_agree_button": "Agree to Terms"
   },
   "permissions": {
     "AddReactions": "Add Reactions",

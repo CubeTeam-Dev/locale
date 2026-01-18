@@ -602,6 +602,7 @@
         "mod_only": "❌このコマンドはモデレーター専用です。",
         "dev_only": "❌このコマンドは開発者専用です。",
         "admin_only": "❌このコマンドは管理者専用です。",
+        "support_only": "❌ This command is for Support only.",
         "user_perms_missing": "❌このコマンドを実行する権限がありません。",
         "bot_perms_missing": "❌Botにこのコマンドを実行する権限がありません。",
         "bot_perms_title": "Botには以下の権限が必要です"
@@ -612,5 +613,12 @@
         "execution": "コマンドの実行中にエラーが発生しました。\nエラーID: `{errorId}`"
       }
     }
+  },
+  "dev": {
+    "connect": {
+      "content": "**Account Linking**\nYou'll need to link your account to purchase subscriptions and manage your credits.\nLink your account using the button below.",
+      "button": "Link Account"
+    },
+    "account_linked": "Account linked successfully!"
   }
 }

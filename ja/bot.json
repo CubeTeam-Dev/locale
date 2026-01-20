@@ -602,7 +602,7 @@
         "mod_only": "❌このコマンドはモデレーター専用です。",
         "dev_only": "❌このコマンドは開発者専用です。",
         "admin_only": "❌このコマンドは管理者専用です。",
-        "support_only": "❌ This command is for Support only.",
+        "support_only": "❌ このコマンドはサポート専用です",
         "user_perms_missing": "❌このコマンドを実行する権限がありません。",
         "bot_perms_missing": "❌Botにこのコマンドを実行する権限がありません。",
         "bot_perms_title": "Botには以下の権限が必要です"
@@ -616,9 +616,9 @@
   },
   "dev": {
     "connect": {
-      "content": "**Account Linking**\nYou'll need to link your account to purchase subscriptions and manage your credits.\nLink your account using the button below.",
-      "button": "Link Account"
+      "content": "**アカウントの連携**\nサブスクリプションを購入し、クレジットを管理するにはアカウントを連携する必要があります。\n下のボタンを使用してアカウントを連携します。",
+      "button": "アカウントを連携する"
     },
-    "account_linked": "Account linked successfully!"
+    "account_linked": "アカウントが正常に連携されました!"
   }
 }

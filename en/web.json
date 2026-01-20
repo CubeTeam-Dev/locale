@@ -1,1 +1,11 @@
-{}
+{
+    "page": {
+        "link": {
+            "title": "If you are seeing this, there may have been an error.\nPlease try again.",
+            "success": {
+                "title": "Account Linking",
+                "description": "You have successfully linked your account."
+            }
+        }
+    }
+}

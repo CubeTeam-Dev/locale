@@ -347,6 +347,27 @@
     },
     "translate": {
       "original_button": "Go to original message"
+    },
+    "clear": {
+      "confirm_description": "This message and all messages before it will be deleted.",
+      "button": {
+        "yes": "Yes",
+        "no": "No",
+        "custom": "Delete specific number of messages from here"
+      },
+      "processing": "Deleting messages...",
+      "success_one": "{count} message deleted.",
+      "success_other": "{count} messages deleted.",
+      "cancelled": "Cancelled.",
+      "modal": {
+        "title": "Delete messages",
+        "label": "Number of messages to delete",
+        "placeholder": "Enter the number of messages to delete.",
+        "error": {
+          "invalid": "Invalid number.",
+          "min": "Enter a number greater than or equal to 1."
+        }
+      }
     }
   },
   "settings": {

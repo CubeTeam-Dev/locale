@@ -348,6 +348,9 @@
     "translate": {
       "original_button": "Go to original message"
     },
+    "Purge-below": {
+      "name": "Purge below"
+    },
     "clear": {
       "confirm_description": "This message and all messages before it will be deleted.",
       "button": {

@@ -348,26 +348,8 @@
     "translate": {
       "original_button": "元のメッセージに移動"
     },
-    "clear": {
-      "confirm_description": "This message and all messages before it will be deleted.",
-      "button": {
-        "yes": "Yes",
-        "no": "No",
-        "custom": "Delete specific number of messages from here"
-      },
-      "processing": "Deleting messages...",
-      "success_one": "{count} message deleted.",
-      "success_other": "{count} messages deleted.",
-      "cancelled": "Cancelled.",
-      "modal": {
-        "title": "Delete messages",
-        "label": "Number of messages to delete",
-        "placeholder": "Enter the number of messages to delete.",
-        "error": {
-          "invalid": "Invalid number.",
-          "min": "Enter a number greater than or equal to 1."
-        }
-      }
+    "Purge-below": {
+      "name": "Purge below"
     }
   },
   "settings": {
@@ -396,6 +378,27 @@
     }
   },
   "manage": {
+    "clear": {
+      "confirm_description": "This message and all messages before it will be deleted.",
+      "button": {
+        "yes": "Yes",
+        "no": "No",
+        "custom": "Delete specific number of messages from here"
+      },
+      "processing": "Deleting messages...",
+      "success_one": "{count} message deleted.",
+      "success_other": "{count} messages deleted.",
+      "cancelled": "Cancelled.",
+      "modal": {
+        "title": "Delete messages",
+        "label": "Number of messages to delete",
+        "placeholder": "Enter the number of messages to delete.",
+        "error": {
+          "invalid": "Invalid number.",
+          "min": "Enter a number greater than or equal to 1."
+        }
+      }
+    },
     "move": {
       "error": {
         "not_in_voice": "{user} はボイスチャンネルに接続していません。",

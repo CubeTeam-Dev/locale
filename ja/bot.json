@@ -379,23 +379,23 @@
   },
   "manage": {
     "clear": {
-      "confirm_description": "This message and all messages before it will be deleted.",
+      "confirm_description": "これより前のメッセージが削除されます。",
       "button": {
-        "yes": "Yes",
-        "no": "No",
+        "yes": "はい",
+        "no": "いいえ",
         "custom": "Delete specific number of messages from here"
       },
-      "processing": "Deleting messages...",
-      "success_one": "{count} message deleted.",
-      "success_other": "{count} messages deleted.",
-      "cancelled": "Cancelled.",
+      "processing": "メッセージを削除中...",
+      "success_one": "{count}件のメッセージを削除しました。",
+      "success_other": "{count}件のメッセージを削除しました。",
+      "cancelled": "キャンセルしました",
       "modal": {
-        "title": "Delete messages",
-        "label": "Number of messages to delete",
-        "placeholder": "Enter the number of messages to delete.",
+        "title": "メッセージを削除する",
+        "label": "削除するメッセージ数",
+        "placeholder": "削除するメッセージ数を入力してください。",
         "error": {
-          "invalid": "Invalid number.",
-          "min": "Enter a number greater than or equal to 1."
+          "invalid": "無効な数値です。",
+          "min": "1以上の数値を入力してください。"
         }
       }
     },

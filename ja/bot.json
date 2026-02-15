@@ -349,7 +349,7 @@
       "original_button": "元のメッセージに移動"
     },
     "Purge-below": {
-      "name": "Purge below"
+      "name": "これより下を削除"
     }
   },
   "settings": {
@@ -383,7 +383,7 @@
       "button": {
         "yes": "はい",
         "no": "いいえ",
-        "custom": "Delete specific number of messages from here"
+        "custom": "ここから特定のメッセージ数を削除します"
       },
       "processing": "メッセージを削除中...",
       "success_one": "{count}件のメッセージを削除しました。",

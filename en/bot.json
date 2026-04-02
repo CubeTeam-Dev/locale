@@ -1,4 +1,20 @@
 {
+  "help": {
+    "buttons": {
+      "website": {
+        "label": "Website"
+      },
+      "docs": {
+        "label": "Docs"
+      },
+      "invite": {
+        "label": "Invite bot"
+      },
+      "support": {
+        "label": "Support server"
+      }
+    }
+  },
   "ping": {
     "title": "🏓 Ping Information",
     "description": "Various latency and bot information",
@@ -27,6 +43,9 @@
     }
   },
   "commands": {
+    "help": {
+      "description": "Show information about the bot."
+    },
     "move": {
       "description": "Move a member to another voice channel.",
       "one": {

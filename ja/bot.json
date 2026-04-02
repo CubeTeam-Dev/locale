@@ -1,4 +1,20 @@
 {
+  "help": {
+    "buttons": {
+      "website": {
+        "label": "Web サイト"
+      },
+      "docs": {
+        "label": "ドキュメント"
+      },
+      "invite": {
+        "label": "Botを招待する"
+      },
+      "support": {
+        "label": "サポートサーバー"
+      }
+    }
+  },
   "ping": {
     "title": "🏓 Ping情報",
     "description": "各種レイテンシとBot情報",
@@ -27,6 +43,9 @@
     }
   },
   "commands": {
+    "help": {
+      "description": "Botに関する情報を表示します。"
+    },
     "move": {
       "description": "メンバーを別のボイスチャンネルに移動します。",
       "one": {
@@ -347,6 +366,9 @@
     },
     "translate": {
       "original_button": "元のメッセージに移動"
+    },
+    "Purge-below": {
+      "name": "これより下を削除"
     }
   },
   "settings": {
@@ -375,6 +397,27 @@
     }
   },
   "manage": {
+    "clear": {
+      "confirm_description": "これより前のメッセージが削除されます。",
+      "button": {
+        "yes": "はい",
+        "no": "いいえ",
+        "custom": "ここから特定のメッセージ数を削除します"
+      },
+      "processing": "メッセージを削除中...",
+      "success_one": "{count}件のメッセージを削除しました。",
+      "success_other": "{count}件のメッセージを削除しました。",
+      "cancelled": "キャンセルしました",
+      "modal": {
+        "title": "メッセージを削除する",
+        "label": "削除するメッセージ数",
+        "placeholder": "削除するメッセージ数を入力してください。",
+        "error": {
+          "invalid": "無効な数値です。",
+          "min": "1以上の数値を入力してください。"
+        }
+      }
+    },
     "move": {
       "error": {
         "not_in_voice": "{user} はボイスチャンネルに接続していません。",

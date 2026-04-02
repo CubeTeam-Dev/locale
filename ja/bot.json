@@ -1,4 +1,20 @@
 {
+  "help": {
+    "buttons": {
+      "website": {
+        "label": "Web サイト"
+      },
+      "docs": {
+        "label": "ドキュメント"
+      },
+      "invite": {
+        "label": "Botを招待する"
+      },
+      "support": {
+        "label": "サポートサーバー"
+      }
+    }
+  },
   "ping": {
     "title": "🏓 Ping情報",
     "description": "各種レイテンシとBot情報",
@@ -27,6 +43,9 @@
     }
   },
   "commands": {
+    "help": {
+      "description": "Botに関する情報を表示します。"
+    },
     "move": {
       "description": "メンバーを別のボイスチャンネルに移動します。",
       "one": {

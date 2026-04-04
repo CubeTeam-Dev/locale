@@ -6,6 +6,107 @@
         "title": "Account Linking",
         "description": "You have successfully linked your account."
       }
+    },
+    "pricing": {
+      "title": "Pricing & Plans",
+      "description": "Choose the perfect plan for your needs.",
+      "buyAction": "Purchase",
+      "popularBadge": "Most Popular",
+      "premiumBadge": "Recommended",
+      "bonusLabel": "Bonus"
+    },
+    "dashboard": {
+      "index": {
+        "title": "Select a Server",
+        "description": "Choose a command center to manage your community, monitor analytics, and deploy advanced automations.",
+        "searchPlaceholder": "Filter servers...",
+        "addNew": "Add to New Server",
+        "addNewDesc": "Invite Cube Bot to a new workspace",
+        "installed": "Installed",
+        "notInstalled": "Not Installed",
+        "openDashboard": "Open Dashboard",
+        "setupBot": "Setup Bot",
+        "refresh": "Refresh Servers",
+        "unknownServer": "Unknown Server"
+      },
+      "sidebar": {
+        "active": "Active",
+        "nav": {
+          "general": "General",
+          "modules": "Modules",
+          "economy": "Economy"
+        },
+        "changeServer": "Change Server",
+        "support": "Support"
+      },
+      "general": {
+        "configBadge": "Configuration",
+        "title": "{serverName} Settings",
+        "titleDefault": "Server Settings",
+        "description": "Manage the core heartbeat and fundamental behaviors of your community observatory.",
+        "localization": "Localization",
+        "serverLanguage": "Server Language",
+        "botPrefix": "Bot Prefix",
+        "prefixDesc": "Cube Bot uses slash commands globally.",
+        "unsavedChanges": "You have unsaved changes in 'General Settings'",
+        "reset": "Reset",
+        "save": "Save Changes",
+        "saving": "Saving...",
+        "saveError": "Failed to save settings: "
+      },
+      "modules": {
+        "configBadge": "Configuration",
+        "title": "Modules Configuration",
+        "description": "Manage automation and moderation modules for your server.",
+        "roleKeeper": {
+          "title": "Role Keeper (Sticky Roles)",
+          "enable": "Enable Role Keeper",
+          "enableDesc": "Automatically restore roles when users leave and rejoin.",
+          "ignoreAdmins": "Ignore Admins & Mods",
+          "ignoreAdminsDesc": "Do not restore roles for users with moderation permissions."
+        },
+        "autoPurge": {
+          "title": "Auto Purge",
+          "channelId": "Channel ID",
+          "limits": "Limits (Msgs)",
+          "interval": "Interval (Min)",
+          "add": "Add",
+          "thChannelId": "Channel ID",
+          "thLimit": "Limit",
+          "thInterval": "Interval",
+          "thActions": "Actions",
+          "noRules": "No rules configured.",
+          "minUnit": "min",
+          "placeholderChannel": "e.g. 123456789012345678"
+        },
+        "autoReact": {
+          "title": "Auto React",
+          "channelId": "Channel ID",
+          "emoji": "Emoji",
+          "add": "Add",
+          "thChannelId": "Channel ID",
+          "thEmoji": "Emoji",
+          "thActions": "Actions",
+          "noRules": "No rules configured.",
+          "placeholderChannel": "e.g. 123456789012345678"
+        }
+      },
+      "economy": {
+        "configBadge": "Economy",
+        "title": "Server Economy",
+        "description": "Manage your server's Cube Credits and view transaction history.",
+        "totalBalance": "Total Balance",
+        "paid": "Paid:",
+        "bonus": "Bonus:",
+        "purchaseCredits": "Purchase Credits",
+        "rechargeCredits": "Recharge Credits",
+        "transactionHistory": "Transaction History",
+        "thType": "Transaction Type",
+        "thDescription": "Description",
+        "thAmount": "Amount",
+        "thDate": "Date",
+        "noTransactions": "No transactions found."
+      }
     }
   }
 }

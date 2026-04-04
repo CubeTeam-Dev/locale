@@ -6,6 +6,107 @@
         "title": "アカウント連携",
         "description": "アカウントの連携が完了しました。"
       }
+    },
+    "pricing": {
+      "title": "料金プランと購入",
+      "description": "用途に合わせて最適なプランをお選びください。",
+      "buyAction": "購入する",
+      "popularBadge": "一番人気",
+      "premiumBadge": "おすすめ",
+      "bonusLabel": "ボーナス"
+    },
+    "dashboard": {
+      "index": {
+        "title": "サーバーを選択",
+        "description": "コミュニティを管理し、分析を監視し、高度な自動化をデプロイするためのコマンドセンターを選択してください。",
+        "searchPlaceholder": "サーバーを検索...",
+        "addNew": "新しいサーバーに追加",
+        "addNewDesc": "Cube Botを新しいワークスペースに招待します",
+        "installed": "導入済み",
+        "notInstalled": "未導入",
+        "openDashboard": "ダッシュボードを開く",
+        "setupBot": "ボットをセットアップ",
+        "refresh": "サーバーを更新",
+        "unknownServer": "不明なサーバー"
+      },
+      "sidebar": {
+        "active": "アクティブ",
+        "nav": {
+          "general": "一般",
+          "modules": "モジュール",
+          "economy": "エコノミー"
+        },
+        "changeServer": "サーバーを変更",
+        "support": "サポート"
+      },
+      "general": {
+        "configBadge": "設定",
+        "title": "{serverName} の設定",
+        "titleDefault": "サーバー設定",
+        "description": "コミュニティ監視のコアとなる動作と基本設定を管理します。",
+        "localization": "ローカリゼーション",
+        "serverLanguage": "サーバー言語",
+        "botPrefix": "ボットのプレフィックス",
+        "prefixDesc": "Cube Botはグローバルにスラッシュコマンドを使用します。",
+        "unsavedChanges": "一般設定に未保存の変更があります",
+        "reset": "リセット",
+        "save": "変更を保存",
+        "saving": "保存中...",
+        "saveError": "設定の保存に失敗しました："
+      },
+      "modules": {
+        "configBadge": "設定",
+        "title": "モジュール設定",
+        "description": "サーバーの自動化およびモデレーションモジュールを管理します。",
+        "roleKeeper": {
+          "title": "Role Keeper (役職の保持)",
+          "enable": "Role Keeperを有効化",
+          "enableDesc": "ユーザーの退出・再参加時に自動的に役職を復元します。",
+          "ignoreAdmins": "管理者・モデレーターを除外",
+          "ignoreAdminsDesc": "モデレーション権限を持つユーザーの役職は復元しません。"
+        },
+        "autoPurge": {
+          "title": "Auto Purge (自動削除)",
+          "channelId": "チャンネルID",
+          "limits": "上限 (件数)",
+          "interval": "間隔 (分)",
+          "add": "追加",
+          "thChannelId": "チャンネルID",
+          "thLimit": "上限",
+          "thInterval": "間隔",
+          "thActions": "アクション",
+          "noRules": "ルールが設定されていません。",
+          "minUnit": "分",
+          "placeholderChannel": "例: 123456789012345678"
+        },
+        "autoReact": {
+          "title": "Auto React (自動リアクション)",
+          "channelId": "チャンネルID",
+          "emoji": "絵文字",
+          "add": "追加",
+          "thChannelId": "チャンネルID",
+          "thEmoji": "絵文字",
+          "thActions": "アクション",
+          "noRules": "ルールが設定されていません。",
+          "placeholderChannel": "例: 123456789012345678"
+        }
+      },
+      "economy": {
+        "configBadge": "エコノミー",
+        "title": "サーバーエコノミー",
+        "description": "サーバーのCube Creditを管理し、取引履歴を確認します。",
+        "totalBalance": "総残高",
+        "paid": "有償:",
+        "bonus": "ボーナス:",
+        "purchaseCredits": "クレジットを購入",
+        "rechargeCredits": "クレジットをチャージ",
+        "transactionHistory": "取引履歴",
+        "thType": "取引タイプ",
+        "thDescription": "説明",
+        "thAmount": "金額",
+        "thDate": "日付",
+        "noTransactions": "取引履歴がありません。"
+      }
     }
   }
 }

@@ -226,7 +226,8 @@
     "noSub": "No Subscription",
     "noSubDesc": "Purchase a plan to unlock more features for your server",
     "buy": "Buy a Plan",
-    "statusActive": "Active"
+    "statusActive": "Active",
+    "purchasedBy": "Purchased by"
   },
   "credits": {
     "title": "CC Credits",

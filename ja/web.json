@@ -348,7 +348,7 @@
     "plan": "プラン",
     "renewal": "次回更新",
     "nextRenewal": "次回更新",
-    "cancelsOn": "{date}に解約予定",
+    "cancelsOn": "{date} でキャンセル",
     "assigned": "割り当て済みサーバー",
     "assignedServer": "割り当てサーバー",
     "notAssigned": "未割り当て",

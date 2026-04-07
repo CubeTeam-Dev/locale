@@ -7,5 +7,287 @@
         "description": "You have successfully linked your account."
       }
     }
+  },
+  "locale": {
+    "ja": "日本語",
+    "en": "English"
+  },
+  "common": {
+    "free": "Free",
+    "save": "Save",
+    "saving": "Saving...",
+    "saved": "Saved",
+    "cancel": "Cancel",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "notSet": "Not set",
+    "buy": "Buy",
+    "processing": "Processing..."
+  },
+  "nav": {
+    "toDashboard": "Go to Dashboard",
+    "docs": "Docs"
+  },
+  "top": {
+    "featuresSectionLabel": "Features",
+    "hero": {
+      "badge": "Discord Bot",
+      "title": "Take your server to the next level.",
+      "desc": "Cube is a Discord Bot that combines automation, role management, and AI moderation in one.",
+      "cta": "Get started for free",
+      "pricing": "View pricing"
+    },
+    "features": {
+      "automation": {
+        "label": "Automation",
+        "desc": "Automate complex workflows without code"
+      },
+      "rolekeeper": {
+        "label": "Role Keeper",
+        "desc": "Automatically manage and restore member roles"
+      },
+      "aimod": {
+        "label": "AI Moderation",
+        "desc": "AI monitors and responds to chat in real time"
+      }
+    },
+    "stats": {
+      "servers": "Servers",
+      "users": "Users",
+      "uptime": "Uptime"
+    },
+    "footer": {
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "refund": "Refund Policy"
+    }
+  },
+  "dashboard": {
+    "title": "Select a Server",
+    "desc": "Choose the server you want to manage",
+    "addBot": "Add Bot",
+    "noServers": "No servers available",
+    "noServersDesc": "There are no servers with Cube, or you don't have admin permissions",
+    "refresh": "Refresh",
+    "refreshing": "Refreshing..."
+  },
+  "sidebar": {
+    "overview": "Overview",
+    "general": "General",
+    "automation": "Automation",
+    "rolekeeper": "Role Keeper",
+    "aimod": "AI Moderation",
+    "subscription": "Subscription",
+    "credits": "Credits",
+    "allServers": "All Servers",
+    "manageSubscription": "Manage Subscription",
+    "logout": "Log Out"
+  },
+  "overview": {
+    "desc": "Check your server status and available features",
+    "balance": "Credit Balance",
+    "plan": "Plan",
+    "features": "Features",
+    "automation": {
+      "label": "Automation",
+      "desc": "Automate sending messages, assigning roles, and more"
+    },
+    "rolekeeper": {
+      "label": "Role Keeper",
+      "desc": "Automatically restore roles when members rejoin"
+    },
+    "aimod": {
+      "label": "AI Moderation",
+      "desc": "AI monitors and responds to chat in real time"
+    }
+  },
+  "general": {
+    "title": "General Settings",
+    "desc": "Manage basic server settings",
+    "lang": {
+      "title": "Bot Language",
+      "desc": "Select the language the bot will use in this server"
+    }
+  },
+  "automation": {
+    "title": "Automation",
+    "desc": "Create and manage automation rules"
+  },
+  "rolekeeper": {
+    "title": "Role Keeper",
+    "desc": "Configure automatic role restoration when members leave and rejoin",
+    "enable": {
+      "label": "Enable Role Keeper",
+      "desc": "When enabled, members who rejoin will have their previous roles automatically restored"
+    },
+    "excludeAdmin": {
+      "label": "Exclude Admin Roles",
+      "desc": "Admin roles will be excluded from restoration"
+    },
+    "excludeMod": {
+      "label": "Exclude Moderator Roles",
+      "desc": "Moderator roles will be excluded from restoration"
+    }
+  },
+  "aimod": {
+    "title": "AI Moderation",
+    "desc": "Configure automatic chat monitoring and response by AI",
+    "statusNotSet": "Not configured",
+    "statusRunning": "Running",
+    "statusStopped": "Stopped",
+    "logTitle": "Moderation Logs",
+    "logEmpty": "No logs"
+  },
+  "subscription": {
+    "title": "Subscription",
+    "desc": "Manage and assign your subscription plans",
+    "currentPlan": "Current Plan",
+    "nextRenewal": "Next Renewal",
+    "manage": "Manage on Stripe",
+    "loadingPortal": "Loading...",
+    "unassign": "Unassign",
+    "noPlan": "No Plan",
+    "noPlanDesc": "No plan is assigned to this server",
+    "unassignedPlans": "Unassigned Plans",
+    "assignedToOther": "Assigned to another server",
+    "notAssigned": "Not assigned",
+    "renewal": "Renewal",
+    "assignToServer": "Assign to this server",
+    "noSub": "No Subscription",
+    "noSubDesc": "Purchase a plan to unlock more features for your server",
+    "buy": "Buy a Plan",
+    "statusActive": "Active"
+  },
+  "credits": {
+    "title": "CC Credits",
+    "desc": "Check your credit balance and history",
+    "totalBalance": "Total Balance",
+    "paidBalance": "Purchased",
+    "bonusBalance": "Bonus",
+    "buy": "Buy Credits",
+    "history": "Transaction History",
+    "noHistory": "No transaction history",
+    "lots": {
+      "title": "Expiry",
+      "noLots": "No active credit lots",
+      "type": {
+        "paid": "Purchased",
+        "bonus": "Bonus"
+      },
+      "balance": "Balance",
+      "expiresAt": "Expires",
+      "daysLeft": "Expires in {days} days",
+      "expiresToday": "Expires today"
+    }
+  },
+  "guildSelect": {
+    "error": "Failed to load server list",
+    "empty": "No servers available"
+  },
+  "pricingButtons": {
+    "selectServer": "Select a Server",
+    "selectDesc": "Choose the server you want to purchase for"
+  },
+  "purchaseFlow": {
+    "subscriptionTitle": "Subscription",
+    "ccTitle": "Buy CC Credits",
+    "popular": "Popular",
+    "perMonth": "/mo",
+    "buyBtn": "Buy Now",
+    "selectPlan": "Select Plan",
+    "selectThisPlan": "Select this plan",
+    "selectServer": "Select Server",
+    "confirmPurchase": "Confirm Purchase",
+    "purchasing": "Processing...",
+    "buyCC": "Buy CC Credits",
+    "buyCCPlan": "Buy {name}",
+    "buyPlan": "Buy {plan} plan",
+    "ccNote": "Credits are valid for 180 days from purchase",
+    "linkToServer": "Link to server",
+    "monthly": "Monthly",
+    "annually": "Annually",
+    "annualBilling": "Billed ¥{price}/year",
+    "off": "{n}% off",
+    "unavailable": "Unavailable",
+    "plansError": "Failed to load plans",
+    "error": "An error occurred. Please try again",
+    "liteFeatures": ["Access to basic features", "100 CC credits per month", "Priority support"],
+    "basicFeatures": [
+      "Everything in Lite",
+      "300 CC credits per month",
+      "Advanced automation",
+      "Priority support"
+    ],
+    "proFeatures": [
+      "Everything in Basic",
+      "1000 CC credits per month",
+      "AI moderation (coming soon)",
+      "Dedicated support"
+    ],
+    "confirmTitle": "Purchase {plan} plan?",
+    "confirmDesc": "You will be billed ¥{price}/month. Cancel anytime."
+  },
+  "accountSub": {
+    "title": "Subscription Management",
+    "desc": "Manage and assign your purchased plans",
+    "loading": "Loading...",
+    "noSub": "No Subscription",
+    "noSubDesc": "You haven't purchased any plans yet",
+    "buy": "Buy a Plan",
+    "assignModal": {
+      "title": "Assign to Server",
+      "desc": "Select the server to assign this plan to",
+      "loading": "Loading...",
+      "error": "Failed to load server list",
+      "empty": "No servers available",
+      "assign": "Assign",
+      "assigning": "Assigning..."
+    },
+    "status": {
+      "active": "Active",
+      "past_due": "Past Due",
+      "canceled": "Canceled"
+    },
+    "plan": "Plan",
+    "renewal": "Next Renewal",
+    "assigned": "Assigned Server",
+    "notAssigned": "Not assigned",
+    "assign": "Assign to Server",
+    "unassign": "Unassign",
+    "manage": "Manage on Stripe",
+    "loading2": "Loading..."
+  },
+  "pricing": {
+    "title": "Pricing",
+    "desc": "Choose the plan that fits your server best",
+    "popular": "Popular",
+    "perMonth": "/mo",
+    "oneTime": "One-time",
+    "bonus": "Bonus",
+    "buyBtn": "Buy Now",
+    "footerNote": "For questions, see our",
+    "footerLink": "Refund Policy",
+    "subscription": {
+      "title": "Subscription",
+      "desc": "Expand your server's features with a monthly plan"
+    },
+    "cc": {
+      "title": "CC Credits",
+      "desc": "One-time credits you can buy as needed"
+    },
+    "liteFeatures": ["Access to basic features", "100 CC credits per month", "Priority support"],
+    "basicFeatures": [
+      "Everything in Lite",
+      "300 CC credits per month",
+      "Advanced automation",
+      "Priority support"
+    ],
+    "proFeatures": [
+      "Everything in Basic",
+      "1000 CC credits per month",
+      "AI moderation (coming soon)",
+      "Dedicated support"
+    ]
   }
 }

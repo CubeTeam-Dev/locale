@@ -114,6 +114,9 @@
     "loginRequired": "ログインが必要です",
     "loginDesc": "ダッシュボードにアクセスするにはDiscordでログインしてください。",
     "loginBtn": "Discordでログイン",
+    "permissionDeniedTitle": "アクセスできません",
+    "permissionDeniedDesc": "このサーバーの管理者権限がありません。",
+    "backToDashboard": "ダッシュボードに戻る",
     "botJoined": "Cube参加済みのサーバー",
     "botNotJoined": "Cubeを招待できるサーバー",
     "open": "開く",
@@ -161,7 +164,24 @@
   },
   "automation": {
     "title": "オートメーション",
-    "desc": "自動化ルールを作成・管理します"
+    "desc": "自動化ルールを作成・管理します",
+    "autoPurge": {
+      "title": "Auto Purge",
+      "desc": "指定したチャンネルのメッセージを定期的に自動削除します",
+      "msgLimit": "保持するメッセージ数",
+      "interval": "削除間隔",
+      "msgLimitUnit": "件",
+      "intervalUnit": "分",
+      "itemDesc": "{msgLimit}件保持 · {interval}分ごと"
+    },
+    "autoReact": {
+      "title": "Auto React",
+      "desc": "チャンネルへの投稿に自動でリアクションを付けます",
+      "emoji": "絵文字"
+    },
+    "channel": "チャンネル",
+    "selectChannel": "チャンネルを選択",
+    "add": "追加"
   },
   "rolekeeper": {
     "title": "ロールキーパー",
@@ -206,7 +226,8 @@
     "noSub": "サブスクリプションなし",
     "noSubDesc": "プランを購入してサーバーの機能を拡張しましょう",
     "buy": "プランを購入",
-    "statusActive": "有効"
+    "statusActive": "有効",
+    "purchasedBy": "購入者"
   },
   "credits": {
     "title": "CC クレジット",

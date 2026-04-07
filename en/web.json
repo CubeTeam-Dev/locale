@@ -27,10 +27,27 @@
   },
   "nav": {
     "toDashboard": "Go to Dashboard",
-    "docs": "Docs"
+    "docs": "Docs",
+    "dashboard": "Dashboard",
+    "login": "Log in",
+    "startFree": "Start for free",
+    "inviteBot": "Invite Bot",
+    "viewDashboard": "View Dashboard",
+    "pricing": "Pricing",
+    "changelog": "Changelog"
   },
   "top": {
     "featuresSectionLabel": "Features",
+    "heroBadge": "Discord Bot",
+    "heroTitle1": "Take your server",
+    "heroTitle2": "to the next level.",
+    "heroDesc": "Cube is a Discord Bot that combines automation, role management, and AI moderation in one.",
+    "statsNote": "Trusted by 12,000+ Discord servers worldwide",
+    "featuresTitle1": "Everything your server needs,",
+    "featuresTitle2": "all in one bot.",
+    "featuresDesc": "Powerful features that work together seamlessly to keep your server running smoothly.",
+    "ctaTitle": "Ready to upgrade your server?",
+    "ctaDesc": "Join 12,000+ servers already using Cube to automate their Discord experience.",
     "hero": {
       "badge": "Discord Bot",
       "title": "Take your server to the next level.",
@@ -39,6 +56,22 @@
       "pricing": "View pricing"
     },
     "features": {
+      "autoPurge": {
+        "desc": "Automatically delete messages after a set time",
+        "tag": "Automation"
+      },
+      "autoReact": {
+        "desc": "Automatically react to messages with emojis",
+        "tag": "Automation"
+      },
+      "roleKeeper": {
+        "desc": "Automatically manage and restore member roles",
+        "tag": "Management"
+      },
+      "aiMod": {
+        "desc": "AI monitors and responds to chat in real time",
+        "tag": "AI"
+      },
       "automation": {
         "label": "Automation",
         "desc": "Automate complex workflows without code"
@@ -55,22 +88,38 @@
     "stats": {
       "servers": "Servers",
       "users": "Users",
-      "uptime": "Uptime"
+      "uptime": "Uptime",
+      "activeServers": "Active Servers",
+      "members": "Members",
+      "automation": "Automation"
     },
     "footer": {
       "terms": "Terms of Service",
       "privacy": "Privacy Policy",
-      "refund": "Refund Policy"
+      "refund": "Refund Policy",
+      "law": "Specified Commercial Transactions Act",
+      "allRights": "All rights reserved."
     }
   },
   "dashboard": {
     "title": "Select a Server",
     "desc": "Choose the server you want to manage",
+    "selectServer": "Select a Server",
+    "selectDesc": "Choose the server you want to manage",
     "addBot": "Add Bot",
     "noServers": "No servers available",
     "noServersDesc": "There are no servers with Cube, or you don't have admin permissions",
     "refresh": "Refresh",
-    "refreshing": "Refreshing..."
+    "refreshing": "Refreshing...",
+    "loginRequired": "Login Required",
+    "loginDesc": "Please log in with Discord to access your dashboard.",
+    "loginBtn": "Log in with Discord",
+    "botJoined": "Servers with Cube",
+    "botNotJoined": "Add Cube to these servers",
+    "open": "Open",
+    "invite": "Add Bot",
+    "reload": "Reload",
+    "refreshHint": "Don't see your server? Try refreshing after adding the bot."
   },
   "sidebar": {
     "overview": "Overview",
@@ -242,7 +291,9 @@
       "error": "Failed to load server list",
       "empty": "No servers available",
       "assign": "Assign",
-      "assigning": "Assigning..."
+      "assigning": "Assigning...",
+      "unassign": "Unassign",
+      "save": "Save"
     },
     "status": {
       "active": "Active",
@@ -251,12 +302,20 @@
     },
     "plan": "Plan",
     "renewal": "Next Renewal",
+    "nextRenewal": "Next Renewal",
     "assigned": "Assigned Server",
+    "assignedServer": "Assigned Server",
     "notAssigned": "Not assigned",
     "assign": "Assign to Server",
+    "assignToServer": "Assign to Server",
+    "changeAssign": "Change Server",
     "unassign": "Unassign",
     "manage": "Manage on Stripe",
-    "loading2": "Loading..."
+    "loading2": "Loading...",
+    "started": "Started",
+    "cancelLabel": "Cancel subscription",
+    "billingNote": "Subscriptions are billed monthly and can be canceled anytime from the Stripe portal.",
+    "addNew": "Add new plan"
   },
   "pricing": {
     "title": "Pricing",

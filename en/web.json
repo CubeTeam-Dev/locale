@@ -282,18 +282,38 @@
     "unavailable": "Unavailable",
     "plansError": "Failed to load plans",
     "error": "An error occurred. Please try again",
-    "liteFeatures": ["Access to basic features", "100 CC credits per month", "Priority support"],
+    "freeFeatures": [
+      "7-day moderation logs",
+      "Unlimited AutoPurge",
+      "Unlimited AutoReact",
+      "RoleKeeper (30-day retention)"
+    ],
+    "liteFeatures": [
+      "Everything in Free",
+      "6,500 CC credits per month",
+      "30-day moderation logs",
+      "RoleKeeper (Unlimited retention)",
+      "Priority support"
+    ],
     "basicFeatures": [
       "Everything in Lite",
-      "300 CC credits per month",
-      "Advanced automation",
+      "15,000 CC credits per month",
+      "Custom Bot Profile",
+      "Advanced AutoMod",
+      "180-day moderation logs",
+      "Full Node Editor Access in AI Moderation",
+      "Early access to new features",
       "Priority support"
     ],
     "proFeatures": [
       "Everything in Basic",
-      "1000 CC credits per month",
-      "AI moderation (coming soon)",
-      "Dedicated support"
+      "30,000 CC credits per month",
+      "Advanced AntiRaid",
+      "Unlimited moderation logs",
+      "Moderation logs CSV Export",
+      "Bleeding-edge feature access",
+      "Monthly 1-on-1 AI Tuning Support",
+      "Priority support"
     ],
     "confirmTitle": "Purchase {plan} plan?",
     "confirmDesc": "You will be billed ¥{price}/month. Cancel anytime."
@@ -321,9 +341,14 @@
       "past_due": "Past Due",
       "canceled": "Canceled"
     },
+    "billing": {
+      "monthly": "Monthly",
+      "annually": "Annual"
+    },
     "plan": "Plan",
     "renewal": "Next Renewal",
     "nextRenewal": "Next Renewal",
+    "cancelsOn": "Cancels on {date}",
     "assigned": "Assigned Server",
     "assignedServer": "Assigned Server",
     "notAssigned": "Not assigned",
@@ -331,11 +356,21 @@
     "assignToServer": "Assign to Server",
     "changeAssign": "Change Server",
     "unassign": "Unassign",
-    "manage": "Manage on Stripe",
     "loading2": "Loading...",
     "started": "Started",
+    "cancelAutoRenew": "Stop auto-renewal",
+    "resumeAutoRenew": "Resume auto-renewal",
     "cancelLabel": "Cancel subscription",
-    "billingNote": "Subscriptions are billed monthly and can be canceled anytime from the Stripe portal.",
+    "cancelConfirmTitle": "Stop auto-renewal?",
+    "cancelConfirmDesc": "Your subscription will be canceled at the end of the current period. You can continue using it until then.",
+    "cancelConfirmBtn": "Stop",
+    "keepSubscription": "Keep subscription",
+    "changePlan": "Change Plan",
+    "changePlanTitle": "Change Plan",
+    "changePlanCurrent": "Current",
+    "changePlanApply": "Apply",
+    "changePlanChanging": "Changing...",
+    "changePlanNote": "Changes apply immediately with prorated billing.",
     "addNew": "Add new plan"
   },
   "pricing": {
@@ -356,18 +391,38 @@
       "title": "CC Credits",
       "desc": "One-time credits you can buy as needed"
     },
-    "liteFeatures": ["Access to basic features", "100 CC credits per month", "Priority support"],
+    "freeFeatures": [
+      "7-day moderation logs",
+      "Unlimited AutoPurge",
+      "Unlimited AutoReact",
+      "RoleKeeper (30-day retention)"
+    ],
+    "liteFeatures": [
+      "Everything in Free",
+      "6,500 CC credits per month",
+      "30-day moderation logs",
+      "RoleKeeper (Unlimited retention)",
+      "Priority support"
+    ],
     "basicFeatures": [
       "Everything in Lite",
-      "300 CC credits per month",
-      "Advanced automation",
+      "15,000 CC credits per month",
+      "Custom Bot Profile",
+      "Advanced AutoMod",
+      "180-day moderation logs",
+      "Full Node Editor Access in AI Moderation",
+      "Early access to new features",
       "Priority support"
     ],
     "proFeatures": [
       "Everything in Basic",
-      "1000 CC credits per month",
-      "AI moderation (coming soon)",
-      "Dedicated support"
+      "30,000 CC credits per month",
+      "Advanced AntiRaid",
+      "Unlimited moderation logs",
+      "Moderation logs CSV Export",
+      "Bleeding-edge feature access",
+      "Monthly 1-on-1 AI Tuning Support",
+      "Priority support"
     ]
   }
 }

@@ -282,18 +282,18 @@
     "unavailable": "Unavailable",
     "plansError": "Failed to load plans",
     "error": "An error occurred. Please try again",
-    "liteFeatures": ["Access to basic features", "100 CC credits per month", "Priority support"],
+    "liteFeatures": ["6,500 CC credits per month", "Priority support"],
     "basicFeatures": [
       "Everything in Lite",
-      "300 CC credits per month",
-      "Advanced automation",
+      "15,000 CC credits per month",
+      "Advanced AutoMod",
       "Priority support"
     ],
     "proFeatures": [
       "Everything in Basic",
-      "1000 CC credits per month",
-      "AI moderation (coming soon)",
-      "Dedicated support"
+      "30,000 CC credits per month",
+      "Advanced AntiRaid",
+      "Priority support"
     ],
     "confirmTitle": "Purchase {plan} plan?",
     "confirmDesc": "You will be billed ¥{price}/month. Cancel anytime."
@@ -321,9 +321,14 @@
       "past_due": "Past Due",
       "canceled": "Canceled"
     },
+    "billing": {
+      "monthly": "Monthly",
+      "annually": "Annual"
+    },
     "plan": "Plan",
     "renewal": "Next Renewal",
     "nextRenewal": "Next Renewal",
+    "cancelsOn": "Cancels on {date}",
     "assigned": "Assigned Server",
     "assignedServer": "Assigned Server",
     "notAssigned": "Not assigned",
@@ -331,11 +336,21 @@
     "assignToServer": "Assign to Server",
     "changeAssign": "Change Server",
     "unassign": "Unassign",
-    "manage": "Manage on Stripe",
     "loading2": "Loading...",
     "started": "Started",
+    "cancelAutoRenew": "Stop auto-renewal",
+    "resumeAutoRenew": "Resume auto-renewal",
     "cancelLabel": "Cancel subscription",
-    "billingNote": "Subscriptions are billed monthly and can be canceled anytime from the Stripe portal.",
+    "cancelConfirmTitle": "Stop auto-renewal?",
+    "cancelConfirmDesc": "Your subscription will be canceled at the end of the current period. You can continue using it until then.",
+    "cancelConfirmBtn": "Stop",
+    "keepSubscription": "Keep subscription",
+    "changePlan": "Change Plan",
+    "changePlanTitle": "Change Plan",
+    "changePlanCurrent": "Current",
+    "changePlanApply": "Apply",
+    "changePlanChanging": "Changing...",
+    "changePlanNote": "Changes apply immediately with prorated billing.",
     "addNew": "Add new plan"
   },
   "pricing": {

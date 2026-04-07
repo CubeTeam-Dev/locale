@@ -321,9 +321,14 @@
       "past_due": "支払い遅延",
       "canceled": "キャンセル済み"
     },
+    "billing": {
+      "monthly": "月払い",
+      "annually": "年払い"
+    },
     "plan": "プラン",
     "renewal": "次回更新",
     "nextRenewal": "次回更新",
+    "cancelsOn": "{date}に解約予定",
     "assigned": "割り当て済みサーバー",
     "assignedServer": "割り当てサーバー",
     "notAssigned": "未割り当て",
@@ -331,11 +336,21 @@
     "assignToServer": "サーバーに割り当て",
     "changeAssign": "サーバーを変更",
     "unassign": "割り当て解除",
-    "manage": "Stripeで管理",
     "loading2": "読み込み中...",
     "started": "開始",
+    "cancelAutoRenew": "自動更新を停止",
+    "resumeAutoRenew": "自動更新を再開",
     "cancelLabel": "サブスクリプションを解約",
-    "billingNote": "サブスクリプションは毎月請求されます。いつでもStripeポータルから解約できます。",
+    "cancelConfirmTitle": "自動更新を停止しますか？",
+    "cancelConfirmDesc": "現在の期間終了後にサブスクリプションが解約されます。期間内はそのまま利用できます。",
+    "cancelConfirmBtn": "停止する",
+    "keepSubscription": "キャンセル",
+    "changePlan": "プランを変更",
+    "changePlanTitle": "プランを変更",
+    "changePlanCurrent": "現在",
+    "changePlanApply": "変更する",
+    "changePlanChanging": "変更中...",
+    "changePlanNote": "変更は即座に適用され、日割り計算で請求されます",
     "addNew": "新しいプランを追加"
   },
   "pricing": {

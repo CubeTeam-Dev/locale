@@ -27,10 +27,27 @@
   },
   "nav": {
     "toDashboard": "ダッシュボードへ",
-    "docs": "ドキュメント"
+    "docs": "ドキュメント",
+    "dashboard": "ダッシュボード",
+    "login": "ログイン",
+    "startFree": "無料で始める",
+    "inviteBot": "Botを招待",
+    "viewDashboard": "ダッシュボードを見る",
+    "pricing": "料金プラン",
+    "changelog": "更新履歴"
   },
   "top": {
     "featuresSectionLabel": "機能",
+    "heroBadge": "Discord Bot",
+    "heroTitle1": "あなたのサーバーを、",
+    "heroTitle2": "次のレベルへ。",
+    "heroDesc": "Cube は自動化・ロール管理・AI モデレーションを一つにまとめた Discord Bot です。",
+    "statsNote": "世界 12,000 以上の Discord サーバーに導入されています",
+    "featuresTitle1": "サーバーに必要なすべての機能が、",
+    "featuresTitle2": "1つのBotに。",
+    "featuresDesc": "シームレスに連携する強力な機能で、サーバーの運営をスムーズに。",
+    "ctaTitle": "サーバーをアップグレードしましょう",
+    "ctaDesc": "すでに 12,000 以上のサーバーが Cube を使って Discord 体験を自動化しています。",
     "hero": {
       "badge": "Discord Bot",
       "title": "あなたのサーバーを、次のレベルへ。",
@@ -39,6 +56,22 @@
       "pricing": "料金を見る"
     },
     "features": {
+      "autoPurge": {
+        "desc": "設定した時間が経過したメッセージを自動削除",
+        "tag": "自動化"
+      },
+      "autoReact": {
+        "desc": "メッセージに絵文字で自動リアクション",
+        "tag": "自動化"
+      },
+      "roleKeeper": {
+        "desc": "メンバーのロールを自動で管理・復元",
+        "tag": "管理"
+      },
+      "aiMod": {
+        "desc": "AI がリアルタイムでチャットを監視・対応",
+        "tag": "AI"
+      },
       "automation": {
         "label": "オートメーション",
         "desc": "複雑なワークフローをノーコードで自動化"
@@ -55,22 +88,38 @@
     "stats": {
       "servers": "サーバー",
       "users": "ユーザー",
-      "uptime": "稼働率"
+      "uptime": "稼働率",
+      "activeServers": "アクティブサーバー",
+      "members": "メンバー",
+      "automation": "自動化"
     },
     "footer": {
       "terms": "利用規約",
       "privacy": "プライバシーポリシー",
-      "refund": "返金ポリシー"
+      "refund": "返金ポリシー",
+      "law": "特定商取引法に基づく表記",
+      "allRights": "All rights reserved."
     }
   },
   "dashboard": {
     "title": "サーバーを選択",
     "desc": "管理するサーバーを選んでください",
+    "selectServer": "サーバーを選択",
+    "selectDesc": "管理するサーバーを選んでください",
     "addBot": "Botを追加",
     "noServers": "管理できるサーバーがありません",
     "noServersDesc": "Cubeが参加しているサーバーがないか、管理者権限がありません",
     "refresh": "更新",
-    "refreshing": "更新中..."
+    "refreshing": "更新中...",
+    "loginRequired": "ログインが必要です",
+    "loginDesc": "ダッシュボードにアクセスするにはDiscordでログインしてください。",
+    "loginBtn": "Discordでログイン",
+    "botJoined": "Cube参加済みのサーバー",
+    "botNotJoined": "Cubeを招待できるサーバー",
+    "open": "開く",
+    "invite": "Botを追加",
+    "reload": "再読み込み",
+    "refreshHint": "サーバーが表示されない場合は、Bot追加後に更新してください。"
   },
   "sidebar": {
     "overview": "概要",
@@ -246,7 +295,9 @@
       "error": "サーバー一覧の取得に失敗しました",
       "empty": "利用可能なサーバーがありません",
       "assign": "割り当て",
-      "assigning": "割り当て中..."
+      "assigning": "割り当て中...",
+      "unassign": "割り当て解除",
+      "save": "保存"
     },
     "status": {
       "active": "有効",
@@ -255,12 +306,20 @@
     },
     "plan": "プラン",
     "renewal": "次回更新",
+    "nextRenewal": "次回更新",
     "assigned": "割り当て済みサーバー",
+    "assignedServer": "割り当てサーバー",
     "notAssigned": "未割り当て",
     "assign": "サーバーに割り当て",
+    "assignToServer": "サーバーに割り当て",
+    "changeAssign": "サーバーを変更",
     "unassign": "割り当て解除",
     "manage": "Stripeで管理",
-    "loading2": "読み込み中..."
+    "loading2": "読み込み中...",
+    "started": "開始",
+    "cancelLabel": "サブスクリプションを解約",
+    "billingNote": "サブスクリプションは毎月請求されます。いつでもStripeポータルから解約できます。",
+    "addNew": "新しいプランを追加"
   },
   "pricing": {
     "title": "料金プラン",

@@ -161,7 +161,24 @@
   },
   "automation": {
     "title": "Automation",
-    "desc": "Create and manage automation rules"
+    "desc": "Create and manage automation rules",
+    "autoPurge": {
+      "title": "Auto Purge",
+      "desc": "Automatically deletes messages in specified channels on a schedule",
+      "msgLimit": "Messages to keep",
+      "interval": "Delete interval",
+      "msgLimitUnit": "msgs",
+      "intervalUnit": "min",
+      "itemDesc": "{msgLimit} messages · every {interval} min"
+    },
+    "autoReact": {
+      "title": "Auto React",
+      "desc": "Automatically reacts to all posts in a channel",
+      "emoji": "Emoji"
+    },
+    "channel": "Channel",
+    "selectChannel": "Select a channel",
+    "add": "Add"
   },
   "rolekeeper": {
     "title": "Role Keeper",

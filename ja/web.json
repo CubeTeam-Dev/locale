@@ -161,7 +161,24 @@
   },
   "automation": {
     "title": "オートメーション",
-    "desc": "自動化ルールを作成・管理します"
+    "desc": "自動化ルールを作成・管理します",
+    "autoPurge": {
+      "title": "Auto Purge",
+      "desc": "指定したチャンネルのメッセージを定期的に自動削除します",
+      "msgLimit": "保持するメッセージ数",
+      "interval": "削除間隔",
+      "msgLimitUnit": "件",
+      "intervalUnit": "分",
+      "itemDesc": "{msgLimit}件保持 · {interval}分ごと"
+    },
+    "autoReact": {
+      "title": "Auto React",
+      "desc": "チャンネルへの投稿に自動でリアクションを付けます",
+      "emoji": "絵文字"
+    },
+    "channel": "チャンネル",
+    "selectChannel": "チャンネルを選択",
+    "add": "追加"
   },
   "rolekeeper": {
     "title": "ロールキーパー",

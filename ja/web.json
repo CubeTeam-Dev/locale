@@ -7,5 +7,295 @@
         "description": "アカウントの連携が完了しました。"
       }
     }
+  },
+  "locale": {
+    "ja": "日本語",
+    "en": "English"
+  },
+  "common": {
+    "free": "Free",
+    "save": "保存",
+    "saving": "保存中...",
+    "saved": "保存しました",
+    "cancel": "キャンセル",
+    "close": "閉じる",
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "notSet": "未設定",
+    "buy": "購入する",
+    "processing": "処理中..."
+  },
+  "nav": {
+    "toDashboard": "ダッシュボードへ",
+    "docs": "ドキュメント"
+  },
+  "top": {
+    "featuresSectionLabel": "機能",
+    "hero": {
+      "badge": "Discord Bot",
+      "title": "あなたのサーバーを、次のレベルへ。",
+      "desc": "Cube は自動化・ロール管理・AI モデレーションを一つにまとめた Discord Bot です。",
+      "cta": "無料で始める",
+      "pricing": "料金を見る"
+    },
+    "features": {
+      "automation": {
+        "label": "オートメーション",
+        "desc": "複雑なワークフローをノーコードで自動化"
+      },
+      "rolekeeper": {
+        "label": "ロールキーパー",
+        "desc": "メンバーのロールを自動で管理・復元"
+      },
+      "aimod": {
+        "label": "AI モデレーション",
+        "desc": "AI がリアルタイムでチャットを監視・対応"
+      }
+    },
+    "stats": {
+      "servers": "サーバー",
+      "users": "ユーザー",
+      "uptime": "稼働率"
+    },
+    "footer": {
+      "terms": "利用規約",
+      "privacy": "プライバシーポリシー",
+      "refund": "返金ポリシー"
+    }
+  },
+  "dashboard": {
+    "title": "サーバーを選択",
+    "desc": "管理するサーバーを選んでください",
+    "addBot": "Botを追加",
+    "noServers": "管理できるサーバーがありません",
+    "noServersDesc": "Cubeが参加しているサーバーがないか、管理者権限がありません",
+    "refresh": "更新",
+    "refreshing": "更新中..."
+  },
+  "sidebar": {
+    "overview": "概要",
+    "general": "一般",
+    "automation": "オートメーション",
+    "rolekeeper": "ロールキーパー",
+    "aimod": "AI モデレーション",
+    "subscription": "サブスクリプション",
+    "credits": "クレジット",
+    "allServers": "すべてのサーバー",
+    "manageSubscription": "サブスクリプション管理",
+    "logout": "ログアウト"
+  },
+  "overview": {
+    "desc": "サーバーの状態と利用可能な機能を確認できます",
+    "balance": "クレジット残高",
+    "plan": "プラン",
+    "features": "機能",
+    "automation": {
+      "label": "オートメーション",
+      "desc": "メッセージの送信やロール付与などを自動化"
+    },
+    "rolekeeper": {
+      "label": "ロールキーパー",
+      "desc": "メンバーが再参加した際にロールを自動復元"
+    },
+    "aimod": {
+      "label": "AI モデレーション",
+      "desc": "AI がリアルタイムでチャットを監視・対応"
+    }
+  },
+  "general": {
+    "title": "一般設定",
+    "desc": "サーバーの基本設定を管理します",
+    "lang": {
+      "title": "Botの言語",
+      "desc": "このサーバーでBotが使用する言語を選択してください"
+    }
+  },
+  "automation": {
+    "title": "オートメーション",
+    "desc": "自動化ルールを作成・管理します"
+  },
+  "rolekeeper": {
+    "title": "ロールキーパー",
+    "desc": "メンバーが退出・再参加した際のロール自動復元を設定します",
+    "enable": {
+      "label": "ロールキーパーを有効化",
+      "desc": "有効にすると、退出したメンバーが再参加した際に以前のロールを自動で復元します"
+    },
+    "excludeAdmin": {
+      "label": "管理者ロールを除外",
+      "desc": "管理者ロールは復元対象から除外されます"
+    },
+    "excludeMod": {
+      "label": "モデレーターロールを除外",
+      "desc": "モデレーターロールは復元対象から除外されます"
+    }
+  },
+  "aimod": {
+    "title": "AI モデレーション",
+    "desc": "AI によるチャットの自動監視・対応を設定します",
+    "statusNotSet": "未設定",
+    "statusRunning": "実行中",
+    "statusStopped": "停止中",
+    "logTitle": "モデレーションログ",
+    "logEmpty": "ログはありません"
+  },
+  "subscription": {
+    "title": "サブスクリプション",
+    "desc": "サブスクリプションプランの管理と割り当てを行います",
+    "currentPlan": "現在のプラン",
+    "nextRenewal": "次回更新日",
+    "manage": "Stripeで管理",
+    "loadingPortal": "読み込み中...",
+    "unassign": "割り当て解除",
+    "noPlan": "プランなし",
+    "noPlanDesc": "このサーバーにはプランが割り当てられていません",
+    "unassignedPlans": "未割り当てのプラン",
+    "assignedToOther": "他のサーバーに割り当て済み",
+    "notAssigned": "未割り当て",
+    "renewal": "更新日",
+    "assignToServer": "このサーバーに割り当て",
+    "noSub": "サブスクリプションなし",
+    "noSubDesc": "プランを購入してサーバーの機能を拡張しましょう",
+    "buy": "プランを購入",
+    "statusActive": "有効"
+  },
+  "credits": {
+    "title": "CC クレジット",
+    "desc": "クレジットの残高と履歴を確認します",
+    "totalBalance": "合計残高",
+    "paidBalance": "購入済み",
+    "bonusBalance": "ボーナス",
+    "buy": "クレジットを購入",
+    "history": "取引履歴",
+    "noHistory": "取引履歴がありません",
+    "lots": {
+      "title": "有効期限",
+      "noLots": "アクティブなクレジットロットがありません",
+      "type": {
+        "paid": "購入",
+        "bonus": "ボーナス"
+      },
+      "balance": "残高",
+      "expiresAt": "有効期限",
+      "daysLeft": "{days}日後に期限切れ",
+      "expiresToday": "本日期限切れ"
+    }
+  },
+  "guildSelect": {
+    "error": "サーバー一覧の取得に失敗しました",
+    "empty": "利用可能なサーバーがありません"
+  },
+  "pricingButtons": {
+    "selectServer": "サーバーを選択",
+    "selectDesc": "購入するサーバーを選んでください"
+  },
+  "purchaseFlow": {
+    "subscriptionTitle": "サブスクリプション",
+    "ccTitle": "CC クレジットを購入",
+    "popular": "人気",
+    "perMonth": "/月",
+    "buyBtn": "購入する",
+    "selectPlan": "プランを選択",
+    "selectThisPlan": "このプランを選択",
+    "selectServer": "サーバーを選択",
+    "confirmPurchase": "購入を確定",
+    "purchasing": "処理中...",
+    "buyCC": "CC クレジットを購入",
+    "buyCCPlan": "{name} を購入",
+    "buyPlan": "{plan} プランを購入",
+    "ccNote": "クレジットは購入日から180日間有効です",
+    "linkToServer": "サーバーに連携",
+    "monthly": "月払い",
+    "annually": "年払い",
+    "annualBilling": "年間 ¥{price} で請求",
+    "off": "{n}% 割引",
+    "unavailable": "利用不可",
+    "plansError": "プランの取得に失敗しました",
+    "error": "エラーが発生しました。もう一度お試しください",
+    "liteFeatures": [
+      "基本機能へのアクセス",
+      "月100 CCクレジット付与",
+      "優先サポート"
+    ],
+    "basicFeatures": [
+      "すべてのLite機能",
+      "月300 CCクレジット付与",
+      "高度な自動化機能",
+      "優先サポート"
+    ],
+    "proFeatures": [
+      "すべてのBasic機能",
+      "月1000 CCクレジット付与",
+      "AIモデレーション（近日公開）",
+      "専任サポート"
+    ],
+    "confirmTitle": "{plan} プランを購入しますか？",
+    "confirmDesc": "月額 ¥{price} が請求されます。いつでもキャンセルできます。"
+  },
+  "accountSub": {
+    "title": "サブスクリプション管理",
+    "desc": "購入したプランの管理と割り当てを行います",
+    "loading": "読み込み中...",
+    "noSub": "サブスクリプションなし",
+    "noSubDesc": "まだプランを購入していません",
+    "buy": "プランを購入",
+    "assignModal": {
+      "title": "サーバーに割り当て",
+      "desc": "このプランを割り当てるサーバーを選んでください",
+      "loading": "読み込み中...",
+      "error": "サーバー一覧の取得に失敗しました",
+      "empty": "利用可能なサーバーがありません",
+      "assign": "割り当て",
+      "assigning": "割り当て中..."
+    },
+    "status": {
+      "active": "有効",
+      "past_due": "支払い遅延",
+      "canceled": "キャンセル済み"
+    },
+    "plan": "プラン",
+    "renewal": "次回更新",
+    "assigned": "割り当て済みサーバー",
+    "notAssigned": "未割り当て",
+    "assign": "サーバーに割り当て",
+    "unassign": "割り当て解除",
+    "manage": "Stripeで管理",
+    "loading2": "読み込み中..."
+  },
+  "pricing": {
+    "title": "料金プラン",
+    "desc": "あなたのサーバーに最適なプランをお選びください",
+    "popular": "人気",
+    "perMonth": "/月",
+    "oneTime": "一回払い",
+    "bonus": "ボーナス",
+    "buyBtn": "購入する",
+    "footerNote": "ご不明な点は",
+    "footerLink": "返金ポリシー",
+    "subscription": {
+      "title": "サブスクリプション",
+      "desc": "月額プランでサーバーの機能を拡張"
+    },
+    "cc": {
+      "title": "CC クレジット",
+      "desc": "必要な分だけ購入できる一回払いのクレジット"
+    },
+    "liteFeatures": [
+      "基本機能へのアクセス",
+      "月100 CCクレジット付与",
+      "優先サポート"
+    ],
+    "basicFeatures": [
+      "すべてのLite機能",
+      "月300 CCクレジット付与",
+      "高度な自動化機能",
+      "優先サポート"
+    ],
+    "proFeatures": [
+      "すべてのBasic機能",
+      "月1000 CCクレジット付与",
+      "AIモデレーション（近日公開）",
+      "専任サポート"
+    ]
   }
 }

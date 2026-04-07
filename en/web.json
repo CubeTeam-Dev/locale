@@ -114,6 +114,9 @@
     "loginRequired": "Login Required",
     "loginDesc": "Please log in with Discord to access your dashboard.",
     "loginBtn": "Log in with Discord",
+    "permissionDeniedTitle": "Access Denied",
+    "permissionDeniedDesc": "You don't have admin permissions for this server.",
+    "backToDashboard": "Back to Dashboard",
     "botJoined": "Servers with Cube",
     "botNotJoined": "Add Cube to these servers",
     "open": "Open",
@@ -161,7 +164,24 @@
   },
   "automation": {
     "title": "Automation",
-    "desc": "Create and manage automation rules"
+    "desc": "Create and manage automation rules",
+    "autoPurge": {
+      "title": "Auto Purge",
+      "desc": "Automatically deletes messages in specified channels on a schedule",
+      "msgLimit": "Messages to keep",
+      "interval": "Delete interval",
+      "msgLimitUnit": "msgs",
+      "intervalUnit": "min",
+      "itemDesc": "{msgLimit} messages · every {interval} min"
+    },
+    "autoReact": {
+      "title": "Auto React",
+      "desc": "Automatically reacts to all posts in a channel",
+      "emoji": "Emoji"
+    },
+    "channel": "Channel",
+    "selectChannel": "Select a channel",
+    "add": "Add"
   },
   "rolekeeper": {
     "title": "Role Keeper",
@@ -206,7 +226,8 @@
     "noSub": "No Subscription",
     "noSubDesc": "Purchase a plan to unlock more features for your server",
     "buy": "Buy a Plan",
-    "statusActive": "Active"
+    "statusActive": "Active",
+    "purchasedBy": "Purchased by"
   },
   "credits": {
     "title": "CC Credits",

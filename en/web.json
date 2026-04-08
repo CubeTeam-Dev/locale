@@ -268,6 +268,9 @@
     "selectPlan": "Select Plan",
     "selectThisPlan": "Select this plan",
     "selectServer": "Select Server",
+    "selectServerDesc": "Choose the server to apply this subscription to. You can change it later.",
+    "continueWithServer": "Continue with this server",
+    "continueWithoutServer": "Continue without a server",
     "confirmPurchase": "Confirm Purchase",
     "purchasing": "Processing...",
     "buyCC": "Buy CC Credits",
@@ -370,7 +373,8 @@
     "changePlanCurrent": "Current",
     "changePlanApply": "Apply",
     "changePlanChanging": "Changing...",
-    "changePlanNote": "Changes apply immediately with prorated billing.",
+    "changePlanNote": "Changes will take effect from your next billing date.",
+    "downgradeNotAllowed": "Downgrade is not allowed. Please cancel your current plan and resubscribe to a lower tier.",
     "addNew": "Add new plan"
   },
   "pricing": {

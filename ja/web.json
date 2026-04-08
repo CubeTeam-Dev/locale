@@ -337,7 +337,15 @@
       "assign": "割り当て",
       "assigning": "割り当て中...",
       "unassign": "割り当て解除",
-      "save": "保存"
+      "save": "保存",
+      "saveError": "割り当てに失敗しました",
+      "errors": {
+        "Subscription not found": "サブスクリプションが見つかりません",
+        "Subscription is not active": "このサブスクリプションは有効ではありません",
+        "Subscription is scheduled for cancellation": "解約予定のため割り当てを変更できません",
+        "No permission in target guild": "このサーバーへの管理者権限がありません",
+        "This guild already has an active subscription": "このサーバーには既に有効なサブスクリプションが割り当てられています"
+      }
     },
     "status": {
       "active": "有効",

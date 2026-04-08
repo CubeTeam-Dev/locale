@@ -373,7 +373,7 @@
     "changePlanCurrent": "現在",
     "changePlanApply": "適用する",
     "changePlanChanging": "変更中...",
-    "changePlanNote": "変更は、割り当てられた請求で即座に適用されます。",
+    "changePlanNote": "変更は次の請求日から適用されます。",
     "downgradeNotAllowed": "ダウングレードはできません。一度解約してから下位プランに再契約してください。",
     "addNew": "新しいプランを追加"
   },

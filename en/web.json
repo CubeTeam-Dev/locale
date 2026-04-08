@@ -337,7 +337,15 @@
       "assign": "Assign",
       "assigning": "Assigning...",
       "unassign": "Unassign",
-      "save": "Save"
+      "save": "Save",
+      "saveError": "Failed to assign server",
+      "errors": {
+        "Subscription not found": "Subscription not found",
+        "Subscription is not active": "This subscription is no longer active",
+        "Subscription is scheduled for cancellation": "Cannot reassign a subscription scheduled for cancellation",
+        "No permission in target guild": "You don't have admin permission in that server",
+        "This guild already has an active subscription": "This server already has an active subscription assigned"
+      }
     },
     "status": {
       "active": "Active",

@@ -435,6 +435,28 @@
       "新機能への先行アクセス",
       "月1回のAIチューニングサポート",
       "優先サポート"
-    ]
+    ],
+    "free": "Free",
+    "getFree": "はじめる",
+    "compare": {
+      "feature": "機能",
+      "ccCredits": "月間CCクレジット",
+      "modLogs": "モデレーションログ",
+      "autoPurge": "AutoPurge",
+      "autoReact": "AutoReact",
+      "roleKeeper": "RoleKeeper",
+      "prioritySupport": "優先サポート",
+      "customBotProfile": "カスタムBotプロフィール",
+      "advancedAutoMod": "高度な自動モデレーション",
+      "nodeEditor": "AIモデレーション ノードエディター",
+      "earlyAccess": "新機能への先行アクセス",
+      "advancedAntiRaid": "高度なAntiRaid",
+      "csvExport": "モデレーションログ CSV出力",
+      "aiTuning": "月1回のAIチューニング",
+      "unlimited": "無制限",
+      "days": "{n}日間",
+      "retention30": "30日間",
+      "retention": "無制限"
+    }
   }
 }

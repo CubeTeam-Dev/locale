@@ -435,6 +435,28 @@
       "Bleeding-edge feature access",
       "Monthly 1-on-1 AI Tuning Support",
       "Priority support"
-    ]
+    ],
+    "free": "Free",
+    "getFree": "Get Started",
+    "compare": {
+      "feature": "Feature",
+      "ccCredits": "CC Credits / Month",
+      "modLogs": "Moderation Logs",
+      "autoPurge": "AutoPurge",
+      "autoReact": "AutoReact",
+      "roleKeeper": "RoleKeeper",
+      "prioritySupport": "Priority Support",
+      "customBotProfile": "Custom Bot Profile",
+      "advancedAutoMod": "Advanced AutoMod",
+      "nodeEditor": "AI Mod Node Editor",
+      "earlyAccess": "Early Access",
+      "advancedAntiRaid": "Advanced AntiRaid",
+      "csvExport": "Mod Logs CSV Export",
+      "aiTuning": "Monthly AI Tuning",
+      "unlimited": "Unlimited",
+      "days": "{n} days",
+      "retention30": "30-day",
+      "retention": "Unlimited"
+    }
   }
 }

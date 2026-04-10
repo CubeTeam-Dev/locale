@@ -174,11 +174,11 @@
     "autoPurge": {
       "title": "Auto Purge",
       "desc": "指定したチャンネルのメッセージを定期的に自動削除します",
-      "msgLimit": "保持するメッセージ数",
+      "msgLimit": "削除する最大メッセージ数",
       "interval": "削除間隔",
       "msgLimitUnit": "件",
       "intervalUnit": "分",
-      "itemDesc": "{msgLimit}件保持 · {interval}分ごと"
+      "itemDesc": "{msgLimit}件まで削除 · {interval}分ごと"
     },
     "autoReact": {
       "title": "Auto React",

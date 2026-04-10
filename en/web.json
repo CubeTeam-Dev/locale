@@ -174,7 +174,7 @@
     "autoPurge": {
       "title": "Auto Purge",
       "desc": "Automatically deletes messages in specified channels on a schedule",
-      "msgLimit": "Messages to keep",
+      "msgLimit": "Max messages to delete",
       "interval": "Delete interval",
       "msgLimitUnit": "msgs",
       "intervalUnit": "min",

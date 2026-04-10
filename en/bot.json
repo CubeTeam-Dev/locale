@@ -572,7 +572,8 @@
       "must_text_or_news_channel": "❌ Channel must be a Text Channel or News Channel.",
       "invalid_format": "❌ Invalid time format. Example: 5s, 2m, 1h",
       "blacklisted": "❌ You are blacklisted.",
-      "no_permission": "❌ This command requires {permission} permission."
+      "no_permission": "❌ This command requires {permission} permission.",
+      "no_available": "❌ This command/feature is not available."
     },
     "yes": "Yes",
     "no": "No",

@@ -486,172 +486,172 @@
     "clearAllConfirm": "Are you sure you want to clear all audit log settings?",
     "types": {
       "guild_update": {
-        "name": "guild update",
-        "desc": "Log guild update events"
+        "name": "Guild Update",
+        "desc": "Log Guild Update events"
       },
       "channel_create": {
-        "name": "channel create",
-        "desc": "Log channel create events"
+        "name": "Channel Create",
+        "desc": "Log Channel Create events"
       },
       "channel_update": {
-        "name": "channel update",
-        "desc": "Log channel update events"
+        "name": "Channel Update",
+        "desc": "Log Channel Update events"
       },
       "channel_delete": {
-        "name": "channel delete",
-        "desc": "Log channel delete events"
+        "name": "Channel Delete",
+        "desc": "Log Channel Delete events"
       },
       "channel_overwrite_create": {
-        "name": "channel overwrite create",
-        "desc": "Log channel overwrite create events"
+        "name": "Channel Overwrite Create",
+        "desc": "Log Channel Overwrite Create events"
       },
       "channel_overwrite_update": {
-        "name": "channel overwrite update",
-        "desc": "Log channel overwrite update events"
+        "name": "Channel Overwrite Update",
+        "desc": "Log Channel Overwrite Update events"
       },
       "channel_overwrite_delete": {
-        "name": "channel overwrite delete",
-        "desc": "Log channel overwrite delete events"
+        "name": "Channel Overwrite Delete",
+        "desc": "Log Channel Overwrite Delete events"
       },
       "message_pin": {
-        "name": "message pin",
-        "desc": "Log message pin events"
+        "name": "Message Pin",
+        "desc": "Log Message Pin events"
       },
       "message_unpin": {
-        "name": "message unpin",
-        "desc": "Log message unpin events"
+        "name": "Message Unpin",
+        "desc": "Log Message Unpin events"
       },
       "message_delete": {
-        "name": "message delete",
-        "desc": "Log message delete events"
+        "name": "Message Delete",
+        "desc": "Log Message Delete events"
       },
       "message_delete_bulk": {
-        "name": "message delete bulk",
-        "desc": "Log message delete bulk events"
+        "name": "Message Delete Bulk",
+        "desc": "Log Message Delete Bulk events"
       },
       "message_update": {
-        "name": "message update",
-        "desc": "Log message update events"
+        "name": "Message Update",
+        "desc": "Log Message Update events"
       },
       "member_kick": {
-        "name": "member kick",
-        "desc": "Log member kick events"
+        "name": "Member Kick",
+        "desc": "Log Member Kick events"
       },
       "member_prune": {
-        "name": "member prune",
-        "desc": "Log member prune events"
+        "name": "Member Prune",
+        "desc": "Log Member Prune events"
       },
       "member_ban_add": {
-        "name": "member ban add",
-        "desc": "Log member ban add events"
+        "name": "Member Ban Add",
+        "desc": "Log Member Ban Add events"
       },
       "member_ban_remove": {
-        "name": "member ban remove",
-        "desc": "Log member ban remove events"
+        "name": "Member Ban Remove",
+        "desc": "Log Member Ban Remove events"
       },
       "member_update": {
-        "name": "member update",
-        "desc": "Log member update events"
+        "name": "Member Update",
+        "desc": "Log Member Update events"
       },
       "member_role_update": {
-        "name": "member role update",
-        "desc": "Log member role update events"
+        "name": "Member Role Update",
+        "desc": "Log Member Role Update events"
       },
       "member_move": {
-        "name": "member move",
-        "desc": "Log member move events"
+        "name": "Member Move",
+        "desc": "Log Member Move events"
       },
       "member_disconnect": {
-        "name": "member disconnect",
-        "desc": "Log member disconnect events"
+        "name": "Member Disconnect",
+        "desc": "Log Member Disconnect events"
       },
       "bot_add": {
-        "name": "bot add",
-        "desc": "Log bot add events"
+        "name": "Bot Add",
+        "desc": "Log Bot Add events"
       },
       "role_create": {
-        "name": "role create",
-        "desc": "Log role create events"
+        "name": "Role Create",
+        "desc": "Log Role Create events"
       },
       "role_update": {
-        "name": "role update",
-        "desc": "Log role update events"
+        "name": "Role Update",
+        "desc": "Log Role Update events"
       },
       "role_delete": {
-        "name": "role delete",
-        "desc": "Log role delete events"
+        "name": "Role Delete",
+        "desc": "Log Role Delete events"
       },
       "invite_create": {
-        "name": "invite create",
-        "desc": "Log invite create events"
+        "name": "Invite Create",
+        "desc": "Log Invite Create events"
       },
       "invite_update": {
-        "name": "invite update",
-        "desc": "Log invite update events"
+        "name": "Invite Update",
+        "desc": "Log Invite Update events"
       },
       "invite_delete": {
-        "name": "invite delete",
-        "desc": "Log invite delete events"
+        "name": "Invite Delete",
+        "desc": "Log Invite Delete events"
       },
       "webhook_create": {
-        "name": "webhook create",
-        "desc": "Log webhook create events"
+        "name": "Webhook Create",
+        "desc": "Log Webhook Create events"
       },
       "webhook_update": {
-        "name": "webhook update",
-        "desc": "Log webhook update events"
+        "name": "Webhook Update",
+        "desc": "Log Webhook Update events"
       },
       "webhook_delete": {
-        "name": "webhook delete",
-        "desc": "Log webhook delete events"
+        "name": "Webhook Delete",
+        "desc": "Log Webhook Delete events"
       },
       "emoji_create": {
-        "name": "emoji create",
-        "desc": "Log emoji create events"
+        "name": "Emoji Create",
+        "desc": "Log Emoji Create events"
       },
       "emoji_update": {
-        "name": "emoji update",
-        "desc": "Log emoji update events"
+        "name": "Emoji Update",
+        "desc": "Log Emoji Update events"
       },
       "emoji_delete": {
-        "name": "emoji delete",
-        "desc": "Log emoji delete events"
+        "name": "Emoji Delete",
+        "desc": "Log Emoji Delete events"
       },
       "sticker_create": {
-        "name": "sticker create",
-        "desc": "Log sticker create events"
+        "name": "Sticker Create",
+        "desc": "Log Sticker Create events"
       },
       "sticker_update": {
-        "name": "sticker update",
-        "desc": "Log sticker update events"
+        "name": "Sticker Update",
+        "desc": "Log Sticker Update events"
       },
       "sticker_delete": {
-        "name": "sticker delete",
-        "desc": "Log sticker delete events"
+        "name": "Sticker Delete",
+        "desc": "Log Sticker Delete events"
       },
       "guild_scheduled_event_create": {
-        "name": "guild scheduled event create",
-        "desc": "Log guild scheduled event create events"
+        "name": "Guild Scheduled Event Create",
+        "desc": "Log Guild Scheduled Event Create events"
       },
       "guild_scheduled_event_update": {
-        "name": "guild scheduled event update",
-        "desc": "Log guild scheduled event update events"
+        "name": "Guild Scheduled Event Update",
+        "desc": "Log Guild Scheduled Event Update events"
       },
       "guild_scheduled_event_delete": {
-        "name": "guild scheduled event delete",
-        "desc": "Log guild scheduled event delete events"
+        "name": "Guild Scheduled Event Delete",
+        "desc": "Log Guild Scheduled Event Delete events"
       },
       "thread_create": {
-        "name": "thread create",
-        "desc": "Log thread create events"
+        "name": "Thread Create",
+        "desc": "Log Thread Create events"
       },
       "thread_update": {
-        "name": "thread update",
-        "desc": "Log thread update events"
+        "name": "Thread Update",
+        "desc": "Log Thread Update events"
       },
       "thread_delete": {
-        "name": "thread delete",
-        "desc": "Log thread delete events"
+        "name": "Thread Delete",
+        "desc": "Log Thread Delete events"
       }
     }
   }

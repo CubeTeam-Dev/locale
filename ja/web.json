@@ -485,172 +485,172 @@
     "clearAllConfirm": "すべての監査ログ設定をクリアしてもよろしいですか？",
     "types": {
       "guild_update": {
-        "name": "guild update",
-        "desc": "guild update イベントのログ"
+        "name": "サーバー更新",
+        "desc": "サーバー更新のログを記録します"
       },
       "channel_create": {
-        "name": "channel create",
-        "desc": "channel create イベントのログ"
+        "name": "チャンネル作成",
+        "desc": "チャンネル作成のログを記録します"
       },
       "channel_update": {
-        "name": "channel update",
-        "desc": "channel update イベントのログ"
+        "name": "チャンネル更新",
+        "desc": "チャンネル更新のログを記録します"
       },
       "channel_delete": {
-        "name": "channel delete",
-        "desc": "channel delete イベントのログ"
+        "name": "チャンネル削除",
+        "desc": "チャンネル削除のログを記録します"
       },
       "channel_overwrite_create": {
-        "name": "channel overwrite create",
-        "desc": "channel overwrite create イベントのログ"
+        "name": "権限の上書き作成",
+        "desc": "権限の上書き作成のログを記録します"
       },
       "channel_overwrite_update": {
-        "name": "channel overwrite update",
-        "desc": "channel overwrite update イベントのログ"
+        "name": "権限の上書き更新",
+        "desc": "権限の上書き更新のログを記録します"
       },
       "channel_overwrite_delete": {
-        "name": "channel overwrite delete",
-        "desc": "channel overwrite delete イベントのログ"
+        "name": "権限の上書き削除",
+        "desc": "権限の上書き削除のログを記録します"
       },
       "message_pin": {
-        "name": "message pin",
-        "desc": "message pin イベントのログ"
+        "name": "メッセージのピン留め",
+        "desc": "メッセージのピン留めのログを記録します"
       },
       "message_unpin": {
-        "name": "message unpin",
-        "desc": "message unpin イベントのログ"
+        "name": "メッセージのピン留め解除",
+        "desc": "メッセージのピン留め解除のログを記録します"
       },
       "message_delete": {
-        "name": "message delete",
-        "desc": "message delete イベントのログ"
+        "name": "メッセージ削除",
+        "desc": "メッセージ削除のログを記録します"
       },
       "message_delete_bulk": {
-        "name": "message delete bulk",
-        "desc": "message delete bulk イベントのログ"
+        "name": "メッセージ一括削除",
+        "desc": "メッセージ一括削除のログを記録します"
       },
       "message_update": {
-        "name": "message update",
-        "desc": "message update イベントのログ"
+        "name": "メッセージ編集",
+        "desc": "メッセージ編集のログを記録します"
       },
       "member_kick": {
-        "name": "member kick",
-        "desc": "member kick イベントのログ"
+        "name": "メンバーキック",
+        "desc": "メンバーキックのログを記録します"
       },
       "member_prune": {
-        "name": "member prune",
-        "desc": "member prune イベントのログ"
+        "name": "メンバー一括追放",
+        "desc": "メンバー一括追放のログを記録します"
       },
       "member_ban_add": {
-        "name": "member ban add",
-        "desc": "member ban add イベントのログ"
+        "name": "メンバーBAN",
+        "desc": "メンバーBANのログを記録します"
       },
       "member_ban_remove": {
-        "name": "member ban remove",
-        "desc": "member ban remove イベントのログ"
+        "name": "メンバーBAN解除",
+        "desc": "メンバーBAN解除のログを記録します"
       },
       "member_update": {
-        "name": "member update",
-        "desc": "member update イベントのログ"
+        "name": "メンバー更新",
+        "desc": "メンバー更新のログを記録します"
       },
       "member_role_update": {
-        "name": "member role update",
-        "desc": "member role update イベントのログ"
+        "name": "メンバーロール更新",
+        "desc": "メンバーロール更新のログを記録します"
       },
       "member_move": {
-        "name": "member move",
-        "desc": "member move イベントのログ"
+        "name": "メンバー移動",
+        "desc": "メンバー移動のログを記録します"
       },
       "member_disconnect": {
-        "name": "member disconnect",
-        "desc": "member disconnect イベントのログ"
+        "name": "メンバー切断",
+        "desc": "メンバー切断のログを記録します"
       },
       "bot_add": {
-        "name": "bot add",
-        "desc": "bot add イベントのログ"
+        "name": "Bot追加",
+        "desc": "Bot追加のログを記録します"
       },
       "role_create": {
-        "name": "role create",
-        "desc": "role create イベントのログ"
+        "name": "ロール作成",
+        "desc": "ロール作成のログを記録します"
       },
       "role_update": {
-        "name": "role update",
-        "desc": "role update イベントのログ"
+        "name": "ロール更新",
+        "desc": "ロール更新のログを記録します"
       },
       "role_delete": {
-        "name": "role delete",
-        "desc": "role delete イベントのログ"
+        "name": "ロール削除",
+        "desc": "ロール削除のログを記録します"
       },
       "invite_create": {
-        "name": "invite create",
-        "desc": "invite create イベントのログ"
+        "name": "招待リンク作成",
+        "desc": "招待リンク作成のログを記録します"
       },
       "invite_update": {
-        "name": "invite update",
-        "desc": "invite update イベントのログ"
+        "name": "招待リンク更新",
+        "desc": "招待リンク更新のログを記録します"
       },
       "invite_delete": {
-        "name": "invite delete",
-        "desc": "invite delete イベントのログ"
+        "name": "招待リンク削除",
+        "desc": "招待リンク削除のログを記録します"
       },
       "webhook_create": {
-        "name": "webhook create",
-        "desc": "webhook create イベントのログ"
+        "name": "Webhook作成",
+        "desc": "Webhook作成のログを記録します"
       },
       "webhook_update": {
-        "name": "webhook update",
-        "desc": "webhook update イベントのログ"
+        "name": "Webhook更新",
+        "desc": "Webhook更新のログを記録します"
       },
       "webhook_delete": {
-        "name": "webhook delete",
-        "desc": "webhook delete イベントのログ"
+        "name": "Webhook削除",
+        "desc": "Webhook削除のログを記録します"
       },
       "emoji_create": {
-        "name": "emoji create",
-        "desc": "emoji create イベントのログ"
+        "name": "絵文字作成",
+        "desc": "絵文字作成のログを記録します"
       },
       "emoji_update": {
-        "name": "emoji update",
-        "desc": "emoji update イベントのログ"
+        "name": "絵文字更新",
+        "desc": "絵文字更新のログを記録します"
       },
       "emoji_delete": {
-        "name": "emoji delete",
-        "desc": "emoji delete イベントのログ"
+        "name": "絵文字削除",
+        "desc": "絵文字削除のログを記録します"
       },
       "sticker_create": {
-        "name": "sticker create",
-        "desc": "sticker create イベントのログ"
+        "name": "スタンプ作成",
+        "desc": "スタンプ作成のログを記録します"
       },
       "sticker_update": {
-        "name": "sticker update",
-        "desc": "sticker update イベントのログ"
+        "name": "スタンプ更新",
+        "desc": "スタンプ更新のログを記録します"
       },
       "sticker_delete": {
-        "name": "sticker delete",
-        "desc": "sticker delete イベントのログ"
+        "name": "スタンプ削除",
+        "desc": "スタンプ削除のログを記録します"
       },
       "guild_scheduled_event_create": {
-        "name": "guild scheduled event create",
-        "desc": "guild scheduled event create イベントのログ"
+        "name": "イベント作成",
+        "desc": "イベント作成のログを記録します"
       },
       "guild_scheduled_event_update": {
-        "name": "guild scheduled event update",
-        "desc": "guild scheduled event update イベントのログ"
+        "name": "イベント更新",
+        "desc": "イベント更新のログを記録します"
       },
       "guild_scheduled_event_delete": {
-        "name": "guild scheduled event delete",
-        "desc": "guild scheduled event delete イベントのログ"
+        "name": "イベント削除",
+        "desc": "イベント削除のログを記録します"
       },
       "thread_create": {
-        "name": "thread create",
-        "desc": "thread create イベントのログ"
+        "name": "スレッド作成",
+        "desc": "スレッド作成のログを記録します"
       },
       "thread_update": {
-        "name": "thread update",
-        "desc": "thread update イベントのログ"
+        "name": "スレッド更新",
+        "desc": "スレッド更新のログを記録します"
       },
       "thread_delete": {
-        "name": "thread delete",
-        "desc": "thread delete イベントのログ"
+        "name": "スレッド削除",
+        "desc": "スレッド削除のログを記録します"
       }
     }
   }

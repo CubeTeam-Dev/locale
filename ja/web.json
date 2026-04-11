@@ -62,6 +62,14 @@
       "pricing": "料金を見る"
     },
     "features": {
+      "antiraid": {
+        "desc": "AntiRaid is a feature that automatically deletes messages that violate the server rules.",
+        "tag": "モデレーション"
+      },
+      "automod": {
+        "desc": "AutoModは、サーバーのルールに違反したメッセージを自動的に削除する機能です。",
+        "tag": "モデレーション"
+      },
       "autoPurge": {
         "desc": "設定した時間が経過したメッセージを自動削除",
         "tag": "自動化"
@@ -442,14 +450,14 @@
       "月1回のAIチューニングサポート",
       "優先サポート"
     ],
-    "free": "Free",
+    "free": "無料",
     "getFree": "はじめる",
     "compare": {
       "feature": "機能",
       "ccCredits": "月間CCクレジット",
       "modLogs": "モデレーションログ",
-      "autoPurge": "AutoPurge",
-      "autoReact": "AutoReact",
+      "autoPurge": "自動削除",
+      "autoReact": "自動リアクション",
       "roleKeeper": "RoleKeeper",
       "prioritySupport": "優先サポート",
       "customBotProfile": "カスタムBotプロフィール",

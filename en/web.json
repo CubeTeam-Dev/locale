@@ -13,6 +13,7 @@
     "en": "English"
   },
   "common": {
+    "none": "None",
     "free": "Free",
     "save": "Save",
     "saving": "Saving...",
@@ -144,6 +145,7 @@
     "automation": "Automation",
     "rolekeeper": "Role Keeper",
     "aimod": "AI Moderation",
+    "auditlog": "Audit Log",
     "subscription": "Subscription",
     "credits": "Credits",
     "allServers": "All Servers",
@@ -475,6 +477,182 @@
       "days": "{n} days",
       "retention30": "30-day",
       "retention": "Unlimited"
+    }
+  },
+  "auditlog": {
+    "title": "Audit Log",
+    "desc": "Configure logging for server events",
+    "clearAll": "Clear All",
+    "clearAllConfirm": "Are you sure you want to clear all audit log settings?",
+    "types": {
+      "guild_update": {
+        "name": "Guild Update",
+        "desc": "Log Guild Update events"
+      },
+      "channel_create": {
+        "name": "Channel Create",
+        "desc": "Log Channel Create events"
+      },
+      "channel_update": {
+        "name": "Channel Update",
+        "desc": "Log Channel Update events"
+      },
+      "channel_delete": {
+        "name": "Channel Delete",
+        "desc": "Log Channel Delete events"
+      },
+      "channel_overwrite_create": {
+        "name": "Channel Overwrite Create",
+        "desc": "Log Channel Overwrite Create events"
+      },
+      "channel_overwrite_update": {
+        "name": "Channel Overwrite Update",
+        "desc": "Log Channel Overwrite Update events"
+      },
+      "channel_overwrite_delete": {
+        "name": "Channel Overwrite Delete",
+        "desc": "Log Channel Overwrite Delete events"
+      },
+      "message_pin": {
+        "name": "Message Pin",
+        "desc": "Log Message Pin events"
+      },
+      "message_unpin": {
+        "name": "Message Unpin",
+        "desc": "Log Message Unpin events"
+      },
+      "message_delete": {
+        "name": "Message Delete",
+        "desc": "Log Message Delete events"
+      },
+      "message_delete_bulk": {
+        "name": "Message Delete Bulk",
+        "desc": "Log Message Delete Bulk events"
+      },
+      "message_update": {
+        "name": "Message Update",
+        "desc": "Log Message Update events"
+      },
+      "member_kick": {
+        "name": "Member Kick",
+        "desc": "Log Member Kick events"
+      },
+      "member_prune": {
+        "name": "Member Prune",
+        "desc": "Log Member Prune events"
+      },
+      "member_ban_add": {
+        "name": "Member Ban Add",
+        "desc": "Log Member Ban Add events"
+      },
+      "member_ban_remove": {
+        "name": "Member Ban Remove",
+        "desc": "Log Member Ban Remove events"
+      },
+      "member_update": {
+        "name": "Member Update",
+        "desc": "Log Member Update events"
+      },
+      "member_role_update": {
+        "name": "Member Role Update",
+        "desc": "Log Member Role Update events"
+      },
+      "member_move": {
+        "name": "Member Move",
+        "desc": "Log Member Move events"
+      },
+      "member_disconnect": {
+        "name": "Member Disconnect",
+        "desc": "Log Member Disconnect events"
+      },
+      "bot_add": {
+        "name": "Bot Add",
+        "desc": "Log Bot Add events"
+      },
+      "role_create": {
+        "name": "Role Create",
+        "desc": "Log Role Create events"
+      },
+      "role_update": {
+        "name": "Role Update",
+        "desc": "Log Role Update events"
+      },
+      "role_delete": {
+        "name": "Role Delete",
+        "desc": "Log Role Delete events"
+      },
+      "invite_create": {
+        "name": "Invite Create",
+        "desc": "Log Invite Create events"
+      },
+      "invite_update": {
+        "name": "Invite Update",
+        "desc": "Log Invite Update events"
+      },
+      "invite_delete": {
+        "name": "Invite Delete",
+        "desc": "Log Invite Delete events"
+      },
+      "webhook_create": {
+        "name": "Webhook Create",
+        "desc": "Log Webhook Create events"
+      },
+      "webhook_update": {
+        "name": "Webhook Update",
+        "desc": "Log Webhook Update events"
+      },
+      "webhook_delete": {
+        "name": "Webhook Delete",
+        "desc": "Log Webhook Delete events"
+      },
+      "emoji_create": {
+        "name": "Emoji Create",
+        "desc": "Log Emoji Create events"
+      },
+      "emoji_update": {
+        "name": "Emoji Update",
+        "desc": "Log Emoji Update events"
+      },
+      "emoji_delete": {
+        "name": "Emoji Delete",
+        "desc": "Log Emoji Delete events"
+      },
+      "sticker_create": {
+        "name": "Sticker Create",
+        "desc": "Log Sticker Create events"
+      },
+      "sticker_update": {
+        "name": "Sticker Update",
+        "desc": "Log Sticker Update events"
+      },
+      "sticker_delete": {
+        "name": "Sticker Delete",
+        "desc": "Log Sticker Delete events"
+      },
+      "guild_scheduled_event_create": {
+        "name": "Guild Scheduled Event Create",
+        "desc": "Log Guild Scheduled Event Create events"
+      },
+      "guild_scheduled_event_update": {
+        "name": "Guild Scheduled Event Update",
+        "desc": "Log Guild Scheduled Event Update events"
+      },
+      "guild_scheduled_event_delete": {
+        "name": "Guild Scheduled Event Delete",
+        "desc": "Log Guild Scheduled Event Delete events"
+      },
+      "thread_create": {
+        "name": "Thread Create",
+        "desc": "Log Thread Create events"
+      },
+      "thread_update": {
+        "name": "Thread Update",
+        "desc": "Log Thread Update events"
+      },
+      "thread_delete": {
+        "name": "Thread Delete",
+        "desc": "Log Thread Delete events"
+      }
     }
   }
 }

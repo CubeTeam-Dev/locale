@@ -62,6 +62,14 @@
       "pricing": "料金を見る"
     },
     "features": {
+      "antiraid": {
+        "desc": "Anti-Raidは、短期間に多数のアカウントがサーバーに殺到し、コミュニティを混乱させたり破壊したりする、大量参加攻撃を検知し対応します。",
+        "tag": "モデレーション"
+      },
+      "automod": {
+        "desc": "AutoModは、スパム、フィッシングリンク、NSFW画像、メンションの乱用など、ルール違反のメッセージをリアルタイムで自動的に検出し、対処します。",
+        "tag": "モデレーション"
+      },
       "autoPurge": {
         "desc": "設定した時間が経過したメッセージを自動削除",
         "tag": "自動化"
@@ -365,7 +373,7 @@
     "plan": "プラン",
     "renewal": "次回更新",
     "nextRenewal": "次回更新",
-    "cancelsOn": "{date}に解約予定",
+    "cancelsOn": "{date} でキャンセル",
     "assigned": "割り当て済みサーバー",
     "assignedServer": "割り当てサーバー",
     "notAssigned": "未割り当て",
@@ -450,7 +458,7 @@
       "modLogs": "モデレーションログ",
       "autoPurge": "AutoPurge",
       "autoReact": "AutoReact",
-      "roleKeeper": "RoleKeeper",
+      "roleKeeper": "ロールキーパー",
       "prioritySupport": "優先サポート",
       "customBotProfile": "カスタムBotプロフィール",
       "advancedAutoMod": "高度な自動モデレーション",

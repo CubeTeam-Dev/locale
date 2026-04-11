@@ -398,7 +398,7 @@
   },
   "manage": {
     "clear": {
-      "confirm_description": "これより前のメッセージが削除されます。",
+      "confirm_description": "これより後のメッセージが削除されます。",
       "button": {
         "yes": "はい",
         "no": "いいえ",

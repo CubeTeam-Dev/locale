@@ -573,7 +573,7 @@
       "invalid_format": "❌無効な時間形式です。例: 5s, 2m, 1h",
       "blacklisted": "❌ ブラックリストに登録されています。",
       "no_permission": "❌ このコマンドを実行するには {permission} 権限が必要です。",
-      "no_available": "❌ This command/feature is not available."
+      "no_available": "❌ このコマンド/機能は利用できません。"
     },
     "yes": "はい",
     "no": "いいえ",

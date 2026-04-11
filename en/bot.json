@@ -664,5 +664,301 @@
       "button": "Link Account"
     },
     "account_linked": "Account linked successfully!"
+  },
+  "auditLogs": {
+    "guild_update": {
+      "title": "Guild Update",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "channel_create": {
+      "title": "Channel Create",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "channel_update": {
+      "title": "Channel Update",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "channel_delete": {
+      "title": "Channel Delete",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "channel_overwrite_create": {
+      "title": "Channel Overwrite Create",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "channel_overwrite_update": {
+      "title": "Channel Overwrite Update",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "channel_overwrite_delete": {
+      "title": "Channel Overwrite Delete",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "message_pin": {
+      "title": "Message Pin",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "message_unpin": {
+      "title": "Message Unpin",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "message_delete": {
+      "title": "Message Delete",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "message_delete_bulk": {
+      "title": "Message Delete Bulk",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "message_update": {
+      "title": "Message Update",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "member_kick": {
+      "title": "Member Kick",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "member_prune": {
+      "title": "Member Prune",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "member_ban_add": {
+      "title": "Member Ban Add",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "member_ban_remove": {
+      "title": "Member Ban Remove",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "member_update": {
+      "title": "Member Update",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "member_role_update": {
+      "title": "Member Role Update",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "member_move": {
+      "title": "Member Move",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "member_disconnect": {
+      "title": "Member Disconnect",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "bot_add": {
+      "title": "Bot Add",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "role_create": {
+      "title": "Role Create",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "role_update": {
+      "title": "Role Update",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "role_delete": {
+      "title": "Role Delete",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "invite_create": {
+      "title": "Invite Create",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "invite_update": {
+      "title": "Invite Update",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "invite_delete": {
+      "title": "Invite Delete",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "webhook_create": {
+      "title": "Webhook Create",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "webhook_update": {
+      "title": "Webhook Update",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "webhook_delete": {
+      "title": "Webhook Delete",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "emoji_create": {
+      "title": "Emoji Create",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "emoji_update": {
+      "title": "Emoji Update",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "emoji_delete": {
+      "title": "Emoji Delete",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "sticker_create": {
+      "title": "Sticker Create",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "sticker_update": {
+      "title": "Sticker Update",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "sticker_delete": {
+      "title": "Sticker Delete",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "guild_scheduled_event_create": {
+      "title": "Guild Scheduled Event Create",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "guild_scheduled_event_update": {
+      "title": "Guild Scheduled Event Update",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "guild_scheduled_event_delete": {
+      "title": "Guild Scheduled Event Delete",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "thread_create": {
+      "title": "Thread Create",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "thread_update": {
+      "title": "Thread Update",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    },
+    "thread_delete": {
+      "title": "Thread Delete",
+      "name": "Detail",
+      "type": "Type",
+      "old": "Before",
+      "new": "After"
+    }
   }
 }

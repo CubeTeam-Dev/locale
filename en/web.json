@@ -63,11 +63,11 @@
     },
     "features": {
       "antiraid": {
-        "desc": "AntiRaid is a feature that automatically deletes messages that violate the server rules.",
+        "desc": "Anti-Raid detects and responds to coordinated mass-join attacks, where a large number of accounts flood a server in a short period to disrupt or destroy the community.",
         "tag": "Moderation"
       },
       "automod": {
-        "desc": "AutoMod is a feature that automatically deletes messages that violate the server rules.",
+        "desc": "AutoMod automatically detects and acts on rule-violating messages in real time — covering things like spam, phishing links, NSFW images, and mention abuse — without requiring manual moderator intervention.",
         "tag": "Moderation"
       },
       "autoPurge": {

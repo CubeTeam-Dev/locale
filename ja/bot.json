@@ -664,5 +664,57 @@
       "button": "アカウントを連携する"
     },
     "account_linked": "アカウントが正常に連携されました!"
+  },
+  "auditLogs": {
+    "common": {
+      "detail": "詳細",
+      "type": "タイプ",
+      "before": "変更前",
+      "after": "変更後"
+    },
+    "events": {
+      "guild_update": "Guild Updateログ",
+      "channel_create": "Channel Createログ",
+      "channel_update": "Channel Updateログ",
+      "channel_delete": "Channel Deleteログ",
+      "channel_overwrite_create": "Channel Overwrite Createログ",
+      "channel_overwrite_update": "Channel Overwrite Updateログ",
+      "channel_overwrite_delete": "Channel Overwrite Deleteログ",
+      "message_pin": "Message Pinログ",
+      "message_unpin": "Message Unpinログ",
+      "message_delete": "Message Deleteログ",
+      "message_delete_bulk": "Message Delete Bulkログ",
+      "message_update": "Message Updateログ",
+      "member_kick": "Member Kickログ",
+      "member_prune": "Member Pruneログ",
+      "member_ban_add": "Member Ban Addログ",
+      "member_ban_remove": "Member Ban Removeログ",
+      "member_update": "Member Updateログ",
+      "member_role_update": "Member Role Updateログ",
+      "member_move": "Member Moveログ",
+      "member_disconnect": "Member Disconnectログ",
+      "bot_add": "Bot Addログ",
+      "role_create": "Role Createログ",
+      "role_update": "Role Updateログ",
+      "role_delete": "Role Deleteログ",
+      "invite_create": "Invite Createログ",
+      "invite_update": "Invite Updateログ",
+      "invite_delete": "Invite Deleteログ",
+      "webhook_create": "Webhook Createログ",
+      "webhook_update": "Webhook Updateログ",
+      "webhook_delete": "Webhook Deleteログ",
+      "emoji_create": "Emoji Createログ",
+      "emoji_update": "Emoji Updateログ",
+      "emoji_delete": "Emoji Deleteログ",
+      "sticker_create": "Sticker Createログ",
+      "sticker_update": "Sticker Updateログ",
+      "sticker_delete": "Sticker Deleteログ",
+      "guild_scheduled_event_create": "Guild Scheduled Event Createログ",
+      "guild_scheduled_event_update": "Guild Scheduled Event Updateログ",
+      "guild_scheduled_event_delete": "Guild Scheduled Event Deleteログ",
+      "thread_create": "Thread Createログ",
+      "thread_update": "Thread Updateログ",
+      "thread_delete": "Thread Deleteログ"
+    }
   }
 }

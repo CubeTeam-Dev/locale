@@ -44,7 +44,7 @@
     "heroTitle1hl": "快適",
     "heroTitle1post": "に、",
     "heroTitle2": "情報をもっと簡単に。",
-    "heroTitle2pre": "",
+    "heroTitle2pre": "情報をもっと",
     "heroTitle2hl": "簡単に",
     "heroTitle2post": "。",
     "heroDesc": "Cube は自動化・ロール管理・AI モデレーションを一つにまとめた Discord Bot です。",
@@ -186,7 +186,7 @@
       "interval": "削除間隔",
       "msgLimitUnit": "件",
       "intervalUnit": "分",
-      "itemDesc": "{msgLimit}件保持 · {interval}分ごと"
+      "itemDesc": "{msgLimit}件まで削除 · {interval}分ごと"
     },
     "autoReact": {
       "title": "Auto React",
@@ -450,14 +450,14 @@
       "月1回のAIチューニングサポート",
       "優先サポート"
     ],
-    "free": "無料",
+    "free": "Free",
     "getFree": "はじめる",
     "compare": {
       "feature": "機能",
       "ccCredits": "月間CCクレジット",
       "modLogs": "モデレーションログ",
-      "autoPurge": "自動削除",
-      "autoReact": "自動リアクション",
+      "autoPurge": "AutoPurge",
+      "autoReact": "AutoReact",
       "roleKeeper": "ロールキーパー",
       "prioritySupport": "優先サポート",
       "customBotProfile": "カスタムBotプロフィール",

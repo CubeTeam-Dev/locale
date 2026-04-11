@@ -62,6 +62,14 @@
       "pricing": "View pricing"
     },
     "features": {
+      "antiraid": {
+        "desc": "AntiRaid is a feature that automatically deletes messages that violate the server rules.",
+        "tag": "Moderation"
+      },
+      "automod": {
+        "desc": "AutoMod is a feature that automatically deletes messages that violate the server rules.",
+        "tag": "Moderation"
+      },
       "autoPurge": {
         "desc": "Automatically delete messages after a set time",
         "tag": "Automation"

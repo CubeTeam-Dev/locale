@@ -452,6 +452,10 @@
     ],
     "free": "Free",
     "getFree": "Get Started",
+    "monthly": "Monthly",
+    "annually": "Annually",
+    "off": "{n}% off",
+    "annualBilling": "Billed ¥{price}/year",
     "compare": {
       "feature": "Feature",
       "ccCredits": "CC Credits / Month",

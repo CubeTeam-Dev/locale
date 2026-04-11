@@ -452,6 +452,10 @@
     ],
     "free": "Free",
     "getFree": "はじめる",
+    "monthly": "月払い",
+    "annually": "年払い",
+    "off": "{n}% 割引",
+    "annualBilling": "年間 ¥{price} で請求",
     "compare": {
       "feature": "機能",
       "ccCredits": "月間CCクレジット",

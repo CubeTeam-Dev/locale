@@ -13,6 +13,7 @@
     "en": "English"
   },
   "common": {
+    "none": "None",
     "free": "Free",
     "save": "保存",
     "saving": "保存中...",
@@ -144,6 +145,7 @@
     "automation": "オートメーション",
     "rolekeeper": "ロールキーパー",
     "aimod": "AI モデレーション",
+    "auditlog": "監査ログ",
     "subscription": "サブスクリプション",
     "credits": "クレジット",
     "allServers": "すべてのサーバー",
@@ -475,6 +477,182 @@
       "days": "{n}日間",
       "retention30": "30日間",
       "retention": "無制限"
+    }
+  },
+  "auditlog": {
+    "title": "監査ログ",
+    "desc": "サーバーイベントのログ設定",
+    "clearAll": "すべてクリア",
+    "clearAllConfirm": "すべての監査ログ設定をクリアしてもよろしいですか？",
+    "types": {
+      "guild_update": {
+        "name": "サーバー更新",
+        "desc": "サーバー更新のログを記録します"
+      },
+      "channel_create": {
+        "name": "チャンネル作成",
+        "desc": "チャンネル作成のログを記録します"
+      },
+      "channel_update": {
+        "name": "チャンネル更新",
+        "desc": "チャンネル更新のログを記録します"
+      },
+      "channel_delete": {
+        "name": "チャンネル削除",
+        "desc": "チャンネル削除のログを記録します"
+      },
+      "channel_overwrite_create": {
+        "name": "権限の上書き作成",
+        "desc": "権限の上書き作成のログを記録します"
+      },
+      "channel_overwrite_update": {
+        "name": "権限の上書き更新",
+        "desc": "権限の上書き更新のログを記録します"
+      },
+      "channel_overwrite_delete": {
+        "name": "権限の上書き削除",
+        "desc": "権限の上書き削除のログを記録します"
+      },
+      "message_pin": {
+        "name": "メッセージのピン留め",
+        "desc": "メッセージのピン留めのログを記録します"
+      },
+      "message_unpin": {
+        "name": "メッセージのピン留め解除",
+        "desc": "メッセージのピン留め解除のログを記録します"
+      },
+      "message_delete": {
+        "name": "メッセージ削除",
+        "desc": "メッセージ削除のログを記録します"
+      },
+      "message_delete_bulk": {
+        "name": "メッセージ一括削除",
+        "desc": "メッセージ一括削除のログを記録します"
+      },
+      "message_update": {
+        "name": "メッセージ編集",
+        "desc": "メッセージ編集のログを記録します"
+      },
+      "member_kick": {
+        "name": "メンバーキック",
+        "desc": "メンバーキックのログを記録します"
+      },
+      "member_prune": {
+        "name": "メンバー一括追放",
+        "desc": "メンバー一括追放のログを記録します"
+      },
+      "member_ban_add": {
+        "name": "メンバーBAN",
+        "desc": "メンバーBANのログを記録します"
+      },
+      "member_ban_remove": {
+        "name": "メンバーBAN解除",
+        "desc": "メンバーBAN解除のログを記録します"
+      },
+      "member_update": {
+        "name": "メンバー更新",
+        "desc": "メンバー更新のログを記録します"
+      },
+      "member_role_update": {
+        "name": "メンバーロール更新",
+        "desc": "メンバーロール更新のログを記録します"
+      },
+      "member_move": {
+        "name": "メンバー移動",
+        "desc": "メンバー移動のログを記録します"
+      },
+      "member_disconnect": {
+        "name": "メンバー切断",
+        "desc": "メンバー切断のログを記録します"
+      },
+      "bot_add": {
+        "name": "Bot追加",
+        "desc": "Bot追加のログを記録します"
+      },
+      "role_create": {
+        "name": "ロール作成",
+        "desc": "ロール作成のログを記録します"
+      },
+      "role_update": {
+        "name": "ロール更新",
+        "desc": "ロール更新のログを記録します"
+      },
+      "role_delete": {
+        "name": "ロール削除",
+        "desc": "ロール削除のログを記録します"
+      },
+      "invite_create": {
+        "name": "招待リンク作成",
+        "desc": "招待リンク作成のログを記録します"
+      },
+      "invite_update": {
+        "name": "招待リンク更新",
+        "desc": "招待リンク更新のログを記録します"
+      },
+      "invite_delete": {
+        "name": "招待リンク削除",
+        "desc": "招待リンク削除のログを記録します"
+      },
+      "webhook_create": {
+        "name": "Webhook作成",
+        "desc": "Webhook作成のログを記録します"
+      },
+      "webhook_update": {
+        "name": "Webhook更新",
+        "desc": "Webhook更新のログを記録します"
+      },
+      "webhook_delete": {
+        "name": "Webhook削除",
+        "desc": "Webhook削除のログを記録します"
+      },
+      "emoji_create": {
+        "name": "絵文字作成",
+        "desc": "絵文字作成のログを記録します"
+      },
+      "emoji_update": {
+        "name": "絵文字更新",
+        "desc": "絵文字更新のログを記録します"
+      },
+      "emoji_delete": {
+        "name": "絵文字削除",
+        "desc": "絵文字削除のログを記録します"
+      },
+      "sticker_create": {
+        "name": "スタンプ作成",
+        "desc": "スタンプ作成のログを記録します"
+      },
+      "sticker_update": {
+        "name": "スタンプ更新",
+        "desc": "スタンプ更新のログを記録します"
+      },
+      "sticker_delete": {
+        "name": "スタンプ削除",
+        "desc": "スタンプ削除のログを記録します"
+      },
+      "guild_scheduled_event_create": {
+        "name": "イベント作成",
+        "desc": "イベント作成のログを記録します"
+      },
+      "guild_scheduled_event_update": {
+        "name": "イベント更新",
+        "desc": "イベント更新のログを記録します"
+      },
+      "guild_scheduled_event_delete": {
+        "name": "イベント削除",
+        "desc": "イベント削除のログを記録します"
+      },
+      "thread_create": {
+        "name": "スレッド作成",
+        "desc": "スレッド作成のログを記録します"
+      },
+      "thread_update": {
+        "name": "スレッド更新",
+        "desc": "スレッド更新のログを記録します"
+      },
+      "thread_delete": {
+        "name": "スレッド削除",
+        "desc": "スレッド削除のログを記録します"
+      }
     }
   }
 }

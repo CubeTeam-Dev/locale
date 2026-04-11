@@ -398,7 +398,7 @@
   },
   "manage": {
     "clear": {
-      "confirm_description": "This message and all messages before it will be deleted.",
+      "confirm_description": "This message and all messages after it will be deleted.",
       "button": {
         "yes": "Yes",
         "no": "No",

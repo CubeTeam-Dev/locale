@@ -144,6 +144,7 @@
     "automation": "オートメーション",
     "rolekeeper": "ロールキーパー",
     "aimod": "AI モデレーション",
+    "auditlog": "監査ログ",
     "subscription": "サブスクリプション",
     "credits": "クレジット",
     "allServers": "すべてのサーバー",
@@ -475,6 +476,182 @@
       "days": "{n}日間",
       "retention30": "30日間",
       "retention": "無制限"
+    }
+  },
+  "auditlog": {
+    "title": "監査ログ",
+    "desc": "サーバーイベントのログ設定",
+    "clearAll": "すべてクリア",
+    "clearAllConfirm": "すべての監査ログ設定をクリアしてもよろしいですか？",
+    "types": {
+      "guild_update": {
+        "name": "guild update",
+        "desc": "guild update イベントのログ"
+      },
+      "channel_create": {
+        "name": "channel create",
+        "desc": "channel create イベントのログ"
+      },
+      "channel_update": {
+        "name": "channel update",
+        "desc": "channel update イベントのログ"
+      },
+      "channel_delete": {
+        "name": "channel delete",
+        "desc": "channel delete イベントのログ"
+      },
+      "channel_overwrite_create": {
+        "name": "channel overwrite create",
+        "desc": "channel overwrite create イベントのログ"
+      },
+      "channel_overwrite_update": {
+        "name": "channel overwrite update",
+        "desc": "channel overwrite update イベントのログ"
+      },
+      "channel_overwrite_delete": {
+        "name": "channel overwrite delete",
+        "desc": "channel overwrite delete イベントのログ"
+      },
+      "message_pin": {
+        "name": "message pin",
+        "desc": "message pin イベントのログ"
+      },
+      "message_unpin": {
+        "name": "message unpin",
+        "desc": "message unpin イベントのログ"
+      },
+      "message_delete": {
+        "name": "message delete",
+        "desc": "message delete イベントのログ"
+      },
+      "message_delete_bulk": {
+        "name": "message delete bulk",
+        "desc": "message delete bulk イベントのログ"
+      },
+      "message_update": {
+        "name": "message update",
+        "desc": "message update イベントのログ"
+      },
+      "member_kick": {
+        "name": "member kick",
+        "desc": "member kick イベントのログ"
+      },
+      "member_prune": {
+        "name": "member prune",
+        "desc": "member prune イベントのログ"
+      },
+      "member_ban_add": {
+        "name": "member ban add",
+        "desc": "member ban add イベントのログ"
+      },
+      "member_ban_remove": {
+        "name": "member ban remove",
+        "desc": "member ban remove イベントのログ"
+      },
+      "member_update": {
+        "name": "member update",
+        "desc": "member update イベントのログ"
+      },
+      "member_role_update": {
+        "name": "member role update",
+        "desc": "member role update イベントのログ"
+      },
+      "member_move": {
+        "name": "member move",
+        "desc": "member move イベントのログ"
+      },
+      "member_disconnect": {
+        "name": "member disconnect",
+        "desc": "member disconnect イベントのログ"
+      },
+      "bot_add": {
+        "name": "bot add",
+        "desc": "bot add イベントのログ"
+      },
+      "role_create": {
+        "name": "role create",
+        "desc": "role create イベントのログ"
+      },
+      "role_update": {
+        "name": "role update",
+        "desc": "role update イベントのログ"
+      },
+      "role_delete": {
+        "name": "role delete",
+        "desc": "role delete イベントのログ"
+      },
+      "invite_create": {
+        "name": "invite create",
+        "desc": "invite create イベントのログ"
+      },
+      "invite_update": {
+        "name": "invite update",
+        "desc": "invite update イベントのログ"
+      },
+      "invite_delete": {
+        "name": "invite delete",
+        "desc": "invite delete イベントのログ"
+      },
+      "webhook_create": {
+        "name": "webhook create",
+        "desc": "webhook create イベントのログ"
+      },
+      "webhook_update": {
+        "name": "webhook update",
+        "desc": "webhook update イベントのログ"
+      },
+      "webhook_delete": {
+        "name": "webhook delete",
+        "desc": "webhook delete イベントのログ"
+      },
+      "emoji_create": {
+        "name": "emoji create",
+        "desc": "emoji create イベントのログ"
+      },
+      "emoji_update": {
+        "name": "emoji update",
+        "desc": "emoji update イベントのログ"
+      },
+      "emoji_delete": {
+        "name": "emoji delete",
+        "desc": "emoji delete イベントのログ"
+      },
+      "sticker_create": {
+        "name": "sticker create",
+        "desc": "sticker create イベントのログ"
+      },
+      "sticker_update": {
+        "name": "sticker update",
+        "desc": "sticker update イベントのログ"
+      },
+      "sticker_delete": {
+        "name": "sticker delete",
+        "desc": "sticker delete イベントのログ"
+      },
+      "guild_scheduled_event_create": {
+        "name": "guild scheduled event create",
+        "desc": "guild scheduled event create イベントのログ"
+      },
+      "guild_scheduled_event_update": {
+        "name": "guild scheduled event update",
+        "desc": "guild scheduled event update イベントのログ"
+      },
+      "guild_scheduled_event_delete": {
+        "name": "guild scheduled event delete",
+        "desc": "guild scheduled event delete イベントのログ"
+      },
+      "thread_create": {
+        "name": "thread create",
+        "desc": "thread create イベントのログ"
+      },
+      "thread_update": {
+        "name": "thread update",
+        "desc": "thread update イベントのログ"
+      },
+      "thread_delete": {
+        "name": "thread delete",
+        "desc": "thread delete イベントのログ"
+      }
     }
   }
 }

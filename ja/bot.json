@@ -666,299 +666,55 @@
     "account_linked": "アカウントが正常に連携されました!"
   },
   "auditLogs": {
-    "guild_update": {
-      "title": "Guild Updateログ",
-      "name": "詳細",
+    "common": {
+      "detail": "詳細",
       "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
+      "before": "変更前",
+      "after": "変更後"
     },
-    "channel_create": {
-      "title": "Channel Createログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "channel_update": {
-      "title": "Channel Updateログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "channel_delete": {
-      "title": "Channel Deleteログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "channel_overwrite_create": {
-      "title": "Channel Overwrite Createログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "channel_overwrite_update": {
-      "title": "Channel Overwrite Updateログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "channel_overwrite_delete": {
-      "title": "Channel Overwrite Deleteログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "message_pin": {
-      "title": "Message Pinログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "message_unpin": {
-      "title": "Message Unpinログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "message_delete": {
-      "title": "Message Deleteログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "message_delete_bulk": {
-      "title": "Message Delete Bulkログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "message_update": {
-      "title": "Message Updateログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "member_kick": {
-      "title": "Member Kickログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "member_prune": {
-      "title": "Member Pruneログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "member_ban_add": {
-      "title": "Member Ban Addログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "member_ban_remove": {
-      "title": "Member Ban Removeログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "member_update": {
-      "title": "Member Updateログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "member_role_update": {
-      "title": "Member Role Updateログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "member_move": {
-      "title": "Member Moveログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "member_disconnect": {
-      "title": "Member Disconnectログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "bot_add": {
-      "title": "Bot Addログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "role_create": {
-      "title": "Role Createログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "role_update": {
-      "title": "Role Updateログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "role_delete": {
-      "title": "Role Deleteログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "invite_create": {
-      "title": "Invite Createログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "invite_update": {
-      "title": "Invite Updateログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "invite_delete": {
-      "title": "Invite Deleteログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "webhook_create": {
-      "title": "Webhook Createログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "webhook_update": {
-      "title": "Webhook Updateログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "webhook_delete": {
-      "title": "Webhook Deleteログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "emoji_create": {
-      "title": "Emoji Createログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "emoji_update": {
-      "title": "Emoji Updateログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "emoji_delete": {
-      "title": "Emoji Deleteログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "sticker_create": {
-      "title": "Sticker Createログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "sticker_update": {
-      "title": "Sticker Updateログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "sticker_delete": {
-      "title": "Sticker Deleteログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "guild_scheduled_event_create": {
-      "title": "Guild Scheduled Event Createログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "guild_scheduled_event_update": {
-      "title": "Guild Scheduled Event Updateログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "guild_scheduled_event_delete": {
-      "title": "Guild Scheduled Event Deleteログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "thread_create": {
-      "title": "Thread Createログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "thread_update": {
-      "title": "Thread Updateログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
-    },
-    "thread_delete": {
-      "title": "Thread Deleteログ",
-      "name": "詳細",
-      "type": "タイプ",
-      "old": "変更前",
-      "new": "変更後"
+    "events": {
+      "guild_update": "Guild Updateログ",
+      "channel_create": "Channel Createログ",
+      "channel_update": "Channel Updateログ",
+      "channel_delete": "Channel Deleteログ",
+      "channel_overwrite_create": "Channel Overwrite Createログ",
+      "channel_overwrite_update": "Channel Overwrite Updateログ",
+      "channel_overwrite_delete": "Channel Overwrite Deleteログ",
+      "message_pin": "Message Pinログ",
+      "message_unpin": "Message Unpinログ",
+      "message_delete": "Message Deleteログ",
+      "message_delete_bulk": "Message Delete Bulkログ",
+      "message_update": "Message Updateログ",
+      "member_kick": "Member Kickログ",
+      "member_prune": "Member Pruneログ",
+      "member_ban_add": "Member Ban Addログ",
+      "member_ban_remove": "Member Ban Removeログ",
+      "member_update": "Member Updateログ",
+      "member_role_update": "Member Role Updateログ",
+      "member_move": "Member Moveログ",
+      "member_disconnect": "Member Disconnectログ",
+      "bot_add": "Bot Addログ",
+      "role_create": "Role Createログ",
+      "role_update": "Role Updateログ",
+      "role_delete": "Role Deleteログ",
+      "invite_create": "Invite Createログ",
+      "invite_update": "Invite Updateログ",
+      "invite_delete": "Invite Deleteログ",
+      "webhook_create": "Webhook Createログ",
+      "webhook_update": "Webhook Updateログ",
+      "webhook_delete": "Webhook Deleteログ",
+      "emoji_create": "Emoji Createログ",
+      "emoji_update": "Emoji Updateログ",
+      "emoji_delete": "Emoji Deleteログ",
+      "sticker_create": "Sticker Createログ",
+      "sticker_update": "Sticker Updateログ",
+      "sticker_delete": "Sticker Deleteログ",
+      "guild_scheduled_event_create": "Guild Scheduled Event Createログ",
+      "guild_scheduled_event_update": "Guild Scheduled Event Updateログ",
+      "guild_scheduled_event_delete": "Guild Scheduled Event Deleteログ",
+      "thread_create": "Thread Createログ",
+      "thread_update": "Thread Updateログ",
+      "thread_delete": "Thread Deleteログ"
     }
   }
 }

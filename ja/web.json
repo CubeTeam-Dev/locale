@@ -63,11 +63,11 @@
     },
     "features": {
       "antiraid": {
-        "desc": "AntiRaid is a feature that automatically deletes messages that violate the server rules.",
+        "desc": "Anti-Raidは、短期間に多数のアカウントがサーバーに殺到し、コミュニティを混乱させたり破壊したりする、大量参加攻撃を検知し対応します。",
         "tag": "モデレーション"
       },
       "automod": {
-        "desc": "AutoModは、サーバーのルールに違反したメッセージを自動的に削除する機能です。",
+        "desc": "AutoModは、スパム、フィッシングリンク、NSFW画像、メンションの乱用など、ルール違反のメッセージをリアルタイムで自動的に検出し、対処します。",
         "tag": "モデレーション"
       },
       "autoPurge": {
@@ -458,7 +458,7 @@
       "modLogs": "モデレーションログ",
       "autoPurge": "自動削除",
       "autoReact": "自動リアクション",
-      "roleKeeper": "RoleKeeper",
+      "roleKeeper": "ロールキーパー",
       "prioritySupport": "優先サポート",
       "customBotProfile": "カスタムBotプロフィール",
       "advancedAutoMod": "高度な自動モデレーション",

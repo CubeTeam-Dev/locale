@@ -664,5 +664,57 @@
       "button": "Link Account"
     },
     "account_linked": "Account linked successfully!"
+  },
+  "auditLogs": {
+    "common": {
+      "detail": "Detail",
+      "type": "Type",
+      "before": "Before",
+      "after": "After"
+    },
+    "events": {
+      "guild_update": "Guild Update",
+      "channel_create": "Channel Create",
+      "channel_update": "Channel Update",
+      "channel_delete": "Channel Delete",
+      "channel_overwrite_create": "Channel Overwrite Create",
+      "channel_overwrite_update": "Channel Overwrite Update",
+      "channel_overwrite_delete": "Channel Overwrite Delete",
+      "message_pin": "Message Pin",
+      "message_unpin": "Message Unpin",
+      "message_delete": "Message Delete",
+      "message_delete_bulk": "Message Delete Bulk",
+      "message_update": "Message Update",
+      "member_kick": "Member Kick",
+      "member_prune": "Member Prune",
+      "member_ban_add": "Member Ban Add",
+      "member_ban_remove": "Member Ban Remove",
+      "member_update": "Member Update",
+      "member_role_update": "Member Role Update",
+      "member_move": "Member Move",
+      "member_disconnect": "Member Disconnect",
+      "bot_add": "Bot Add",
+      "role_create": "Role Create",
+      "role_update": "Role Update",
+      "role_delete": "Role Delete",
+      "invite_create": "Invite Create",
+      "invite_update": "Invite Update",
+      "invite_delete": "Invite Delete",
+      "webhook_create": "Webhook Create",
+      "webhook_update": "Webhook Update",
+      "webhook_delete": "Webhook Delete",
+      "emoji_create": "Emoji Create",
+      "emoji_update": "Emoji Update",
+      "emoji_delete": "Emoji Delete",
+      "sticker_create": "Sticker Create",
+      "sticker_update": "Sticker Update",
+      "sticker_delete": "Sticker Delete",
+      "guild_scheduled_event_create": "Guild Scheduled Event Create",
+      "guild_scheduled_event_update": "Guild Scheduled Event Update",
+      "guild_scheduled_event_delete": "Guild Scheduled Event Delete",
+      "thread_create": "Thread Create",
+      "thread_update": "Thread Update",
+      "thread_delete": "Thread Delete"
+    }
   }
 }

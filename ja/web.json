@@ -482,8 +482,72 @@
   "auditlog": {
     "title": "監査ログ",
     "desc": "サーバーイベントのログ設定",
+    "missingChannel": "存在しないチャンネル ({{id}})",
+    "invalidChannelHint": "このチャンネルは削除されたか、ダッシュボードから参照できません。",
+    "clearInvalid": "無効設定を削除",
     "clearAll": "すべてクリア",
     "clearAllConfirm": "すべての監査ログ設定をクリアしてもよろしいですか？",
+    "bulk": {
+      "title": "カテゴリ一括設定",
+      "desc": "カテゴリ単位でログチャンネルを一括設定して、初期設定をすばやく行えます。",
+      "current": "現在",
+      "mixed": "混在",
+      "unset": "未設定",
+      "selectChannel": "このカテゴリのチャンネルを選択",
+      "apply": "適用",
+      "clear": "クリア",
+      "loadingApply": "カテゴリ設定を適用中...",
+      "loadingClear": "カテゴリ設定をクリア中...",
+      "loadingApplyShort": "適用中...",
+      "loadingClearShort": "クリア中...",
+      "progress": "{completed}/{total}",
+      "categories": {
+        "server": {
+          "name": "サーバー",
+          "desc": "サーバー全体の設定変更"
+        },
+        "channels": {
+          "name": "チャンネル",
+          "desc": "チャンネル本体と権限上書きの変更"
+        },
+        "messages": {
+          "name": "メッセージ",
+          "desc": "メッセージ削除・編集関連"
+        },
+        "members": {
+          "name": "メンバー",
+          "desc": "参加/退出/VC/モデレーション関連"
+        },
+        "roles": {
+          "name": "ロール",
+          "desc": "ロールの作成・更新・削除"
+        },
+        "invites": {
+          "name": "招待リンク",
+          "desc": "招待リンクの変更"
+        },
+        "webhooks": {
+          "name": "Webhook",
+          "desc": "Webhookの作成・更新・削除"
+        },
+        "emojis": {
+          "name": "絵文字",
+          "desc": "カスタム絵文字の変更"
+        },
+        "stickers": {
+          "name": "スタンプ",
+          "desc": "スタンプの作成・更新・削除"
+        },
+        "events": {
+          "name": "イベント",
+          "desc": "サーバーイベントの変更"
+        },
+        "threads": {
+          "name": "スレッド",
+          "desc": "スレッドの作成・更新・削除"
+        }
+      }
+    },
     "types": {
       "guild_update": {
         "name": "サーバー更新",

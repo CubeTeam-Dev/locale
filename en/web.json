@@ -565,6 +565,14 @@
         "name": "Member Disconnect",
         "desc": "Log Member Disconnect events"
       },
+      "member_join_vc": {
+        "name": "Member Join VC",
+        "desc": "Log Member Join VC events"
+      },
+      "member_add": {
+        "name": "Member Add",
+        "desc": "Log Member Add events"
+      },
       "bot_add": {
         "name": "Bot Add",
         "desc": "Log Bot Add events"
@@ -652,6 +660,15 @@
       "thread_delete": {
         "name": "Thread Delete",
         "desc": "Log Thread Delete events"
+      }
+    },
+    "options": {
+      "saving": "Saving...",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "voiceSelfState": {
+        "name": "Voice Self Actions",
+        "desc": "Include self mute/deafen, camera, and screen-share changes in voice logs"
       }
     }
   }

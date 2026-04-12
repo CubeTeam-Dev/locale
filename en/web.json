@@ -482,6 +482,9 @@
   "auditlog": {
     "title": "Audit Log",
     "desc": "Configure logging for server events",
+    "missingChannel": "Missing channel ({{id}})",
+    "invalidChannelHint": "This channel no longer exists or is not visible to the dashboard bot.",
+    "clearInvalid": "Clear invalid",
     "clearAll": "Clear All",
     "clearAllConfirm": "Are you sure you want to clear all audit log settings?",
     "bulk": {

@@ -482,6 +482,9 @@
   "auditlog": {
     "title": "監査ログ",
     "desc": "サーバーイベントのログ設定",
+    "missingChannel": "存在しないチャンネル ({{id}})",
+    "invalidChannelHint": "このチャンネルは削除されたか、ダッシュボードから参照できません。",
+    "clearInvalid": "無効設定を削除",
     "clearAll": "すべてクリア",
     "clearAllConfirm": "すべての監査ログ設定をクリアしてもよろしいですか？",
     "bulk": {

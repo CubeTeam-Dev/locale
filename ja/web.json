@@ -565,6 +565,14 @@
         "name": "メンバー切断",
         "desc": "メンバー切断のログを記録します"
       },
+      "member_join_vc": {
+        "name": "VC参加",
+        "desc": "VC参加のログを記録します"
+      },
+      "member_add": {
+        "name": "メンバー参加",
+        "desc": "メンバー参加のログを記録します"
+      },
       "bot_add": {
         "name": "Bot追加",
         "desc": "Bot追加のログを記録します"
@@ -652,6 +660,15 @@
       "thread_delete": {
         "name": "スレッド削除",
         "desc": "スレッド削除のログを記録します"
+      }
+    },
+    "options": {
+      "saving": "保存中...",
+      "enabled": "有効",
+      "disabled": "無効",
+      "voiceSelfState": {
+        "name": "VC自己操作ログ",
+        "desc": "自己ミュート/自己デフ、カメラ、画面共有の変化もログに含めます"
       }
     }
   }

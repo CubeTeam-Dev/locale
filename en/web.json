@@ -637,6 +637,10 @@
         "name": "Member Add",
         "desc": "Log Member Add events"
       },
+      "member_remove": {
+        "name": "Member Remove",
+        "desc": "Log Member Remove events"
+      },
       "bot_add": {
         "name": "Bot Add",
         "desc": "Log Bot Add events"

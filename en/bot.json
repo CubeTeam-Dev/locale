@@ -693,6 +693,8 @@
       "member_role_update": "Member Role Update",
       "member_move": "Member Move",
       "member_disconnect": "Member Disconnect",
+      "member_add": "Member Add",
+      "member_join_vc": "Member Join VC",
       "bot_add": "Bot Add",
       "role_create": "Role Create",
       "role_update": "Role Update",

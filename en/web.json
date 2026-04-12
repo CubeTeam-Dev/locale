@@ -482,8 +482,72 @@
   "auditlog": {
     "title": "Audit Log",
     "desc": "Configure logging for server events",
+    "missingChannel": "Missing channel ({{id}})",
+    "invalidChannelHint": "This channel no longer exists or is not visible to the dashboard bot.",
+    "clearInvalid": "Clear invalid",
     "clearAll": "Clear All",
     "clearAllConfirm": "Are you sure you want to clear all audit log settings?",
+    "bulk": {
+      "title": "Bulk by Category",
+      "desc": "Assign a channel to an entire category at once to speed up setup.",
+      "current": "Current",
+      "mixed": "Mixed",
+      "unset": "Not set",
+      "selectChannel": "Select channel for this category",
+      "apply": "Apply",
+      "clear": "Clear",
+      "loadingApply": "Applying category settings...",
+      "loadingClear": "Clearing category settings...",
+      "loadingApplyShort": "Applying...",
+      "loadingClearShort": "Clearing...",
+      "progress": "{completed}/{total}",
+      "categories": {
+        "server": {
+          "name": "Server",
+          "desc": "Guild-level settings updates"
+        },
+        "channels": {
+          "name": "Channels",
+          "desc": "Channel and permission overwrite events"
+        },
+        "messages": {
+          "name": "Messages",
+          "desc": "Message deletion and edit events"
+        },
+        "members": {
+          "name": "Members",
+          "desc": "Join, leave, voice, and moderation actions"
+        },
+        "roles": {
+          "name": "Roles",
+          "desc": "Role create, update, and delete"
+        },
+        "invites": {
+          "name": "Invites",
+          "desc": "Invite link changes"
+        },
+        "webhooks": {
+          "name": "Webhooks",
+          "desc": "Webhook create, update, and delete"
+        },
+        "emojis": {
+          "name": "Emojis",
+          "desc": "Custom emoji changes"
+        },
+        "stickers": {
+          "name": "Stickers",
+          "desc": "Sticker create, update, and delete"
+        },
+        "events": {
+          "name": "Scheduled Events",
+          "desc": "Guild scheduled event changes"
+        },
+        "threads": {
+          "name": "Threads",
+          "desc": "Thread lifecycle changes"
+        }
+      }
+    },
     "types": {
       "guild_update": {
         "name": "Guild Update",

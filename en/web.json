@@ -24,7 +24,8 @@
     "error": "An error occurred",
     "notSet": "Not set",
     "buy": "Buy",
-    "processing": "Processing..."
+    "processing": "Processing...",
+    "soon": "Soon"
   },
   "nav": {
     "toDashboard": "Go to Dashboard",
@@ -180,20 +181,22 @@
       "en": "English"
     },
     "profile": {
-      "title": "Server Profile",
-      "desc": "Update this server's display name, icon, and banner",
+      "title": "Bot Server Profile",
+      "desc": "Set the nickname, avatar, and banner the bot uses in this server",
       "premiumTitle": "Basic or Pro required",
       "premiumDesc": "This setting is available for servers with an active Basic or Pro subscription.",
       "openSubscription": "Open subscription settings",
-      "nameLabel": "Server name",
-      "namePlaceholder": "Enter server name",
-      "iconLabel": "Server icon",
-      "bannerLabel": "Server banner",
+      "nameLabel": "Nickname",
+      "namePlaceholder": "Enter nickname (2–32 characters)",
+      "iconLabel": "Avatar (1:1)",
+      "bannerLabel": "Banner",
       "upload": "Upload",
       "remove": "Remove",
-      "noIcon": "No icon",
+      "noIcon": "No avatar",
       "noBanner": "No banner",
-      "imageHint": "Images are uploaded as data URI and must be under 10MB.",
+      "hasAvatar": "Avatar is set",
+      "hasBanner": "Banner is set",
+      "imageHint": "Images must be under 10MB.",
       "save": "Save profile",
       "saveError": "Failed to save profile. Please try again.",
       "readError": "Failed to read the selected image."

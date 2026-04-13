@@ -709,6 +709,8 @@
       "channel": "Channel",
       "content": "Content",
       "attachments": "Attachments",
+      "attachments_removed": "Removed Attachments",
+      "attachments_added": "Added Attachments",
       "joined_at": "Joined At",
       "roles": "Roles",
       "roles_added": "Roles Added",

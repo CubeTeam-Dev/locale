@@ -27,6 +27,12 @@
     "processing": "処理中...",
     "soon": "近日公開"
   },
+  "authBlocked": {
+    "title": "アクセスが制限されています",
+    "description": "このアカウントは現在 Cube の利用が制限されています。",
+    "contact": "誤判定の可能性がある場合は、Cube サポートまでお問い合わせください。",
+    "backHome": "トップへ戻る"
+  },
   "nav": {
     "toDashboard": "ダッシュボードへ",
     "docs": "ドキュメント",

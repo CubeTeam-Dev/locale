@@ -27,6 +27,12 @@
     "processing": "Processing...",
     "soon": "Soon"
   },
+  "authBlocked": {
+    "title": "Access blocked",
+    "description": "Your account is currently restricted from using Cube.",
+    "contact": "If you think this is a mistake, please contact Cube support.",
+    "backHome": "Back to Home"
+  },
   "nav": {
     "toDashboard": "Go to Dashboard",
     "docs": "Docs",

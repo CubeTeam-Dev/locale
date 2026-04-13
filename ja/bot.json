@@ -771,7 +771,9 @@
       "off": "オフ",
       "type": "タイプ",
       "description": "説明",
-      "jump_to_message": "メッセージへジャンプ"
+      "jump_to_message": "メッセージへジャンプ",
+      "message_content": "メッセージ内容",
+      "removed": "削除"
     },
     "events": {
       "guild_update": "サーバー設定更新",

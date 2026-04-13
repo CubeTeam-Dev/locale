@@ -717,6 +717,7 @@
       "channel": "チャンネル",
       "content": "内容",
       "attachments": "添付ファイル",
+      "embeds": "埋め込み",
       "attachments_removed": "削除された添付ファイル",
       "attachments_added": "追加された添付ファイル",
       "joined_at": "参加日時",

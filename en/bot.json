@@ -717,6 +717,7 @@
       "channel": "Channel",
       "content": "Content",
       "attachments": "Attachments",
+      "embeds": "Embeds",
       "attachments_removed": "Removed Attachments",
       "attachments_added": "Added Attachments",
       "joined_at": "Joined At",

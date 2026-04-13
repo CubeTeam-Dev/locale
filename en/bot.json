@@ -771,7 +771,9 @@
       "off": "Off",
       "type": "Type",
       "description": "Description",
-      "jump_to_message": "Jump to Message"
+      "jump_to_message": "Jump to Message",
+      "message_content": "Message Content",
+      "removed": "Removed"
     },
     "events": {
       "guild_update": "Server Updated",

@@ -733,6 +733,7 @@
       "timeout": "タイムアウト",
       "pending": "保留中 (ルール確認)",
       "server_avatar": "サーバーアバター",
+      "server_banner": "サーバーバナー",
       "account_created": "アカウント作成日",
       "member_count": "メンバー数",
       "messages_deleted": "削除メッセージ数",

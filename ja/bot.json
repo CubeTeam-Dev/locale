@@ -809,6 +809,8 @@
       "description": "説明",
       "jump_to_message": "メッセージへジャンプ",
       "message_content": "メッセージ内容",
+      "before_embed_preview": "編集前Embed",
+      "after_embed_preview": "編集後Embed",
       "removed": "削除"
     },
     "events": {
@@ -824,6 +826,8 @@
       "message_delete": "メッセージ削除",
       "message_delete_bulk": "メッセージ一括削除",
       "message_update": "メッセージ編集",
+      "message_update_embed_before": "編集前Embedプレビュー",
+      "message_update_embed_after": "編集後Embedプレビュー",
       "member_add": "メンバー参加",
       "member_remove": "メンバー退出",
       "member_kick": "メンバーキック",

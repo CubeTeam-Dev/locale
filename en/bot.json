@@ -733,6 +733,7 @@
       "timeout": "Timeout",
       "pending": "Pending (Rules Screening)",
       "server_avatar": "Server Avatar",
+      "server_banner": "Server Banner",
       "account_created": "Account Created",
       "member_count": "Member Count",
       "messages_deleted": "Messages Deleted",

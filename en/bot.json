@@ -809,6 +809,8 @@
       "description": "Description",
       "jump_to_message": "Jump to Message",
       "message_content": "Message Content",
+      "before_embed_preview": "Embed Before Edit",
+      "after_embed_preview": "Embed After Edit",
       "removed": "Removed"
     },
     "events": {
@@ -824,6 +826,8 @@
       "message_delete": "Message Deleted",
       "message_delete_bulk": "Bulk Message Delete",
       "message_update": "Message Edited",
+      "message_update_embed_before": "Embed Preview Before Edit",
+      "message_update_embed_after": "Embed Preview After Edit",
       "member_add": "Member Joined",
       "member_remove": "Member Left",
       "member_kick": "Member Kicked",

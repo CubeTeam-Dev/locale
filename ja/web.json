@@ -175,7 +175,28 @@
     "desc": "サーバーの基本設定を管理します",
     "lang": {
       "title": "Botの言語",
-      "desc": "このサーバーでBotが使用する言語を選択してください"
+      "desc": "このサーバーでBotが使用する言語を選択してください",
+      "ja": "日本語",
+      "en": "英語"
+    },
+    "profile": {
+      "title": "サーバープロフィール",
+      "desc": "このサーバーの表示名、アイコン、バナーを更新します",
+      "premiumTitle": "Basic または Pro が必要です",
+      "premiumDesc": "この設定は Basic または Pro の有効なサブスクリプションが割り当てられたサーバーで利用できます。",
+      "openSubscription": "サブスクリプション設定を開く",
+      "nameLabel": "サーバー名",
+      "namePlaceholder": "サーバー名を入力",
+      "iconLabel": "サーバーアイコン",
+      "bannerLabel": "サーバーバナー",
+      "upload": "アップロード",
+      "remove": "削除",
+      "noIcon": "アイコンなし",
+      "noBanner": "バナーなし",
+      "imageHint": "画像は data URI として送信され、10MB 以下である必要があります。",
+      "save": "プロフィールを保存",
+      "saveError": "プロフィールの保存に失敗しました。もう一度お試しください。",
+      "readError": "選択した画像の読み込みに失敗しました。"
     }
   },
   "automation": {

@@ -198,6 +198,9 @@
       "hasBanner": "Banner is set",
       "imageHint": "Images must be under 10MB.",
       "save": "Save profile",
+      "resetAll": "Reset profile",
+      "rateLimitWait": "Bot profile updates are rate limited right now. Please wait about {minutes} minute(s) and try again.",
+      "rateLimitUnknown": "Bot profile updates are rate limited right now. Please wait a few minutes and try again.",
       "saveError": "Failed to save profile. Please try again.",
       "readError": "Failed to read the selected image."
     }

@@ -770,7 +770,8 @@
       "changed": "Changed",
       "off": "Off",
       "type": "Type",
-      "description": "Description"
+      "description": "Description",
+      "jump_to_message": "Jump to Message"
     },
     "events": {
       "guild_update": "Guild Update",

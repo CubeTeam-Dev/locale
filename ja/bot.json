@@ -770,7 +770,8 @@
       "changed": "変更あり",
       "off": "オフ",
       "type": "タイプ",
-      "description": "説明"
+      "description": "説明",
+      "jump_to_message": "メッセージへジャンプ"
     },
     "events": {
       "guild_update": "Guild Updateログ",

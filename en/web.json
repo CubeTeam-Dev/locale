@@ -175,7 +175,28 @@
     "desc": "Manage basic server settings",
     "lang": {
       "title": "Bot Language",
-      "desc": "Select the language the bot will use in this server"
+      "desc": "Select the language the bot will use in this server",
+      "ja": "Japanese",
+      "en": "English"
+    },
+    "profile": {
+      "title": "Server Profile",
+      "desc": "Update this server's display name, icon, and banner",
+      "premiumTitle": "Basic or Pro required",
+      "premiumDesc": "This setting is available for servers with an active Basic or Pro subscription.",
+      "openSubscription": "Open subscription settings",
+      "nameLabel": "Server name",
+      "namePlaceholder": "Enter server name",
+      "iconLabel": "Server icon",
+      "bannerLabel": "Server banner",
+      "upload": "Upload",
+      "remove": "Remove",
+      "noIcon": "No icon",
+      "noBanner": "No banner",
+      "imageHint": "Images are uploaded as data URI and must be under 10MB.",
+      "save": "Save profile",
+      "saveError": "Failed to save profile. Please try again.",
+      "readError": "Failed to read the selected image."
     }
   },
   "automation": {

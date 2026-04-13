@@ -24,7 +24,8 @@
     "error": "エラーが発生しました",
     "notSet": "未設定",
     "buy": "購入する",
-    "processing": "処理中..."
+    "processing": "処理中...",
+    "soon": "近日公開"
   },
   "nav": {
     "toDashboard": "ダッシュボードへ",
@@ -180,21 +181,26 @@
       "en": "英語"
     },
     "profile": {
-      "title": "サーバープロフィール",
-      "desc": "このサーバーの表示名、アイコン、バナーを更新します",
+      "title": "Botのサーバープロフィール",
+      "desc": "このサーバーでBotが使用するニックネーム、アバター、バナーを設定します",
       "premiumTitle": "Basic または Pro が必要です",
       "premiumDesc": "この設定は Basic または Pro の有効なサブスクリプションが割り当てられたサーバーで利用できます。",
       "openSubscription": "サブスクリプション設定を開く",
-      "nameLabel": "サーバー名",
-      "namePlaceholder": "サーバー名を入力",
-      "iconLabel": "サーバーアイコン",
-      "bannerLabel": "サーバーバナー",
+      "nameLabel": "ニックネーム",
+      "namePlaceholder": "ニックネームを入力（2〜32文字）",
+      "iconLabel": "アバター（1:1）",
+      "bannerLabel": "バナー",
       "upload": "アップロード",
       "remove": "削除",
-      "noIcon": "アイコンなし",
+      "noIcon": "アバターなし",
       "noBanner": "バナーなし",
-      "imageHint": "画像は data URI として送信され、10MB 以下である必要があります。",
+      "hasAvatar": "アバターが設定されています",
+      "hasBanner": "バナーが設定されています",
+      "imageHint": "10MB以下の画像をアップロードしてください。",
       "save": "プロフィールを保存",
+      "resetAll": "プロフィールをリセット",
+      "rateLimitWait": "Botプロフィールの反映が混み合っています。約{minutes}分待ってからもう一度お試しください。",
+      "rateLimitUnknown": "Botプロフィールの反映が混み合っています。数分待ってからもう一度お試しください。",
       "saveError": "プロフィールの保存に失敗しました。もう一度お試しください。",
       "readError": "選択した画像の読み込みに失敗しました。"
     }

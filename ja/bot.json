@@ -473,6 +473,14 @@
       "success": "{user} のタイムアウトを解除しました。",
       "failed": "{user}のタイムアウト解除に失敗しました。\nエラーID: `{errorId}`"
     },
+    "setnick": {
+      "error": {
+        "user_not_found": "❌ ユーザーが見つかりませんでした。"
+      },
+      "success_set": "{user} のニックネームを `{nickname}` に変更しました。",
+      "success_clear": "{user} のニックネームを削除しました。",
+      "failed": "{user} のニックネーム変更に失敗しました。\nエラーID: `{errorId}`"
+    },
     "role": {
       "role_hierarchy": "❌ ロールの順序が正しくありません。ロールの順序と権限を確認してください。",
       "failed_get_member": "メンバー情報の取得に失敗しました。",

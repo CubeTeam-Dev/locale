@@ -473,6 +473,14 @@
       "success": "Successfully untimeouted {user}.",
       "failed": "Failed to untimeout {user}.\nError ID: `{errorId}`"
     },
+    "setnick": {
+      "error": {
+        "user_not_found": "❌ User is not found."
+      },
+      "success_set": "Successfully set nickname for {user} to `{nickname}`.",
+      "success_clear": "Successfully cleared nickname for {user}.",
+      "failed": "Failed to update nickname for {user}.\nError ID: `{errorId}`"
+    },
     "role": {
       "role_hierarchy": "❌ Role hierarchy error. Please check role hierarchy and permissions.",
       "failed_get_member": "Failed to get member information.",

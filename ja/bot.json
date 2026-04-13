@@ -273,6 +273,14 @@
         }
       }
     },
+    "clear": {
+      "description": "このチャンネルの最近のメッセージを削除します。",
+      "options": {
+        "count": {
+          "description": "削除するメッセージ数"
+        }
+      }
+    },
     "slowmode": {
       "description": "チャンネルに低速モードを設定します。",
       "options": {

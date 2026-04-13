@@ -273,6 +273,14 @@
         }
       }
     },
+    "clear": {
+      "description": "Delete recent messages in this channel.",
+      "options": {
+        "count": {
+          "description": "Number of messages to delete"
+        }
+      }
+    },
     "slowmode": {
       "description": "Set slowmode in the channel.",
       "options": {

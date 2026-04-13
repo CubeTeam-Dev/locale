@@ -278,6 +278,18 @@
       "options": {
         "count": {
           "description": "Number of messages to delete"
+        },
+        "user": {
+          "description": "Delete only messages by this user"
+        },
+        "role": {
+          "description": "Delete only messages by members with this role"
+        },
+        "bots_only": {
+          "description": "Delete only bot messages"
+        },
+        "humans_only": {
+          "description": "Delete only human messages"
         }
       }
     },
@@ -407,6 +419,10 @@
   "manage": {
     "clear": {
       "confirm_description": "This message and all messages after it will be deleted.",
+      "error": {
+        "conflicting_filters": "❌ You cannot enable both bots_only and humans_only at the same time.",
+        "no_match": "❌ No messages matched the specified filter conditions."
+      },
       "button": {
         "yes": "Yes",
         "no": "No",

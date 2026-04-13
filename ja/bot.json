@@ -278,6 +278,18 @@
       "options": {
         "count": {
           "description": "削除するメッセージ数"
+        },
+        "user": {
+          "description": "このユーザーのメッセージのみ削除"
+        },
+        "role": {
+          "description": "このロールを持つメンバーのメッセージのみ削除"
+        },
+        "bots_only": {
+          "description": "Botのメッセージのみ削除"
+        },
+        "humans_only": {
+          "description": "人間のメッセージのみ削除"
         }
       }
     },
@@ -407,6 +419,10 @@
   "manage": {
     "clear": {
       "confirm_description": "これより後のメッセージが削除されます。",
+      "error": {
+        "conflicting_filters": "❌ bots_only と humans_only を同時に有効化することはできません。",
+        "no_match": "❌ 指定したフィルター条件に一致するメッセージがありませんでした。"
+      },
       "button": {
         "yes": "はい",
         "no": "いいえ",

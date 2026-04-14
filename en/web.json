@@ -31,7 +31,8 @@
     "title": "Access blocked",
     "description": "Your account is currently restricted from using Cube.",
     "contact": "If you think this is a mistake, please contact Cube support.",
-    "backHome": "Back to Home"
+    "backHome": "Back to Home",
+    "support": "Support Server"
   },
   "nav": {
     "toDashboard": "Go to Dashboard",

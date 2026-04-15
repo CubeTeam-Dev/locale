@@ -159,7 +159,8 @@
     "allServers": "All Servers",
     "manageSubscription": "Manage Subscription",
     "logout": "Log Out",
-    "messages": "Messages"
+    "messages": "Messages",
+    "workflow": "Workflow"
   },
   "overview": {
     "desc": "Check your server status and available features",
@@ -831,5 +832,19 @@
       "empty": "No sent messages yet",
       "embedCount": "{count} embed(s)"
     }
+  },
+  "workflow": {
+    "title": "Workflow",
+    "desc": "Automate Discord events with node-based flows",
+    "create": "New",
+    "createTitle": "Create Workflow",
+    "nameLabel": "Name",
+    "namePlaceholder": "e.g. Welcome new members",
+    "triggerLabel": "Trigger",
+    "cancel": "Cancel",
+    "empty": "No workflows",
+    "emptyDesc": "Create a workflow by clicking New",
+    "enable": "Enable",
+    "disable": "Disable"
   }
 }

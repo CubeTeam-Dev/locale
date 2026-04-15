@@ -911,13 +911,34 @@
       "match": "✓ 一致",
       "unmatch": "✗ 不一致",
       "triggers": {
-        "member_join": { "label": "メンバー参加", "desc": "サーバーに参加したとき" },
-        "member_leave": { "label": "メンバー退出", "desc": "サーバーから退出したとき" },
-        "role_add": { "label": "ロール付与", "desc": "ロールが付与されたとき" },
-        "role_remove": { "label": "ロール削除", "desc": "ロールが削除されたとき" },
-        "message_send": { "label": "メッセージ送信", "desc": "メッセージが送信されたとき" },
-        "reaction_add": { "label": "リアクション追加", "desc": "リアクションが追加されたとき" },
-        "scheduled": { "label": "定期実行", "desc": "定期的に実行する" }
+        "member_join": {
+          "label": "メンバー参加",
+          "desc": "サーバーに参加したとき"
+        },
+        "member_leave": {
+          "label": "メンバー退出",
+          "desc": "サーバーから退出したとき"
+        },
+        "role_add": {
+          "label": "ロール付与",
+          "desc": "ロールが付与されたとき"
+        },
+        "role_remove": {
+          "label": "ロール削除",
+          "desc": "ロールが削除されたとき"
+        },
+        "message_send": {
+          "label": "メッセージ送信",
+          "desc": "メッセージが送信されたとき"
+        },
+        "reaction_add": {
+          "label": "リアクション追加",
+          "desc": "リアクションが追加されたとき"
+        },
+        "scheduled": {
+          "label": "定期実行",
+          "desc": "定期的に実行する"
+        }
       },
       "conditions": {
         "check_channel": "チャンネルが一致",
@@ -981,6 +1002,7 @@
       "delayTime": "遅延時間（秒）",
       "deleteTarget": "削除対象",
       "targetTriggerMessage": "トリガーメッセージ"
-    }
+    },
+    "executionCount": "{count} 回実行"
   }
 }

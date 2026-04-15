@@ -517,7 +517,69 @@
       "unlimited": "Unlimited",
       "days": "{n} days",
       "retention30": "30-day",
-      "retention": "Unlimited"
+      "retention": "Unlimited",
+      "categories": {
+        "general": "General Features",
+        "workflow": "Workflow & Automation"
+      }
+    },
+    "workflow": {
+      "title": "Workflows (Automation)",
+      "desc": "Build custom automations by combining triggers, conditions, and actions.",
+      "tableHead": {
+        "feature": "Feature",
+        "free": "Free",
+        "lite": "LITE",
+        "basic": "BASIC",
+        "pro": "PRO"
+      },
+      "compare": {
+        "workflowCount": "Workflows",
+        "maxSteps": "Max steps per flow",
+        "monthlyExecutions": "Monthly executions",
+        "triggers": "Available triggers",
+        "actions": "Available actions",
+        "cron": "Cron jobs",
+        "webhookIn": "Incoming Webhooks",
+        "webhookOut": "Outgoing Webhooks",
+        "httpRequest": "HTTP Requests",
+        "logRetention": "Log retention"
+      },
+      "values": {
+        "freeCount": "1",
+        "liteCount": "3",
+        "basicCount": "10",
+        "proCount": "30",
+        "freeSteps": "3",
+        "liteSteps": "5",
+        "basicSteps": "10",
+        "proSteps": "20",
+        "freeExec": "300",
+        "liteExec": "2,000",
+        "basicExec": "10,000",
+        "proExec": "50,000",
+        "v1Part": "v1 Partial",
+        "v1All": "v1 All",
+        "v1AllV2Part": "v1 All + v2 Partial",
+        "v1V2All": "v1/v2 All",
+        "cronFree": "1/Daily only",
+        "cronLite": "3/Daily・Weekly",
+        "cronBasic": "10/Flexible",
+        "cronPro": "High limits",
+        "limited": "Limited",
+        "hours24": "24 hours",
+        "days7": "7 days",
+        "days30": "30 days",
+        "days180": "180+ days"
+      },
+      "v1v2Details": {
+        "title": "v1/v2 Trigger & Action Details",
+        "v1Title": "v1 (Basic Features)",
+        "v2Title": "v2 (Advanced & Webhooks)",
+        "trigger": "Triggers",
+        "action": "Actions",
+        "condition": "Conditions"
+      }
     }
   },
   "auditlog": {

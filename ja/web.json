@@ -788,7 +788,12 @@
     "contentPlaceholder": "メッセージの内容を入力...",
     "addEmbed": "Embedを追加",
     "send": "送信",
+    "update": "更新",
+    "cancel": "キャンセル",
+    "edit": "編集",
+    "delete": "削除",
     "sendError": "送信に失敗しました",
+    "updateError": "更新に失敗しました",
     "embed": {
       "title": "タイトル",
       "titlePlaceholder": "Embedのタイトル",
@@ -816,7 +821,9 @@
     },
     "compose": {
       "title": "メッセージを作成",
-      "desc": "テキストやEmbedを組み合わせてメッセージを作成し、指定チャンネルに送信します"
+      "desc": "テキストやEmbedを組み合わせてメッセージを作成し、指定チャンネルに送信します",
+      "editTitle": "メッセージを編集",
+      "editDesc": "送信済みメッセージを編集します"
     },
     "sent": {
       "title": "送信済みメッセージ",

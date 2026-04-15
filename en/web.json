@@ -811,7 +811,8 @@
       "fieldValue": "Field value",
       "fieldInline": "Inline",
       "addField": "Add field",
-      "advanced": "Advanced"
+      "advanced": "Advanced",
+      "embedN": "Embed {n}"
     },
     "compose": {
       "title": "Compose Message",
@@ -819,7 +820,7 @@
     },
     "sent": {
       "title": "Sent Messages",
-      "desc": "List of sent messages. Copy the Message ID to use as a reaction trigger in workflows",
+      "desc": "List of messages sent by Cube",
       "empty": "No sent messages yet",
       "embedCount": "{count} embed(s)"
     }

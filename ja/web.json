@@ -811,7 +811,8 @@
       "fieldValue": "フィールド値",
       "fieldInline": "インライン表示",
       "addField": "フィールドを追加",
-      "advanced": "詳細設定"
+      "advanced": "詳細設定",
+      "embedN": "Embed {n}"
     },
     "compose": {
       "title": "メッセージを作成",
@@ -819,7 +820,7 @@
     },
     "sent": {
       "title": "送信済みメッセージ",
-      "desc": "送信済みのメッセージ一覧。Message IDをコピーしてワークフローのリアクショントリガーに使用できます",
+      "desc": "送信済みのメッセージ一覧です",
       "empty": "送信済みメッセージはありません",
       "embedCount": "{count}件のEmbed"
     }

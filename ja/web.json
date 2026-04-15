@@ -158,7 +158,8 @@
     "credits": "クレジット",
     "allServers": "すべてのサーバー",
     "manageSubscription": "サブスクリプション管理",
-    "logout": "ログアウト"
+    "logout": "ログアウト",
+    "messages": "メッセージ送信"
   },
   "overview": {
     "desc": "サーバーの状態と利用可能な機能を確認できます",
@@ -772,6 +773,55 @@
         "name": "VC自己操作ログ",
         "desc": "自己ミュート/自己デフ、カメラ、画面共有の変化もログに含めます"
       }
+    }
+  },
+  "messages": {
+    "title": "メッセージ送信",
+    "desc": "Discordチャンネルにメッセージやembedを送信し、送信済みメッセージを管理します",
+    "channel": "チャンネル",
+    "selectChannel": "チャンネルを選択",
+    "label": "ラベル",
+    "labelOptional": "(任意)",
+    "labelPlaceholder": "例: リアクションロール用メッセージ",
+    "content": "テキスト",
+    "contentOptional": "(任意)",
+    "contentPlaceholder": "メッセージの内容を入力...",
+    "addEmbed": "Embedを追加",
+    "send": "送信",
+    "sendError": "送信に失敗しました",
+    "embed": {
+      "title": "タイトル",
+      "titlePlaceholder": "Embedのタイトル",
+      "description": "説明",
+      "descriptionPlaceholder": "Embedの説明文...",
+      "color": "カラー",
+      "url": "URL",
+      "thumbnail": "サムネイルURL",
+      "image": "画像URL",
+      "author": "著者",
+      "authorName": "著者名",
+      "authorUrl": "著者URL",
+      "authorIconUrl": "著者アイコンURL",
+      "footer": "フッター",
+      "footerText": "フッターテキスト",
+      "footerIconUrl": "フッターアイコンURL",
+      "timestamp": "タイムスタンプ",
+      "field": "フィールド",
+      "fieldName": "フィールド名",
+      "fieldValue": "フィールド値",
+      "fieldInline": "インライン表示",
+      "addField": "フィールドを追加",
+      "advanced": "詳細設定"
+    },
+    "compose": {
+      "title": "メッセージを作成",
+      "desc": "テキストやEmbedを組み合わせてメッセージを作成し、指定チャンネルに送信します"
+    },
+    "sent": {
+      "title": "送信済みメッセージ",
+      "desc": "送信済みのメッセージ一覧。Message IDをコピーしてワークフローのリアクショントリガーに使用できます",
+      "empty": "送信済みメッセージはありません",
+      "embedCount": "{count}件のEmbed"
     }
   }
 }

@@ -158,7 +158,8 @@
     "credits": "Credits",
     "allServers": "All Servers",
     "manageSubscription": "Manage Subscription",
-    "logout": "Log Out"
+    "logout": "Log Out",
+    "messages": "Messages"
   },
   "overview": {
     "desc": "Check your server status and available features",
@@ -772,6 +773,55 @@
         "name": "Voice Self Actions",
         "desc": "Include self mute/deafen, camera, and screen-share changes in voice logs"
       }
+    }
+  },
+  "messages": {
+    "title": "Messages",
+    "desc": "Send messages and embeds to Discord channels, and manage sent messages",
+    "channel": "Channel",
+    "selectChannel": "Select a channel",
+    "label": "Label",
+    "labelOptional": "(optional)",
+    "labelPlaceholder": "e.g. Reaction role message",
+    "content": "Text",
+    "contentOptional": "(optional)",
+    "contentPlaceholder": "Enter message content...",
+    "addEmbed": "Add Embed",
+    "send": "Send",
+    "sendError": "Failed to send message",
+    "embed": {
+      "title": "Title",
+      "titlePlaceholder": "Embed title",
+      "description": "Description",
+      "descriptionPlaceholder": "Embed description...",
+      "color": "Color",
+      "url": "URL",
+      "thumbnail": "Thumbnail URL",
+      "image": "Image URL",
+      "author": "Author",
+      "authorName": "Author name",
+      "authorUrl": "Author URL",
+      "authorIconUrl": "Author icon URL",
+      "footer": "Footer",
+      "footerText": "Footer text",
+      "footerIconUrl": "Footer icon URL",
+      "timestamp": "Timestamp",
+      "field": "Field",
+      "fieldName": "Field name",
+      "fieldValue": "Field value",
+      "fieldInline": "Inline",
+      "addField": "Add field",
+      "advanced": "Advanced"
+    },
+    "compose": {
+      "title": "Compose Message",
+      "desc": "Compose a message with text and/or embeds and send it to a channel"
+    },
+    "sent": {
+      "title": "Sent Messages",
+      "desc": "List of sent messages. Copy the Message ID to use as a reaction trigger in workflows",
+      "empty": "No sent messages yet",
+      "embedCount": "{count} embed(s)"
     }
   }
 }

@@ -121,7 +121,8 @@
       "privacy": "プライバシーポリシー",
       "refund": "返金ポリシー",
       "law": "特定商取引法に基づく表記",
-      "allRights": "All rights reserved."
+      "allRights": "All rights reserved.",
+      "gcGuideline": "GlobalChat Guidelines"
     }
   },
   "dashboard": {
@@ -845,6 +846,63 @@
     "empty": "ワークフローがありません",
     "emptyDesc": "「新規作成」からワークフローを作成してください",
     "enable": "有効化",
-    "disable": "無効化"
+    "disable": "無効化",
+    "config": {
+      "title": "トリガー設定",
+      "subTitle": "トリガー特有の設定を行います。",
+      "desc": "設定を変更すると、実行条件が変わります。",
+      "scheduledTitle": "定期実行の設定",
+      "reactionTitle": "リアクション検知設定",
+      "roleAddTitle": "ロール付与検知設定",
+      "roleRemoveTitle": "ロール削除検知設定",
+      "messageSendTitle": "メッセージ送信検知設定",
+      "memberJoinTitle": "メンバー参加トリガー",
+      "memberLeaveTitle": "メンバー退出トリガー",
+      "memberJoinDesc": "このトリガーはサーバーへの参加を検知します。アクションノードを追加して動作を設定してください。",
+      "memberLeaveDesc": "このトリガーはサーバーからの退出を検知します。アクションノードを追加して動作を設定してください。",
+      "interval": "実行間隔",
+      "intervalHint": "ワークフローを自動実行する間隔を選択してください",
+      "startTime": "開始時刻（任意）",
+      "startTimeHint": "毎日・毎週の場合、何時に実行するか指定できます",
+      "weekdays": "曜日",
+      "intervals": {
+        "5m": "5分ごと",
+        "10m": "10分ごと",
+        "30m": "30分ごと",
+        "1h": "1時間ごと",
+        "3h": "3時間ごと",
+        "6h": "6時間ごと",
+        "12h": "12時間ごと",
+        "24h": "毎日",
+        "weekly": "毎週"
+      },
+      "days": {
+        "0": "日",
+        "1": "月",
+        "2": "火",
+        "3": "水",
+        "4": "木",
+        "5": "金",
+        "6": "土"
+      },
+      "targetMessage": "監視するメッセージ",
+      "targetMessageHint": "特定のメッセージへのリアクションのみ検知します。未選択で全メッセージが対象",
+      "allMessages": "すべてのメッセージ",
+      "createMessagePrompt": "「メッセージ送信」ページからメッセージを作成してください",
+      "emojiFilter": "絵文字フィルター（任意）",
+      "emojiFilterHint": "特定の絵文字のリアクションのみ検知します",
+      "emojiHint": "例: 👍",
+      "targetRole": "対象ロール（任意）",
+      "targetRoleHint": "特定のロールへの操作のみ検知します。未選択でどのロールでも発火",
+      "allRoles": "すべてのロール",
+      "targetChannel": "監視チャンネル（任意）",
+      "targetChannelHint": "指定チャンネルへの送信のみ検知します。未選択ですべてのチャンネルが対象",
+      "allChannels": "すべてのチャンネル",
+      "ignoreBots": "ボットのメッセージを無視",
+      "enabled": "有効",
+      "disabled": "無効",
+      "noSettings": "設定項目はありません",
+      "noSettingsDesc": "このトリガーは追加の設定なしで動作します。"
+    }
   }
 }

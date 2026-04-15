@@ -788,7 +788,12 @@
     "contentPlaceholder": "Enter message content...",
     "addEmbed": "Add Embed",
     "send": "Send",
+    "update": "Update",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
     "sendError": "Failed to send message",
+    "updateError": "Failed to update message",
     "embed": {
       "title": "Title",
       "titlePlaceholder": "Embed title",
@@ -816,7 +821,9 @@
     },
     "compose": {
       "title": "Compose Message",
-      "desc": "Compose a message with text and/or embeds and send it to a channel"
+      "desc": "Compose a message with text and/or embeds and send it to a channel",
+      "editTitle": "Edit Message",
+      "editDesc": "Edit a previously sent message"
     },
     "sent": {
       "title": "Sent Messages",

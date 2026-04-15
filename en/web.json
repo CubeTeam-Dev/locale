@@ -846,6 +846,57 @@
     "empty": "No workflows",
     "emptyDesc": "Create a workflow by clicking New",
     "enable": "Enable",
-    "disable": "Disable"
+    "disable": "Disable",
+    "config": {
+      "title": "Trigger Settings",
+      "subTitle": "Configure settings specific to this trigger.",
+      "desc": "Changing these settings affects when the workflow triggers.",
+      "scheduledTitle": "Scheduled Execution Settings",
+      "reactionTitle": "Reaction Detection Settings",
+      "roleAddTitle": "Role Add Detection Settings",
+      "roleRemoveTitle": "Role Remove Detection Settings",
+      "messageSendTitle": "Message Send Detection Settings",
+      "memberJoinTitle": "Member Join Trigger",
+      "memberLeaveTitle": "Member Leave Trigger",
+      "memberJoinDesc": "This trigger detects when a member joins the server. Add an action node to configure behavior.",
+      "memberLeaveDesc": "This trigger detects when a member leaves the server. Add an action node to configure behavior.",
+      "interval": "Execution Interval",
+      "intervalHint": "Select how often the workflow should run automatically",
+      "startTime": "Start Time (Optional)",
+      "startTimeHint": "Specify the exact time to run for daily or weekly schedules",
+      "weekdays": "Days of the Week",
+      "intervals": {
+        "5m": "Every 5 minutes",
+        "10m": "Every 10 minutes",
+        "30m": "Every 30 minutes",
+        "1h": "Every 1 hour",
+        "3h": "Every 3 hours",
+        "6h": "Every 6 hours",
+        "12h": "Every 12 hours",
+        "24h": "Daily",
+        "weekly": "Weekly"
+      },
+      "days": {
+        "0": "Sun", "1": "Mon", "2": "Tue", "3": "Wed", "4": "Thu", "5": "Fri", "6": "Sat"
+      },
+      "targetMessage": "Target Message",
+      "targetMessageHint": "Detects reactions only on a specific message. If empty, all messages are monitored.",
+      "allMessages": "All Messages",
+      "createMessagePrompt": "Please create a message from the Messages page first.",
+      "emojiFilter": "Emoji Filter (Optional)",
+      "emojiFilterHint": "Detects only specific emojis",
+      "emojiHint": "e.g. 👍",
+      "targetRole": "Target Role (Optional)",
+      "targetRoleHint": "Detects operations only on a specific role. If empty, any role triggers it.",
+      "allRoles": "All Roles",
+      "targetChannel": "Target Channel (Optional)",
+      "targetChannelHint": "Detects messages only in a specific channel. If empty, all channels are monitored.",
+      "allChannels": "All Channels",
+      "ignoreBots": "Ignore Bot Messages",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "noSettings": "No settings required",
+      "noSettingsDesc": "This trigger does not require any additional configuration."
+    }
   }
 }

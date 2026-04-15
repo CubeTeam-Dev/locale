@@ -550,6 +550,45 @@
       }
     }
   },
+  "info": {
+    "user": {
+      "id": "ID",
+      "is_bot": "🤖 Bot",
+      "account_created": "Account Created",
+      "badges": "Badges",
+      "joined_at": "Joined Server",
+      "roles": "Roles",
+      "no_roles": "None",
+      "boosting_since": "Boosting Since",
+      "timed_out_until": "Timed Out Until",
+      "voice_channel": "Voice Channel"
+    },
+    "guild": {
+      "id": "Server ID",
+      "owner": "Owner",
+      "created_at": "Created",
+      "members": "Members",
+      "channels": "Channels",
+      "roles": "Roles",
+      "emojis_stickers": "Emojis / Stickers",
+      "boost": "Boost",
+      "verification_level": "Verification Level",
+      "features": "Features",
+      "verification_levels": {
+        "None": "None",
+        "Low": "Low",
+        "Medium": "Medium",
+        "High": "High",
+        "VeryHigh": "Highest"
+      },
+      "boost_tiers": {
+        "None": "None",
+        "Tier1": "Tier 1",
+        "Tier2": "Tier 2",
+        "Tier3": "Tier 3"
+      }
+    }
+  },
   "utility": {
     "translate": {
       "no_content": "❌ No content to translate.",

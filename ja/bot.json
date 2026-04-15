@@ -550,6 +550,45 @@
       }
     }
   },
+  "info": {
+    "user": {
+      "id": "ID",
+      "is_bot": "🤖 Bot",
+      "account_created": "アカウント作成",
+      "badges": "バッジ",
+      "joined_at": "サーバー参加",
+      "roles": "ロール",
+      "no_roles": "なし",
+      "boosting_since": "Nitroブースト",
+      "timed_out_until": "タイムアウト",
+      "voice_channel": "VC"
+    },
+    "guild": {
+      "id": "サーバーID",
+      "owner": "オーナー",
+      "created_at": "作成日",
+      "members": "メンバー",
+      "channels": "チャンネル",
+      "roles": "ロール",
+      "emojis_stickers": "絵文字 / スタンプ",
+      "boost": "ブースト",
+      "verification_level": "認証レベル",
+      "features": "機能",
+      "verification_levels": {
+        "None": "なし",
+        "Low": "低",
+        "Medium": "中",
+        "High": "高",
+        "VeryHigh": "最高"
+      },
+      "boost_tiers": {
+        "None": "なし",
+        "Tier1": "Tier 1",
+        "Tier2": "Tier 2",
+        "Tier3": "Tier 3"
+      }
+    }
+  },
   "utility": {
     "translate": {
       "no_content": "❌ 翻訳する内容がありません",

@@ -1032,7 +1032,17 @@
       "workflowName": "Workflow Name",
       "save": "Save",
       "saving": "Saving...",
-      "loading": "Loading..."
+      "loading": "Loading...",
+      "editorTab": "Editor",
+      "logsTab": "Execution Logs"
+    },
+    "logs": {
+      "empty": "No execution logs",
+      "emptyDesc": "Logs will appear here once the workflow runs",
+      "status": {
+        "completed": "Completed",
+        "failed": "Failed"
+      }
     },
     "nodeConfig": {
       "channel": "Channel",

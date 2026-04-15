@@ -903,6 +903,85 @@
       "disabled": "Disabled",
       "noSettings": "No settings required",
       "noSettingsDesc": "This trigger does not require any additional configuration."
+    },
+    "nodes": {
+      "trigger": "Trigger",
+      "condition": "Condition Node",
+      "action": "Action Node",
+      "config": "Config",
+      "match": "✓ Match",
+      "unmatch": "✗ No Match",
+      "triggers": {
+        "member_join": { "label": "Member Join", "desc": "When a member joins" },
+        "member_leave": { "label": "Member Leave", "desc": "When a member leaves" },
+        "role_add": { "label": "Role Added", "desc": "When a role is added" },
+        "role_remove": { "label": "Role Removed", "desc": "When a role is removed" },
+        "message_send": { "label": "Message Sent", "desc": "When a message is sent" },
+        "reaction_add": { "label": "Reaction Added", "desc": "When a reaction is added" },
+        "scheduled": { "label": "Scheduled", "desc": "Run on a schedule" }
+      },
+      "conditions": {
+        "check_channel": "Channel Matches",
+        "check_role": "Has Role",
+        "check_keyword": "Contains Keyword",
+        "check_time_range": "Time Range Matches"
+      },
+      "actions": {
+        "send_message": "Send Message",
+        "add_role": "Add Role",
+        "remove_role": "Remove Role",
+        "add_reaction": "Add Reaction",
+        "delete_message": "Delete Message",
+        "send_log": "Send Log",
+        "delay": "Delay"
+      }
+    },
+    "palette": {
+      "addNode": "Add Node",
+      "noNodes": "No nodes available for this trigger"
+    },
+    "editor": {
+      "back": "Back",
+      "workflowName": "Workflow Name",
+      "save": "Save",
+      "saving": "Saving...",
+      "loading": "Loading..."
+    },
+    "nodeConfig": {
+      "channel": "Channel",
+      "selectChannel": "Select channel",
+      "keyword": "Contains Keyword",
+      "keywordPlaceholder": "e.g. hello",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "color": "Color",
+      "field": "Field {index}",
+      "fieldName": "Field Name",
+      "fieldValue": "Field Value",
+      "inline": "Inline",
+      "messageContent": "Message Content (Optional)",
+      "messageContentPlaceholder": "Message to send...",
+      "embed": "Embed",
+      "addEmbed": "Add Embed",
+      "embedOptional": "Embed (Optional)",
+      "targetRole": "Target Role",
+      "selectRole": "Select role",
+      "reactionEmoji": "Reaction Emoji",
+      "reactionEmojiPlaceholder": "e.g. 👍",
+      "targetMessage": "Target Message (Sent)",
+      "selectMessage": "Select from sent messages",
+      "createMessagePrompt": "Please create a message from the Messages page first.",
+      "anyMessage": "Any Message",
+      "sendLogNote": "Send Log is for server admins. Unlike regular messages, you can set log levels and titles for structured recording.",
+      "logChannel": "Log Channel",
+      "logLevel": "Log Level",
+      "logTitle": "Log Title (Optional)",
+      "logTitlePlaceholder": "e.g. Member Join Log",
+      "logContent": "Log Body (Optional)",
+      "logContentPlaceholder": "Detailed log message...",
+      "delayTime": "Delay Time (seconds)",
+      "deleteTarget": "Target to Delete",
+      "targetTriggerMessage": "Trigger Message"
     }
   }
 }

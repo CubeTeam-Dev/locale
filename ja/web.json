@@ -902,6 +902,85 @@
       "disabled": "無効",
       "noSettings": "設定項目はありません",
       "noSettingsDesc": "このトリガーは追加の設定なしで動作します。"
+    },
+    "nodes": {
+      "trigger": "トリガー",
+      "condition": "条件ノード",
+      "action": "アクションノード",
+      "config": "設定",
+      "match": "✓ 一致",
+      "unmatch": "✗ 不一致",
+      "triggers": {
+        "member_join": { "label": "メンバー参加", "desc": "サーバーに参加したとき" },
+        "member_leave": { "label": "メンバー退出", "desc": "サーバーから退出したとき" },
+        "role_add": { "label": "ロール付与", "desc": "ロールが付与されたとき" },
+        "role_remove": { "label": "ロール削除", "desc": "ロールが削除されたとき" },
+        "message_send": { "label": "メッセージ送信", "desc": "メッセージが送信されたとき" },
+        "reaction_add": { "label": "リアクション追加", "desc": "リアクションが追加されたとき" },
+        "scheduled": { "label": "定期実行", "desc": "定期的に実行する" }
+      },
+      "conditions": {
+        "check_channel": "チャンネルが一致",
+        "check_role": "ロールを持っている",
+        "check_keyword": "キーワードを含む",
+        "check_time_range": "時間帯が一致"
+      },
+      "actions": {
+        "send_message": "メッセージ送信",
+        "add_role": "ロール付与",
+        "remove_role": "ロール削除",
+        "add_reaction": "リアクション追加",
+        "delete_message": "メッセージ削除",
+        "send_log": "ログ送信",
+        "delay": "遅延"
+      }
+    },
+    "palette": {
+      "addNode": "ノードを追加",
+      "noNodes": "このトリガーで追加できるノードはありません"
+    },
+    "editor": {
+      "back": "戻る",
+      "workflowName": "ワークフロー名",
+      "save": "保存",
+      "saving": "保存中...",
+      "loading": "読み込み中..."
+    },
+    "nodeConfig": {
+      "channel": "対象チャンネル",
+      "selectChannel": "チャンネルを選択",
+      "keyword": "含まれるキーワード",
+      "keywordPlaceholder": "例: こんにちは",
+      "startTime": "開始時刻",
+      "endTime": "終了時刻",
+      "color": "カラー",
+      "field": "フィールド {index}",
+      "fieldName": "フィールド名",
+      "fieldValue": "フィールド値",
+      "inline": "インライン",
+      "messageContent": "メッセージ内容（省略可）",
+      "messageContentPlaceholder": "送信するメッセージ...",
+      "embed": "Embed",
+      "addEmbed": "Embed を追加",
+      "embedOptional": "Embed（任意）",
+      "targetRole": "対象ロール",
+      "selectRole": "ロールを選択",
+      "reactionEmoji": "リアクション絵文字",
+      "reactionEmojiPlaceholder": "例: 👍",
+      "targetMessage": "対象メッセージ（送信済み）",
+      "selectMessage": "送信済みメッセージから選択",
+      "createMessagePrompt": "「メッセージ送信」ページからメッセージを作成してください",
+      "anyMessage": "任意のメッセージ",
+      "sendLogNote": "ログ送信はサーバー管理者向けの記録用です。メッセージ送信と異なり、ログレベルやタイトルを設定して構造化されたログとして送信できます。",
+      "logChannel": "ログチャンネル",
+      "logLevel": "ログレベル",
+      "logTitle": "ログタイトル（省略可）",
+      "logTitlePlaceholder": "例: メンバー参加ログ",
+      "logContent": "ログ本文（省略可）",
+      "logContentPlaceholder": "ログの詳細メッセージ...",
+      "delayTime": "遅延時間（秒）",
+      "deleteTarget": "削除対象",
+      "targetTriggerMessage": "トリガーメッセージ"
     }
   }
 }

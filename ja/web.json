@@ -71,6 +71,10 @@
       "pricing": "料金を見る"
     },
     "features": {
+      "workflow": {
+        "desc": "コードなしで複雑なワークフローを自動化",
+        "tag": "自動化"
+      },
       "antiraid": {
         "desc": "Anti-Raidは、短期間に多数のアカウントがサーバーに殺到し、コミュニティを混乱させたり破壊したりする、大量参加攻撃を検知し対応します。",
         "tag": "モデレーション"
@@ -122,7 +126,7 @@
       "refund": "返金ポリシー",
       "law": "特定商取引法に基づく表記",
       "allRights": "All rights reserved.",
-      "gcGuideline": "GlobalChat Guidelines"
+      "gcGuideline": "グローバルチャットガイドライン"
     }
   },
   "dashboard": {
@@ -513,7 +517,69 @@
       "unlimited": "無制限",
       "days": "{n}日間",
       "retention30": "30日間",
-      "retention": "無制限"
+      "retention": "無制限",
+      "categories": {
+        "general": "基本機能",
+        "workflow": "ワークフロー・自動化"
+      }
+    },
+    "workflow": {
+      "title": "ワークフロー (自動化)",
+      "desc": "トリガー・条件・アクションを組み合わせて独自の処理を構築できます。",
+      "tableHead": {
+        "feature": "機能",
+        "free": "無料",
+        "lite": "LITE",
+        "basic": "BASIC",
+        "pro": "PRO"
+      },
+      "compare": {
+        "workflowCount": "ワークフロー数",
+        "maxSteps": "1フローの最大ステップ数",
+        "monthlyExecutions": "月間実行回数",
+        "triggers": "利用可能トリガー",
+        "actions": "利用可能アクション",
+        "cron": "定期実行",
+        "webhookIn": "外部Webhook受信",
+        "webhookOut": "外部Webhook送信",
+        "httpRequest": "HTTPリクエスト",
+        "logRetention": "実行ログ保存"
+      },
+      "values": {
+        "freeCount": "1",
+        "liteCount": "3",
+        "basicCount": "10",
+        "proCount": "30",
+        "freeSteps": "3",
+        "liteSteps": "5",
+        "basicSteps": "10",
+        "proSteps": "20",
+        "freeExec": "300",
+        "liteExec": "2,000",
+        "basicExec": "10,000",
+        "proExec": "50,000",
+        "v1Part": "v1の一部",
+        "v1All": "v1全部",
+        "v1AllV2Part": "v1全部 + v2一部(http以外)",
+        "v1V2All": "v1/v2全部",
+        "cronFree": "1本/日次のみ",
+        "cronLite": "3本/日次・週次",
+        "cronBasic": "10本/柔軟",
+        "cronPro": "高上限",
+        "limited": "制限付き",
+        "hours24": "24時間",
+        "days7": "7日",
+        "days30": "30日",
+        "days180": "180日以上"
+      },
+      "v1v2Details": {
+        "title": "v1/v2 Trigger & Action Details",
+        "v1Title": "v1 (Basic Features)",
+        "v2Title": "v2 (Advanced & Webhooks)",
+        "trigger": "Triggers",
+        "action": "Actions",
+        "condition": "Conditions"
+      }
     }
   },
   "auditlog": {
@@ -819,7 +885,7 @@
       "fieldInline": "インライン表示",
       "addField": "フィールドを追加",
       "advanced": "詳細設定",
-      "embedN": "Embed {n}"
+      "embedN": "埋め込み {n}"
     },
     "compose": {
       "title": "メッセージを作成",
@@ -966,7 +1032,17 @@
       "workflowName": "ワークフロー名",
       "save": "保存",
       "saving": "保存中...",
-      "loading": "読み込み中..."
+      "loading": "読み込み中...",
+      "editorTab": "エディタ",
+      "logsTab": "実行ログ"
+    },
+    "logs": {
+      "empty": "実行ログがありません",
+      "emptyDesc": "ワークフローが実行されると、ここにログが表示されます",
+      "status": {
+        "completed": "成功",
+        "failed": "失敗"
+      }
     },
     "nodeConfig": {
       "channel": "対象チャンネル",
@@ -982,7 +1058,7 @@
       "inline": "インライン",
       "messageContent": "メッセージ内容（省略可）",
       "messageContentPlaceholder": "送信するメッセージ...",
-      "embed": "Embed",
+      "embed": "埋め込み",
       "addEmbed": "Embed を追加",
       "embedOptional": "Embed（任意）",
       "targetRole": "対象ロール",
@@ -1003,6 +1079,7 @@
       "delayTime": "遅延時間（秒）",
       "deleteTarget": "削除対象",
       "targetTriggerMessage": "トリガーメッセージ"
-    }
+    },
+    "executionCount": "{count} 回実行"
   }
 }

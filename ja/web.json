@@ -159,7 +159,8 @@
     "allServers": "すべてのサーバー",
     "manageSubscription": "サブスクリプション管理",
     "logout": "ログアウト",
-    "messages": "メッセージ送信"
+    "messages": "メッセージ送信",
+    "workflow": "ワークフロー"
   },
   "overview": {
     "desc": "サーバーの状態と利用可能な機能を確認できます",
@@ -831,5 +832,19 @@
       "empty": "送信済みメッセージはありません",
       "embedCount": "{count}件のEmbed"
     }
+  },
+  "workflow": {
+    "title": "ワークフロー",
+    "desc": "ノードベースのフローでDiscordイベントを自動化します",
+    "create": "新規作成",
+    "createTitle": "ワークフローを作成",
+    "nameLabel": "名前",
+    "namePlaceholder": "例: 新規メンバー歓迎",
+    "triggerLabel": "トリガー",
+    "cancel": "キャンセル",
+    "empty": "ワークフローがありません",
+    "emptyDesc": "「新規作成」からワークフローを作成してください",
+    "enable": "有効化",
+    "disable": "無効化"
   }
 }

@@ -574,6 +574,28 @@
       "boost": "ブースト",
       "verification_level": "認証レベル",
       "features": "機能",
+      "cube_plan": "Cubeプラン",
+      "cube_credits": "CCクレジット",
+      "cube_features": "Cube機能",
+      "no_subscription": "フリープラン",
+      "plan_status": {
+        "active": "✅ 有効",
+        "trialing": "🔄 トライアル中",
+        "past_due": "⚠️ 支払い遅延",
+        "canceled": "❌ キャンセル済み",
+        "incomplete": "⏳ 不完全",
+        "incomplete_expired": "❌ 期限切れ",
+        "unpaid": "⚠️ 未払い"
+      },
+      "feature_names": {
+        "CUSTOM_BOT_PROFILE": "カスタムBotプロフィール",
+        "ADVANCED_AUTO_MOD": "高度なAutoMod",
+        "NODE_EDITOR": "ノードエディター",
+        "EARLY_ACCESS": "早期アクセス",
+        "ADVANCED_ANTI_RAID": "高度なアンチレイド",
+        "CSV_EXPORT": "CSVエクスポート",
+        "AI_TUNING": "AIチューニング"
+      },
       "verification_levels": {
         "None": "なし",
         "Low": "低",

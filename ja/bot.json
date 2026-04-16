@@ -551,18 +551,6 @@
     }
   },
   "info": {
-    "user": {
-      "id": "ID",
-      "is_bot": "🤖 Bot",
-      "account_created": "アカウント作成",
-      "badges": "バッジ",
-      "joined_at": "サーバー参加",
-      "roles": "ロール",
-      "no_roles": "なし",
-      "boosting_since": "Nitroブースト",
-      "timed_out_until": "タイムアウト",
-      "voice_channel": "VC"
-    },
     "guild": {
       "id": "サーバーID",
       "owner": "オーナー",
@@ -574,6 +562,28 @@
       "boost": "ブースト",
       "verification_level": "認証レベル",
       "features": "機能",
+      "cube_plan": "Cubeプラン",
+      "cube_credits": "CCクレジット",
+      "cube_features": "Cube機能",
+      "no_subscription": "フリープラン",
+      "plan_status": {
+        "active": "✅ 有効",
+        "trialing": "🔄 トライアル中",
+        "past_due": "⚠️ 支払い遅延",
+        "canceled": "❌ キャンセル済み",
+        "incomplete": "⏳ 不完全",
+        "incomplete_expired": "❌ 期限切れ",
+        "unpaid": "⚠️ 未払い"
+      },
+      "feature_names": {
+        "CUSTOM_BOT_PROFILE": "カスタムBotプロフィール",
+        "ADVANCED_AUTO_MOD": "高度なAutoMod",
+        "NODE_EDITOR": "ノードエディター",
+        "EARLY_ACCESS": "早期アクセス",
+        "ADVANCED_ANTI_RAID": "高度なアンチレイド",
+        "CSV_EXPORT": "CSVエクスポート",
+        "AI_TUNING": "AIチューニング"
+      },
       "verification_levels": {
         "None": "なし",
         "Low": "低",
@@ -587,6 +597,18 @@
         "Tier2": "Tier 2",
         "Tier3": "Tier 3"
       }
+    },
+    "user": {
+      "id": "ID",
+      "is_bot": "🤖 Bot",
+      "account_created": "アカウント作成",
+      "badges": "バッジ",
+      "joined_at": "サーバー参加",
+      "roles": "ロール",
+      "no_roles": "なし",
+      "boosting_since": "Nitroブースト",
+      "timed_out_until": "タイムアウト",
+      "voice_channel": "VC"
     }
   },
   "utility": {

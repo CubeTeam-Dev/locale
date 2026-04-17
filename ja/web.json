@@ -1021,7 +1021,11 @@
       "saving": "保存中...",
       "loading": "読み込み中...",
       "editorTab": "エディタ",
-      "logsTab": "実行ログ"
+      "logsTab": "実行ログ",
+      "nodes": "ノード",
+      "lastRun": "最終実行:",
+      "neverRun": "未実行",
+      "logsClose": "ログを閉じる"
     },
     "logs": {
       "empty": "実行ログがありません",
@@ -1065,7 +1069,8 @@
       "logContentPlaceholder": "ログの詳細メッセージ...",
       "delayTime": "遅延時間（秒）",
       "deleteTarget": "削除対象",
-      "targetTriggerMessage": "トリガーメッセージ"
+      "targetTriggerMessage": "トリガーメッセージ",
+      "variables": "利用可能な変数"
     },
     "executionCount": "{count} 回実行"
   }

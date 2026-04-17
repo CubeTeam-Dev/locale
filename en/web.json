@@ -1034,7 +1034,11 @@
       "saving": "Saving...",
       "loading": "Loading...",
       "editorTab": "Editor",
-      "logsTab": "Execution Logs"
+      "logsTab": "Execution Logs",
+      "nodes": "nodes",
+      "lastRun": "Last run:",
+      "neverRun": "Never run",
+      "logsClose": "Close logs"
     },
     "logs": {
       "empty": "No execution logs",
@@ -1078,7 +1082,8 @@
       "logContentPlaceholder": "Detailed log message...",
       "delayTime": "Delay Time (seconds)",
       "deleteTarget": "Target to Delete",
-      "targetTriggerMessage": "Trigger Message"
+      "targetTriggerMessage": "Trigger Message",
+      "variables": "Available variables"
     },
     "executionCount": "{count} executions"
   }

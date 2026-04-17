@@ -1037,7 +1037,11 @@
       "nodes": "ノード",
       "lastRun": "最終実行:",
       "neverRun": "未実行",
-      "logsClose": "ログを閉じる"
+      "logsClose": "ログを閉じる",
+      "unsavedChanges": "未保存の変更があります",
+      "leaveConfirm": "保存していない変更があります。このページを離れますか？",
+      "validationSendMessageNoChannel": "「メッセージ送信」ノードには送信先チャンネルの指定が必要です。",
+      "validationSendMessageEmpty": "「メッセージ送信」ノードにはメッセージ内容か Embed のいずれかが必要です。"
     },
     "logs": {
       "empty": "実行ログがありません",

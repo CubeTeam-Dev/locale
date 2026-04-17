@@ -1038,7 +1038,11 @@
       "nodes": "nodes",
       "lastRun": "Last run:",
       "neverRun": "Never run",
-      "logsClose": "Close logs"
+      "logsClose": "Close logs",
+      "unsavedChanges": "Unsaved changes",
+      "leaveConfirm": "You have unsaved changes. Leave this page?",
+      "validationSendMessageNoChannel": "\"Send Message\" nodes require a target channel.",
+      "validationSendMessageEmpty": "\"Send Message\" nodes require either message content or at least one Embed."
     },
     "logs": {
       "empty": "No execution logs",

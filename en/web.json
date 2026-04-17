@@ -287,7 +287,7 @@
     "purchasedBy": "Purchased by"
   },
   "credits": {
-    "title": "CC Credits",
+    "title": "Cube Credit",
     "desc": "Check your credit balance and history",
     "totalBalance": "Total Balance",
     "paidBalance": "Purchased",
@@ -318,7 +318,7 @@
   },
   "purchaseFlow": {
     "subscriptionTitle": "Subscription",
-    "ccTitle": "Buy CC Credits",
+    "ccTitle": "Buy Cube Credit",
     "popular": "Popular",
     "perMonth": "/mo",
     "buyBtn": "Buy Now",
@@ -330,7 +330,7 @@
     "continueWithoutServer": "Continue without a server",
     "confirmPurchase": "Confirm Purchase",
     "purchasing": "Processing...",
-    "buyCC": "Buy CC Credits",
+    "buyCC": "Buy Cube Credit",
     "buyCCPlan": "Buy {name}",
     "buyPlan": "Buy {plan} plan",
     "ccNote": "Credits are valid for 180 days from purchase",
@@ -350,14 +350,14 @@
     ],
     "liteFeatures": [
       "Everything in Free",
-      "6,500 CC credits per month",
+      "6,500 Cube Credit per month",
       "30-day moderation logs",
       "RoleKeeper (Unlimited retention)",
       "Priority support"
     ],
     "basicFeatures": [
       "Everything in Lite",
-      "15,000 CC credits per month",
+      "15,000 Cube Credit per month",
       "Custom Bot Profile",
       "Advanced AutoMod",
       "180-day moderation logs",
@@ -367,7 +367,7 @@
     ],
     "proFeatures": [
       "Everything in Basic",
-      "30,000 CC credits per month",
+      "30,000 Cube Credit per month",
       "Advanced AntiRaid",
       "Unlimited moderation logs",
       "Moderation logs CSV Export",
@@ -457,7 +457,7 @@
       "desc": "Expand your server's features with a monthly plan"
     },
     "cc": {
-      "title": "CC Credits",
+      "title": "Cube Credit",
       "desc": "One-time credits you can buy as needed"
     },
     "freeFeatures": [
@@ -468,14 +468,14 @@
     ],
     "liteFeatures": [
       "Everything in Free",
-      "6,500 CC credits per month",
+      "6,500 Cube Credit per month",
       "30-day moderation logs",
       "RoleKeeper (Unlimited retention)",
       "Priority support"
     ],
     "basicFeatures": [
       "Everything in Lite",
-      "15,000 CC credits per month",
+      "15,000 Cube Credit per month",
       "Custom Bot Profile",
       "Advanced AutoMod",
       "180-day moderation logs",
@@ -485,7 +485,7 @@
     ],
     "proFeatures": [
       "Everything in Basic",
-      "30,000 CC credits per month",
+      "30,000 Cube Credit per month",
       "Advanced AntiRaid",
       "Unlimited moderation logs",
       "Moderation logs CSV Export",
@@ -501,7 +501,7 @@
     "annualBilling": "Billed ¥{price}/year",
     "compare": {
       "feature": "Feature",
-      "ccCredits": "CC Credits / Month",
+      "ccCredits": "Cube Credit / Month",
       "modLogs": "Moderation Logs",
       "autoPurge": "AutoPurge",
       "autoReact": "AutoReact",

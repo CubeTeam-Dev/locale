@@ -572,14 +572,6 @@
         "days7": "7 days",
         "days30": "30 days",
         "days180": "180+ days"
-      },
-      "v1v2Details": {
-        "title": "v1/v2 Trigger & Action Details",
-        "v1Title": "v1 (Basic Features)",
-        "v2Title": "v2 (Advanced & Webhooks)",
-        "trigger": "Triggers",
-        "action": "Actions",
-        "condition": "Conditions"
       }
     }
   },

@@ -913,6 +913,14 @@
     "emptyDesc": "Create a workflow by clicking New",
     "enable": "Enable",
     "disable": "Disable",
+    "tabs": {
+      "workflows": "Workflows",
+      "logs": "Execution Logs"
+    },
+    "logsTitle": "Execution Logs",
+    "refresh": "Refresh",
+    "noLogs": "No recent executions",
+    "deletedWorkflow": "Deleted Workflow",
     "config": {
       "title": "Trigger Settings",
       "subTitle": "Configure settings specific to this trigger.",

@@ -900,6 +900,14 @@
     "emptyDesc": "「新規作成」からワークフローを作成してください",
     "enable": "有効化",
     "disable": "無効化",
+    "tabs": {
+      "workflows": "ワークフロー",
+      "logs": "実行ログ"
+    },
+    "logsTitle": "実行ログ",
+    "refresh": "更新",
+    "noLogs": "最近の実行履歴はありません",
+    "deletedWorkflow": "削除されたワークフロー",
     "config": {
       "title": "トリガー設定",
       "subTitle": "トリガー特有の設定を行います。",

@@ -287,7 +287,7 @@
     "purchasedBy": "購入者"
   },
   "credits": {
-    "title": "CC クレジット",
+    "title": "Cube Credit",
     "desc": "クレジットの残高と履歴を確認します",
     "totalBalance": "合計残高",
     "paidBalance": "購入済み",
@@ -318,7 +318,7 @@
   },
   "purchaseFlow": {
     "subscriptionTitle": "サブスクリプション",
-    "ccTitle": "CC クレジットを購入",
+    "ccTitle": "Cubeクレジットを購入",
     "popular": "人気",
     "perMonth": "/月",
     "buyBtn": "購入する",
@@ -330,7 +330,7 @@
     "continueWithoutServer": "サーバーを指定せずに続ける",
     "confirmPurchase": "購入を確定",
     "purchasing": "処理中...",
-    "buyCC": "CC クレジットを購入",
+    "buyCC": "Cubeクレジットを購入",
     "buyCCPlan": "{name} を購入",
     "buyPlan": "{plan} プランを購入",
     "ccNote": "クレジットは購入日から180日間有効です",
@@ -457,7 +457,7 @@
       "desc": "月額プランでサーバーの機能を拡張"
     },
     "cc": {
-      "title": "CC クレジット",
+      "title": "Cube Credit",
       "desc": "必要な分だけ購入できる一回払いのクレジット"
     },
     "freeFeatures": [

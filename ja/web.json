@@ -1038,7 +1038,12 @@
       "nodes": "ノード",
       "lastRun": "最終実行:",
       "neverRun": "未実行",
-      "logsClose": "ログを閉じる"
+      "logsClose": "ログを閉じる",
+      "unsavedChanges": "未保存の変更",
+      "leaveConfirm": "未保存の変更があります。このページから離れますか？",
+      "validationSendMessageNoChannel": "「メッセージを送信」ノードにはターゲットチャンネルが必要です。",
+      "validationSendMessageEmpty": "「メッセージを送信」ノードにはメッセージ内容または少なくとも1つの埋め込みが必要です。",
+      "validationLoopDetected": "ワークフローにループ（循環）が含まれています。無限ループを防ぐため修正してください。"
     },
     "logs": {
       "empty": "実行ログがありません",

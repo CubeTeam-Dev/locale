@@ -1019,7 +1019,6 @@
         "remove_role": "Remove Role",
         "add_reaction": "Add Reaction",
         "delete_message": "Delete Message",
-        "send_log": "Send Log",
         "delay": "Delay"
       }
     },
@@ -1073,7 +1072,6 @@
       "selectMessage": "Select from sent messages",
       "createMessagePrompt": "Please create a message from the Messages page first.",
       "anyMessage": "Any Message",
-      "sendLogNote": "Send Log is for server admins. Unlike regular messages, you can set log levels and titles for structured recording.",
       "logChannel": "Log Channel",
       "logLevel": "Log Level",
       "logTitle": "Log Title (Optional)",

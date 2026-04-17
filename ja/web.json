@@ -1006,7 +1006,6 @@
         "remove_role": "ロール削除",
         "add_reaction": "リアクション追加",
         "delete_message": "メッセージ削除",
-        "send_log": "ログ送信",
         "delay": "遅延"
       }
     },
@@ -1060,7 +1059,6 @@
       "selectMessage": "送信済みメッセージから選択",
       "createMessagePrompt": "「メッセージ送信」ページからメッセージを作成してください",
       "anyMessage": "任意のメッセージ",
-      "sendLogNote": "ログ送信はサーバー管理者向けの記録用です。メッセージ送信と異なり、ログレベルやタイトルを設定して構造化されたログとして送信できます。",
       "logChannel": "ログチャンネル",
       "logLevel": "ログレベル",
       "logTitle": "ログタイトル（省略可）",

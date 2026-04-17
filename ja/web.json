@@ -1041,7 +1041,8 @@
       "unsavedChanges": "未保存の変更があります",
       "leaveConfirm": "保存していない変更があります。このページを離れますか？",
       "validationSendMessageNoChannel": "「メッセージ送信」ノードには送信先チャンネルの指定が必要です。",
-      "validationSendMessageEmpty": "「メッセージ送信」ノードにはメッセージ内容か Embed のいずれかが必要です。"
+      "validationSendMessageEmpty": "「メッセージ送信」ノードにはメッセージ内容か Embed のいずれかが必要です。",
+      "validationLoopDetected": "ワークフローにループ（循環）が含まれています。無限ループを防ぐため修正してください。"
     },
     "logs": {
       "empty": "実行ログがありません",

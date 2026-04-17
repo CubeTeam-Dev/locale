@@ -1042,7 +1042,8 @@
       "unsavedChanges": "Unsaved changes",
       "leaveConfirm": "You have unsaved changes. Leave this page?",
       "validationSendMessageNoChannel": "\"Send Message\" nodes require a target channel.",
-      "validationSendMessageEmpty": "\"Send Message\" nodes require either message content or at least one Embed."
+      "validationSendMessageEmpty": "\"Send Message\" nodes require either message content or at least one Embed.",
+      "validationLoopDetected": "Your workflow contains a loop (circular reference). Please remove it to prevent infinite loops."
     },
     "logs": {
       "empty": "No execution logs",

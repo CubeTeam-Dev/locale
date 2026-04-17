@@ -53,7 +53,7 @@
     "heroTitle1hl": "快適",
     "heroTitle1post": "に、",
     "heroTitle2": "情報をもっと簡単に。",
-    "heroTitle2pre": "情報をもっと",
+    "heroTitle2pre": "",
     "heroTitle2hl": "簡単に",
     "heroTitle2post": "。",
     "heroDesc": "Cube は自動化・ロール管理・AI モデレーションを一つにまとめた Discord Bot です。",
@@ -71,6 +71,10 @@
       "pricing": "料金を見る"
     },
     "features": {
+      "workflow": {
+        "desc": "コードなしで複雑なワークフローを自動化",
+        "tag": "自動化"
+      },
       "antiraid": {
         "desc": "Anti-Raidは、短期間に多数のアカウントがサーバーに殺到し、コミュニティを混乱させたり破壊したりする、大量参加攻撃を検知し対応します。",
         "tag": "モデレーション"
@@ -121,7 +125,8 @@
       "privacy": "プライバシーポリシー",
       "refund": "返金ポリシー",
       "law": "特定商取引法に基づく表記",
-      "allRights": "All rights reserved."
+      "allRights": "All rights reserved.",
+      "gcGuideline": "グローバルチャットガイドライン"
     }
   },
   "dashboard": {
@@ -826,7 +831,7 @@
       "disabled": "無効",
       "voiceSelfState": {
         "name": "VC自己操作ログ",
-        "desc": "自己ミュート/自己デフ、カメラ、画面共有の変化もログに含めます"
+        "desc": "自己ミュート/自己スピーカーミュート、カメラ、画面共有の変化もログに含めます"
       }
     }
   },
@@ -872,7 +877,7 @@
       "fieldInline": "インライン表示",
       "addField": "フィールドを追加",
       "advanced": "詳細設定",
-      "embedN": "Embed {n}"
+      "embedN": "埋め込み {n}"
     },
     "compose": {
       "title": "メッセージを作成",
@@ -1056,7 +1061,7 @@
       "inline": "インライン",
       "messageContent": "メッセージ内容（省略可）",
       "messageContentPlaceholder": "送信するメッセージ...",
-      "embed": "Embed",
+      "embed": "埋め込み",
       "addEmbed": "Embed を追加",
       "embedOptional": "Embed（任意）",
       "targetRole": "対象ロール",

@@ -505,6 +505,7 @@
       "modLogs": "Moderation Logs",
       "autoPurge": "AutoPurge",
       "autoReact": "AutoReact",
+      "aiModeration": "AI Moderation",
       "roleKeeper": "RoleKeeper",
       "prioritySupport": "Priority Support",
       "customBotProfile": "Custom Bot Profile",

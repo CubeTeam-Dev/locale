@@ -551,6 +551,18 @@
     }
   },
   "info": {
+    "user": {
+      "id": "ID",
+      "is_bot": "🤖 Bot",
+      "account_created": "アカウント作成",
+      "badges": "バッジ",
+      "joined_at": "サーバー参加",
+      "roles": "ロール",
+      "no_roles": "なし",
+      "boosting_since": "Nitroブースト",
+      "timed_out_until": "タイムアウト",
+      "voice_channel": "VC"
+    },
     "guild": {
       "id": "サーバーID",
       "owner": "オーナー",

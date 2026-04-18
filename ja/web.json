@@ -25,7 +25,8 @@
     "notSet": "未設定",
     "buy": "購入する",
     "processing": "処理中...",
-    "soon": "近日公開"
+    "soon": "近日公開",
+    "back": "戻る"
   },
   "authBlocked": {
     "title": "アクセスが制限されています",
@@ -317,6 +318,7 @@
     "selectDesc": "購入するサーバーを選んでください"
   },
   "purchaseFlow": {
+    "purchaseFailed": "購入処理が完了していないか、セッションが無効です。",
     "purchaseSuccess": "ご購入ありがとうございます！",
     "purchaseSuccessDesc": "{seconds}秒後にダッシュボードに戻ります...",
     "backToDashboard": "ダッシュボードに戻る",

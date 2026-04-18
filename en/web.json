@@ -317,6 +317,9 @@
     "selectDesc": "Choose the server you want to purchase for"
   },
   "purchaseFlow": {
+    "purchaseSuccess": "Thank you for your purchase!",
+    "purchaseSuccessDesc": "Returning to dashboard in {seconds} seconds...",
+    "backToDashboard": "Back to Dashboard",
     "subscriptionTitle": "Subscription",
     "ccTitle": "Buy Cube Credit",
     "popular": "Popular",

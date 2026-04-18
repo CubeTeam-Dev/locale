@@ -923,6 +923,7 @@
     "emptyDesc": "Create a workflow by clicking New",
     "enable": "Enable",
     "disable": "Disable",
+    "duplicate": "Duplicate",
     "tabs": {
       "workflows": "Workflows",
       "logs": "Execution Logs"
@@ -1005,6 +1006,7 @@
       "webhookUrl": "Webhook URL",
       "webhookUrlHint": "Send a POST request to this URL to trigger the workflow.",
       "webhookTokenLabel": "Webhook Token",
+      "webhookUrlLabel": "Webhook URL",
       "webhookNoToken": "Webhook token not yet generated. It will appear after saving.",
       "allVoiceChannels": "All Voice Channels",
       "webhookUrlCopy": "Copy URL",
@@ -1107,7 +1109,10 @@
         "acknowledge_interaction": "Acknowledge Interaction",
         "reply_interaction": "Reply to Interaction",
         "update_interaction_message": "Update Interaction Message",
-        "open_modal": "Open Modal"
+        "open_modal": "Open Modal",
+        "kick_member": "Kick Member",
+        "ban_member": "Ban Member",
+        "delete_thread": "Delete Thread"
       }
     },
     "palette": {
@@ -1232,9 +1237,11 @@
       "fieldMaxLength": "Max Length (Optional)",
       "buttons": "Buttons",
       "addButton": "Add Button",
-      "buttonLabel": "Button Label (displayed text)",
+      "buttonLabel": "Label",
+      "buttonLabelHint": "Text displayed on the button",
       "buttonLabelPlaceholder": "e.g. Confirm",
-      "buttonCustomId": "Custom ID (button identifier)",
+      "buttonCustomId": "Custom ID",
+      "buttonCustomIdHint": "Internal identifier (alphanumeric, hyphens)",
       "buttonCustomIdPlaceholder": "e.g. confirm-btn",
       "buttonStyle": "Style",
       "buttonStylePrimary": "Primary (Blue)",
@@ -1267,7 +1274,33 @@
       "disabled": "Disabled",
       "noSettings": "No settings required",
       "varNote": "Variables set via Set Variable nodes can be referenced as {{variableName}}",
-      "webhookPayloadHint": "Each key in the received JSON is available as {{webhook.payload.keyName}}"
+      "webhookPayloadHint": "Each key in the received JSON is available as {{webhook.payload.keyName}}",
+      "webhookHeaders": "Custom Headers",
+      "webhookHeadersHint": "e.g. Authorization: Bearer token",
+      "webhookAddHeader": "Add Header",
+      "threadStarterMessage": "Starter Message (Optional)",
+      "threadStarterMessageHint": "Message sent immediately after thread creation",
+      "threadStarterMessagePlaceholder": "First message in the thread...",
+      "kickReason": "Kick Reason (Optional)",
+      "kickReasonPlaceholder": "e.g. Rule violation",
+      "dmBeforeKick": "DM Before Kick (Optional)",
+      "dmBeforeKickHint": "Sends a DM to the user before kicking (skipped if DMs are disabled)",
+      "dmBeforeKickPlaceholder": "e.g. You have been kicked for rule violation",
+      "banReason": "Ban Reason (Optional)",
+      "banReasonPlaceholder": "e.g. Spam behavior",
+      "dmBeforeBan": "DM Before Ban (Optional)",
+      "dmBeforeBanHint": "Sends a DM to the user before banning (skipped if DMs are disabled)",
+      "dmBeforeBanPlaceholder": "e.g. You have been banned for spam",
+      "banDeleteDays": "Delete Message History",
+      "banDeleteDaysHint": "Number of days of messages to delete on ban (0–7 days)",
+      "banDeleteDaysNone": "Don't delete",
+      "banDeleteDaysDays": "Delete {days} day(s)",
+      "dmShowAttribution": "Show source server button",
+      "dmShowAttributionHint": "Adds a disabled button to the DM showing which server sent it",
+      "deleteThreadReason": "Reason (optional)",
+      "deleteThreadReasonPlaceholder": "e.g. Task completed",
+      "deleteThreadChannel": "Thread ID (optional)",
+      "deleteThreadChannelHint": "Leave blank to delete the thread that triggered this workflow"
     },
     "executionCount": "{count} executions"
   }

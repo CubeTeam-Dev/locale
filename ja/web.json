@@ -969,7 +969,27 @@
       "enabled": "有効",
       "disabled": "無効",
       "noSettings": "設定項目はありません",
-      "noSettingsDesc": "このトリガーは追加の設定なしで動作します。"
+      "noSettingsDesc": "このトリガーは追加の設定なしで動作します。",
+      "buttonClickTitle": "ボタンクリック設定",
+      "threadCreateTitle": "スレッド作成設定",
+      "voiceJoinTitle": "VC参加設定",
+      "voiceLeaveTitle": "VC退出設定",
+      "messageUpdateTitle": "メッセージ編集設定",
+      "messageDeleteTitle": "メッセージ削除設定",
+      "modalSubmitTitle": "モーダル送信設定",
+      "webhookReceiveTitle": "Webhook受信設定",
+      "customIdFilter": "カスタムID（任意）",
+      "customIdFilterHint": "特定のカスタムIDから始まるものだけを対象にします。空欄で全て対象",
+      "customIdPlaceholder": "例: my-button",
+      "parentChannel": "親チャンネル（任意）",
+      "parentChannelHint": "特定の親チャンネルで作成されたスレッドのみ対象",
+      "voiceChannel": "ボイスチャンネル（任意）",
+      "voiceChannelHint": "特定のボイスチャンネルへの参加/退出のみ対象",
+      "webhookUrl": "Webhook URL",
+      "webhookUrlHint": "このURLにPOSTリクエストを送信するとワークフローが実行されます",
+      "webhookTokenLabel": "Webhook トークン",
+      "webhookNoToken": "Webhookトークンはまだ生成されていません。保存後に表示されます。",
+      "allVoiceChannels": "すべてのVCチャンネル"
     },
     "nodes": {
       "trigger": "トリガー",
@@ -1006,13 +1026,49 @@
         "scheduled": {
           "label": "定期実行",
           "desc": "定期的に実行する"
+        },
+        "button_click": {
+          "label": "ボタンクリック",
+          "desc": "ボタンがクリックされたとき"
+        },
+        "thread_create": {
+          "label": "スレッド作成",
+          "desc": "スレッドが作成されたとき"
+        },
+        "voice_join": {
+          "label": "VC参加",
+          "desc": "ボイスチャンネルに参加したとき"
+        },
+        "voice_leave": {
+          "label": "VC退出",
+          "desc": "ボイスチャンネルから退出したとき"
+        },
+        "message_update": {
+          "label": "メッセージ編集",
+          "desc": "メッセージが編集されたとき"
+        },
+        "message_delete": {
+          "label": "メッセージ削除",
+          "desc": "メッセージが削除されたとき"
+        },
+        "modal_submit": {
+          "label": "モーダル送信",
+          "desc": "モーダルが送信されたとき"
+        },
+        "webhook_receive": {
+          "label": "Webhook受信",
+          "desc": "Webhookリクエストを受信したとき"
         }
       },
       "conditions": {
         "check_channel": "チャンネルが一致",
         "check_role": "ロールを持っている",
         "check_keyword": "キーワードを含む",
-        "check_time_range": "時間帯が一致"
+        "check_time_range": "時間帯が一致",
+        "check_and": "すべての条件が一致",
+        "check_or": "いずれかの条件が一致",
+        "check_account_age": "アカウント作成日数",
+        "check_variable": "変数の値"
       },
       "actions": {
         "send_message": "メッセージ送信",
@@ -1020,7 +1076,18 @@
         "remove_role": "ロール削除",
         "add_reaction": "リアクション追加",
         "delete_message": "メッセージ削除",
-        "delay": "遅延"
+        "delay": "遅延",
+        "send_dm": "DMを送信",
+        "create_thread": "スレッド作成",
+        "rename_channel": "チャンネル名変更",
+        "timeout_add": "タイムアウト付与",
+        "timeout_remove": "タイムアウト解除",
+        "send_webhook": "Webhookを送信",
+        "set_variable": "変数をセット",
+        "acknowledge_interaction": "インタラクションを承認",
+        "reply_interaction": "インタラクションに返信",
+        "update_interaction_message": "メッセージを更新",
+        "open_modal": "モーダルを開く"
       }
     },
     "palette": {
@@ -1043,7 +1110,19 @@
       "leaveConfirm": "未保存の変更があります。このページから離れますか？",
       "validationSendMessageNoChannel": "「メッセージを送信」ノードにはターゲットチャンネルが必要です。",
       "validationSendMessageEmpty": "「メッセージを送信」ノードにはメッセージ内容または少なくとも1つの埋め込みが必要です。",
-      "validationLoopDetected": "ワークフローにループ（循環）が含まれています。無限ループを防ぐため修正してください。"
+      "validationLoopDetected": "ワークフローにループ（循環）が含まれています。無限ループを防ぐため修正してください。",
+      "validationSendDmEmpty": "「DMを送信」ノードにはメッセージ内容またはEmbedが必要です。",
+      "validationTimeoutEmpty": "「タイムアウト付与」ノードには1秒以上のタイムアウト時間が必要です。",
+      "validationWebhookEmpty": "「Webhookを送信」ノードにはURLが必要です。",
+      "validationVariableKeyEmpty": "「変数をセット」ノードには変数名が必要です。",
+      "validationModalTitleEmpty": "「モーダルを開く」ノードにはタイトルが必要です。",
+      "validationModalCustomIdEmpty": "「モーダルを開く」ノードにはカスタムIDが必要です。",
+      "validationModalFieldsEmpty": "「モーダルを開く」ノードには1つ以上のフィールドが必要です。",
+      "validationThreadNameEmpty": "「スレッド作成」ノードにはスレッド名が必要です。",
+      "validationThreadChannelEmpty": "「スレッド作成」ノードには対象チャンネルが必要です。",
+      "validationRenameChannelEmpty": "「チャンネル名変更」ノードにはチャンネルと新しい名前が必要です。",
+      "validationAccountAgeEmpty": "「アカウント作成日数」ノードには最小日数が必要です。",
+      "validationVarKeyEmpty": "「変数の値」ノードには変数名が必要です。"
     },
     "logs": {
       "empty": "実行ログがありません",
@@ -1087,7 +1166,83 @@
       "delayTime": "遅延時間（秒）",
       "deleteTarget": "削除対象",
       "targetTriggerMessage": "トリガーメッセージ",
-      "variables": "利用可能な変数"
+      "variables": "利用可能な変数",
+      "dmContent": "DMメッセージ内容",
+      "dmContentPlaceholder": "送信するDMの内容...",
+      "threadName": "スレッド名",
+      "threadNamePlaceholder": "例: サポートスレッド",
+      "threadChannel": "スレッドを作成するチャンネル",
+      "threadMessage": "最初のメッセージ（任意）",
+      "threadMessagePlaceholder": "スレッドの最初のメッセージ...",
+      "newChannelName": "新しいチャンネル名",
+      "newChannelNamePlaceholder": "例: new-channel-name",
+      "renameChannel": "変更するチャンネル",
+      "timeoutDuration": "タイムアウト時間（秒）",
+      "timeoutDurationHint": "1〜2419200秒（最大28日）",
+      "webhookUrl": "Webhook URL",
+      "webhookUrlPlaceholder": "https://...",
+      "webhookPayloadContent": "メッセージ内容（任意）",
+      "webhookUsername": "ユーザー名（任意）",
+      "webhookAvatarUrl": "アバターURL（任意）",
+      "webhookResponseVar": "レスポンスを変数に保存（任意）",
+      "webhookResponseVarPlaceholder": "例: webhookResponse",
+      "variableKey": "変数名",
+      "variableKeyPlaceholder": "例: myVar",
+      "variableValue": "値",
+      "variableValuePlaceholder": "例: {{user.name}}",
+      "ephemeral": "エフェメラル（本人のみ表示）",
+      "replyContent": "返信内容（省略可）",
+      "replyContentPlaceholder": "返信メッセージ...",
+      "modalTitle": "モーダルタイトル",
+      "modalTitlePlaceholder": "例: お問い合わせフォーム",
+      "modalCustomId": "モーダルカスタムID",
+      "modalCustomIdPlaceholder": "例: contact-form",
+      "modalFields": "テキスト入力フィールド",
+      "addModalField": "フィールドを追加",
+      "fieldLabel": "フィールドラベル",
+      "fieldLabelPlaceholder": "例: お名前",
+      "fieldCustomId": "フィールドカスタムID",
+      "fieldCustomIdPlaceholder": "例: name",
+      "fieldStyle": "スタイル",
+      "fieldStyleShort": "1行",
+      "fieldStyleParagraph": "複数行",
+      "fieldRequired": "必須",
+      "fieldPlaceholder": "プレースホルダー（任意）",
+      "fieldMinLength": "最小文字数（任意）",
+      "fieldMaxLength": "最大文字数（任意）",
+      "buttons": "ボタン",
+      "addButton": "ボタンを追加",
+      "buttonLabel": "ボタンラベル",
+      "buttonLabelPlaceholder": "例: 確認する",
+      "buttonCustomId": "ボタンカスタムID",
+      "buttonCustomIdPlaceholder": "例: confirm-btn",
+      "buttonStyle": "スタイル",
+      "buttonStylePrimary": "プライマリ（青）",
+      "buttonStyleSecondary": "セカンダリ（灰）",
+      "buttonStyleSuccess": "サクセス（緑）",
+      "buttonStyleDanger": "デンジャー（赤）",
+      "buttonEmoji": "絵文字（任意）",
+      "buttonEmojiPlaceholder": "例: 👍",
+      "buttonDisabled": "無効化",
+      "minDays": "最小日数",
+      "minDaysHint": "アカウント作成からこの日数以上経過している場合に一致",
+      "varKey": "変数名",
+      "varKeyPlaceholder": "例: myVar",
+      "varOperator": "演算子",
+      "varOperatorEquals": "等しい",
+      "varOperatorNotEquals": "等しくない",
+      "varOperatorContains": "含む",
+      "varOperatorStartsWith": "から始まる",
+      "varOperatorEndsWith": "で終わる",
+      "varOperatorGreaterThan": "より大きい（数値）",
+      "varOperatorLessThan": "より小さい（数値）",
+      "varValue": "比較値",
+      "varValuePlaceholder": "例: hello",
+      "subConditions": "サブ条件",
+      "addSubCondition": "サブ条件を追加",
+      "subConditionType": "条件タイプ",
+      "updateContent": "更新するメッセージ内容（省略可）",
+      "updateContentPlaceholder": "更新後のメッセージ..."
     },
     "executionCount": "{count} 回実行"
   }

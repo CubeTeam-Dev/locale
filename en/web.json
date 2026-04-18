@@ -394,7 +394,8 @@
       "paid": "Paid",
       "open": "Open",
       "void": "Void",
-      "uncollectible": "Uncollectible"
+      "uncollectible": "Uncollectible",
+      "draft": "Draft"
     },
     "loading": "Loading...",
     "noSub": "No Subscription",

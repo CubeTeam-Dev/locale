@@ -1317,6 +1317,8 @@
       "banDeleteDaysHint": "Number of days of messages to delete on ban (0–7 days)",
       "banDeleteDaysNone": "Don't delete",
       "banDeleteDaysDays": "Delete {days} day(s)",
+      "planRequired": "Requires {plan} or higher",
+      "planLockedTrigger": "This trigger is only available on {plan} or higher",
       "dmShowAttribution": "Show source server button",
       "dmShowAttributionHint": "Adds a disabled button to the DM showing which server sent it",
       "deleteThreadReason": "Reason (optional)",

@@ -1316,6 +1316,8 @@
       "banDeleteDaysHint": "BANと同時に削除するメッセージの日数（0〜7日）",
       "banDeleteDaysNone": "削除しない",
       "banDeleteDaysDays": "{days}日分を削除",
+      "planRequired": "{plan} 以上が必要",
+      "planLockedTrigger": "このトリガーは {plan} 以上でのみ利用できます",
       "dmShowAttribution": "送信元サーバーボタンを表示",
       "dmShowAttributionHint": "DMにどのサーバーから送られたかを示すボタンを付けます",
       "deleteThreadReason": "削除理由（任意）",

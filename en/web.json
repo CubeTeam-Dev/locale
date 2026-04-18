@@ -1327,6 +1327,7 @@
       "deleteThreadChannelHint": "Leave blank to delete the thread that triggered this workflow"
     },
     "executionCount": "{count} executions",
-    "planViolationBadge": "Plan limit"
+    "planViolationBadge": "Plan limit",
+    "duplicateError": "Failed to duplicate workflow"
   }
 }

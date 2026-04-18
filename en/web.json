@@ -1326,6 +1326,7 @@
       "deleteThreadChannel": "Thread ID (optional)",
       "deleteThreadChannelHint": "Leave blank to delete the thread that triggered this workflow"
     },
-    "executionCount": "{count} executions"
+    "executionCount": "{count} executions",
+    "planViolationBadge": "Plan limit"
   }
 }

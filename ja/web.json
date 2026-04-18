@@ -930,6 +930,8 @@
     "refresh": "更新",
     "noLogs": "最近の実行履歴はありません",
     "deletedWorkflow": "削除されたワークフロー",
+    "deleteConfirmTitle": "ワークフローの削除",
+    "deleteConfirmDesc": "このワークフローを削除してもよろしいですか？この操作は取り消せません。",
     "config": {
       "title": "トリガー設定",
       "subTitle": "トリガー特有の設定を行います。",

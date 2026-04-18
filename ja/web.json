@@ -381,6 +381,22 @@
   "accountSub": {
     "title": "サブスクリプション管理",
     "desc": "購入したプランの管理と割り当てを行います",
+    "tabs": {
+      "management": "管理",
+      "billing": "請求"
+    },
+    "upcomingInvoice": "次回の請求予定",
+    "subscription": "サブスクリプション",
+    "invoiceHistory": "請求履歴",
+    "noInvoices": "請求履歴はありません",
+    "downloadPDF": "PDFをダウンロード",
+    "invoiceStatus": {
+      "paid": "支払済み",
+      "open": "未払い",
+      "void": "無効",
+      "uncollectible": "回収不能",
+      "draft": "未完了"
+    },
     "loading": "読み込み中...",
     "noSub": "サブスクリプションなし",
     "noSubDesc": "まだプランを購入していません",
@@ -416,6 +432,7 @@
     "plan": "プラン",
     "renewal": "次回更新",
     "nextRenewal": "次回更新",
+    "nextBillingAmount": "次回ご請求額",
     "cancelsOn": "{date} でキャンセル",
     "assigned": "割り当て済みサーバー",
     "assignedServer": "割り当てサーバー",
@@ -989,7 +1006,10 @@
       "webhookUrlHint": "このURLにPOSTリクエストを送信するとワークフローが実行されます",
       "webhookTokenLabel": "Webhook トークン",
       "webhookNoToken": "Webhookトークンはまだ生成されていません。保存後に表示されます。",
-      "allVoiceChannels": "すべてのVCチャンネル"
+      "allVoiceChannels": "すべてのVCチャンネル",
+      "webhookUrlCopy": "URLをコピー",
+      "webhookUrlCopied": "コピーしました",
+      "webhookUrlDesc": "このURLにPOSTリクエストを送るとワークフローが起動します。JSONボディは {{webhook.payload.key}} で参照できます。"
     },
     "nodes": {
       "trigger": "トリガー",
@@ -1212,9 +1232,9 @@
       "fieldMaxLength": "最大文字数（任意）",
       "buttons": "ボタン",
       "addButton": "ボタンを追加",
-      "buttonLabel": "ボタンラベル",
+      "buttonLabel": "ボタンのラベル（表示名）",
       "buttonLabelPlaceholder": "例: 確認する",
-      "buttonCustomId": "ボタンカスタムID",
+      "buttonCustomId": "カスタムID（ボタンの識別子）",
       "buttonCustomIdPlaceholder": "例: confirm-btn",
       "buttonStyle": "スタイル",
       "buttonStylePrimary": "プライマリ（青）",
@@ -1242,7 +1262,12 @@
       "addSubCondition": "サブ条件を追加",
       "subConditionType": "条件タイプ",
       "updateContent": "更新するメッセージ内容（省略可）",
-      "updateContentPlaceholder": "更新後のメッセージ..."
+      "updateContentPlaceholder": "更新後のメッセージ...",
+      "enabled": "有効",
+      "disabled": "無効",
+      "noSettings": "設定項目はありません",
+      "varNote": "set_variableノードでセットした変数は {{変数名}} で参照できます",
+      "webhookPayloadHint": "受信したJSONの各キーは {{webhook.payload.keyName}} で参照できます"
     },
     "executionCount": "{count} 回実行"
   }

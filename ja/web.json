@@ -287,7 +287,7 @@
     "purchasedBy": "購入者"
   },
   "credits": {
-    "title": "Cube Credit",
+    "title": "Cubeクレジット",
     "desc": "クレジットの残高と履歴を確認します",
     "totalBalance": "合計残高",
     "paidBalance": "購入済み",
@@ -474,7 +474,7 @@
       "desc": "月額プランでサーバーの機能を拡張"
     },
     "cc": {
-      "title": "Cube Credit",
+      "title": "Cubeクレジット",
       "desc": "必要な分だけ購入できる一回払いのクレジット"
     },
     "freeFeatures": [
@@ -1014,7 +1014,7 @@
       "allVoiceChannels": "すべてのVCチャンネル",
       "webhookUrlCopy": "URLをコピー",
       "webhookUrlCopied": "コピーしました",
-      "webhookUrlDesc": "このURLにPOSTリクエストを送るとワークフローが起動します。JSONボディは {{webhook.payload.key}} で参照できます。"
+      "webhookUrlDesc": "このURLにPOSTリクエストを送るとワークフローが起動します。JSONボディは '{{webhook.payload.key}}' で参照できます。"
     },
     "nodes": {
       "trigger": "トリガー",
@@ -1327,6 +1327,7 @@
       "deleteThreadChannelHint": "空欄の場合はトリガー元のスレッドを削除します"
     },
     "executionCount": "{count} 回実行",
-    "planViolationBadge": "プラン制限"
+    "planViolationBadge": "プラン制限",
+    "duplicateError": "複製に失敗しました"
   }
 }

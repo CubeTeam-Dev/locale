@@ -1326,6 +1326,7 @@
       "deleteThreadChannel": "スレッドID（任意）",
       "deleteThreadChannelHint": "空欄の場合はトリガー元のスレッドを削除します"
     },
-    "executionCount": "{count} 回実行"
+    "executionCount": "{count} 回実行",
+    "planViolationBadge": "プラン制限"
   }
 }

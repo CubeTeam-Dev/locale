@@ -1014,7 +1014,7 @@
       "allVoiceChannels": "All Voice Channels",
       "webhookUrlCopy": "Copy URL",
       "webhookUrlCopied": "Copied!",
-      "webhookUrlDesc": "Send a POST request to this URL to trigger the workflow. JSON body fields are available as {{webhook.payload.key}}."
+      "webhookUrlDesc": "Send a POST request to this URL to trigger the workflow. JSON body fields are available as '{{webhook.payload.key}}'."
     },
     "nodes": {
       "trigger": "Trigger",

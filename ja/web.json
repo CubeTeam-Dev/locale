@@ -1013,7 +1013,7 @@
       "allVoiceChannels": "すべてのVCチャンネル",
       "webhookUrlCopy": "URLをコピー",
       "webhookUrlCopied": "コピーしました",
-      "webhookUrlDesc": "このURLにPOSTリクエストを送るとワークフローが起動します。JSONボディは {{webhook.payload.key}} で参照できます。"
+      "webhookUrlDesc": "このURLにPOSTリクエストを送るとワークフローが起動します。JSONボディは '{{webhook.payload.key}}' で参照できます。"
     },
     "nodes": {
       "trigger": "トリガー",

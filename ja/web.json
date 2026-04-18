@@ -287,7 +287,7 @@
     "purchasedBy": "購入者"
   },
   "credits": {
-    "title": "Cube Credit",
+    "title": "Cubeクレジット",
     "desc": "クレジットの残高と履歴を確認します",
     "totalBalance": "合計残高",
     "paidBalance": "購入済み",
@@ -474,7 +474,7 @@
       "desc": "月額プランでサーバーの機能を拡張"
     },
     "cc": {
-      "title": "Cube Credit",
+      "title": "Cubeクレジット",
       "desc": "必要な分だけ購入できる一回払いのクレジット"
     },
     "freeFeatures": [
@@ -522,6 +522,7 @@
       "modLogs": "モデレーションログ",
       "autoPurge": "自動削除",
       "autoReact": "自動リアクション",
+      "aiModeration": "AIモデレーション",
       "roleKeeper": "ロールキーパー",
       "prioritySupport": "優先サポート",
       "customBotProfile": "カスタムBotプロフィール",
@@ -574,7 +575,7 @@
         "freeExec": "300",
         "liteExec": "2,000",
         "basicExec": "10,000",
-        "proExec": "50,000",
+        "proExec": "50.000",
         "v1Part": "一部の基本機能",
         "v1All": "すべての基本機能",
         "v1AllV2Part": "基本機能 ＋ 応用機能",
@@ -1133,10 +1134,10 @@
       "lastRun": "最終実行:",
       "neverRun": "未実行",
       "logsClose": "ログを閉じる",
-      "unsavedChanges": "未保存の変更があります",
-      "leaveConfirm": "保存していない変更があります。このページを離れますか？",
-      "validationSendMessageNoChannel": "「メッセージ送信」ノードには送信先チャンネルの指定が必要です。",
-      "validationSendMessageEmpty": "「メッセージ送信」ノードにはメッセージ内容か Embed のいずれかが必要です。",
+      "unsavedChanges": "未保存の変更",
+      "leaveConfirm": "未保存の変更があります。このページから離れますか？",
+      "validationSendMessageNoChannel": "「メッセージを送信」ノードにはターゲットチャンネルが必要です。",
+      "validationSendMessageEmpty": "「メッセージを送信」ノードにはメッセージ内容または少なくとも1つの埋め込みが必要です。",
       "validationLoopDetected": "ワークフローにループ（循環）が含まれています。無限ループを防ぐため修正してください。",
       "validationSendDmEmpty": "「DMを送信」ノードにはメッセージ内容またはEmbedが必要です。",
       "validationTimeoutEmpty": "「タイムアウト付与」ノードには1秒以上のタイムアウト時間が必要です。",
@@ -1278,8 +1279,8 @@
       "accountAgeLt": "より小さい（<）",
       "accountAgeBetween": "〜の間",
       "accountAgeMaxDays": "最大日数",
-      "minDays": "日数",
-      "minDaysHint": "アカウント作成からの経過日数で条件を判定します",
+      "minDays": "最小日数",
+      "minDaysHint": "アカウント作成からこの日数以上経過している場合に一致",
       "varKey": "変数名",
       "varKeyPlaceholder": "例: myVar",
       "varOperator": "演算子",

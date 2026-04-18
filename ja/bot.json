@@ -575,7 +575,7 @@
       "verification_level": "認証レベル",
       "features": "機能",
       "cube_plan": "Cubeプラン",
-      "cube_credits": "CCクレジット",
+      "cube_credits": "Cubeクレジット",
       "cube_features": "Cube機能",
       "no_subscription": "フリープラン",
       "plan_status": {
@@ -605,22 +605,10 @@
       },
       "boost_tiers": {
         "None": "なし",
-        "Tier1": "Tier 1",
-        "Tier2": "Tier 2",
-        "Tier3": "Tier 3"
+        "Tier1": "ティア1",
+        "Tier2": "ティア2",
+        "Tier3": "ティア3"
       }
-    },
-    "user": {
-      "id": "ID",
-      "is_bot": "🤖 Bot",
-      "account_created": "アカウント作成",
-      "badges": "バッジ",
-      "joined_at": "サーバー参加",
-      "roles": "ロール",
-      "no_roles": "なし",
-      "boosting_since": "Nitroブースト",
-      "timed_out_until": "タイムアウト",
-      "voice_channel": "VC"
     }
   },
   "utility": {

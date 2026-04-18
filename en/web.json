@@ -460,7 +460,11 @@
     "changePlanChanging": "Changing...",
     "changePlanNote": "Changes will take effect from your next billing date.",
     "downgradeNotAllowed": "Downgrade is not allowed. Please cancel your current plan and resubscribe to a lower tier.",
-    "addNew": "Add new plan"
+    "addNew": "Add new plan",
+    "pagination": {
+      "prev": "Previous",
+      "next": "Next"
+    }
   },
   "pricing": {
     "title": "Pricing",

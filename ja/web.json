@@ -460,7 +460,11 @@
     "changePlanChanging": "変更中...",
     "changePlanNote": "変更は次の請求日から適用されます。",
     "downgradeNotAllowed": "ダウングレードはできません。一度解約してから下位プランに再契約してください。",
-    "addNew": "新しいプランを追加"
+    "addNew": "新しいプランを追加",
+    "pagination": {
+      "prev": "前へ",
+      "next": "次へ"
+    }
   },
   "pricing": {
     "title": "料金プラン",

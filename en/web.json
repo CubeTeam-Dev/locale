@@ -25,7 +25,8 @@
     "notSet": "Not set",
     "buy": "Buy",
     "processing": "Processing...",
-    "soon": "Soon"
+    "soon": "Soon",
+    "back": "Back"
   },
   "authBlocked": {
     "title": "Access blocked",
@@ -317,6 +318,7 @@
     "selectDesc": "Choose the server you want to purchase for"
   },
   "purchaseFlow": {
+    "purchaseFailed": "The purchase is incomplete or the session is invalid.",
     "purchaseSuccess": "Thank you for your purchase!",
     "purchaseSuccessDesc": "Returning to dashboard in {seconds} seconds...",
     "backToDashboard": "Back to Dashboard",
@@ -460,7 +462,11 @@
     "changePlanChanging": "Changing...",
     "changePlanNote": "Changes will take effect from your next billing date.",
     "downgradeNotAllowed": "Downgrade is not allowed. Please cancel your current plan and resubscribe to a lower tier.",
-    "addNew": "Add new plan"
+    "addNew": "Add new plan",
+    "pagination": {
+      "prev": "Previous",
+      "next": "Next"
+    }
   },
   "pricing": {
     "title": "Pricing",

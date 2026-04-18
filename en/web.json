@@ -381,6 +381,22 @@
   "accountSub": {
     "title": "Subscription Management",
     "desc": "Manage and assign your purchased plans",
+    "tabs": {
+      "management": "Management",
+      "billing": "Billing"
+    },
+    "upcomingInvoice": "Upcoming Invoice",
+    "subscription": "Subscription",
+    "invoiceHistory": "Invoice History",
+    "noInvoices": "No invoice history found",
+    "downloadPDF": "Download PDF",
+    "invoiceStatus": {
+      "paid": "Paid",
+      "open": "Open",
+      "void": "Void",
+      "uncollectible": "Uncollectible",
+      "draft": "Draft"
+    },
     "loading": "Loading...",
     "noSub": "No Subscription",
     "noSubDesc": "You haven't purchased any plans yet",
@@ -416,6 +432,7 @@
     "plan": "Plan",
     "renewal": "Next Renewal",
     "nextRenewal": "Next Renewal",
+    "nextBillingAmount": "Next Billing Amount",
     "cancelsOn": "Cancels on {date}",
     "assigned": "Assigned Server",
     "assignedServer": "Assigned Server",
@@ -989,7 +1006,10 @@
       "webhookUrlHint": "Send a POST request to this URL to trigger the workflow.",
       "webhookTokenLabel": "Webhook Token",
       "webhookNoToken": "Webhook token not yet generated. It will appear after saving.",
-      "allVoiceChannels": "All Voice Channels"
+      "allVoiceChannels": "All Voice Channels",
+      "webhookUrlCopy": "Copy URL",
+      "webhookUrlCopied": "Copied!",
+      "webhookUrlDesc": "Send a POST request to this URL to trigger the workflow. JSON body fields are available as {{webhook.payload.key}}."
     },
     "nodes": {
       "trigger": "Trigger",
@@ -1212,9 +1232,9 @@
       "fieldMaxLength": "Max Length (Optional)",
       "buttons": "Buttons",
       "addButton": "Add Button",
-      "buttonLabel": "Button Label",
+      "buttonLabel": "Button Label (displayed text)",
       "buttonLabelPlaceholder": "e.g. Confirm",
-      "buttonCustomId": "Button Custom ID",
+      "buttonCustomId": "Custom ID (button identifier)",
       "buttonCustomIdPlaceholder": "e.g. confirm-btn",
       "buttonStyle": "Style",
       "buttonStylePrimary": "Primary (Blue)",
@@ -1242,7 +1262,12 @@
       "addSubCondition": "Add Sub-Condition",
       "subConditionType": "Condition Type",
       "updateContent": "Updated Message Content (Optional)",
-      "updateContentPlaceholder": "Updated message content..."
+      "updateContentPlaceholder": "Updated message content...",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "noSettings": "No settings required",
+      "varNote": "Variables set via Set Variable nodes can be referenced as {{variableName}}",
+      "webhookPayloadHint": "Each key in the received JSON is available as {{webhook.payload.keyName}}"
     },
     "executionCount": "{count} executions"
   }

@@ -924,6 +924,7 @@
     "enable": "Enable",
     "disable": "Disable",
     "duplicate": "Duplicate",
+    "delete": "Delete",
     "tabs": {
       "workflows": "Workflows",
       "logs": "Execution Logs"

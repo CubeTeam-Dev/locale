@@ -317,6 +317,9 @@
     "selectDesc": "購入するサーバーを選んでください"
   },
   "purchaseFlow": {
+    "purchaseSuccess": "ご購入ありがとうございます！",
+    "purchaseSuccessDesc": "{seconds}秒後にダッシュボードに戻ります...",
+    "backToDashboard": "ダッシュボードに戻る",
     "subscriptionTitle": "サブスクリプション",
     "ccTitle": "Cubeクレジットを購入",
     "popular": "人気",

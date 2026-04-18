@@ -922,6 +922,7 @@
     "emptyDesc": "「新規作成」からワークフローを作成してください",
     "enable": "有効化",
     "disable": "無効化",
+    "duplicate": "複製",
     "tabs": {
       "workflows": "ワークフロー",
       "logs": "実行ログ"
@@ -1107,7 +1108,10 @@
         "acknowledge_interaction": "インタラクションを承認",
         "reply_interaction": "インタラクションに返信",
         "update_interaction_message": "メッセージを更新",
-        "open_modal": "モーダルを開く"
+        "open_modal": "モーダルを開く",
+        "kick_member": "メンバーをキック",
+        "ban_member": "メンバーをBAN",
+        "delete_thread": "スレッドを削除"
       }
     },
     "palette": {
@@ -1269,7 +1273,33 @@
       "disabled": "無効",
       "noSettings": "設定項目はありません",
       "varNote": "set_variableノードでセットした変数は {{変数名}} で参照できます",
-      "webhookPayloadHint": "受信したJSONの各キーは {{webhook.payload.keyName}} で参照できます"
+      "webhookPayloadHint": "受信したJSONの各キーは {{webhook.payload.keyName}} で参照できます",
+      "webhookHeaders": "カスタムヘッダー",
+      "webhookHeadersHint": "Authorization: Bearer token など",
+      "webhookAddHeader": "ヘッダーを追加",
+      "threadStarterMessage": "スレッド開始メッセージ（任意）",
+      "threadStarterMessageHint": "スレッド作成直後に送信するメッセージ",
+      "threadStarterMessagePlaceholder": "スレッドへの最初のメッセージ...",
+      "kickReason": "キック理由（任意）",
+      "kickReasonPlaceholder": "例: ルール違反",
+      "dmBeforeKick": "キック前DM（任意）",
+      "dmBeforeKickHint": "キック実行前にユーザーへDMを送信する（受け取り拒否の場合は省略）",
+      "dmBeforeKickPlaceholder": "例: ルール違反のためキックされました",
+      "banReason": "BAN理由（任意）",
+      "banReasonPlaceholder": "例: スパム行為",
+      "dmBeforeBan": "BAN前DM（任意）",
+      "dmBeforeBanHint": "BAN実行前にユーザーへDMを送信する（受け取り拒否の場合は省略）",
+      "dmBeforeBanPlaceholder": "例: スパム行為のためBANされました",
+      "banDeleteDays": "メッセージ削除日数",
+      "banDeleteDaysHint": "BANと同時に削除するメッセージの日数（0〜7日）",
+      "banDeleteDaysNone": "削除しない",
+      "banDeleteDaysDays": "{days}日分を削除",
+      "dmShowAttribution": "送信元サーバーボタンを表示",
+      "dmShowAttributionHint": "DMにどのサーバーから送られたかを示すボタンを付けます",
+      "deleteThreadReason": "削除理由（任意）",
+      "deleteThreadReasonPlaceholder": "例: 処理完了のため削除",
+      "deleteThreadChannel": "スレッドID（任意）",
+      "deleteThreadChannelHint": "空欄の場合はトリガー元のスレッドを削除します"
     },
     "executionCount": "{count} 回実行"
   }

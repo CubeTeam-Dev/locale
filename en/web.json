@@ -969,7 +969,27 @@
       "enabled": "Enabled",
       "disabled": "Disabled",
       "noSettings": "No settings required",
-      "noSettingsDesc": "This trigger does not require any additional configuration."
+      "noSettingsDesc": "This trigger does not require any additional configuration.",
+      "buttonClickTitle": "Button Click Settings",
+      "threadCreateTitle": "Thread Create Settings",
+      "voiceJoinTitle": "Voice Join Settings",
+      "voiceLeaveTitle": "Voice Leave Settings",
+      "messageUpdateTitle": "Message Edit Settings",
+      "messageDeleteTitle": "Message Delete Settings",
+      "modalSubmitTitle": "Modal Submit Settings",
+      "webhookReceiveTitle": "Webhook Receive Settings",
+      "customIdFilter": "Custom ID (Optional)",
+      "customIdFilterHint": "Only trigger for custom IDs starting with this value. Empty means all.",
+      "customIdPlaceholder": "e.g. my-button",
+      "parentChannel": "Parent Channel (Optional)",
+      "parentChannelHint": "Only trigger for threads in a specific parent channel.",
+      "voiceChannel": "Voice Channel (Optional)",
+      "voiceChannelHint": "Only trigger for a specific voice channel.",
+      "webhookUrl": "Webhook URL",
+      "webhookUrlHint": "Send a POST request to this URL to trigger the workflow.",
+      "webhookTokenLabel": "Webhook Token",
+      "webhookNoToken": "Webhook token not yet generated. It will appear after saving.",
+      "allVoiceChannels": "All Voice Channels"
     },
     "nodes": {
       "trigger": "Trigger",
@@ -1006,13 +1026,49 @@
         "scheduled": {
           "label": "Scheduled",
           "desc": "Run on a schedule"
+        },
+        "button_click": {
+          "label": "Button Click",
+          "desc": "When a button is clicked"
+        },
+        "thread_create": {
+          "label": "Thread Create",
+          "desc": "When a thread is created"
+        },
+        "voice_join": {
+          "label": "Voice Join",
+          "desc": "When a member joins a voice channel"
+        },
+        "voice_leave": {
+          "label": "Voice Leave",
+          "desc": "When a member leaves a voice channel"
+        },
+        "message_update": {
+          "label": "Message Edit",
+          "desc": "When a message is edited"
+        },
+        "message_delete": {
+          "label": "Message Delete",
+          "desc": "When a message is deleted"
+        },
+        "modal_submit": {
+          "label": "Modal Submit",
+          "desc": "When a modal is submitted"
+        },
+        "webhook_receive": {
+          "label": "Webhook Receive",
+          "desc": "When a webhook request is received"
         }
       },
       "conditions": {
         "check_channel": "Channel Matches",
         "check_role": "Has Role",
         "check_keyword": "Contains Keyword",
-        "check_time_range": "Time Range Matches"
+        "check_time_range": "Time Range Matches",
+        "check_and": "All Conditions Match",
+        "check_or": "Any Condition Matches",
+        "check_account_age": "Account Age",
+        "check_variable": "Variable Value"
       },
       "actions": {
         "send_message": "Send Message",
@@ -1020,7 +1076,18 @@
         "remove_role": "Remove Role",
         "add_reaction": "Add Reaction",
         "delete_message": "Delete Message",
-        "delay": "Delay"
+        "delay": "Delay",
+        "send_dm": "Send DM",
+        "create_thread": "Create Thread",
+        "rename_channel": "Rename Channel",
+        "timeout_add": "Add Timeout",
+        "timeout_remove": "Remove Timeout",
+        "send_webhook": "Send Webhook",
+        "set_variable": "Set Variable",
+        "acknowledge_interaction": "Acknowledge Interaction",
+        "reply_interaction": "Reply to Interaction",
+        "update_interaction_message": "Update Interaction Message",
+        "open_modal": "Open Modal"
       }
     },
     "palette": {
@@ -1043,7 +1110,19 @@
       "leaveConfirm": "You have unsaved changes. Leave this page?",
       "validationSendMessageNoChannel": "\"Send Message\" nodes require a target channel.",
       "validationSendMessageEmpty": "\"Send Message\" nodes require either message content or at least one Embed.",
-      "validationLoopDetected": "Your workflow contains a loop (circular reference). Please remove it to prevent infinite loops."
+      "validationLoopDetected": "Your workflow contains a loop (circular reference). Please remove it to prevent infinite loops.",
+      "validationSendDmEmpty": "\"Send DM\" nodes require message content or an Embed.",
+      "validationTimeoutEmpty": "\"Add Timeout\" nodes require a duration of at least 1 second.",
+      "validationWebhookEmpty": "\"Send Webhook\" nodes require a URL.",
+      "validationVariableKeyEmpty": "\"Set Variable\" nodes require a variable name.",
+      "validationModalTitleEmpty": "\"Open Modal\" nodes require a title.",
+      "validationModalCustomIdEmpty": "\"Open Modal\" nodes require a custom ID.",
+      "validationModalFieldsEmpty": "\"Open Modal\" nodes require at least one field.",
+      "validationThreadNameEmpty": "\"Create Thread\" nodes require a thread name.",
+      "validationThreadChannelEmpty": "\"Create Thread\" nodes require a target channel.",
+      "validationRenameChannelEmpty": "\"Rename Channel\" nodes require a channel and a new name.",
+      "validationAccountAgeEmpty": "\"Account Age\" nodes require a minimum number of days.",
+      "validationVarKeyEmpty": "\"Variable Value\" nodes require a variable name."
     },
     "logs": {
       "empty": "No execution logs",
@@ -1087,7 +1166,83 @@
       "delayTime": "Delay Time (seconds)",
       "deleteTarget": "Target to Delete",
       "targetTriggerMessage": "Trigger Message",
-      "variables": "Available variables"
+      "variables": "Available variables",
+      "dmContent": "DM Message Content",
+      "dmContentPlaceholder": "DM content to send...",
+      "threadName": "Thread Name",
+      "threadNamePlaceholder": "e.g. Support Thread",
+      "threadChannel": "Channel to Create Thread In",
+      "threadMessage": "Initial Message (Optional)",
+      "threadMessagePlaceholder": "First message in the thread...",
+      "newChannelName": "New Channel Name",
+      "newChannelNamePlaceholder": "e.g. new-channel-name",
+      "renameChannel": "Channel to Rename",
+      "timeoutDuration": "Timeout Duration (seconds)",
+      "timeoutDurationHint": "1–2419200 seconds (max 28 days)",
+      "webhookUrl": "Webhook URL",
+      "webhookUrlPlaceholder": "https://...",
+      "webhookPayloadContent": "Message Content (Optional)",
+      "webhookUsername": "Username (Optional)",
+      "webhookAvatarUrl": "Avatar URL (Optional)",
+      "webhookResponseVar": "Save Response to Variable (Optional)",
+      "webhookResponseVarPlaceholder": "e.g. webhookResponse",
+      "variableKey": "Variable Name",
+      "variableKeyPlaceholder": "e.g. myVar",
+      "variableValue": "Value",
+      "variableValuePlaceholder": "e.g. {{user.name}}",
+      "ephemeral": "Ephemeral (visible only to the user)",
+      "replyContent": "Reply Content (Optional)",
+      "replyContentPlaceholder": "Reply message...",
+      "modalTitle": "Modal Title",
+      "modalTitlePlaceholder": "e.g. Contact Form",
+      "modalCustomId": "Modal Custom ID",
+      "modalCustomIdPlaceholder": "e.g. contact-form",
+      "modalFields": "Text Input Fields",
+      "addModalField": "Add Field",
+      "fieldLabel": "Field Label",
+      "fieldLabelPlaceholder": "e.g. Your Name",
+      "fieldCustomId": "Field Custom ID",
+      "fieldCustomIdPlaceholder": "e.g. name",
+      "fieldStyle": "Style",
+      "fieldStyleShort": "Short",
+      "fieldStyleParagraph": "Paragraph",
+      "fieldRequired": "Required",
+      "fieldPlaceholder": "Placeholder (Optional)",
+      "fieldMinLength": "Min Length (Optional)",
+      "fieldMaxLength": "Max Length (Optional)",
+      "buttons": "Buttons",
+      "addButton": "Add Button",
+      "buttonLabel": "Button Label",
+      "buttonLabelPlaceholder": "e.g. Confirm",
+      "buttonCustomId": "Button Custom ID",
+      "buttonCustomIdPlaceholder": "e.g. confirm-btn",
+      "buttonStyle": "Style",
+      "buttonStylePrimary": "Primary (Blue)",
+      "buttonStyleSecondary": "Secondary (Gray)",
+      "buttonStyleSuccess": "Success (Green)",
+      "buttonStyleDanger": "Danger (Red)",
+      "buttonEmoji": "Emoji (Optional)",
+      "buttonEmojiPlaceholder": "e.g. 👍",
+      "buttonDisabled": "Disabled",
+      "minDays": "Minimum Days",
+      "minDaysHint": "Matches if the account is at least this many days old",
+      "varKey": "Variable Name",
+      "varKeyPlaceholder": "e.g. myVar",
+      "varOperator": "Operator",
+      "varOperatorEquals": "Equals",
+      "varOperatorNotEquals": "Not Equals",
+      "varOperatorContains": "Contains",
+      "varOperatorStartsWith": "Starts With",
+      "varOperatorEndsWith": "Ends With",
+      "varOperatorGreaterThan": "Greater Than (numeric)",
+      "varOperatorLessThan": "Less Than (numeric)",
+      "varValue": "Comparison Value",
+      "varValuePlaceholder": "e.g. hello",
+      "subConditions": "Sub-Conditions",
+      "addSubCondition": "Add Sub-Condition",
+      "subConditionType": "Condition Type",
+      "updateContent": "Updated Message Content (Optional)",
+      "updateContentPlaceholder": "Updated message content..."
     },
     "executionCount": "{count} executions"
   }

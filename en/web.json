@@ -168,6 +168,11 @@
     "messages": "Messages",
     "workflow": "Workflow"
   },
+  "featureGate": {
+    "title": "This feature is not available",
+    "desc": "The corresponding plan or feature flag is required to use this page.",
+    "upgrade": "Upgrade plan"
+  },
   "overview": {
     "desc": "Check your server status and available features",
     "balance": "Credit Balance",
@@ -1456,6 +1461,8 @@
       "noSubscription": "No subscription",
       "detailExpiry": "Expires",
       "detailFeatures": "Feature flags",
+      "featureFromPlan": "plan",
+      "featureRawValue": "Raw value",
       "addPurge": "Add Auto Purge",
       "purgeDesc": "{msgLimit} msgs / every {interval} min",
       "msgLimit": "Message Limit",

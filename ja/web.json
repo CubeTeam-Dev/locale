@@ -1022,6 +1022,8 @@
       "webhookNoToken": "Webhookトークンはまだ生成されていません。保存後に表示されます。",
       "allVoiceChannels": "すべてのVCチャンネル",
       "webhookUrlCopy": "URLをコピー",
+      "webhookRegenerateTitle": "URLを再生成",
+      "webhookRegenerateConfirm": "Webhook URLを再生成すると、現在のURLは無効になります。続行しますか？",
       "webhookUrlCopied": "コピーしました",
       "webhookUrlDesc": "このURLにPOSTリクエストを送るとワークフローが起動します。JSONボディは '{{webhook.payload.key}}' で参照できます。"
     },

@@ -1022,6 +1022,8 @@
       "webhookNoToken": "Webhook token not yet generated. It will appear after saving.",
       "allVoiceChannels": "All Voice Channels",
       "webhookUrlCopy": "Copy URL",
+      "webhookRegenerateTitle": "Regenerate URL",
+      "webhookRegenerateConfirm": "Regenerating the Webhook URL will invalidate the current URL. Continue?",
       "webhookUrlCopied": "Copied!",
       "webhookUrlDesc": "Send a POST request to this URL to trigger the workflow. JSON body fields are available as '{{webhook.payload.key}}'."
     },

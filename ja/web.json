@@ -1259,6 +1259,8 @@
       "buttonCustomIdPlaceholder": "例: confirm-btn",
       "buttonModeCustomId": "カスタムID",
       "buttonModeLinked": "ワークフロー連携",
+      "buttonModeContinue": "続けて実行",
+      "buttonModeContinueHint": "このボタンが押されると、同じワークフローの続きが実行されます。{{button.label}} と {{button.index}} で押されたボタンを判別できます。",
       "buttonLinkedWorkflow": "連携するワークフロー",
       "buttonLinkedWorkflowHint": "ボタンを押したときに実行されるワークフロー",
       "buttonLinkedWorkflowPlaceholder": "ワークフローを選択...",

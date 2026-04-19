@@ -1259,6 +1259,8 @@
       "buttonCustomIdPlaceholder": "e.g. confirm-btn",
       "buttonModeCustomId": "Custom ID",
       "buttonModeLinked": "Link Workflow",
+      "buttonModeContinue": "Continue",
+      "buttonModeContinueHint": "Clicking this button continues the same workflow. Use {{button.label}} and {{button.index}} to identify which button was pressed.",
       "buttonLinkedWorkflow": "Linked Workflow",
       "buttonLinkedWorkflowHint": "Workflow to run when this button is clicked",
       "buttonLinkedWorkflowPlaceholder": "Select a workflow...",

@@ -168,6 +168,11 @@
     "messages": "メッセージ送信",
     "workflow": "ワークフロー"
   },
+  "featureGate": {
+    "title": "この機能はご利用いただけません",
+    "desc": "このページの機能を使用するには、対応するプランまたは機能フラグが必要です。",
+    "upgrade": "プランをアップグレード"
+  },
   "overview": {
     "desc": "サーバーの状態と利用可能な機能を確認できます",
     "balance": "クレジット残高",
@@ -1456,6 +1461,8 @@
       "noSubscription": "サブスクリプションなし",
       "detailExpiry": "有効期限",
       "detailFeatures": "機能フラグ",
+      "featureFromPlan": "プラン",
+      "featureRawValue": "フラグ値",
       "addPurge": "Auto Purge 追加",
       "purgeDesc": "{msgLimit}件 / {interval}分ごとに削除",
       "msgLimit": "メッセージ上限",

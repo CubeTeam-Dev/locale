@@ -1260,7 +1260,7 @@
       "buttonModeCustomId": "カスタムID",
       "buttonModeLinked": "ワークフローを連携する",
       "buttonModeContinue": "続けて実行",
-      "buttonModeContinueHint": "このボタンが押されると、同じワークフローの続きが実行されます。{{button.label}} と {{button.index}} で押されたボタンを判別できます。",
+      "buttonModeContinueHint": "このボタンが押されると、同じワークフローの続きが実行されます。'{{button.label}}' と '{{button.index}}' で押されたボタンを判別できます。",
       "buttonLinkedWorkflow": "ワークフローを連携しました",
       "buttonLinkedWorkflowHint": "ボタンがクリックされたときに実行するワークフロー",
       "buttonLinkedWorkflowPlaceholder": "ワークフローを選択...",

@@ -471,7 +471,11 @@
     "pagination": {
       "prev": "Previous",
       "next": "Next"
-    }
+    },
+    "syncBtn": "Sync with Stripe",
+    "syncOk": "Subscription info synced successfully",
+    "syncFail": "Sync failed",
+    "syncNote": "If your subscription isn't showing up correctly, you can manually sync with Stripe using the button above"
   },
   "pricing": {
     "title": "Pricing",
@@ -1467,7 +1471,9 @@
       "confirmSync": "Sync all subscriptions from Stripe to DB?",
       "syncOk": "Synced {synced} subscriptions (errors: {errors})",
       "syncFail": "Sync failed",
-      "cancelAtEnd": "cancels at period end"
+      "cancelAtEnd": "cancels at period end",
+      "syncUserPlaceholder": "User ID",
+      "confirmSyncUser": "Sync subscription info for user {userId}?"
     },
     "blacklist": {
       "title": "Blacklist",

@@ -1013,6 +1013,36 @@
       "messageDeleteTitle": "Message Delete Settings",
       "modalSubmitTitle": "Modal Submit Settings",
       "webhookReceiveTitle": "Webhook Receive Settings",
+      "rssPollTitle": "RSS Monitor Settings",
+      "youtubeWebsubTitle": "YouTube Post Notification Settings",
+      "twitchEventsubTitle": "Twitch Event Notification Settings",
+      "rssFeedUrl": "RSS Feed URL",
+      "rssFeedUrlHint": "Specify the RSS/Atom feed URL to monitor (http/https)",
+      "rssFeedUrlPlaceholder": "e.g. https://example.com/feed.xml",
+      "rssInterval": "Check Interval",
+      "rssIntervalHint": "Choose how often to check for new posts",
+      "rssIntervals": {
+        "5m": "Every 5 minutes",
+        "15m": "Every 15 minutes",
+        "30m": "Every 30 minutes",
+        "1h": "Every 1 hour",
+        "6h": "Every 6 hours",
+        "12h": "Every 12 hours",
+        "24h": "Every 24 hours"
+      },
+      "youtubeChannelId": "YouTube Channel ID",
+      "youtubeChannelIdHint": "Specify the YouTube channel ID to receive notifications from",
+      "youtubeChannelIdPlaceholder": "e.g. UCxxxxxxxxxxxxxxxxxxxxxx",
+      "twitchBroadcasterUserId": "Twitch Broadcaster User ID",
+      "twitchBroadcasterUserIdHint": "Specify the broadcaster's numeric user ID",
+      "twitchBroadcasterUserIdPlaceholder": "e.g. 123456789",
+      "twitchSubscriptionTypes": "Event Types",
+      "twitchSubscriptionTypesHint": "Select which Twitch events should trigger the workflow",
+      "twitchSubscriptionTypeLabels": {
+        "stream_online": "Stream Online (stream.online)",
+        "stream_offline": "Stream Offline (stream.offline)",
+        "channel_update": "Channel Update (channel.update)"
+      },
       "customIdFilter": "Custom ID (Optional)",
       "customIdFilterHint": "Only trigger for custom IDs starting with this value. Empty means all.",
       "customIdPlaceholder": "e.g. my-button",
@@ -1099,6 +1129,18 @@
         "webhook_receive": {
           "label": "Webhook Receive",
           "desc": "When a webhook request is received"
+        },
+        "rss_poll": {
+          "label": "RSS Post",
+          "desc": "When a new item is published in the RSS feed"
+        },
+        "youtube_websub": {
+          "label": "YouTube Post",
+          "desc": "When a new video is published on the channel"
+        },
+        "twitch_eventsub": {
+          "label": "Twitch Event",
+          "desc": "When a selected Twitch event is received"
         }
       },
       "conditions": {
@@ -1169,7 +1211,15 @@
       "validationVarKeyEmpty": "\"Variable Value\" nodes require a variable name.",
       "validationScheduledCronMissing": "Scheduled triggers require a cron expression (the cron field).",
       "validationScheduledCronInvalid": "Invalid cron expression. Use standard 5-field format (e.g. */5 * * * *).",
-      "validationScheduledCronTooFrequent": "Minimum execution interval is 5 minutes (e.g. */5 * * * *)."
+      "validationScheduledCronTooFrequent": "Minimum execution interval is 5 minutes (e.g. */5 * * * *).",
+      "validationRssFeedUrlMissing": "RSS triggers require a feed URL.",
+      "validationRssFeedUrlInvalid": "RSS feed URL must be a valid http:// or https:// URL.",
+      "validationRssIntervalInvalid": "RSS interval is invalid.",
+      "validationYoutubeChannelIdMissing": "YouTube triggers require a channel ID.",
+      "validationTwitchBroadcasterUserIdMissing": "Twitch triggers require a broadcaster user ID.",
+      "validationTwitchBroadcasterUserIdInvalid": "Broadcaster user ID must contain numbers only.",
+      "validationTwitchSubscriptionTypesMissing": "Select at least one Twitch subscription type.",
+      "validationTwitchSubscriptionTypeInvalid": "Twitch subscription types include an invalid value."
     },
     "logs": {
       "empty": "No execution logs",

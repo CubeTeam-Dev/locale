@@ -1166,7 +1166,10 @@
       "validationThreadChannelEmpty": "\"Create Thread\" nodes require a target channel.",
       "validationRenameChannelEmpty": "\"Rename Channel\" nodes require a channel and a new name.",
       "validationAccountAgeEmpty": "\"Account Age\" nodes require a minimum number of days.",
-      "validationVarKeyEmpty": "\"Variable Value\" nodes require a variable name."
+      "validationVarKeyEmpty": "\"Variable Value\" nodes require a variable name.",
+      "validationScheduledCronMissing": "Scheduled triggers require a cron expression (the cron field).",
+      "validationScheduledCronInvalid": "Invalid cron expression. Use standard 5-field format (e.g. */5 * * * *).",
+      "validationScheduledCronTooFrequent": "Minimum execution interval is 5 minutes (e.g. */5 * * * *)."
     },
     "logs": {
       "empty": "No execution logs",

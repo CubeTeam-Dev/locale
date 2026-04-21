@@ -1166,7 +1166,10 @@
       "validationThreadChannelEmpty": "「スレッド作成」ノードには対象チャンネルが必要です。",
       "validationRenameChannelEmpty": "「チャンネル名変更」ノードにはチャンネルと新しい名前が必要です。",
       "validationAccountAgeEmpty": "「アカウント作成日数」ノードには最小日数が必要です。",
-      "validationVarKeyEmpty": "「変数の値」ノードには変数名が必要です。"
+      "validationVarKeyEmpty": "「変数の値」ノードには変数名が必要です。",
+      "validationScheduledCronMissing": "scheduledトリガーにはcron式（cron フィールド）の指定が必要です",
+      "validationScheduledCronInvalid": "無効なcron式です。標準の5フィールド形式（例: */5 * * * *）で指定してください",
+      "validationScheduledCronTooFrequent": "最短実行間隔は5分です（例: */5 * * * *）"
     },
     "logs": {
       "empty": "実行ログがありません",

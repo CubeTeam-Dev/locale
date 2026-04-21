@@ -1013,6 +1013,36 @@
       "messageDeleteTitle": "メッセージ削除設定",
       "modalSubmitTitle": "モーダル送信設定",
       "webhookReceiveTitle": "Webhook受信設定",
+      "rssPollTitle": "RSS監視設定",
+      "youtubeWebsubTitle": "YouTube投稿通知設定",
+      "twitchEventsubTitle": "Twitchイベント通知設定",
+      "rssFeedUrl": "RSSフィードURL",
+      "rssFeedUrlHint": "監視するRSS/AtomフィードのURLを指定します（http/https）",
+      "rssFeedUrlPlaceholder": "例: https://example.com/feed.xml",
+      "rssInterval": "確認間隔",
+      "rssIntervalHint": "新着投稿の確認頻度を選択します",
+      "rssIntervals": {
+        "5m": "5分ごと",
+        "15m": "15分ごと",
+        "30m": "30分ごと",
+        "1h": "1時間ごと",
+        "6h": "6時間ごと",
+        "12h": "12時間ごと",
+        "24h": "24時間ごと"
+      },
+      "youtubeChannelId": "YouTubeチャンネルID",
+      "youtubeChannelIdHint": "通知を受け取りたいYouTubeチャンネルのIDを指定します",
+      "youtubeChannelIdPlaceholder": "例: UCxxxxxxxxxxxxxxxxxxxxxx",
+      "twitchBroadcasterUserId": "Twitch配信者ユーザーID",
+      "twitchBroadcasterUserIdHint": "通知を受け取りたい配信者の数値ユーザーIDを指定します",
+      "twitchBroadcasterUserIdPlaceholder": "例: 123456789",
+      "twitchSubscriptionTypes": "通知タイプ",
+      "twitchSubscriptionTypesHint": "受け取りたいTwitchイベントを選択します",
+      "twitchSubscriptionTypeLabels": {
+        "stream_online": "配信開始 (stream.online)",
+        "stream_offline": "配信終了 (stream.offline)",
+        "channel_update": "チャンネル更新 (channel.update)"
+      },
       "customIdFilter": "カスタムID（任意）",
       "customIdFilterHint": "特定のカスタムIDから始まるものだけを対象にします。空欄で全て対象",
       "customIdPlaceholder": "例: my-button",
@@ -1099,6 +1129,18 @@
         "webhook_receive": {
           "label": "Webhook受信",
           "desc": "Webhookリクエストを受信したとき"
+        },
+        "rss_poll": {
+          "label": "RSS投稿",
+          "desc": "RSSフィードに新着記事が追加されたとき"
+        },
+        "youtube_websub": {
+          "label": "YouTube投稿",
+          "desc": "指定チャンネルに新しい動画が公開されたとき"
+        },
+        "twitch_eventsub": {
+          "label": "Twitchイベント",
+          "desc": "Twitchの指定イベントを受信したとき"
         }
       },
       "conditions": {
@@ -1169,7 +1211,15 @@
       "validationVarKeyEmpty": "「変数の値」ノードには変数名が必要です。",
       "validationScheduledCronMissing": "scheduledトリガーにはcron式（cron フィールド）の指定が必要です",
       "validationScheduledCronInvalid": "無効なcron式です。標準の5フィールド形式（例: */5 * * * *）で指定してください",
-      "validationScheduledCronTooFrequent": "最短実行間隔は5分です（例: */5 * * * *）"
+      "validationScheduledCronTooFrequent": "最短実行間隔は5分です（例: */5 * * * *）",
+      "validationRssFeedUrlMissing": "RSSトリガーにはフィードURLの指定が必要です。",
+      "validationRssFeedUrlInvalid": "RSSフィードURLは http:// または https:// で始まる有効なURLを指定してください。",
+      "validationRssIntervalInvalid": "RSSの実行間隔が不正です。",
+      "validationYoutubeChannelIdMissing": "YouTubeトリガーにはチャンネルIDの指定が必要です。",
+      "validationTwitchBroadcasterUserIdMissing": "Twitchトリガーには配信者ユーザーIDの指定が必要です。",
+      "validationTwitchBroadcasterUserIdInvalid": "配信者ユーザーIDは数字のみで指定してください。",
+      "validationTwitchSubscriptionTypesMissing": "Twitchトリガーには少なくとも1つの購読タイプが必要です。",
+      "validationTwitchSubscriptionTypeInvalid": "Twitchの購読タイプに不正な値が含まれています。"
     },
     "logs": {
       "empty": "実行ログがありません",

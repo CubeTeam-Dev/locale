@@ -471,7 +471,11 @@
     "pagination": {
       "prev": "前へ",
       "next": "次へ"
-    }
+    },
+    "syncBtn": "情報を最新化",
+    "syncOk": "サブスクリプション情報を同期しました",
+    "syncFail": "同期に失敗しました",
+    "syncNote": "Stripeのデータと同期が取れていない場合は、上のボタンで手動同期できます"
   },
   "pricing": {
     "title": "料金プラン",
@@ -1467,7 +1471,9 @@
       "confirmSync": "StripeとDBのサブスクリプション情報を同期しますか？",
       "syncOk": "{synced}件同期しました（エラー: {errors}件）",
       "syncFail": "同期に失敗しました",
-      "cancelAtEnd": "期間終了時にキャンセル"
+      "cancelAtEnd": "期間終了時にキャンセル",
+      "syncUserPlaceholder": "User ID",
+      "confirmSyncUser": "ユーザー {userId} のサブスクリプション情報を同期しますか？"
     },
     "blacklist": {
       "title": "ブラックリスト",

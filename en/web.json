@@ -472,10 +472,10 @@
       "prev": "Previous",
       "next": "Next"
     },
-    "syncBtn": "Sync with Stripe",
+    "syncBtn": "Sync Subscription",
     "syncOk": "Subscription info synced successfully",
     "syncFail": "Sync failed",
-    "syncNote": "If your subscription isn't showing up correctly, you can manually sync with Stripe using the button above"
+    "syncNote": "If your purchased subscription isn't showing up, click the sync button to fetch the latest info"
   },
   "pricing": {
     "title": "Pricing",

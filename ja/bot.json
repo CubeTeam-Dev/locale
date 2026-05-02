@@ -548,6 +548,16 @@
       "delete": {
         "success": "ピン留めメッセージを削除しました。"
       }
+    },
+    "sus": {
+      "added": "✅ <@{userId}> に Suspicion Level {level} を付与しました。",
+      "removed": "✅ <@{userId}> の Suspicion Level を解除しました。"
+    },
+    "report": {
+      "self_error": "自分自身を通報することはできません。",
+      "default_reason": "通報",
+      "reporter_prefix": "通報者: {moderatorTag} — {reason}",
+      "success": "✅ <@{userId}> を通報しました。モデレーターが確認します。"
     }
   },
   "info": {
@@ -931,6 +941,71 @@
       "thread_create": "スレッド作成",
       "thread_update": "スレッド更新",
       "thread_delete": "スレッド削除"
+    }
+  },
+  "moderation": {
+    "mod_log": {
+      "title": "🚨 Moderation Action",
+      "body": "**User:** <@{userId}> ({userTag})\n**Action(s):** {actions}\n**Reason:** {reason}",
+      "default_reason": "Automod Action",
+      "btn_ban": "BAN",
+      "btn_kick": "Kick",
+      "btn_unquarantine": "誤検知(解除) / Unquarantine"
+    },
+    "warn": {
+      "dm_title": "⚠️ 警告",
+      "dm_body": "**{guildName}** の自動モデレーションにより警告を受けました。サーバーのルールを確認してください。"
+    },
+    "notify_owner": {
+      "dm_title": "⚠️ 管理者通知",
+      "dm_body": "**サーバー:** {guildName}\n**対象:** <@{userId}> ({userTag})\n**理由:** {reason}\n\nこのユーザーは信頼スコアが高いため24時間タイムアウトを適用しました。手動確認してください。"
+    },
+    "appeal_dm": {
+      "quarantine_title": "⚠️ 隔離（Quarantine）が適用されました",
+      "timeout_title": "⚠️ タイムアウトが適用されました",
+      "body": "**サーバー:** {guildName}\n\n自動モデレーションにより {label} が適用されました。誤検知と思われる場合は、下のボタンから異議申し立てができます。",
+      "quarantine_label": "隔離（Quarantine）",
+      "timeout_label": "タイムアウト",
+      "btn_appeal": "異議申し立て"
+    },
+    "appeal_modal": {
+      "title": "異議申し立て",
+      "reason_label": "申し立ての理由",
+      "reason_placeholder": "誤検知と思われる理由や状況を詳しく入力してください。",
+      "success": "✅ 異議申し立てを受け付けました。モデレーターが確認次第、対応します。",
+      "log_title": "📩 異議申し立て",
+      "log_body": "**申立人:** <@{userId}> ({userTag})\n**内容:**\n{reason}"
+    },
+    "mod_ban": {
+      "success": "ユーザー <@{userId}> をBANしました。",
+      "failed": "ユーザー <@{userId}> のBANに失敗しました。",
+      "reason": "{moderatorTag} が Mod-Log からBANしました"
+    },
+    "mod_kick": {
+      "success": "ユーザー <@{userId}> をKickしました。",
+      "failed": "ユーザー <@{userId}> のKickに失敗しました。",
+      "reason": "{moderatorTag} が Mod-Log からKickしました"
+    },
+    "mod_unquarantine": {
+      "not_found": "ユーザー <@{userId}> の隔離スナップショットが見つかりません。",
+      "not_in_server": "ユーザー <@{userId}> はすでにサーバーにいません。",
+      "success": "ユーザー <@{userId}> の隔離を解除し、ロールを復元しました。",
+      "failed": "ユーザー <@{userId}> の隔離解除に失敗しました。"
+    },
+    "join_gate": {
+      "dm_title": "🔒 認証が必要です",
+      "dm_body": "**{guildName}** に参加するには認証が必要です。\n\n[こちらをクリックして認証してください]({verifyUrl})\n\nリンクは **10分間** 有効です。",
+      "channel_fallback": "<@{userId}> 認証が必要です。下のボタンをクリックして認証リンクを取得してください。"
+    },
+    "pow_gate": {
+      "channel_title": "🔒 認証が必要です",
+      "channel_body": "このサーバーに参加するには認証が必要です。\n下のボタンをクリックして認証リンクを取得してください。",
+      "channel_note": "-# 認証リンクは10分間有効です",
+      "btn_label": "認証リンクを取得",
+      "no_guild": "認証情報を取得できませんでした。",
+      "no_settings": "認証設定が見つかりません。",
+      "not_needed": "認証は不要です。",
+      "link_reply": "以下のリンクから認証してください（**10分間有効**）:\n{verifyUrl}"
     }
   }
 }

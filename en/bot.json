@@ -548,6 +548,16 @@
       "delete": {
         "success": "Deleted sticky message."
       }
+    },
+    "sus": {
+      "added": "✅ Granted Suspicion Level {level} to <@{userId}>.",
+      "removed": "✅ Removed Suspicion Level from <@{userId}>."
+    },
+    "report": {
+      "self_error": "You cannot report yourself.",
+      "default_reason": "Report",
+      "reporter_prefix": "Reported by: {moderatorTag} — {reason}",
+      "success": "✅ Reported <@{userId}>. A moderator will review it shortly."
     }
   },
   "info": {
@@ -931,6 +941,71 @@
       "thread_create": "Thread Created",
       "thread_update": "Thread Updated",
       "thread_delete": "Thread Deleted"
+    }
+  },
+  "moderation": {
+    "mod_log": {
+      "title": "🚨 Moderation Action",
+      "body": "**User:** <@{userId}> ({userTag})\n**Action(s):** {actions}\n**Reason:** {reason}",
+      "default_reason": "Automod Action",
+      "btn_ban": "BAN",
+      "btn_kick": "Kick",
+      "btn_unquarantine": "False Positive (Release)"
+    },
+    "warn": {
+      "dm_title": "⚠️ Warning",
+      "dm_body": "You have received a warning from **{guildName}**'s auto-moderation. Please review the server rules."
+    },
+    "notify_owner": {
+      "dm_title": "⚠️ Owner Notification",
+      "dm_body": "**Server:** {guildName}\n**Target:** <@{userId}> ({userTag})\n**Reason:** {reason}\n\nThis user had a high trust score so a 24-hour timeout was applied. Please review manually."
+    },
+    "appeal_dm": {
+      "quarantine_title": "⚠️ Quarantine Applied",
+      "timeout_title": "⚠️ Timeout Applied",
+      "body": "**Server:** {guildName}\n\nAuto-moderation has applied a {label} to your account. If you believe this is a false positive, you can submit an appeal using the button below.",
+      "quarantine_label": "Quarantine",
+      "timeout_label": "Timeout",
+      "btn_appeal": "Submit Appeal"
+    },
+    "appeal_modal": {
+      "title": "Submit Appeal",
+      "reason_label": "Reason for Appeal",
+      "reason_placeholder": "Please describe why you believe this action was a false positive.",
+      "success": "✅ Your appeal has been submitted. A moderator will review it shortly.",
+      "log_title": "📩 Appeal Received",
+      "log_body": "**Appellant:** <@{userId}> ({userTag})\n**Message:**\n{reason}"
+    },
+    "mod_ban": {
+      "success": "Successfully banned user <@{userId}>.",
+      "failed": "Failed to ban user <@{userId}>.",
+      "reason": "Banned by {moderatorTag} via Mod-Log"
+    },
+    "mod_kick": {
+      "success": "Successfully kicked user <@{userId}>.",
+      "failed": "Failed to kick user <@{userId}>.",
+      "reason": "Kicked by {moderatorTag} via Mod-Log"
+    },
+    "mod_unquarantine": {
+      "not_found": "Failed to find quarantine snapshot for user <@{userId}>.",
+      "not_in_server": "User <@{userId}> is no longer in the server.",
+      "success": "Successfully unquarantined user <@{userId}> and restored roles.",
+      "failed": "Failed to unquarantine user <@{userId}>."
+    },
+    "join_gate": {
+      "dm_title": "🔒 Verification Required",
+      "dm_body": "Verification is required to join **{guildName}**.\n\n[Click here to verify]({verifyUrl})\n\nThis link is valid for **10 minutes**.",
+      "channel_fallback": "<@{userId}> Verification is required. Click the button below to get your verification link."
+    },
+    "pow_gate": {
+      "channel_title": "🔒 Verification Required",
+      "channel_body": "Verification is required to join this server.\nClick the button below to get your verification link.",
+      "channel_note": "-# Verification link is valid for 10 minutes",
+      "btn_label": "Get Verification Link",
+      "no_guild": "Failed to retrieve verification information.",
+      "no_settings": "Verification settings not found.",
+      "not_needed": "Verification is not required.",
+      "link_reply": "Please verify using the following link (**valid for 10 minutes**):\n{verifyUrl}"
     }
   }
 }

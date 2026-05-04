@@ -963,10 +963,14 @@
     "appeal_dm": {
       "quarantine_title": "⚠️ 隔離（Quarantine）が適用されました",
       "timeout_title": "⚠️ タイムアウトが適用されました",
-      "body": "**サーバー:** {guildName}\n\n自動モデレーションにより {label} が適用されました。誤検知と思われる場合は、下のボタンから異議申し立てができます。",
+      "body": "**サーバー:** {guildName}\n**理由:** {reason}\n\n自動モデレーションにより {label} が適用されました。誤検知と思われる場合は、下のボタンから異議申し立てができます。",
       "quarantine_label": "隔離（Quarantine）",
       "timeout_label": "タイムアウト",
       "btn_appeal": "異議申し立て"
+    },
+    "notify": {
+      "channel_title": "🚨 自動モデレーション",
+      "channel_body": "<@{userId}> に対して処罰を実施しました。\n**処罰:** {action}\n**理由:** {reason}"
     },
     "appeal_modal": {
       "title": "異議申し立て",

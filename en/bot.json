@@ -1018,6 +1018,7 @@
     },
     "actions": {
       "QUARANTINE": "Quarantine",
+      "UNQUARANTINE": "Unquarantine",
       "TIMEOUT_1H": "1 Hour Timeout",
       "TIMEOUT_24H": "24 Hour Timeout",
       "DELETE_MESSAGE": "Message Deletion",

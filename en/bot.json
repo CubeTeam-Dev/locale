@@ -977,6 +977,7 @@
       "reason_label": "Reason for Appeal",
       "reason_placeholder": "Please describe why you believe this action was a false positive.",
       "success": "✅ Your appeal has been submitted. A moderator will review it shortly.",
+      "already_submitted": "❌ You have already submitted an appeal. Please wait for a moderator to review it.",
       "log_title": "📩 Appeal Received",
       "log_body": "**Appellant:** <@{userId}> ({userTag})\n**Message:**\n{reason}"
     },

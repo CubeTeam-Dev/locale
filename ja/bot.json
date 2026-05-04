@@ -977,6 +977,7 @@
       "reason_label": "申し立ての理由",
       "reason_placeholder": "誤検知と思われる理由や状況を詳しく入力してください。",
       "success": "✅ 異議申し立てを受け付けました。モデレーターが確認次第、対応します。",
+      "already_submitted": "❌ 異議申し立てはすでに送信済みです。モデレーターの確認をお待ちください。",
       "log_title": "📩 異議申し立て",
       "log_body": "**申立人:** <@{userId}> ({userTag})\n**内容:**\n{reason}"
     },

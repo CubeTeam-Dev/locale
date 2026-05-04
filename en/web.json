@@ -1665,7 +1665,7 @@
     "ruleInactiveChannel": "Inactive Channel Post",
     "ruleInactiveChannelDesc": "Add +3% heat for posting in channels with no recent activity",
     "inactiveChannelThreshold": "Inactivity threshold (minutes)",
-    "nightTimeRange": "Night Hours (UTC)",
+    "nightTimeRange": "Night Hours (JST)",
     "nightTimeRangeDesc": "Severity threshold is lowered during this window (night-time policy)",
     "nightTimeRangeTo": "to",
     "spamHashManagement": "Known Spam Image Hashes",

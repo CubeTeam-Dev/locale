@@ -1010,6 +1010,39 @@
       "no_settings": "認証設定が見つかりません。",
       "not_needed": "認証は不要です。",
       "link_reply": "以下のリンクから認証してください（**10分間有効**）:\n{verifyUrl}"
+    },
+    "actions": {
+      "QUARANTINE": "隔離（Quarantine）",
+      "TIMEOUT_1H": "1時間のタイムアウト",
+      "TIMEOUT_24H": "24時間のタイムアウト",
+      "DELETE_MESSAGE": "メッセージ削除",
+      "WARN": "警告",
+      "SEND_TO_REVIEW_QUEUE": "手動レビューへ送信",
+      "ADD_SUSPICION_LEVEL_1": "監視レベル1追加",
+      "NOTIFY_OWNER": "オーナー通知",
+      "MARK_COHORT_SUSPICION_LV2": "連座制による監視レベル2付与"
+    },
+    "rules": {
+      "MESSAGE_SEND": "メッセージの連続送信",
+      "MESSAGE_REPEAT": "同一メッセージの反復",
+      "LINE_BREAK_SPAM": "改行スパム",
+      "ATTACHMENT": "添付ファイル送信",
+      "EMOJI": "絵文字スパム",
+      "ZALGO": "Zalgoテキスト",
+      "LONG_TEXT": "長文送信",
+      "URL": "URL送信",
+      "MENTION_USER": "ユーザーメンション",
+      "MENTION_ROLE": "ロールメンション",
+      "MENTION_HERE": "Hereメンション",
+      "MENTION_EVERYONE": "Everyoneメンション",
+      "INVITATION": "招待リンク",
+      "PHISHING": "フィッシングリンク",
+      "IMAGE_HASH": "不適切画像",
+      "CROSS_CHANNEL": "複数チャンネルへのスパム",
+      "BLACKLIST_WORD": "禁止ワード",
+      "INACTIVE_CHANNEL": "非アクティブチャンネルへの投稿",
+      "NSFW_URL": "NSFWリンク",
+      "ANTINUKE": "破壊行為（Anti-Nuke）の検出"
     }
   }
 }

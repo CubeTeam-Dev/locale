@@ -949,12 +949,12 @@
   },
   "moderation": {
     "mod_log": {
-      "title": "🚨 Moderation Action",
-      "body": "**User:** <@{userId}> ({userTag})\n**Action(s):** {actions}\n**Reason:** {reason}",
-      "default_reason": "Automod Action",
+      "title": "🚨 モデレーション実行",
+      "body": "**対象:** <@{userId}> ({userTag})\n**実施アクション:** {actions}\n**理由:** {reason}",
+      "default_reason": "自動モデレーションによる処罰",
       "btn_ban": "BAN",
-      "btn_kick": "Kick",
-      "btn_unquarantine": "誤検知(解除) / Unquarantine"
+      "btn_kick": "キック",
+      "btn_unquarantine": "誤検知（隔離解除）"
     },
     "warn": {
       "dm_title": "⚠️ 警告",
@@ -1018,6 +1018,7 @@
     },
     "actions": {
       "QUARANTINE": "隔離（Quarantine）",
+      "UNQUARANTINE": "隔離解除",
       "TIMEOUT_1H": "1時間のタイムアウト",
       "TIMEOUT_24H": "24時間のタイムアウト",
       "DELETE_MESSAGE": "メッセージ削除",

@@ -891,7 +891,11 @@
       "message_content": "Message Content",
       "before_embed_preview": "Embed Before Edit",
       "after_embed_preview": "Embed After Edit",
-      "removed": "Removed"
+      "removed": "Removed",
+      "embeds_deleted_threaded": "Deleted message embeds (see thread for details)",
+      "embed_deleted_thread_name": "deleted-embed-{id}",
+      "embed_deleted_thread_intro": "This thread stores the embed preview of the deleted message.",
+      "deleted_embed_preview": "Deleted Embed"
     },
     "events": {
       "guild_update": "Server Updated",
@@ -977,6 +981,7 @@
       "reason_label": "Reason for Appeal",
       "reason_placeholder": "Please describe why you believe this action was a false positive.",
       "success": "✅ Your appeal has been submitted. A moderator will review it shortly.",
+      "already_submitted": "❌ You have already submitted an appeal. Please wait for a moderator to review it.",
       "log_title": "📩 Appeal Received",
       "log_body": "**Appellant:** <@{userId}> ({userTag})\n**Message:**\n{reason}"
     },
@@ -1010,6 +1015,39 @@
       "no_settings": "Verification settings not found.",
       "not_needed": "Verification is not required.",
       "link_reply": "Please verify using the following link (**valid for 10 minutes**):\n{verifyUrl}"
+    },
+    "actions": {
+      "QUARANTINE": "Quarantine",
+      "TIMEOUT_1H": "1 Hour Timeout",
+      "TIMEOUT_24H": "24 Hour Timeout",
+      "DELETE_MESSAGE": "Message Deletion",
+      "WARN": "Warning",
+      "SEND_TO_REVIEW_QUEUE": "Send to Manual Review",
+      "ADD_SUSPICION_LEVEL_1": "Add Suspicion Level 1",
+      "NOTIFY_OWNER": "Notify Owner",
+      "MARK_COHORT_SUSPICION_LV2": "Add Cohort Suspicion Level 2"
+    },
+    "rules": {
+      "MESSAGE_SEND": "Sending Messages",
+      "MESSAGE_REPEAT": "Repeating Same Message",
+      "LINE_BREAK_SPAM": "Line Break Spam",
+      "ATTACHMENT": "Sending Attachments",
+      "EMOJI": "Emoji Spam",
+      "ZALGO": "Zalgo Text",
+      "LONG_TEXT": "Sending Long Text",
+      "URL": "Sending URLs",
+      "MENTION_USER": "User Mentions",
+      "MENTION_ROLE": "Role Mentions",
+      "MENTION_HERE": "Here Mention",
+      "MENTION_EVERYONE": "Everyone Mention",
+      "INVITATION": "Invite Link",
+      "PHISHING": "Phishing Link",
+      "IMAGE_HASH": "Inappropriate Image",
+      "CROSS_CHANNEL": "Cross-channel Spam",
+      "BLACKLIST_WORD": "Blacklisted Word",
+      "INACTIVE_CHANNEL": "Posting in Inactive Channel",
+      "NSFW_URL": "NSFW Link",
+      "ANTINUKE": "Anti-Nuke Detection"
     }
   }
 }

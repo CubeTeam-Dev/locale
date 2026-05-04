@@ -963,10 +963,14 @@
     "appeal_dm": {
       "quarantine_title": "⚠️ Quarantine Applied",
       "timeout_title": "⚠️ Timeout Applied",
-      "body": "**Server:** {guildName}\n\nAuto-moderation has applied a {label} to your account. If you believe this is a false positive, you can submit an appeal using the button below.",
+      "body": "**Server:** {guildName}\n**Reason:** {reason}\n\nAuto-moderation has applied a {label} to your account. If you believe this is a false positive, you can submit an appeal using the button below.",
       "quarantine_label": "Quarantine",
       "timeout_label": "Timeout",
       "btn_appeal": "Submit Appeal"
+    },
+    "notify": {
+      "channel_title": "🚨 Auto Moderation",
+      "channel_body": "Applied punishment to <@{userId}>.\n**Action:** {action}\n**Reason:** {reason}"
     },
     "appeal_modal": {
       "title": "Submit Appeal",

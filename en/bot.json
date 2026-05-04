@@ -550,8 +550,9 @@
       }
     },
     "sus": {
-      "added": "✅ Granted Suspicion Level {level} to <@{userId}>.",
-      "removed": "✅ Removed Suspicion Level from <@{userId}>."
+      "added": "✅ Added Suspicion Level {level} to <@{userId}>.",
+      "removed": "✅ Removed Suspicion Level from <@{userId}>.",
+      "already_exists": "User <@{userId}> is already in that state or the action was skipped."
     },
     "report": {
       "self_error": "You cannot report yourself.",
@@ -999,7 +1000,8 @@
       "not_found": "Failed to find quarantine snapshot for user <@{userId}>.",
       "not_in_server": "User <@{userId}> is no longer in the server.",
       "success": "Successfully unquarantined user <@{userId}> and restored roles.",
-      "failed": "Failed to unquarantine user <@{userId}>."
+      "failed": "Failed to unquarantine user <@{userId}>.",
+      "already_exists": "User <@{userId}> is not currently quarantined."
     },
     "join_gate": {
       "dm_title": "🔒 Verification Required",
@@ -1048,7 +1050,8 @@
       "BLACKLIST_WORD": "Blacklisted Word",
       "INACTIVE_CHANNEL": "Posting in Inactive Channel",
       "NSFW_URL": "NSFW Link",
-      "ANTINUKE": "Anti-Nuke Detection"
+      "ANTINUKE": "Anti-Nuke Detection",
+      "ANTINUKE_ROLE_GRANT": "Granted dangerous permissions to a role"
     }
   }
 }

@@ -551,7 +551,8 @@
     },
     "sus": {
       "added": "✅ <@{userId}> に Suspicion Level {level} を付与しました。",
-      "removed": "✅ <@{userId}> の Suspicion Level を解除しました。"
+      "removed": "✅ <@{userId}> の Suspicion Level を解除しました。",
+      "already_exists": "ユーザー <@{userId}> はすでにその状態であるか、処罰をスキップしました。"
     },
     "report": {
       "self_error": "自分自身を通報することはできません。",
@@ -999,7 +1000,8 @@
       "not_found": "ユーザー <@{userId}> の隔離スナップショットが見つかりません。",
       "not_in_server": "ユーザー <@{userId}> はすでにサーバーにいません。",
       "success": "ユーザー <@{userId}> の隔離を解除し、ロールを復元しました。",
-      "failed": "ユーザー <@{userId}> の隔離解除に失敗しました。"
+      "failed": "ユーザー <@{userId}> の隔離解除に失敗しました。",
+      "already_exists": "ユーザー <@{userId}> は現在隔離されていません。"
     },
     "join_gate": {
       "dm_title": "🔒 認証が必要です",
@@ -1048,7 +1050,8 @@
       "BLACKLIST_WORD": "禁止ワード",
       "INACTIVE_CHANNEL": "非アクティブチャンネルへの投稿",
       "NSFW_URL": "NSFWリンク",
-      "ANTINUKE": "破壊行為（Anti-Nuke）の検出"
+      "ANTINUKE": "破壊行為（Anti-Nuke）の検出",
+      "ANTINUKE_ROLE_GRANT": "ロールへの危険な権限の付与"
     }
   }
 }

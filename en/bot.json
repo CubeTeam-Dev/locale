@@ -378,6 +378,67 @@
     },
     "ping": {
       "description": "Ping the bot."
+    },
+    "sus": {
+      "description": "Manually manage Suspicion Level.",
+      "add": {
+        "description": "Grant Suspicion Level to a user.",
+        "options": {
+          "user": {
+            "description": "Target user"
+          },
+          "level": {
+            "description": "Level to grant (1=GRAY, 2=BLACKISH, 3=DANGER)"
+          }
+        }
+      },
+      "remove": {
+        "description": "Remove Suspicion Level from a user.",
+        "options": {
+          "user": {
+            "description": "Target user"
+          }
+        }
+      }
+    },
+    "mod": {
+      "description": "Advanced moderation commands.",
+      "quarantine": {
+        "description": "Quarantine a user (apply quarantine role and strip permissions).",
+        "options": {
+          "user": {
+            "description": "User to quarantine"
+          },
+          "reason": {
+            "description": "Reason for quarantine"
+          }
+        }
+      },
+      "unquarantine": {
+        "description": "Unquarantine a user.",
+        "options": {
+          "user": {
+            "description": "User to unquarantine"
+          },
+          "reason": {
+            "description": "Reason for unquarantine"
+          }
+        }
+      },
+      "info": {
+        "description": "Show user's moderation status (Heat, Suspicion, etc.).",
+        "title": "Moderation Info for {{user}}",
+        "heat": "Current Heat",
+        "suspicion": "Suspicion Level",
+        "last_violation": "Last Violation",
+        "trust_status": "Trust Status",
+        "violations": "Violation History Counts",
+        "options": {
+          "user": {
+            "description": "User to show info for"
+          }
+        }
+      }
     }
   },
   "context": {

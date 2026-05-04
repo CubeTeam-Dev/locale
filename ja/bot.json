@@ -891,7 +891,11 @@
       "message_content": "メッセージ内容",
       "before_embed_preview": "編集前Embed",
       "after_embed_preview": "編集後Embed",
-      "removed": "削除"
+      "removed": "削除",
+      "embeds_deleted_threaded": "削除されたメッセージのEmbed（詳細はスレッド）",
+      "embed_deleted_thread_name": "deleted-embed-{id}",
+      "embed_deleted_thread_intro": "このスレッドには削除されたメッセージのEmbedプレビューが保存されています。",
+      "deleted_embed_preview": "削除前Embed"
     },
     "events": {
       "guild_update": "サーバー設定更新",

@@ -891,7 +891,11 @@
       "message_content": "Message Content",
       "before_embed_preview": "Embed Before Edit",
       "after_embed_preview": "Embed After Edit",
-      "removed": "Removed"
+      "removed": "Removed",
+      "embeds_deleted_threaded": "Deleted message embeds (see thread for details)",
+      "embed_deleted_thread_name": "deleted-embed-{id}",
+      "embed_deleted_thread_intro": "This thread stores the embed preview of the deleted message.",
+      "deleted_embed_preview": "Deleted Embed"
     },
     "events": {
       "guild_update": "Server Updated",

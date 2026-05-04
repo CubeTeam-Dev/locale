@@ -378,6 +378,67 @@
     },
     "ping": {
       "description": "Ping値を表示します"
+    },
+    "sus": {
+      "description": "不審者(Suspicion)レベルを手動で管理します。",
+      "add": {
+        "description": "ユーザーに不審者レベルを付与します。",
+        "options": {
+          "user": {
+            "description": "対象のユーザー"
+          },
+          "level": {
+            "description": "付与するレベル (1:GRAY, 2:BLACKISH, 3:DANGER)"
+          }
+        }
+      },
+      "remove": {
+        "description": "ユーザーの不審者レベルを解除します。",
+        "options": {
+          "user": {
+            "description": "対象のユーザー"
+          }
+        }
+      }
+    },
+    "mod": {
+      "description": "高度なモデレーションコマンド",
+      "quarantine": {
+        "description": "ユーザーを隔離（隔離ロール付与＋権限剥奪）します。",
+        "options": {
+          "user": {
+            "description": "隔離するユーザー"
+          },
+          "reason": {
+            "description": "隔離の理由"
+          }
+        }
+      },
+      "unquarantine": {
+        "description": "ユーザーの隔離を解除します。",
+        "options": {
+          "user": {
+            "description": "解除するユーザー"
+          },
+          "reason": {
+            "description": "解除の理由"
+          }
+        }
+      },
+      "info": {
+        "description": "ユーザーのモデレーションステータス（Heat, Suspicion等）を表示します。",
+        "title": "{{user}} のモデレーション情報",
+        "heat": "現在のHeat",
+        "suspicion": "不審者レベル",
+        "last_violation": "最終違反日時",
+        "trust_status": "信頼ステータス",
+        "violations": "違反履歴カウント",
+        "options": {
+          "user": {
+            "description": "情報を表示するユーザー"
+          }
+        }
+      }
     }
   },
   "context": {

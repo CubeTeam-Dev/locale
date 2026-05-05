@@ -427,7 +427,7 @@
       },
       "info": {
         "description": "ユーザーのモデレーションステータス（Heat, Suspicion等）を表示します。",
-        "title": "{{user}} のモデレーション情報",
+        "title": "{user} のモデレーション情報",
         "heat": "現在のHeat",
         "suspicion": "不審者レベル",
         "last_violation": "最終違反日時",

@@ -427,7 +427,7 @@
       },
       "info": {
         "description": "Show user's moderation status (Heat, Suspicion, etc.).",
-        "title": "Moderation Info for {{user}}",
+        "title": "Moderation Info for {user}",
         "heat": "Current Heat",
         "suspicion": "Suspicion Level",
         "last_violation": "Last Violation",

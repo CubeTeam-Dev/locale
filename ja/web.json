@@ -1427,6 +1427,7 @@
       "users": "ユーザー",
       "guilds": "サーバー",
       "blacklist": "ブラックリスト",
+      "spamPatterns": "スパムパターン",
       "economy": "エコノミー"
     },
     "dashboard": {

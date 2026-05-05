@@ -1427,6 +1427,7 @@
       "users": "Users",
       "guilds": "Servers",
       "blacklist": "Blacklist",
+      "spamPatterns": "Spam Patterns",
       "economy": "Economy"
     },
     "dashboard": {

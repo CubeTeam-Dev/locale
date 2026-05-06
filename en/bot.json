@@ -1036,6 +1036,25 @@
       "thread_create": "Thread Created",
       "thread_update": "Thread Updated",
       "thread_delete": "Thread Deleted"
+    },
+    "reason": {
+      "role_keeper_regrant": "RoleKeeper: Re-granting previously held roles",
+      "pow_gate_success": "PoW Gate: Verification successful",
+      "role_add_manual": "Role command: Added by {userTag}",
+      "role_remove_manual": "Role command: Removed by {userTag}",
+      "role_add_bulk": "Role command (Bulk): Added by {userTag}",
+      "role_remove_bulk": "Role command (Bulk): Removed by {userTag}",
+      "workflow_role_add": "Workflow: Role granted",
+      "workflow_role_remove": "Workflow: Role removed",
+      "workflow_timeout_add": "Workflow: Timeout applied",
+      "workflow_timeout_remove": "Workflow: Timeout removed",
+      "workflow_thread_create": "Workflow: Thread created",
+      "workflow_thread_delete": "Workflow: Thread deleted",
+      "workflow_kick": "Workflow: Kicked",
+      "workflow_ban": "Workflow: Banned",
+      "join_gate_pow": "JoinGate: PoW Gate requirement",
+      "verify_manual": "Context Verify: Verified manually by {userTag}",
+      "audit_test": "Audit Test"
     }
   },
   "moderation": {

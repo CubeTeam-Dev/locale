@@ -1036,6 +1036,25 @@
       "thread_create": "スレッド作成",
       "thread_update": "スレッド更新",
       "thread_delete": "スレッド削除"
+    },
+    "reason": {
+      "role_keeper_regrant": "RoleKeeper: 以前保持していたロールの再付与",
+      "pow_gate_success": "PoW Gate: 認証成功",
+      "role_add_manual": "Role コマンド: {userTag} により付与",
+      "role_remove_manual": "Role コマンド: {userTag} により剥奪",
+      "role_add_bulk": "Role コマンド (一括): {userTag} により付与",
+      "role_remove_bulk": "Role コマンド (一括): {userTag} により剥奪",
+      "workflow_role_add": "ワークフロー: ロール付与",
+      "workflow_role_remove": "ワークフロー: ロール剥奪",
+      "workflow_timeout_add": "ワークフロー: タイムアウト",
+      "workflow_timeout_remove": "ワークフロー: タイムアウト解除",
+      "workflow_thread_create": "ワークフロー: スレッド作成",
+      "workflow_thread_delete": "ワークフロー: スレッド削除",
+      "workflow_kick": "ワークフロー: キック",
+      "workflow_ban": "ワークフロー: BAN",
+      "join_gate_pow": "JoinGate: PoW Gate による要求",
+      "verify_manual": "Context Verify: {userTag} による手動認証",
+      "audit_test": "監査ログテスト"
     }
   },
   "moderation": {

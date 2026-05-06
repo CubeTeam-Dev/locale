@@ -616,10 +616,39 @@
       "already_exists": "ユーザー <@{userId}> はすでにその状態であるか、処罰をスキップしました。"
     },
     "report": {
-      "self_error": "自分自身を通報することはできません。",
-      "default_reason": "通報",
+      "self_error": "自分自身やBotを通報することはできません。",
       "reporter_prefix": "通報者: {moderatorTag} — {reason}",
-      "success": "✅ <@{userId}> を通報しました。モデレーターが確認します。"
+      "success": "✅ <@{userId}> を通報しました。モデレーターが確認します。",
+      "modal_title": "メッセージを通報",
+      "modal_reason_label": "通報理由",
+      "modal_reason_placeholder": "スパム、ハラスメント、規約違反など…",
+      "no_content": "テキストなし",
+      "log_title": "メッセージ通報",
+      "log_reporter": "通報者",
+      "log_target": "対象ユーザー",
+      "log_channel": "チャンネル",
+      "log_reason": "理由",
+      "log_message": "メッセージ内容"
+    },
+    "verify": {
+      "not_found": "メンバーが見つかりませんでした。",
+      "no_role_configured": "認証ロール（PoW Gate）が設定されていません。",
+      "not_in_gate": "<@{userId}> は認証待ちではありません。",
+      "success": "✅ <@{userId}> の認証を完了しました。"
+    },
+    "quarantine": {
+      "cannot_quarantine_self": "自分自身またはBotを隔離することはできません。",
+      "modal_title": "メンバーを隔離",
+      "modal_reason_label": "理由（任意）",
+      "modal_reason_placeholder": "例: スパム行為、不審な行動など",
+      "not_found": "メンバーが見つかりませんでした。",
+      "manual_prefix": "モデレーターによる手動隔離",
+      "success": "✅ <@{userId}> を隔離しました。",
+      "already_quarantined": "<@{userId}> はすでに隔離されています。"
+    },
+    "flag_suspicious": {
+      "cannot_flag_self": "自分自身またはBotにSuspicion Levelを付与することはできません。",
+      "success": "✅ <@{userId}> にSuspicion Level 1（グレー）を付与しました。"
     }
   },
   "info": {

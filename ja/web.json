@@ -1577,6 +1577,7 @@
     }
   },
   "automod": {
+    "unknownUser": "Unknown",
     "title": "統合モデレーション",
     "desc": "AutoMod・AntiRaid・JoinGate の設定を行います",
     "tabFilters": "フィルター",

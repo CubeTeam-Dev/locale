@@ -1125,7 +1125,9 @@
       "no_guild": "認証情報を取得できませんでした。",
       "no_settings": "認証設定が見つかりません。",
       "not_needed": "認証は不要です。",
-      "link_reply": "以下のリンクから認証してください（**10分間有効**）:\n{verifyUrl}"
+      "link_reply": "以下のリンクから認証してください（**10分間有効**）:\n{verifyUrl}",
+      "log_title": "認証完了 (PoW Gate)",
+      "log_body": "ユーザー: <@{userId}> ({userTag})\n**日時:** <t:{timestamp}:F>"
     },
     "actions": {
       "QUARANTINE": "隔離（Quarantine）",

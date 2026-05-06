@@ -1125,7 +1125,9 @@
       "no_guild": "Failed to retrieve verification information.",
       "no_settings": "Verification settings not found.",
       "not_needed": "Verification is not required.",
-      "link_reply": "Please verify using the following link (**valid for 10 minutes**):\n{verifyUrl}"
+      "link_reply": "Please verify using the following link (**valid for 10 minutes**):\n{verifyUrl}",
+      "log_title": "Verification Complete (PoW Gate)",
+      "log_body": "User: <@{userId}> ({userTag})\n**Time:** <t:{timestamp}:F>"
     },
     "actions": {
       "QUARANTINE": "Quarantine",

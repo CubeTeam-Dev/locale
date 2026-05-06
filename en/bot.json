@@ -616,10 +616,39 @@
       "already_exists": "User <@{userId}> is already in that state or the action was skipped."
     },
     "report": {
-      "self_error": "You cannot report yourself.",
-      "default_reason": "Report",
+      "self_error": "You cannot report yourself or the bot.",
       "reporter_prefix": "Reported by: {moderatorTag} — {reason}",
-      "success": "✅ Reported <@{userId}>. A moderator will review it shortly."
+      "success": "✅ Reported <@{userId}>. A moderator will review it shortly.",
+      "modal_title": "Report Message",
+      "modal_reason_label": "Reason for report",
+      "modal_reason_placeholder": "Spam, harassment, rule violation, etc.",
+      "no_content": "no text content",
+      "log_title": "Message Reported",
+      "log_reporter": "Reporter",
+      "log_target": "Reported User",
+      "log_channel": "Channel",
+      "log_reason": "Reason",
+      "log_message": "Message Content"
+    },
+    "verify": {
+      "not_found": "Member not found.",
+      "no_role_configured": "PoW Gate verification role is not configured.",
+      "not_in_gate": "<@{userId}> is not pending verification.",
+      "success": "✅ Manually verified <@{userId}>."
+    },
+    "quarantine": {
+      "cannot_quarantine_self": "You cannot quarantine yourself or the bot.",
+      "modal_title": "Quarantine Member",
+      "modal_reason_label": "Reason (optional)",
+      "modal_reason_placeholder": "e.g. Spam, suspicious behavior, etc.",
+      "not_found": "Member not found.",
+      "manual_prefix": "Manual quarantine by moderator",
+      "success": "✅ Quarantined <@{userId}>.",
+      "already_quarantined": "<@{userId}> is already quarantined."
+    },
+    "flag_suspicious": {
+      "cannot_flag_self": "You cannot flag yourself or the bot as suspicious.",
+      "success": "✅ Added Suspicion Level 1 (Gray) to <@{userId}>."
     }
   },
   "info": {

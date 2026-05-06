@@ -1577,6 +1577,7 @@
     }
   },
   "automod": {
+    "unknownUser": "Unknown",
     "title": "Unified Moderation",
     "desc": "Configure AutoMod, AntiRaid, and JoinGate settings",
     "tabFilters": "Filters",

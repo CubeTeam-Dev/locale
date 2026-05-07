@@ -18,6 +18,7 @@
     "save": "保存",
     "saving": "保存中...",
     "saved": "保存しました",
+    "unsavedChanges": "未保存の変更があります",
     "cancel": "キャンセル",
     "close": "閉じる",
     "loading": "読み込み中...",

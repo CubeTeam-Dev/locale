@@ -1132,6 +1132,9 @@
     "actions": {
       "QUARANTINE": "隔離（Quarantine）",
       "UNQUARANTINE": "隔離解除",
+      "TIMEOUT_5M": "5分のタイムアウト",
+      "TIMEOUT_10M": "10分のタイムアウト",
+      "TIMEOUT_30M": "30分のタイムアウト",
       "TIMEOUT_1H": "1時間のタイムアウト",
       "TIMEOUT_24H": "24時間のタイムアウト",
       "DELETE_MESSAGE": "メッセージ削除",

@@ -1066,6 +1066,10 @@
       "btn_kick": "Kick",
       "btn_unquarantine": "False Positive (Release)"
     },
+    "review_queue": {
+      "title": "🔍 Review Required (Gray Zone)",
+      "body": "**Target:** <@{userId}> ({userTag})\n**Reason:** {reason}\n\nAutomatic detection confidence was low. Please review this case manually."
+    },
     "warn": {
       "dm_title": "⚠️ Warning",
       "dm_body": "You have received a warning from **{guildName}**'s auto-moderation. Please review the server rules."

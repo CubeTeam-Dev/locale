@@ -1066,6 +1066,10 @@
       "btn_kick": "キック",
       "btn_unquarantine": "誤検知（隔離解除）"
     },
+    "review_queue": {
+      "title": "🔍 要審査（グレーゾーン）",
+      "body": "**対象:** <@{userId}> ({userTag})\n**理由:** {reason}\n\n自動判定の信頼度が低いため、モデレーターによる手動確認が必要です。"
+    },
     "warn": {
       "dm_title": "⚠️ 警告",
       "dm_body": "**{guildName}** の自動モデレーションにより警告を受けました。サーバーのルールを確認してください。"

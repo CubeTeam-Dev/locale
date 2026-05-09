@@ -46,7 +46,9 @@
     "inviteBot": "Invite Bot",
     "viewDashboard": "View Dashboard",
     "pricing": "Pricing",
-    "changelog": "Changelog"
+    "changelog": "Changelog",
+    "security": "Security",
+    "subscription": "Subscription"
   },
   "top": {
     "featuresSectionLabel": "Features",
@@ -153,7 +155,9 @@
     "open": "Open",
     "invite": "Add Bot",
     "reload": "Reload",
-    "refreshHint": "Don't see your server? Try refreshing after adding the bot."
+    "refreshHint": "Don't see your server? Try refreshing after adding the bot.",
+    "passkeyBtn": "Log in with Passkey",
+    "orDivider": "or"
   },
   "sidebar": {
     "overview": "Overview",
@@ -1732,5 +1736,22 @@
     "exemptAiLane": "AI Lane Exempt",
     "exemptAntinuke": "AntiNuke Exempt",
     "exemptAntiraid": "AntiRaid Exempt"
+  },
+  "accountSecurity": {
+    "title": "Security",
+    "desc": "Register passkeys to log in even if you lose access to Discord",
+    "passkeyTitle": "Passkeys",
+    "passkeyDesc": "Use registered passkeys to log in during emergencies",
+    "addPasskey": "Add Passkey",
+    "adding": "Registering...",
+    "noPasskeys": "No passkeys registered",
+    "noPasskeysDesc": "Add a passkey so you can log in even if you lose your Discord account",
+    "deletePasskey": "Delete",
+    "deleting": "Deleting...",
+    "addSuccess": "Passkey registered",
+    "addError": "Failed to register passkey",
+    "deleteSuccess": "Passkey deleted",
+    "deleteError": "Failed to delete passkey",
+    "registeredAt": "Registered"
   }
 }

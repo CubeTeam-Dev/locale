@@ -1753,6 +1753,10 @@
     "addError": "Failed to register passkey",
     "deleteSuccess": "Passkey deleted",
     "deleteError": "Failed to delete passkey",
-    "registeredAt": "Registered"
+    "registeredAt": "Registered",
+    "addModalTitle": "Name your Passkey",
+    "addModalDesc": "Enter a name that helps you identify this device.",
+    "addModalPlaceholder": "e.g. My iPhone, Work PC",
+    "addModalBtn": "Start Registration"
   }
 }

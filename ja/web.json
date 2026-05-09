@@ -1752,6 +1752,10 @@
     "addError": "パスキーの登録に失敗しました",
     "deleteSuccess": "パスキーを削除しました",
     "deleteError": "パスキーの削除に失敗しました",
-    "registeredAt": "登録日"
+    "registeredAt": "登録日",
+    "addModalTitle": "パスキーに名前を付ける",
+    "addModalDesc": "このデバイスを識別しやすい名前を入力してください。",
+    "addModalPlaceholder": "例: 私のiPhone、メインPC",
+    "addModalBtn": "登録を開始"
   }
 }

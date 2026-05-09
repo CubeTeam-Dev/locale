@@ -46,7 +46,9 @@
     "inviteBot": "Botを招待",
     "viewDashboard": "ダッシュボードを見る",
     "pricing": "料金プラン",
-    "changelog": "更新履歴"
+    "changelog": "更新履歴",
+    "security": "セキュリティ",
+    "subscription": "サブスクリプション"
   },
   "top": {
     "featuresSectionLabel": "機能",
@@ -153,7 +155,9 @@
     "open": "開く",
     "invite": "Botを追加",
     "reload": "再読み込み",
-    "refreshHint": "サーバーが表示されない場合は、Bot追加後に更新してください。"
+    "refreshHint": "サーバーが表示されない場合は、Bot追加後に更新してください。",
+    "passkeyBtn": "パスキーでログイン",
+    "orDivider": "または"
   },
   "sidebar": {
     "overview": "概要",
@@ -1732,5 +1736,22 @@
     "exemptAiLane": "AIレーン免除",
     "exemptAntinuke": "AntiNuke免除",
     "exemptAntiraid": "AntiRaid免除"
+  },
+  "accountSecurity": {
+    "title": "セキュリティ",
+    "desc": "パスキーを登録して、Discordにアクセスできない場合でもログインできます",
+    "passkeyTitle": "パスキー",
+    "passkeyDesc": "登録済みのパスキーを使って緊急時にログインできます",
+    "addPasskey": "パスキーを追加",
+    "adding": "登録中...",
+    "noPasskeys": "パスキーが登録されていません",
+    "noPasskeysDesc": "パスキーを追加すると、Discordアカウントを失った場合でもログインできます",
+    "deletePasskey": "削除",
+    "deleting": "削除中...",
+    "addSuccess": "パスキーを登録しました",
+    "addError": "パスキーの登録に失敗しました",
+    "deleteSuccess": "パスキーを削除しました",
+    "deleteError": "パスキーの削除に失敗しました",
+    "registeredAt": "登録日"
   }
 }

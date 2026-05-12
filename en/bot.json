@@ -986,7 +986,9 @@
       "embeds_deleted_threaded": "Deleted message embeds (see thread for details)",
       "embed_deleted_thread_name": "deleted-embed-{id}",
       "embed_deleted_thread_intro": "This thread stores the embed preview of the deleted message.",
-      "deleted_embed_preview": "Deleted Embed"
+      "deleted_embed_preview": "Deleted Embed",
+      "emoji": "Emoji",
+      "message": "Message"
     },
     "events": {
       "guild_update": "Server Updated",
@@ -1003,6 +1005,8 @@
       "message_update": "Message Edited",
       "message_update_embed_before": "Embed Preview Before Edit",
       "message_update_embed_after": "Embed Preview After Edit",
+      "message_reaction_add": "Reaction Added",
+      "message_reaction_remove": "Reaction Removed",
       "member_add": "Member Joined",
       "member_remove": "Member Left",
       "member_kick": "Member Kicked",

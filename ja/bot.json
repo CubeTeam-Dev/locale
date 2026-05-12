@@ -986,7 +986,9 @@
       "embeds_deleted_threaded": "削除されたメッセージのEmbed（詳細はスレッド）",
       "embed_deleted_thread_name": "deleted-embed-{id}",
       "embed_deleted_thread_intro": "このスレッドには削除されたメッセージのEmbedプレビューが保存されています。",
-      "deleted_embed_preview": "削除前Embed"
+      "deleted_embed_preview": "削除前Embed",
+      "emoji": "絵文字",
+      "message": "メッセージ"
     },
     "events": {
       "guild_update": "サーバー設定更新",
@@ -1003,6 +1005,8 @@
       "message_update": "メッセージ編集",
       "message_update_embed_before": "編集前Embedプレビュー",
       "message_update_embed_after": "編集後Embedプレビュー",
+      "message_reaction_add": "リアクション追加",
+      "message_reaction_remove": "リアクション削除",
       "member_add": "メンバー参加",
       "member_remove": "メンバー退出",
       "member_kick": "メンバーキック",

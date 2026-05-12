@@ -736,6 +736,14 @@
         "name": "Message Update",
         "desc": "Log Message Update events"
       },
+      "message_reaction_add": {
+        "name": "Message Reaction Add",
+        "desc": "Log Message Reaction Add events"
+      },
+      "message_reaction_remove": {
+        "name": "Message Reaction Remove",
+        "desc": "Log Message Reaction Remove events"
+      },
       "member_kick": {
         "name": "Member Kick",
         "desc": "Log Member Kick events"

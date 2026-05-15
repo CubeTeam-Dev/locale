@@ -1751,6 +1751,7 @@
     "scheduleAddRule": "ルールを追加",
     "scheduleRuleType": "アクション",
     "scheduleRuleTypeInviteDisable": "招待リンクを無効化",
+    "scheduleRuleTypeDmDisable": "DM を無効化",
     "scheduleRuleTypeSecurityLevel": "認証レベルを変更",
     "scheduleScheduleType": "スケジュール種別",
     "scheduleTimeRange": "毎日繰り返し（時間帯）",

@@ -1751,6 +1751,7 @@
     "scheduleAddRule": "Add Rule",
     "scheduleRuleType": "Action",
     "scheduleRuleTypeInviteDisable": "Disable Invites",
+    "scheduleRuleTypeDmDisable": "Disable DMs",
     "scheduleRuleTypeSecurityLevel": "Change Verification Level",
     "scheduleScheduleType": "Schedule Type",
     "scheduleTimeRange": "Daily Time Range",

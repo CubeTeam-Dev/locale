@@ -174,7 +174,8 @@
     "logout": "Log Out",
     "messages": "Messages",
     "workflow": "Workflow",
-    "automod": "Moderation"
+    "automod": "Moderation",
+    "activityLog": "Activity Log"
   },
   "featureGate": {
     "title": "This feature is not available",
@@ -1793,5 +1794,39 @@
     "addModalDesc": "Enter a name that helps you identify this device.",
     "addModalPlaceholder": "e.g. My iPhone, Work PC",
     "addModalBtn": "Start Registration"
+  },
+  "activityLog": {
+    "title": "Activity Log",
+    "desc": "View the history of settings changes and actions performed in the dashboard",
+    "empty": "No activity logs found",
+    "loadMore": "Load more",
+    "loading": "Loading...",
+    "filterAll": "All",
+    "page": "Page",
+    "of": "of",
+    "total": "entries",
+    "categories": {
+      "module": "Module",
+      "workflow": "Workflow",
+      "audit_log": "Audit Log Settings",
+      "guild": "Server Settings",
+      "moderation": "Moderation",
+      "ai_moderation": "AI Moderation",
+      "general": "General"
+    },
+    "actions": {
+      "auto_purge_updated": "Updated auto purge settings",
+      "auto_purge_deleted": "Deleted auto purge settings",
+      "auto_react_updated": "Updated auto react settings",
+      "auto_react_deleted": "Deleted auto react settings",
+      "role_keeper_updated": "Updated role keeper settings",
+      "role_keeper_deleted": "Deleted role keeper settings",
+      "workflow_created": "Created workflow",
+      "workflow_updated": "Updated workflow",
+      "workflow_deleted": "Deleted workflow",
+      "audit_log_channel_set": "Set audit log channel",
+      "guild_settings_updated": "Updated server settings",
+      "moderation_settings_updated": "Updated moderation settings"
+    }
   }
 }

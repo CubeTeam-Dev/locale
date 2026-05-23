@@ -198,6 +198,16 @@
     "aimod": {
       "label": "AI Moderation",
       "desc": "AI monitors and responds to chat in real time"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "messages": "Messages",
+      "members": "Member Changes",
+      "joins": "Joins",
+      "leaves": "Leaves",
+      "range7": "7 days",
+      "range30": "30 days",
+      "noData": "No data available"
     }
   },
   "general": {

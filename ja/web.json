@@ -198,6 +198,16 @@
     "aimod": {
       "label": "AI モデレーション",
       "desc": "AI がリアルタイムでチャットを監視・対応"
+    },
+    "analytics": {
+      "title": "アナリティクス",
+      "messages": "メッセージ数",
+      "members": "メンバー増減",
+      "joins": "参加",
+      "leaves": "退出",
+      "range7": "7日間",
+      "range30": "30日間",
+      "noData": "データがありません"
     }
   },
   "general": {

@@ -174,7 +174,8 @@
     "logout": "ログアウト",
     "messages": "メッセージ送信",
     "workflow": "ワークフロー",
-    "automod": "統合モデレーション"
+    "automod": "統合モデレーション",
+    "activityLog": "操作ログ"
   },
   "featureGate": {
     "title": "この機能はご利用いただけません",
@@ -1793,5 +1794,39 @@
     "addModalDesc": "このデバイスを識別しやすい名前を入力してください。",
     "addModalPlaceholder": "例: 私のiPhone、メインPC",
     "addModalBtn": "登録を開始"
+  },
+  "activityLog": {
+    "title": "操作ログ",
+    "desc": "ダッシュボードでの設定変更・操作の履歴を確認できます",
+    "empty": "操作ログがありません",
+    "loadMore": "さらに読み込む",
+    "loading": "読み込み中...",
+    "filterAll": "すべて",
+    "page": "ページ",
+    "of": "/",
+    "total": "件",
+    "categories": {
+      "module": "モジュール",
+      "workflow": "ワークフロー",
+      "audit_log": "監査ログ設定",
+      "guild": "サーバー設定",
+      "moderation": "モデレーション",
+      "ai_moderation": "AIモデレーション",
+      "general": "一般"
+    },
+    "actions": {
+      "auto_purge_updated": "自動削除設定を更新",
+      "auto_purge_deleted": "自動削除設定を削除",
+      "auto_react_updated": "自動リアクション設定を更新",
+      "auto_react_deleted": "自動リアクション設定を削除",
+      "role_keeper_updated": "ロールキーパー設定を更新",
+      "role_keeper_deleted": "ロールキーパー設定を削除",
+      "workflow_created": "ワークフローを作成",
+      "workflow_updated": "ワークフローを更新",
+      "workflow_deleted": "ワークフローを削除",
+      "audit_log_channel_set": "監査ログチャンネルを設定",
+      "guild_settings_updated": "サーバー設定を更新",
+      "moderation_settings_updated": "モデレーション設定を更新"
+    }
   }
 }

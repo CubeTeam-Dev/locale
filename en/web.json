@@ -208,6 +208,10 @@
       "range7": "7 days",
       "range30": "30 days",
       "noData": "No data available"
+    },
+    "widget": {
+      "customize": "Customize",
+      "done": "Done"
     }
   },
   "general": {

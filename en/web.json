@@ -409,7 +409,20 @@
       "Priority support"
     ],
     "confirmTitle": "Purchase {plan} plan?",
-    "confirmDesc": "You will be billed ¥{price}/month. Cancel anytime."
+    "confirmDesc": "You will be billed ¥{price}/month. Cancel anytime.",
+    "consentTitle": "Before You Continue",
+    "consentDesc": "To proceed with your purchase, we need to verify your age and obtain your consent.",
+    "consentDob": "Date of birth",
+    "consentYear": "Year",
+    "consentMonth": "Month",
+    "consentDay": "Day",
+    "consentTermsLabel": "I agree to the Terms of Service and Privacy Policy",
+    "consentParentalLabel": "I have obtained parental permission to make this purchase",
+    "consentMinorNotice": "Because you are under 18, parental consent is required.",
+    "consentUnderageError": "Sorry, users under 13 are not eligible to make purchases.",
+    "consentDataNote": "Your date of birth is used solely for age verification and will be shared with Stripe for payment processing.",
+    "consentContinue": "Agree and continue",
+    "consentSubmitting": "Verifying..."
   },
   "accountSub": {
     "title": "Subscription Management",

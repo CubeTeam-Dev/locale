@@ -409,7 +409,20 @@
       "優先サポート"
     ],
     "confirmTitle": "{plan} プランを購入しますか？",
-    "confirmDesc": "月額 ¥{price} が請求されます。いつでもキャンセルできます。"
+    "confirmDesc": "月額 ¥{price} が請求されます。いつでもキャンセルできます。",
+    "consentTitle": "購入前の確認",
+    "consentDesc": "購入手続きを進めるにあたり、生年月日の確認と利用規約への同意が必要です。",
+    "consentDob": "生年月日",
+    "consentYear": "年",
+    "consentMonth": "月",
+    "consentDay": "日",
+    "consentTermsLabel": "利用規約およびプライバシーポリシーに同意します",
+    "consentParentalLabel": "保護者から購入の許可を得ています",
+    "consentMinorNotice": "18歳未満の方は、保護者の同意が必要です。",
+    "consentUnderageError": "申し訳ありませんが、13歳未満の方はご購入いただけません。",
+    "consentDataNote": "入力された生年月日は年齢確認のためにのみ使用され、決済処理のためStripeと共有されます。",
+    "consentContinue": "同意して続ける",
+    "consentSubmitting": "確認中..."
   },
   "accountSub": {
     "title": "サブスクリプション管理",

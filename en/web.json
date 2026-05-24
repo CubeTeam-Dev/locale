@@ -212,6 +212,24 @@
     "widget": {
       "customize": "Customize",
       "done": "Done"
+    },
+    "fastaccess": {
+      "title": "Quick Access"
+    },
+    "recentwork": {
+      "title": "Recent Work",
+      "empty": "No recent activity yet",
+      "justNow": "Just now",
+      "minutesAgo": "{n}m ago",
+      "hoursAgo": "{n}h ago",
+      "daysAgo": "{n}d ago"
+    },
+    "analyticsummary": {
+      "title": "This Week's Summary",
+      "messages": "Messages",
+      "joins": "Joins",
+      "leaves": "Leaves",
+      "netChange": "Net Change"
     }
   },
   "general": {

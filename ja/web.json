@@ -212,6 +212,24 @@
     "widget": {
       "customize": "カスタマイズ",
       "done": "完了"
+    },
+    "fastaccess": {
+      "title": "クイックアクセス"
+    },
+    "recentwork": {
+      "title": "最近の作業",
+      "empty": "まだ作業履歴がありません",
+      "justNow": "たった今",
+      "minutesAgo": "{n}分前",
+      "hoursAgo": "{n}時間前",
+      "daysAgo": "{n}日前"
+    },
+    "analyticsummary": {
+      "title": "今週のサマリー",
+      "messages": "メッセージ数",
+      "joins": "参加",
+      "leaves": "退出",
+      "netChange": "純増減"
     }
   },
   "general": {

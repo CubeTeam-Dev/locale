@@ -208,6 +208,10 @@
       "range7": "7日間",
       "range30": "30日間",
       "noData": "データがありません"
+    },
+    "widget": {
+      "customize": "カスタマイズ",
+      "done": "完了"
     }
   },
   "general": {

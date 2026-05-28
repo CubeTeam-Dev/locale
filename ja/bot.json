@@ -1068,7 +1068,9 @@
       "default_reason": "自動モデレーションによる処罰",
       "btn_ban": "BAN",
       "btn_kick": "キック",
-      "btn_unquarantine": "誤検知（隔離解除）"
+      "btn_unquarantine": "隔離解除",
+      "btn_false_positive": "誤検知として解除",
+      "btn_confirm_spam": "スパム確認"
     },
     "review_queue": {
       "title": "🔍 要審査（グレーゾーン）",
@@ -1119,6 +1121,15 @@
       "success": "ユーザー <@{userId}> の隔離を解除し、ロールを復元しました。",
       "failed": "ユーザー <@{userId}> の隔離解除に失敗しました。",
       "already_exists": "ユーザー <@{userId}> は現在隔離されていません。"
+    },
+    "mod_false_positive": {
+      "success": "ユーザー <@{userId}> を誤検知として隔離解除しました。",
+      "failed": "ユーザー <@{userId}> の隔離解除に失敗しました。",
+      "already_exists": "ユーザー <@{userId}> は現在隔離されていません。"
+    },
+    "mod_confirm_spam": {
+      "success": "✅ スパムパターンを登録しました。",
+      "no_data": "パターンデータが見つかりませんでした（有効期限切れの可能性があります）。"
     },
     "join_gate": {
       "dm_title": "🔒 認証が必要です",

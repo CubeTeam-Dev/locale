@@ -1520,7 +1520,9 @@
       "guilds": "Servers",
       "blacklist": "Blacklist",
       "spamPatterns": "Spam Patterns",
-      "economy": "Economy"
+      "economy": "Economy",
+      "features": "Feature Flags",
+      "testGroups": "Test Groups"
     },
     "dashboard": {
       "title": "System Status",

@@ -1068,7 +1068,9 @@
       "default_reason": "Automod Action",
       "btn_ban": "BAN",
       "btn_kick": "Kick",
-      "btn_unquarantine": "False Positive (Release)"
+      "btn_unquarantine": "Release",
+      "btn_false_positive": "False Positive",
+      "btn_confirm_spam": "Confirm Spam"
     },
     "review_queue": {
       "title": "🔍 Review Required (Gray Zone)",
@@ -1119,6 +1121,15 @@
       "success": "Successfully unquarantined user <@{userId}> and restored roles.",
       "failed": "Failed to unquarantine user <@{userId}>.",
       "already_exists": "User <@{userId}> is not currently quarantined."
+    },
+    "mod_false_positive": {
+      "success": "Successfully released user <@{userId}> as a false positive.",
+      "failed": "Failed to unquarantine user <@{userId}>.",
+      "already_exists": "User <@{userId}> is not currently quarantined."
+    },
+    "mod_confirm_spam": {
+      "success": "✅ Spam pattern has been registered.",
+      "no_data": "Pattern data not found (may have expired)."
     },
     "join_gate": {
       "dm_title": "🔒 Verification Required",

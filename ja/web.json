@@ -1520,7 +1520,9 @@
       "guilds": "サーバー",
       "blacklist": "ブラックリスト",
       "spamPatterns": "スパムパターン",
-      "economy": "エコノミー"
+      "economy": "エコノミー",
+      "features": "フィーチャーフラグ",
+      "testGroups": "テストグループ"
     },
     "dashboard": {
       "title": "システム状況",

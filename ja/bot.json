@@ -1069,6 +1069,7 @@
       "btn_ban": "BAN",
       "btn_kick": "キック",
       "btn_unquarantine": "隔離解除",
+      "btn_untimeout": "タイムアウト解除",
       "btn_false_positive": "誤検知として解除",
       "btn_confirm_spam": "スパム確認"
     },
@@ -1121,6 +1122,12 @@
       "success": "ユーザー <@{userId}> の隔離を解除し、ロールを復元しました。",
       "failed": "ユーザー <@{userId}> の隔離解除に失敗しました。",
       "already_exists": "ユーザー <@{userId}> は現在隔離されていません。"
+    },
+    "mod_untimeout": {
+      "success": "ユーザー <@{userId}> のタイムアウトを解除しました。",
+      "not_timed_out": "ユーザー <@{userId}> は現在タイムアウト中ではありません。",
+      "not_found": "ユーザー <@{userId}> が見つかりません。",
+      "failed": "ユーザー <@{userId}> のタイムアウト解除に失敗しました。"
     },
     "mod_false_positive": {
       "success": "ユーザー <@{userId}> を誤検知として隔離解除しました。",

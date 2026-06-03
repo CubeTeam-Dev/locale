@@ -1720,6 +1720,8 @@
     "panicModeDesc": "When enabled, significantly lowers the action threshold for all users",
     "crossServerOptInLabel": "Cross-Server Risk Sharing",
     "crossServerOptInDesc": "When enabled, anonymously contributes violation data to the cross-server risk database to improve threat detection across servers",
+    "trustedRolesLabel": "Trusted Roles (AutoMod Bypass)",
+    "trustedRolesDesc": "Members with these roles will bypass all AutoMod detection",
     "antiNukeSection": "AntiNuke",
     "antiNukeDesc": "Detects and responds to destructive server actions (channel deletion, mass bans, etc.)",
     "antiNukeChannelDeleteLabel": "Channel delete",

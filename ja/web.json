@@ -1720,6 +1720,8 @@
     "panicModeDesc": "有効時、全ユーザーへの制裁閾値を大幅に下げます",
     "crossServerOptInLabel": "サーバー間のリスク共有",
     "crossServerOptInDesc": "有効時、このサーバーの違反情報を匿名でクロスサーバーリスクデータベースに提供し、他サーバーの脅威検知精度を向上します",
+    "trustedRolesLabel": "信頼ロール（AutoMod完全免除）",
+    "trustedRolesDesc": "このロールを持つメンバーはすべてのAutoMod検知をスキップします",
     "antiNukeSection": "AntiNuke",
     "antiNukeDesc": "サーバーへの破壊的な操作（チャンネル削除・一括BAN等）を検知・対応します",
     "antiNukeChannelDeleteLabel": "チャンネル削除",

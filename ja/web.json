@@ -1819,7 +1819,6 @@
     "ruleAttachment": "添付ファイル",
     "ruleAttachmentDesc": "画像・ファイルの添付ごとに +4%（常時適用）",
     "whitelistSection": "ホワイトリスト",
-    "whitelistUsers": "ユーザー除外",
     "whitelistRoles": "ロール除外",
     "whitelistChannels": "チャンネル除外",
     "whitelistAddPlaceholder": "IDを入力",

@@ -1820,7 +1820,6 @@
     "ruleAttachment": "Attachments",
     "ruleAttachmentDesc": "Image and file attachments (+4% each, always)",
     "whitelistSection": "Whitelist",
-    "whitelistUsers": "Exempt Users",
     "whitelistRoles": "Exempt Roles",
     "whitelistChannels": "Exempt Channels",
     "whitelistAddPlaceholder": "Enter ID",

@@ -649,6 +649,13 @@
     "flag_suspicious": {
       "cannot_flag_self": "自分自身またはBotにSuspicion Levelを付与することはできません。",
       "success": "✅ <@{userId}> にSuspicion Level 1（グレー）を付与しました。"
+    },
+    "setup": {
+      "owner_only": "❌ このコマンドはサーバーオーナーのみ実行できます。",
+      "already_setup": "❌ 既にセットアップ済みです。",
+      "success": "✅ セットアップが完了しました。",
+      "no_manage_roles": "❌ Botに **ロールの管理** 権限がありません。権限を付与してから再度お試しください。",
+      "role_too_low": "❌ Botのロール（**{roleName}**）が低すぎます。ロール一覧の上から3番目以内に移動してから再度お試しください。"
     }
   },
   "info": {
@@ -1069,7 +1076,7 @@
       "btn_ban": "BAN",
       "btn_kick": "キック",
       "btn_unquarantine": "隔離解除",
-      "btn_untimeout": "Remove Timeout",
+      "btn_untimeout": "タイムアウト解除",
       "btn_false_positive": "誤検知として解除",
       "btn_confirm_spam": "スパム確認"
     },
@@ -1124,10 +1131,10 @@
       "already_exists": "ユーザー <@{userId}> は現在隔離されていません。"
     },
     "mod_untimeout": {
-      "success": "Successfully removed timeout for user <@{userId}>.",
-      "not_timed_out": "User <@{userId}> is not currently timed out.",
-      "not_found": "User <@{userId}> not found.",
-      "failed": "Failed to remove timeout for user <@{userId}>."
+      "success": "ユーザー <@{userId}> のタイムアウトを解除しました。",
+      "not_timed_out": "ユーザー <@{userId}> は現在タイムアウト中ではありません。",
+      "not_found": "ユーザー <@{userId}> が見つかりません。",
+      "failed": "ユーザー <@{userId}> のタイムアウト解除に失敗しました。"
     },
     "mod_false_positive": {
       "success": "ユーザー <@{userId}> を誤検知として隔離解除しました。",

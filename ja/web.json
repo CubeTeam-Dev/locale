@@ -732,6 +732,10 @@
         "threads": {
           "name": "スレッド",
           "desc": "スレッドの作成・更新・削除"
+        },
+        "automod": {
+          "name": "AutoMod",
+          "desc": "AutoModルールの作成・更新・削除"
         }
       }
     },
@@ -923,6 +927,18 @@
       "thread_delete": {
         "name": "スレッド削除",
         "desc": "スレッド削除のログを記録します"
+      },
+      "automod_rule_create": {
+        "name": "AutoModルール作成",
+        "desc": "AutoModルール作成のログを記録します"
+      },
+      "automod_rule_update": {
+        "name": "AutoModルール更新",
+        "desc": "AutoModルール更新のログを記録します"
+      },
+      "automod_rule_delete": {
+        "name": "AutoModルール削除",
+        "desc": "AutoModルール削除のログを記録します"
       }
     },
     "options": {

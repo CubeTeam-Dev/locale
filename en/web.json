@@ -732,6 +732,10 @@
         "threads": {
           "name": "Threads",
           "desc": "Thread lifecycle changes"
+        },
+        "automod": {
+          "name": "AutoMod",
+          "desc": "AutoMod rule create, update, and delete"
         }
       }
     },
@@ -923,6 +927,18 @@
       "thread_delete": {
         "name": "Thread Delete",
         "desc": "Log Thread Delete events"
+      },
+      "automod_rule_create": {
+        "name": "AutoMod Rule Created",
+        "desc": "Logs AutoMod rule creation events"
+      },
+      "automod_rule_update": {
+        "name": "AutoMod Rule Updated",
+        "desc": "Logs AutoMod rule update events"
+      },
+      "automod_rule_delete": {
+        "name": "AutoMod Rule Deleted",
+        "desc": "Logs AutoMod rule deletion events"
       }
     },
     "options": {

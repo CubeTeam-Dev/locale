@@ -649,6 +649,13 @@
     "flag_suspicious": {
       "cannot_flag_self": "自分自身またはBotにSuspicion Levelを付与することはできません。",
       "success": "✅ <@{userId}> にSuspicion Level 1（グレー）を付与しました。"
+    },
+    "setup": {
+      "owner_only": "❌ このコマンドはサーバーオーナーのみ実行できます。",
+      "already_setup": "❌ 既にセットアップ済みです。",
+      "success": "✅ セットアップが完了しました。",
+      "no_manage_roles": "❌ Botに **ロールの管理** 権限がありません。権限を付与してから再度お試しください。",
+      "role_too_low": "❌ Botのロール（**{roleName}**）が低すぎます。ロール一覧の上から3番目以内に移動してから再度お試しください。"
     }
   },
   "info": {

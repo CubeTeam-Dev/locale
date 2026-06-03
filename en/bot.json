@@ -649,6 +649,13 @@
     "flag_suspicious": {
       "cannot_flag_self": "You cannot flag yourself or the bot as suspicious.",
       "success": "✅ Added Suspicion Level 1 (Gray) to <@{userId}>."
+    },
+    "setup": {
+      "owner_only": "❌ Only the server owner can run this command.",
+      "already_setup": "❌ This server is already set up.",
+      "success": "✅ Setup completed successfully.",
+      "no_manage_roles": "❌ The bot is missing the **Manage Roles** permission. Please grant it and try again.",
+      "role_too_low": "❌ The bot's role (**{roleName}**) is too low. Please move it to the top 3 in the role list and try again."
     }
   },
   "info": {

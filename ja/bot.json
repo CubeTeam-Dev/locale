@@ -1229,6 +1229,54 @@
       "NSFW_URL": "NSFWリンク",
       "ANTINUKE": "破壊行為（Anti-Nuke）の検出",
       "ANTINUKE_ROLE_GRANT": "ロールへの危険な権限の付与"
+    },
+    "legacy_automod": {
+      "category": {
+        "harassment": "嫌がらせ",
+        "harassment/threatening": "嫌がらせ（脅迫）",
+        "hate": "ヘイト",
+        "hate/threatening": "ヘイト（脅迫）",
+        "sexual": "性的",
+        "sexual/minors": "性的（未成年）",
+        "violence": "暴力",
+        "violence/graphic": "暴力（描写）",
+        "self-harm": "自傷",
+        "self-harm/intent": "自傷（意図）",
+        "self-harm/instructions": "自傷（手段）",
+        "illicit": "違法行為",
+        "illicit/violent": "違法行為（暴力）"
+      },
+      "thread_delete_reason": "レガシーAIモデレーションによる自動削除",
+      "report": {
+        "title": "🛡️ レガシーAIモデレーション検知",
+        "thread_title": "🛡️ レガシーAIモデレーション検知（スレッド）",
+        "author": "**送信者:** <@{userId}> (`{userTag}`)",
+        "content": "**内容:**\n{content}",
+        "high_score": "**高スコアカテゴリ:** {categories}",
+        "flagged": "**フラグ付きカテゴリ:** {categories}",
+        "auto_action": "**自動対応:** {action}",
+        "action_deleted": "削除",
+        "action_none": "なし",
+        "jump": "[メッセージへ移動]({url})",
+        "btn_delete": "メッセージ削除",
+        "btn_warn": "警告を送信"
+      },
+      "delete": {
+        "success": "メッセージを削除しました。",
+        "failed": "メッセージの削除に失敗しました。",
+        "not_found": "対象のメッセージが見つかりませんでした。"
+      },
+      "warn": {
+        "modal_title": "警告の送信",
+        "reason_label": "警告理由",
+        "reason_placeholder": "警告の理由を入力してください",
+        "bot_not_allowed": "Botへ警告を送信することはできません。",
+        "success": "<@{userId}> へ警告を送信しました。",
+        "dm_failed": "<@{userId}> へのDM送信に失敗しました（DMが閉じられている可能性があります）。",
+        "dm_title": "⚠️ 警告",
+        "dm_body": "**{guildName}** から警告を受けました。\n**理由:** {reason}",
+        "log_appended": "✅ <@{moderatorId}> が <@{userId}> へ警告を送信しました。\n**理由:** {reason}"
+      }
     }
   }
 }

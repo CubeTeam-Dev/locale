@@ -1229,6 +1229,54 @@
       "NSFW_URL": "NSFW Link",
       "ANTINUKE": "Anti-Nuke Detection",
       "ANTINUKE_ROLE_GRANT": "Granted dangerous permissions to a role"
+    },
+    "legacy_automod": {
+      "category": {
+        "harassment": "Harassment",
+        "harassment/threatening": "Harassment (Threatening)",
+        "hate": "Hate",
+        "hate/threatening": "Hate (Threatening)",
+        "sexual": "Sexual",
+        "sexual/minors": "Sexual (Minors)",
+        "violence": "Violence",
+        "violence/graphic": "Violence (Graphic)",
+        "self-harm": "Self-harm",
+        "self-harm/intent": "Self-harm (Intent)",
+        "self-harm/instructions": "Self-harm (Instructions)",
+        "illicit": "Illicit",
+        "illicit/violent": "Illicit (Violent)"
+      },
+      "thread_delete_reason": "Auto-deleted by Legacy AI Moderation",
+      "report": {
+        "title": "🛡️ Legacy AI Moderation Detection",
+        "thread_title": "🛡️ Legacy AI Moderation Detection (Thread)",
+        "author": "**Author:** <@{userId}> (`{userTag}`)",
+        "content": "**Content:**\n{content}",
+        "high_score": "**High-score categories:** {categories}",
+        "flagged": "**Flagged categories:** {categories}",
+        "auto_action": "**Auto action:** {action}",
+        "action_deleted": "Deleted",
+        "action_none": "None",
+        "jump": "[Jump to message]({url})",
+        "btn_delete": "Delete Message",
+        "btn_warn": "Send Warning"
+      },
+      "delete": {
+        "success": "Message deleted.",
+        "failed": "Failed to delete the message.",
+        "not_found": "The target message was not found."
+      },
+      "warn": {
+        "modal_title": "Send Warning",
+        "reason_label": "Warning Reason",
+        "reason_placeholder": "Enter the reason for the warning",
+        "bot_not_allowed": "You cannot send a warning to a bot.",
+        "success": "Sent a warning to <@{userId}>.",
+        "dm_failed": "Failed to DM <@{userId}> (their DMs may be closed).",
+        "dm_title": "⚠️ Warning",
+        "dm_body": "You have received a warning from **{guildName}**.\n**Reason:** {reason}",
+        "log_appended": "✅ <@{moderatorId}> sent a warning to <@{userId}>.\n**Reason:** {reason}"
+      }
     }
   }
 }

@@ -317,9 +317,9 @@
     "legacyAiDesc": "omni-moderationのスコアを基に自動でレポート・削除を行います",
     "legacyAiLogChannelLabel": "ログチャンネル",
     "legacyAiReportScoreLabel": "レポートスコア閾値",
-    "legacyAiReportScoreDesc": "このスコア以上でログに報告します（0〜1）",
+    "legacyAiReportScoreDesc": "低いほど敏感に検知し、ログに通知します",
     "legacyAiDeleteScoreLabel": "削除スコア閾値",
-    "legacyAiDeleteScoreDesc": "このスコア以上でメッセージを自動削除します（0〜1、レポート以上推奨）",
+    "legacyAiDeleteScoreDesc": "この値を超えたメッセージを自動削除します（通知の値以上を推奨）",
     "legacyAiScoreRecommend": "削除スコアはレポートスコア以上を推奨します",
     "legacyAiBypassChannelsLabel": "バイパスチャンネル",
     "legacyAiBypassChannelsDesc": "このチャンネルのメッセージはAIモデレーションをスキップします",
@@ -334,7 +334,15 @@
     "permissionDenied": "Master権限がないため設定を変更できません",
     "saveError": "保存に失敗しました",
     "forbiddenTitle": "アクセス権限がありません",
-    "forbiddenDesc": "このサーバーのモデレーション設定を閲覧・編集するにはMaster権限が必要です。"
+    "forbiddenDesc": "このサーバーのモデレーション設定を閲覧・編集するにはMaster権限が必要です。",
+    "modeLabel": "モデレーションモード",
+    "modeDesc": "メッセージの自動監視方法を選択します",
+    "modeOff": "なし",
+    "modeOffDesc": "自動監視を行いません",
+    "modeLegacy": "レガシー版",
+    "modeLegacyDesc": "不適切なメッセージを自動で検知・通知・削除します（無料）",
+    "modeAdvanced": "次世代",
+    "modeAdvancedDesc": "文脈を理解する高度な AI モデレーション"
   },
   "subscription": {
     "title": "サブスクリプション",

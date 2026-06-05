@@ -317,9 +317,9 @@
     "legacyAiDesc": "Automatically reports and deletes messages based on omni-moderation scores",
     "legacyAiLogChannelLabel": "Log Channel",
     "legacyAiReportScoreLabel": "Report Score Threshold",
-    "legacyAiReportScoreDesc": "Report to log when score reaches this value (0–1)",
+    "legacyAiReportScoreDesc": "Lower is more sensitive; flagged messages are reported to the log",
     "legacyAiDeleteScoreLabel": "Delete Score Threshold",
-    "legacyAiDeleteScoreDesc": "Auto-delete messages when score reaches this value (0–1, recommended ≥ report score)",
+    "legacyAiDeleteScoreDesc": "Messages above this value are auto-deleted (recommended ≥ report value)",
     "legacyAiScoreRecommend": "Delete score should be greater than or equal to report score",
     "legacyAiBypassChannelsLabel": "Bypass Channels",
     "legacyAiBypassChannelsDesc": "Messages in these channels skip AI moderation",
@@ -334,7 +334,15 @@
     "permissionDenied": "You don't have Master permission to change settings",
     "saveError": "Failed to save",
     "forbiddenTitle": "Access Denied",
-    "forbiddenDesc": "You need Master permission to view or edit moderation settings for this server."
+    "forbiddenDesc": "You need Master permission to view or edit moderation settings for this server.",
+    "modeLabel": "Moderation mode",
+    "modeDesc": "Choose how messages are automatically monitored",
+    "modeOff": "Off",
+    "modeOffDesc": "No automatic monitoring",
+    "modeLegacy": "Legacy",
+    "modeLegacyDesc": "Automatically detects, reports and removes inappropriate messages (free)",
+    "modeAdvanced": "Next-gen",
+    "modeAdvancedDesc": "Advanced AI moderation that understands context"
   },
   "subscription": {
     "title": "Subscription",

@@ -551,7 +551,8 @@
         "success": "✅ Successfully gave role to {user}.",
         "cant_find_role_or_member": "❌ We couldn't find the role or member.",
         "failed_add_role": "❌ Failed to give role to {user}.\nPlease check role hierarchy and permissions.",
-        "already_has_role": "ℹ️ {user} already has the role."
+        "already_has_role": "ℹ️ {user} already has the role.",
+        "dangerous_role_blocked": "❌ This role has dangerous permissions. Only users with AntiNuke exemption can grant it."
       },
       "remove": {
         "success": "✅ Successfully removed role from {user}.",

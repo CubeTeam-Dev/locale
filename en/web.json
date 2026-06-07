@@ -1756,6 +1756,8 @@
     "antiNukeDesc": "Detects and responds to destructive server actions (channel deletion, mass bans, etc.)",
     "antiNukeChannelDeleteLabel": "Channel delete",
     "antiNukeRoleDeleteLabel": "Role delete",
+    "antiNukeChannelCreateLabel": "Channel create",
+    "antiNukeRoleCreateLabel": "Role create",
     "antiNukeWebhookCreateLabel": "Webhook create",
     "antiNukeBanKickLabel": "Ban/Kick",
     "antiNukeRoleGrantLabel": "Role grant",

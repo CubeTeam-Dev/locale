@@ -1911,7 +1911,8 @@
     "scheduleEnabled": "有効",
     "scheduleDeleteConfirm": "このルールを削除しますか？",
     "scheduleNoRules": "スケジュールルールがありません",
-    "scheduleAddRuleTitle": "ルールを追加"
+    "scheduleAddRuleTitle": "ルールを追加",
+    "scheduleEditRuleTitle": "ルールを編集"
   },
   "accountSecurity": {
     "title": "セキュリティ",

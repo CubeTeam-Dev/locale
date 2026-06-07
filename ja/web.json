@@ -1755,6 +1755,8 @@
     "antiNukeDesc": "サーバーへの破壊的な操作（チャンネル削除・一括BAN等）を検知・対応します",
     "antiNukeChannelDeleteLabel": "チャンネル削除",
     "antiNukeRoleDeleteLabel": "ロール削除",
+    "antiNukeChannelCreateLabel": "チャンネル作成",
+    "antiNukeRoleCreateLabel": "ロール作成",
     "antiNukeWebhookCreateLabel": "Webhook作成",
     "antiNukeBanKickLabel": "BAN/Kick",
     "antiNukeRoleGrantLabel": "ロール一括付与",

@@ -1911,7 +1911,8 @@
     "scheduleEnabled": "Enabled",
     "scheduleDeleteConfirm": "Delete this rule?",
     "scheduleNoRules": "No schedule rules",
-    "scheduleAddRuleTitle": "Add Rule"
+    "scheduleAddRuleTitle": "Add Rule",
+    "scheduleEditRuleTitle": "Edit Rule"
   },
   "accountSecurity": {
     "title": "Security",

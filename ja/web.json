@@ -995,7 +995,7 @@
     "addEmbed": "Embedを追加",
     "addActionRow": "Action Row を追加",
     "actionRow": {
-      "rowN": "Action Row {n}",
+      "rowN": "アクション行{n}",
       "typeButtons": "ボタン",
       "typeSelect": "セレクトメニュー",
       "addButton": "ボタンを追加",
@@ -1818,7 +1818,7 @@
     "ruleMentionSpam": "メンションスパム",
     "ruleMentionSpamDesc": "@user / @role / @here / @everyone のメンションをheatとして加算",
     "ruleInviteLink": "招待リンク",
-    "ruleInviteLinkDesc": "無断の Discord 招待URLを検知",
+    "ruleInviteLinkDesc": "Discord 招待URLを検知",
     "ruleEmojiSpam": "絵文字スパム",
     "ruleEmojiSpamDesc": "絵文字1個につき+1%（上限20%/メッセージ）",
     "ruleCharSpam": "文字スパム",

@@ -1126,6 +1126,17 @@
       "dm_body": "**サーバー:** {guildName}\n**対象:** <@{userId}> ({userTag})\n**理由:** {reason}\n**適用アクション:** {action}\n\nAnti-Nuke が破壊的な操作を検知しました。誤検知でないか手動でご確認ください。",
       "no_action": "適用できませんでした（手動対応が必要）"
     },
+    "scheduled_security": {
+      "started_title": "🔒 スケジュールセキュリティ開始",
+      "started_body": "**{action}** を開始しました。\n適用時間帯: {range}",
+      "ended_title": "🔓 スケジュールセキュリティ終了",
+      "ended_body": "**{action}** を終了し、元の状態に戻しました。",
+      "type": {
+        "invite_disable": "招待リンクの一時停止",
+        "dm_disable": "メンバー間DMの一時停止",
+        "security_level": "認証レベルの引き上げ"
+      }
+    },
     "appeal_dm": {
       "quarantine_title": "⚠️ 隔離（Quarantine）が適用されました",
       "timeout_title": "⚠️ タイムアウトが適用されました",

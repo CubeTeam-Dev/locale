@@ -1925,7 +1925,18 @@
     "scheduleActionDmDisable": "member DMs are paused.",
     "scheduleActionSecurityLevel": "the verification level is raised to \"{level}\".",
     "scheduleAddRuleTitle": "Add Rule",
-    "scheduleEditRuleTitle": "Edit Rule"
+    "scheduleEditRuleTitle": "Edit Rule",
+    "scheduleSave": "Save",
+    "scheduleSaved": "Saved",
+    "scheduleDailyHint": "Applied automatically during this window every day (JST). Overnight ranges (e.g. 22:00 → 08:00 next day) are supported.",
+    "scheduleEnableLog": "Enable logging",
+    "scheduleEnableLogDesc": "Send a log when this starts and ends.",
+    "scheduleLogChannel": "Log channel",
+    "scheduleSelectChannel": "Select a channel",
+    "scheduleLevelLowDesc": "Only email-verified accounts",
+    "scheduleLevelMediumDesc": "Only accounts registered on Discord for more than 5 minutes",
+    "scheduleLevelHighDesc": "Only accounts in this server for more than 10 minutes",
+    "scheduleLevelVeryHighDesc": "Only phone-verified accounts"
   },
   "accountSecurity": {
     "title": "Security",

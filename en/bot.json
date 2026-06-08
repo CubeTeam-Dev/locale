@@ -1126,6 +1126,17 @@
       "dm_body": "**Server:** {guildName}\n**Target:** <@{userId}> ({userTag})\n**Reason:** {reason}\n**Action applied:** {action}\n\nAnti-Nuke detected a destructive action. Please verify manually that this is not a false positive.",
       "no_action": "Could not be applied (manual action required)"
     },
+    "scheduled_security": {
+      "started_title": "🔒 Scheduled Security Started",
+      "started_body": "**{action}** has started.\nActive window: {range}",
+      "ended_title": "🔓 Scheduled Security Ended",
+      "ended_body": "**{action}** has ended and the original state was restored.",
+      "type": {
+        "invite_disable": "Invite pause",
+        "dm_disable": "Member DM pause",
+        "security_level": "Raised verification level"
+      }
+    },
     "appeal_dm": {
       "quarantine_title": "⚠️ Quarantine Applied",
       "timeout_title": "⚠️ Timeout Applied",

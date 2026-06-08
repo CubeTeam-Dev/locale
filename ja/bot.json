@@ -1122,8 +1122,9 @@
       "dm_body": "**{guildName}** の自動モデレーションにより警告を受けました。サーバーのルールを確認してください。"
     },
     "notify_owner": {
-      "dm_title": "⚠️ 管理者通知",
-      "dm_body": "**サーバー:** {guildName}\n**対象:** <@{userId}> ({userTag})\n**理由:** {reason}\n\nこのユーザーは信頼スコアが高いため24時間タイムアウトを適用しました。手動確認してください。"
+      "dm_title": "🛡️ Anti-Nuke 検知（オーナー通知）",
+      "dm_body": "**サーバー:** {guildName}\n**対象:** <@{userId}> ({userTag})\n**理由:** {reason}\n**適用アクション:** {action}\n\nAnti-Nuke が破壊的な操作を検知しました。誤検知でないか手動でご確認ください。",
+      "no_action": "適用できませんでした（手動対応が必要）"
     },
     "appeal_dm": {
       "quarantine_title": "⚠️ 隔離（Quarantine）が適用されました",
@@ -1231,6 +1232,12 @@
       "INACTIVE_CHANNEL": "非アクティブチャンネルへの投稿",
       "NSFW_URL": "NSFWリンク",
       "ANTINUKE": "破壊行為（Anti-Nuke）の検出",
+      "ANTINUKE_CHANNEL_DELETE": "チャンネルの大量削除",
+      "ANTINUKE_ROLE_DELETE": "ロールの大量削除",
+      "ANTINUKE_CHANNEL_CREATE": "チャンネルの大量作成",
+      "ANTINUKE_ROLE_CREATE": "ロールの大量作成",
+      "ANTINUKE_WEBHOOK_CREATE": "Webhookの大量作成",
+      "ANTINUKE_BAN_KICK": "メンバーの大量BAN／キック",
       "ANTINUKE_ROLE_GRANT": "ロールへの危険な権限の付与"
     },
     "legacy_automod": {

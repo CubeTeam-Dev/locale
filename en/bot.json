@@ -1122,8 +1122,9 @@
       "dm_body": "You have received a warning from **{guildName}**'s auto-moderation. Please review the server rules."
     },
     "notify_owner": {
-      "dm_title": "⚠️ Owner Notification",
-      "dm_body": "**Server:** {guildName}\n**Target:** <@{userId}> ({userTag})\n**Reason:** {reason}\n\nThis user had a high trust score so a 24-hour timeout was applied. Please review manually."
+      "dm_title": "🛡️ Anti-Nuke Detected (Owner Notification)",
+      "dm_body": "**Server:** {guildName}\n**Target:** <@{userId}> ({userTag})\n**Reason:** {reason}\n**Action applied:** {action}\n\nAnti-Nuke detected a destructive action. Please verify manually that this is not a false positive.",
+      "no_action": "Could not be applied (manual action required)"
     },
     "appeal_dm": {
       "quarantine_title": "⚠️ Quarantine Applied",
@@ -1231,6 +1232,12 @@
       "INACTIVE_CHANNEL": "Posting in Inactive Channel",
       "NSFW_URL": "NSFW Link",
       "ANTINUKE": "Anti-Nuke Detection",
+      "ANTINUKE_CHANNEL_DELETE": "Mass channel deletion",
+      "ANTINUKE_ROLE_DELETE": "Mass role deletion",
+      "ANTINUKE_CHANNEL_CREATE": "Mass channel creation",
+      "ANTINUKE_ROLE_CREATE": "Mass role creation",
+      "ANTINUKE_WEBHOOK_CREATE": "Mass webhook creation",
+      "ANTINUKE_BAN_KICK": "Mass member ban/kick",
       "ANTINUKE_ROLE_GRANT": "Granted dangerous permissions to a role"
     },
     "legacy_automod": {

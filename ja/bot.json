@@ -1104,6 +1104,8 @@
       "title": "🚨 モデレーション実行",
       "body": "**対象:** <@{userId}> ({userTag})\n**実施アクション:** {actions}\n**理由:** {reason}",
       "default_reason": "自動モデレーションによる処罰",
+      "failed_title": "⚠️ モデレーション実行失敗",
+      "failed_body": "**対象:** <@{userId}> ({userTag})\n**試行アクション:** {actions}\n**理由:** {reason}\n\n対象が管理者権限を持っている、またはBotより上位のロールを持っているため、アクションを実行できませんでした。手動で対応してください。",
       "btn_ban": "BAN",
       "btn_kick": "キック",
       "btn_unquarantine": "隔離解除",

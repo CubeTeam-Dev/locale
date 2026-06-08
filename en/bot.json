@@ -1104,6 +1104,8 @@
       "title": "🚨 Moderation Action",
       "body": "**User:** <@{userId}> ({userTag})\n**Action(s):** {actions}\n**Reason:** {reason}",
       "default_reason": "Automod Action",
+      "failed_title": "⚠️ Moderation Action Failed",
+      "failed_body": "**User:** <@{userId}> ({userTag})\n**Attempted action(s):** {actions}\n**Reason:** {reason}\n\nThe action could not be performed because the target has administrator permission or a role higher than the bot. Please handle this manually.",
       "btn_ban": "BAN",
       "btn_kick": "Kick",
       "btn_unquarantine": "Release",

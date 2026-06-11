@@ -342,7 +342,195 @@
     "modeLegacy": "Legacy",
     "modeLegacyDesc": "Automatically detects, reports and removes inappropriate messages (free)",
     "modeAdvanced": "Next-gen",
-    "modeAdvancedDesc": "Advanced AI moderation that understands context"
+    "modeAdvancedDesc": "Advanced AI moderation that understands context",
+    "advancedLaneSectionTitle": "AI Lane Settings",
+    "advancedLaneSectionDesc": "Configure detailed settings for next-gen AI moderation (advanced mode)",
+    "naturalLanguageRulesLabel": "Natural Language Rules",
+    "naturalLanguageRulesDesc": "Describe server-specific moderation rules in plain language. The AI will understand and apply them during evaluation",
+    "naturalLanguageRulesPlaceholder": "e.g.\n- No political or religious debates\n- No content inappropriate for users under 18\n- Remove insulting remarks directed at other users",
+    "advancedViolationStorageLabel": "Advanced Violation Storage",
+    "advancedViolationStorageDesc": "AI classifies and stores violation reasons in detail. Useful for richer moderation logs, but consumes 1 CC per violation",
+    "nodeEditorLinkLabel": "Node Editor",
+    "nodeEditorLinkDesc": "Visually build and edit the moderation pipeline with nodes",
+    "nodeEditorLockedTooltip": "The node editor is available on a higher plan (NODE_EDITOR)",
+    "nodeEditorSectionTitle": "Node Editor",
+    "nodeEditorSectionDesc": "Build your AI moderation flow with the visual pipeline builder",
+    "nodeEditorOpenBtn": "Open Node Editor",
+    "nodeEditorAdvancedOnly": "Works in advanced mode only",
+    "modeOffFeature": "No monitoring",
+    "modeLegacyFeature": "Free · OpenAI score · Threshold-based deletion",
+    "modeAdvancedFeature": "Gemini context · CC cost · Auto punishment"
+  },
+  "aimodEditor": {
+    "title": "Node Editor",
+    "back": "Back",
+    "save": "Save",
+    "saving": "Saving...",
+    "saved": "Saved",
+    "saveError": "Failed to save",
+    "paletteTitle": "Add node",
+    "close": "Close",
+    "deleteNode": "Delete node",
+    "noParams": "This node has no settings",
+    "stringListPlaceholder": "Type and press Enter to add",
+    "costBadge": "{cost}CC",
+    "categories": {
+      "input": "Input",
+      "utility": "Utility",
+      "mechanical": "Mechanical",
+      "ai": "AI",
+      "action": "Action"
+    },
+    "handles": {
+      "next": "Next",
+      "true": "Match",
+      "false": "No match",
+      "safe": "Safe",
+      "gray": "Gray",
+      "violation": "Violation",
+      "else": "Else"
+    },
+    "validation": {
+      "errorNoEntry": "A MessageReceived node is required",
+      "errorMultipleEntry": "Only one input node is allowed",
+      "warningDisconnected": "There are disconnected nodes"
+    },
+    "fields": {
+      "channel": "Channel",
+      "category": "Category",
+      "user": "User",
+      "role": "Role",
+      "joinAge": "Time since join",
+      "report_type": "Report type",
+      "velocity_limit": "Velocity limit",
+      "detect_bots": "Detect bots",
+      "block_invites": "Block invites",
+      "block_scams": "Block scams",
+      "custom_patterns": "Custom patterns",
+      "max_mentions": "Max mentions",
+      "sensitivity": "Sensitivity",
+      "model": "Model",
+      "summary": "Generate summary",
+      "threshold": "Threshold",
+      "message": "Message",
+      "duration": "Duration",
+      "delete_message": "Delete message range",
+      "content": "Content"
+    },
+    "nodes": {
+      "MessageReceived": {
+        "label": "Message Received",
+        "desc": "Pipeline entry point. Every message starts here"
+      },
+      "Rule": {
+        "label": "Rule",
+        "desc": "Evaluates natural-language rules"
+      },
+      "Condition": {
+        "label": "Condition",
+        "desc": "Branches on channel/category/user/role/join age"
+      },
+      "TimeWindowCondition": {
+        "label": "Time Window",
+        "desc": "Branches based on the time of day"
+      },
+      "ParallelStart": {
+        "label": "Parallel Start",
+        "desc": "Start of parallel processing"
+      },
+      "ParallelEnd": {
+        "label": "Parallel End",
+        "desc": "Join point of parallel processing"
+      },
+      "SummaryReport": {
+        "label": "Summary Report",
+        "desc": "Outputs the verdict as a report (1CC)"
+      },
+      "HistorySummarizer": {
+        "label": "History Summarizer",
+        "desc": "Summarizes conversation history"
+      },
+      "ReviewQueue": {
+        "label": "Review Queue",
+        "desc": "Adds to a human review queue"
+      },
+      "AntiRaid": {
+        "label": "Anti-Raid",
+        "desc": "Detects mass joins/posts in a short window (0CC)"
+      },
+      "RegexBlock": {
+        "label": "Regex Block",
+        "desc": "Blocks invites, scams and custom patterns (0CC)"
+      },
+      "TextFilter": {
+        "label": "Text Filter",
+        "desc": "Mechanical checks such as mention count (0CC)"
+      },
+      "ThreatDb": {
+        "label": "Threat DB",
+        "desc": "Matches against a known threat database (0CC)"
+      },
+      "Screen": {
+        "label": "Screen",
+        "desc": "Lightweight AI first-pass screening (0CC)"
+      },
+      "LiteLlm": {
+        "label": "Lite LLM",
+        "desc": "Lite LLM judging safe/gray/violation (1CC)"
+      },
+      "DetailLlm": {
+        "label": "Detail LLM",
+        "desc": "Detailed high-accuracy LLM judgment (3CC)"
+      },
+      "Confidence": {
+        "label": "Confidence",
+        "desc": "Branches on a confidence threshold (1CC)"
+      },
+      "AdvancedLlm": {
+        "label": "Advanced LLM",
+        "desc": "Judges with the most advanced LLM"
+      },
+      "ActionPolicy": {
+        "label": "Action Policy",
+        "desc": "Decides the policy for actions to take"
+      },
+      "ExecuteAction": {
+        "label": "Execute Action",
+        "desc": "Executes the decided actions together"
+      },
+      "MessageDelete": {
+        "label": "Message Delete",
+        "desc": "Deletes the target message"
+      },
+      "Timeout": {
+        "label": "Timeout",
+        "desc": "Times out the user for a period"
+      },
+      "Kick": {
+        "label": "Kick",
+        "desc": "Kicks the user from the server"
+      },
+      "Ban": {
+        "label": "Ban",
+        "desc": "Bans the user"
+      },
+      "Warn": {
+        "label": "Warn",
+        "desc": "Sends a warning to the user"
+      },
+      "MessageSend": {
+        "label": "Message Send",
+        "desc": "Sends a message"
+      }
+    },
+    "unsavedChanges": "Unsaved changes",
+    "unsavedDot": "●",
+    "emptyTitle": "No nodes yet",
+    "emptyDesc": "Drag nodes from the palette or start from a template",
+    "loadTemplate": "Load standard template",
+    "searchPlaceholder": "Search nodes...",
+    "unsavedTooltip": "You have unsaved changes",
+    "deleteEdge": "Delete edge"
   },
   "subscription": {
     "title": "Subscription",

@@ -349,7 +349,7 @@
     "naturalLanguageRulesDesc": "Describe server-specific moderation rules in plain language. The AI will understand and apply them during evaluation",
     "naturalLanguageRulesPlaceholder": "e.g.\n- No political or religious debates\n- No content inappropriate for users under 18\n- Remove insulting remarks directed at other users",
     "advancedViolationStorageLabel": "Advanced Violation Storage",
-    "advancedViolationStorageDesc": "AI classifies and stores violation reasons in detail. Useful for richer moderation logs, but consumes 1 CC per violation",
+    "advancedViolationStorageDesc": "AI classifies and stores violation reasons in detail. Useful for richer moderation logs, but consumes 2 CC per violation",
     "nodeEditorLinkLabel": "Node Editor",
     "nodeEditorLinkDesc": "Visually build and edit the moderation pipeline with nodes",
     "nodeEditorLockedTooltip": "The node editor is available on a higher plan (NODE_EDITOR)",
@@ -523,19 +523,19 @@
       },
       "LiteLlm": {
         "label": "Lite LLM",
-        "desc": "A lightweight AI (Gemini) reads the content and routes it to safe/gray/violation (1CC)"
+        "desc": "A lightweight AI (Gemini) reads the content and routes it to safe/gray/violation (2CC)"
       },
       "DetailLlm": {
         "label": "Detail LLM",
-        "desc": "A high-accuracy AI (Gemini) judges in detail including prior history, branching match / no-match (3CC)"
+        "desc": "A high-accuracy AI (Gemini) judges in detail including prior history, branching match / no-match (5CC)"
       },
       "Confidence": {
         "label": "Confidence",
-        "desc": "Compares the latest verdict's confidence to a threshold and branches match / no-match (1CC)"
+        "desc": "Compares the latest verdict's confidence to a threshold and branches match / no-match (2CC)"
       },
       "AdvancedLlm": {
         "label": "Advanced LLM",
-        "desc": "A high-accuracy AI (Gemini) produces a verdict and passes it straight to the next node (3CC)"
+        "desc": "A high-accuracy AI (Gemini) produces a verdict and passes it straight to the next node (5CC)"
       },
       "ActionPolicy": {
         "label": "Action Policy",

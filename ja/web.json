@@ -349,7 +349,7 @@
     "naturalLanguageRulesDesc": "このサーバー固有のモデレーションルールを自然言語で記述します。AI がルールを理解し、判定に反映します",
     "naturalLanguageRulesPlaceholder": "例:\n- 政治・宗教の議論は禁止\n- 18歳未満に不適切なコンテンツを送ってはならない\n- 他のユーザーへの侮辱的な発言は削除する",
     "advancedViolationStorageLabel": "高度な違反保存",
-    "advancedViolationStorageDesc": "AI が違反理由を分類して保存します。モデレーションログの詳細化に役立ちますが、1CC/件 のクレジットを消費します",
+    "advancedViolationStorageDesc": "AI が違反理由を分類して保存します。モデレーションログの詳細化に役立ちますが、2CC/件 のクレジットを消費します",
     "nodeEditorLinkLabel": "ノードエディター",
     "nodeEditorLinkDesc": "パイプラインをノードで視覚的に構築・編集します",
     "nodeEditorLockedTooltip": "ノードエディターは上位プラン (NODE_EDITOR) で利用できます",
@@ -523,19 +523,19 @@
       },
       "LiteLlm": {
         "label": "軽量LLM",
-        "desc": "軽量AI(Gemini)が内容を読み、safe/gray/violation のいずれかの結果に振り分けて分岐します (1CC)"
+        "desc": "軽量AI(Gemini)が内容を読み、safe/gray/violation のいずれかの結果に振り分けて分岐します (2CC)"
       },
       "DetailLlm": {
         "label": "詳細LLM",
-        "desc": "前科を含めて高精度AI(Gemini)が詳しく判定し、違反かどうかで一致/不一致へ分岐します (3CC)"
+        "desc": "前科を含めて高精度AI(Gemini)が詳しく判定し、違反かどうかで一致/不一致へ分岐します (5CC)"
       },
       "Confidence": {
         "label": "確信度分岐",
-        "desc": "直近のAI判定の確信度をしきい値と比較し、しきい値以上かで一致/不一致へ分岐します (1CC)"
+        "desc": "直近のAI判定の確信度をしきい値と比較し、しきい値以上かで一致/不一致へ分岐します (2CC)"
       },
       "AdvancedLlm": {
         "label": "高度LLM",
-        "desc": "高精度AI(Gemini)が判定結果を作り、後続ノードへそのまま渡します (3CC)"
+        "desc": "高精度AI(Gemini)が判定結果を作り、後続ノードへそのまま渡します (5CC)"
       },
       "ActionPolicy": {
         "label": "アクションポリシー",

@@ -1117,6 +1117,18 @@
       "title": "🔍 要審査（グレーゾーン）",
       "body": "**対象:** <@{userId}> ({userTag})\n**理由:** {reason}\n\n自動判定の信頼度が低いため、モデレーターによる手動確認が必要です。"
     },
+    "ai_lane": {
+      "review": {
+        "title": "🤖 AIモデレーション 要確認",
+        "author": "**対象:** <@{userId}> ({userTag})",
+        "verdict": "**判定:** {label}（信頼度 {confidence}%）",
+        "categories": "**カテゴリ:** {categories}",
+        "reason": "**理由:** {reason}",
+        "jump": "[メッセージへ移動]({url})",
+        "label_gray": "グレー",
+        "label_violation": "違反"
+      }
+    },
     "warn": {
       "dm_title": "⚠️ 警告",
       "dm_body": "**{guildName}** の自動モデレーションにより警告を受けました。サーバーのルールを確認してください。"

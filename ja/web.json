@@ -359,7 +359,38 @@
     "nodeEditorAdvancedOnly": "advancedモードでのみ動作します",
     "modeOffFeature": "自動監視: なし",
     "modeLegacyFeature": "無料 · OpenAIスコア · 閾値ベース削除",
-    "modeAdvancedFeature": "Gemini文脈判定 · CC消費 · 自動処罰"
+    "modeAdvancedFeature": "Gemini文脈判定 · CC消費 · 自動処罰",
+    "presetLabel": "検知プリセット",
+    "presetDesc": "検知の厳しさをプリセットから選びます。細かく調整したい場合は「カスタム」を選択してください",
+    "preset_lenient_name": "緩め",
+    "preset_lenient_desc": "確信度が非常に高いものだけを自動処罰します",
+    "preset_lenient_trait": "誤検知: 最小 / コスト: 低 / 見逃し: 多め",
+    "preset_balanced_name": "標準",
+    "preset_balanced_desc": "確信度とコストのバランスを取った標準設定です",
+    "preset_balanced_trait": "誤検知: 中 / コスト: 中 / 見逃し: 中",
+    "preset_strict_name": "厳格",
+    "preset_strict_desc": "グレーも広く詳細分析し、見逃しを最小にします",
+    "preset_strict_trait": "誤検知: やや多め / コスト: 高 / 見逃し: 最小",
+    "preset_custom_name": "カスタム",
+    "preset_custom_desc": "各しきい値を自分で細かく設定します",
+    "preset_custom_trait": "各項目を手動で調整",
+    "cfgConfidenceLabel": "確信度しきい値",
+    "cfgConfidenceDesc": "この確信度以上の判定のみ自動処罰します。高いほど慎重になります",
+    "cfgGrayLabel": "グレー詳細分析しきい値",
+    "cfgGrayDesc": "判定が曖昧（グレー）なメッセージを詳細AI分析に回す度合い。高いほど詳細分析を多用します（コスト増）",
+    "cfgMinLenLabel": "最小解析文字数",
+    "cfgMinLenDesc": "この文字数未満の短いメッセージはAI解析の対象外にします",
+    "cfgTrustedLabel": "高信頼ユーザー検査率",
+    "cfgTrustedDesc": "違反履歴のない高信頼ユーザーをどの割合で抜き取り検査するか。0%で完全にスキップします",
+    "cfgScreenLabel": "一次スクリーニング感度",
+    "cfgScreenDesc": "AI解析の前段で行う機械的な一次判定の感度。高いほど多くのメッセージを精査に回します",
+    "cfgScreenLow": "低",
+    "cfgScreenMedium": "中",
+    "cfgScreenHigh": "高",
+    "cfgDetailLlmLabel": "詳細LLM分析",
+    "cfgDetailLlmDesc": "前科を含めた高精度な詳細AI分析を有効にします（CC消費が増えます）",
+    "cfgOn": "オン",
+    "cfgOff": "オフ"
   },
   "aimodEditor": {
     "title": "ノードエディター",
@@ -397,130 +428,146 @@
     },
     "fields": {
       "channel": "チャンネル",
+      "channel_hint": "対象とするチャンネル。空欄ですべてのチャンネルが対象になります",
       "category": "カテゴリ",
+      "category_hint": "対象とするカテゴリ。配下のチャンネルすべてが対象になります",
       "user": "ユーザー",
+      "user_hint": "対象とするユーザーID。空欄ですべてのユーザーが対象になります",
       "role": "ロール",
+      "role_hint": "対象とするロール。このロールを持つユーザーが対象になります",
       "joinAge": "参加からの経過時間",
+      "joinAge_hint": "サーバー参加からの経過時間で絞り込みます（例: 7d, 24h）",
       "report_type": "レポート種別",
+      "report_type_hint": "ログに出力するレポートの詳しさ。Normal=標準 / Minimum=最小 / Debug=詳細",
       "velocity_limit": "速度上限",
+      "velocity_limit_hint": "短時間にこの件数を超える参加・投稿があるとレイドと判定します",
       "detect_bots": "Bot を検知",
+      "detect_bots_hint": "Bot による大量参加・投稿も検知対象に含めます",
       "block_invites": "招待リンクをブロック",
+      "block_invites_hint": "Discord の招待リンクを含むメッセージをブロックします",
       "block_scams": "詐欺をブロック",
+      "block_scams_hint": "既知の詐欺・フィッシングパターンを含むメッセージをブロックします",
       "custom_patterns": "カスタムパターン",
+      "custom_patterns_hint": "ブロックする独自の正規表現パターンを追加します",
       "max_mentions": "最大メンション数",
+      "max_mentions_hint": "1メッセージあたりのメンションがこの数を超えると違反と判定します",
       "sensitivity": "感度",
-      "model": "モデル",
-      "summary": "要約を生成",
-      "threshold": "閾値",
-      "message": "メッセージ",
+      "sensitivity_hint": "スクリーニングの感度。high ほど多くのメッセージを違反候補として下流に流します",
+      "threshold": "確信度しきい値",
+      "threshold_hint": "直近の判定の確信度がこの値以上なら true 側へ分岐します",
+      "message": "対象メッセージ",
+      "message_hint": "操作対象のメッセージ。current で現在のメッセージを指します",
       "duration": "期間",
+      "duration_hint": "処罰の期間（例: 1h, 1d）。空欄で無期限になります",
       "delete_message": "メッセージ削除範囲",
-      "content": "本文"
+      "delete_message_hint": "BAN時にさかのぼって削除するメッセージの範囲（例: 1d）。空欄で削除しません",
+      "content": "本文",
+      "content_hint": "送信するメッセージの本文"
     },
     "nodes": {
       "MessageReceived": {
         "label": "メッセージ受信",
-        "desc": "パイプラインの開始点。すべてのメッセージがここから流れます"
+        "desc": "パイプラインの開始点です。送信された各メッセージがここから次のノードへ流れます"
       },
       "Rule": {
         "label": "ルール",
-        "desc": "自然言語ルールを評価します"
+        "desc": "設定した自然言語ルールに照らして判定し、結果を次のノードへ渡します"
       },
       "Condition": {
-        "label": "条件",
-        "desc": "チャンネル/カテゴリ/ユーザー/ロール/参加経過で分岐します"
+        "label": "条件分岐",
+        "desc": "チャンネル/カテゴリ/ユーザー/ロール/参加経過のいずれかに一致するかで、一致/不一致の2方向へ分岐します"
       },
       "TimeWindowCondition": {
-        "label": "時間帯条件",
-        "desc": "特定の時間帯かどうかで分岐します"
+        "label": "時間帯分岐",
+        "desc": "現在が指定した時間帯に入っているかで、一致/不一致の2方向へ分岐します"
       },
       "ParallelStart": {
         "label": "並列開始",
-        "desc": "並列処理の開始点"
+        "desc": "ここから複数の処理を同時に走らせます。各分岐は並列終了で合流します"
       },
       "ParallelEnd": {
         "label": "並列終了",
-        "desc": "並列処理の合流点"
+        "desc": "並列開始から分かれた処理をすべて待ち合わせ、1本にまとめて次へ進みます"
       },
       "SummaryReport": {
         "label": "サマリーレポート",
-        "desc": "判定結果をレポートとして出力します (1CC)"
+        "desc": "ここまでの判定結果をまとめてログチャンネルにレポートとして送ります (1CC)"
       },
       "HistorySummarizer": {
         "label": "履歴要約",
-        "desc": "会話履歴を要約します"
+        "desc": "直近の会話履歴を要約し、後続のAI判定が文脈を踏まえられるようにします"
       },
       "ReviewQueue": {
         "label": "レビューキュー",
-        "desc": "人間によるレビュー用キューに追加します"
+        "desc": "自動処罰せず、人間のモデレーターが確認するキューに追加します"
       },
       "AntiRaid": {
         "label": "アンチレイド",
-        "desc": "短時間の大量参加・投稿を検知します (0CC)"
+        "desc": "短時間の大量参加・投稿を検知し、レイドかどうかで一致/不一致へ分岐します (0CC)"
       },
       "RegexBlock": {
         "label": "正規表現ブロック",
-        "desc": "招待・詐欺・カスタムパターンをブロックします (0CC)"
+        "desc": "招待リンク・詐欺・カスタムパターンに該当するかを正規表現で判定し、一致/不一致へ分岐します (0CC)"
       },
       "TextFilter": {
         "label": "テキストフィルター",
-        "desc": "メンション数などの機械的な条件で判定します (0CC)"
+        "desc": "メンション数などの機械的な条件に違反するかで、一致/不一致へ分岐します (0CC)"
       },
       "ThreatDb": {
         "label": "脅威DB",
-        "desc": "既知の脅威データベースと照合します (0CC)"
+        "desc": "既知の脅威データベースと照合し、ヒットするかで一致/不一致へ分岐します (0CC)"
       },
       "Screen": {
         "label": "スクリーニング",
-        "desc": "軽量AIで一次スクリーニングを行います (0CC)"
+        "desc": "軽量AIで一次判定し、違反の疑いがあるかで一致/不一致へ分岐します。疑わしいものだけを下流のLLMへ流せます (0CC)"
       },
       "LiteLlm": {
         "label": "軽量LLM",
-        "desc": "軽量LLMで safe/gray/violation を判定します (1CC)"
+        "desc": "軽量AI(Gemini)が内容を読み、safe/gray/violation のいずれかの結果に振り分けて分岐します (1CC)"
       },
       "DetailLlm": {
         "label": "詳細LLM",
-        "desc": "高精度LLMで詳細に判定します (3CC)"
+        "desc": "前科を含めて高精度AI(Gemini)が詳しく判定し、違反かどうかで一致/不一致へ分岐します (3CC)"
       },
       "Confidence": {
-        "label": "確信度",
-        "desc": "確信度の閾値で分岐します (1CC)"
+        "label": "確信度分岐",
+        "desc": "直近のAI判定の確信度をしきい値と比較し、しきい値以上かで一致/不一致へ分岐します (1CC)"
       },
       "AdvancedLlm": {
         "label": "高度LLM",
-        "desc": "最も高度なLLMで判定します"
+        "desc": "高精度AI(Gemini)が判定結果を作り、後続ノードへそのまま渡します (3CC)"
       },
       "ActionPolicy": {
         "label": "アクションポリシー",
-        "desc": "実行するアクションの方針を決定します"
+        "desc": "ここまでの判定をもとに、実行すべき処罰の方針を決めて次へ渡します"
       },
       "ExecuteAction": {
         "label": "アクション実行",
-        "desc": "決定されたアクションをまとめて実行します"
+        "desc": "アクションポリシーで決まった処罰をまとめて実行します"
       },
       "MessageDelete": {
         "label": "メッセージ削除",
-        "desc": "対象メッセージを削除します"
+        "desc": "対象のメッセージを削除します"
       },
       "Timeout": {
         "label": "タイムアウト",
-        "desc": "ユーザーを一定期間タイムアウトします"
+        "desc": "対象ユーザーを指定期間タイムアウト（発言不可）にします"
       },
       "Kick": {
         "label": "キック",
-        "desc": "ユーザーをサーバーからキックします"
+        "desc": "対象ユーザーをサーバーからキックします"
       },
       "Ban": {
         "label": "BAN",
-        "desc": "ユーザーをBANします"
+        "desc": "対象ユーザーをBANします。過去メッセージの削除範囲も指定できます"
       },
       "Warn": {
         "label": "警告",
-        "desc": "ユーザーに警告を送ります"
+        "desc": "対象ユーザーに警告を記録・通知します"
       },
       "MessageSend": {
         "label": "メッセージ送信",
-        "desc": "メッセージを送信します"
+        "desc": "指定した本文のメッセージをチャンネルに送信します"
       }
     },
     "unsavedChanges": "未保存の変更",

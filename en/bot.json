@@ -1117,6 +1117,18 @@
       "title": "🔍 Review Required (Gray Zone)",
       "body": "**Target:** <@{userId}> ({userTag})\n**Reason:** {reason}\n\nAutomatic detection confidence was low. Please review this case manually."
     },
+    "ai_lane": {
+      "review": {
+        "title": "🤖 AI Moderation — Review Required",
+        "author": "**Target:** <@{userId}> ({userTag})",
+        "verdict": "**Verdict:** {label} (confidence {confidence}%)",
+        "categories": "**Categories:** {categories}",
+        "reason": "**Reason:** {reason}",
+        "jump": "[Jump to message]({url})",
+        "label_gray": "Gray",
+        "label_violation": "Violation"
+      }
+    },
     "warn": {
       "dm_title": "⚠️ Warning",
       "dm_body": "You have received a warning from **{guildName}**'s auto-moderation. Please review the server rules."

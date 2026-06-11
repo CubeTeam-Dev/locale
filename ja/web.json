@@ -342,7 +342,195 @@
     "modeLegacy": "レガシー版",
     "modeLegacyDesc": "不適切なメッセージを自動で検知・通知・削除します（無料）",
     "modeAdvanced": "次世代",
-    "modeAdvancedDesc": "文脈を理解する高度な AI モデレーション"
+    "modeAdvancedDesc": "文脈を理解する高度な AI モデレーション",
+    "advancedLaneSectionTitle": "AIレーン設定",
+    "advancedLaneSectionDesc": "次世代 AI モデレーション（advanced モード）の詳細設定を行います",
+    "naturalLanguageRulesLabel": "自然言語ルール",
+    "naturalLanguageRulesDesc": "このサーバー固有のモデレーションルールを自然言語で記述します。AI がルールを理解し、判定に反映します",
+    "naturalLanguageRulesPlaceholder": "例:\n- 政治・宗教の議論は禁止\n- 18歳未満に不適切なコンテンツを送ってはならない\n- 他のユーザーへの侮辱的な発言は削除する",
+    "advancedViolationStorageLabel": "高度な違反保存",
+    "advancedViolationStorageDesc": "AI が違反理由を分類して保存します。モデレーションログの詳細化に役立ちますが、1CC/件 のクレジットを消費します",
+    "nodeEditorLinkLabel": "ノードエディター",
+    "nodeEditorLinkDesc": "パイプラインをノードで視覚的に構築・編集します",
+    "nodeEditorLockedTooltip": "ノードエディターは上位プラン (NODE_EDITOR) で利用できます",
+    "nodeEditorSectionTitle": "ノードエディター",
+    "nodeEditorSectionDesc": "視覚的なパイプラインビルダーで AI モデレーションフローを構築します",
+    "nodeEditorOpenBtn": "ノードエディターを開く",
+    "nodeEditorAdvancedOnly": "advancedモードでのみ動作します",
+    "modeOffFeature": "自動監視: なし",
+    "modeLegacyFeature": "無料 · OpenAIスコア · 閾値ベース削除",
+    "modeAdvancedFeature": "Gemini文脈判定 · CC消費 · 自動処罰"
+  },
+  "aimodEditor": {
+    "title": "ノードエディター",
+    "back": "戻る",
+    "save": "保存",
+    "saving": "保存中...",
+    "saved": "保存しました",
+    "saveError": "保存に失敗しました",
+    "paletteTitle": "ノードを追加",
+    "close": "閉じる",
+    "deleteNode": "ノードを削除",
+    "noParams": "このノードに設定項目はありません",
+    "stringListPlaceholder": "入力して Enter で追加",
+    "costBadge": "{cost}CC",
+    "categories": {
+      "input": "入力",
+      "utility": "ユーティリティ",
+      "mechanical": "メカニカル",
+      "ai": "AI",
+      "action": "アクション"
+    },
+    "handles": {
+      "next": "次へ",
+      "true": "一致",
+      "false": "不一致",
+      "safe": "安全",
+      "gray": "グレー",
+      "violation": "違反",
+      "else": "それ以外"
+    },
+    "validation": {
+      "errorNoEntry": "MessageReceived ノードが必要です",
+      "errorMultipleEntry": "入力ノードは1つだけ配置できます",
+      "warningDisconnected": "未接続のノードがあります"
+    },
+    "fields": {
+      "channel": "チャンネル",
+      "category": "カテゴリ",
+      "user": "ユーザー",
+      "role": "ロール",
+      "joinAge": "参加からの経過時間",
+      "report_type": "レポート種別",
+      "velocity_limit": "速度上限",
+      "detect_bots": "Bot を検知",
+      "block_invites": "招待リンクをブロック",
+      "block_scams": "詐欺をブロック",
+      "custom_patterns": "カスタムパターン",
+      "max_mentions": "最大メンション数",
+      "sensitivity": "感度",
+      "model": "モデル",
+      "summary": "要約を生成",
+      "threshold": "閾値",
+      "message": "メッセージ",
+      "duration": "期間",
+      "delete_message": "メッセージ削除範囲",
+      "content": "本文"
+    },
+    "nodes": {
+      "MessageReceived": {
+        "label": "メッセージ受信",
+        "desc": "パイプラインの開始点。すべてのメッセージがここから流れます"
+      },
+      "Rule": {
+        "label": "ルール",
+        "desc": "自然言語ルールを評価します"
+      },
+      "Condition": {
+        "label": "条件",
+        "desc": "チャンネル/カテゴリ/ユーザー/ロール/参加経過で分岐します"
+      },
+      "TimeWindowCondition": {
+        "label": "時間帯条件",
+        "desc": "特定の時間帯かどうかで分岐します"
+      },
+      "ParallelStart": {
+        "label": "並列開始",
+        "desc": "並列処理の開始点"
+      },
+      "ParallelEnd": {
+        "label": "並列終了",
+        "desc": "並列処理の合流点"
+      },
+      "SummaryReport": {
+        "label": "サマリーレポート",
+        "desc": "判定結果をレポートとして出力します (1CC)"
+      },
+      "HistorySummarizer": {
+        "label": "履歴要約",
+        "desc": "会話履歴を要約します"
+      },
+      "ReviewQueue": {
+        "label": "レビューキュー",
+        "desc": "人間によるレビュー用キューに追加します"
+      },
+      "AntiRaid": {
+        "label": "アンチレイド",
+        "desc": "短時間の大量参加・投稿を検知します (0CC)"
+      },
+      "RegexBlock": {
+        "label": "正規表現ブロック",
+        "desc": "招待・詐欺・カスタムパターンをブロックします (0CC)"
+      },
+      "TextFilter": {
+        "label": "テキストフィルター",
+        "desc": "メンション数などの機械的な条件で判定します (0CC)"
+      },
+      "ThreatDb": {
+        "label": "脅威DB",
+        "desc": "既知の脅威データベースと照合します (0CC)"
+      },
+      "Screen": {
+        "label": "スクリーニング",
+        "desc": "軽量AIで一次スクリーニングを行います (0CC)"
+      },
+      "LiteLlm": {
+        "label": "軽量LLM",
+        "desc": "軽量LLMで safe/gray/violation を判定します (1CC)"
+      },
+      "DetailLlm": {
+        "label": "詳細LLM",
+        "desc": "高精度LLMで詳細に判定します (3CC)"
+      },
+      "Confidence": {
+        "label": "確信度",
+        "desc": "確信度の閾値で分岐します (1CC)"
+      },
+      "AdvancedLlm": {
+        "label": "高度LLM",
+        "desc": "最も高度なLLMで判定します"
+      },
+      "ActionPolicy": {
+        "label": "アクションポリシー",
+        "desc": "実行するアクションの方針を決定します"
+      },
+      "ExecuteAction": {
+        "label": "アクション実行",
+        "desc": "決定されたアクションをまとめて実行します"
+      },
+      "MessageDelete": {
+        "label": "メッセージ削除",
+        "desc": "対象メッセージを削除します"
+      },
+      "Timeout": {
+        "label": "タイムアウト",
+        "desc": "ユーザーを一定期間タイムアウトします"
+      },
+      "Kick": {
+        "label": "キック",
+        "desc": "ユーザーをサーバーからキックします"
+      },
+      "Ban": {
+        "label": "BAN",
+        "desc": "ユーザーをBANします"
+      },
+      "Warn": {
+        "label": "警告",
+        "desc": "ユーザーに警告を送ります"
+      },
+      "MessageSend": {
+        "label": "メッセージ送信",
+        "desc": "メッセージを送信します"
+      }
+    },
+    "unsavedChanges": "未保存の変更",
+    "unsavedDot": "●",
+    "emptyTitle": "ノードがありません",
+    "emptyDesc": "パレットからノードをドラッグするか、テンプレートから始めてください",
+    "loadTemplate": "標準テンプレートを読み込む",
+    "searchPlaceholder": "ノードを検索...",
+    "unsavedTooltip": "未保存の変更があります",
+    "deleteEdge": "エッジを削除"
   },
   "subscription": {
     "title": "サブスクリプション",

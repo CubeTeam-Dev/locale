@@ -359,7 +359,38 @@
     "nodeEditorAdvancedOnly": "Works in advanced mode only",
     "modeOffFeature": "No monitoring",
     "modeLegacyFeature": "Free · OpenAI score · Threshold-based deletion",
-    "modeAdvancedFeature": "Gemini context · CC cost · Auto punishment"
+    "modeAdvancedFeature": "Gemini context · CC cost · Auto punishment",
+    "presetLabel": "Detection preset",
+    "presetDesc": "Pick how strict detection should be. Choose Custom to fine-tune each value",
+    "preset_lenient_name": "Lenient",
+    "preset_lenient_desc": "Only auto-punishes very high-confidence verdicts",
+    "preset_lenient_trait": "False positives: minimal / Cost: low / Misses: more",
+    "preset_balanced_name": "Balanced",
+    "preset_balanced_desc": "A balanced default trading off confidence and cost",
+    "preset_balanced_trait": "False positives: medium / Cost: medium / Misses: medium",
+    "preset_strict_name": "Strict",
+    "preset_strict_desc": "Analyzes gray cases broadly to minimize misses",
+    "preset_strict_trait": "False positives: higher / Cost: high / Misses: minimal",
+    "preset_custom_name": "Custom",
+    "preset_custom_desc": "Set each threshold manually",
+    "preset_custom_trait": "Tune every value by hand",
+    "cfgConfidenceLabel": "Confidence threshold",
+    "cfgConfidenceDesc": "Only verdicts at or above this confidence are auto-punished. Higher is more cautious",
+    "cfgGrayLabel": "Gray detail-analysis threshold",
+    "cfgGrayDesc": "How aggressively ambiguous (gray) messages are sent to detailed AI analysis. Higher uses detailed analysis more (more cost)",
+    "cfgMinLenLabel": "Minimum content length",
+    "cfgMinLenDesc": "Messages shorter than this character count are excluded from AI analysis",
+    "cfgTrustedLabel": "Trusted-user sampling rate",
+    "cfgTrustedDesc": "What share of trusted users (no violation history) to spot-check. 0% skips them entirely",
+    "cfgScreenLabel": "First-pass screening sensitivity",
+    "cfgScreenDesc": "Sensitivity of the mechanical first-pass before AI analysis. Higher sends more messages to deeper analysis",
+    "cfgScreenLow": "Low",
+    "cfgScreenMedium": "Medium",
+    "cfgScreenHigh": "High",
+    "cfgDetailLlmLabel": "Detailed LLM analysis",
+    "cfgDetailLlmDesc": "Enable high-accuracy detailed AI analysis including prior history (increases CC cost)",
+    "cfgOn": "On",
+    "cfgOff": "Off"
   },
   "aimodEditor": {
     "title": "Node Editor",
@@ -397,106 +428,122 @@
     },
     "fields": {
       "channel": "Channel",
+      "channel_hint": "Channels to target. Leave empty to target all channels",
       "category": "Category",
+      "category_hint": "Categories to target. All channels under them are included",
       "user": "User",
+      "user_hint": "User IDs to target. Leave empty to target all users",
       "role": "Role",
+      "role_hint": "Roles to target. Users with these roles are included",
       "joinAge": "Time since join",
+      "joinAge_hint": "Filter by time since joining the server (e.g. 7d, 24h)",
       "report_type": "Report type",
+      "report_type_hint": "How detailed the log report is. Normal = standard / Minimum = minimal / Debug = verbose",
       "velocity_limit": "Velocity limit",
+      "velocity_limit_hint": "More joins/posts than this in a short window is treated as a raid",
       "detect_bots": "Detect bots",
+      "detect_bots_hint": "Also detect mass joins/posts from bots",
       "block_invites": "Block invites",
+      "block_invites_hint": "Block messages containing Discord invite links",
       "block_scams": "Block scams",
+      "block_scams_hint": "Block messages matching known scam or phishing patterns",
       "custom_patterns": "Custom patterns",
+      "custom_patterns_hint": "Add your own regex patterns to block",
       "max_mentions": "Max mentions",
+      "max_mentions_hint": "A message with more mentions than this is flagged as a violation",
       "sensitivity": "Sensitivity",
-      "model": "Model",
-      "summary": "Generate summary",
-      "threshold": "Threshold",
-      "message": "Message",
+      "sensitivity_hint": "Screening sensitivity. Higher sends more messages downstream as suspects",
+      "threshold": "Confidence threshold",
+      "threshold_hint": "If the latest verdict's confidence is at or above this, branch to true",
+      "message": "Target message",
+      "message_hint": "The message to act on. Use 'current' for the current message",
       "duration": "Duration",
+      "duration_hint": "Punishment duration (e.g. 1h, 1d). Leave empty for permanent",
       "delete_message": "Delete message range",
-      "content": "Content"
+      "delete_message_hint": "How far back to delete messages on ban (e.g. 1d). Empty deletes nothing",
+      "content": "Content",
+      "content_hint": "The body of the message to send"
     },
     "nodes": {
       "MessageReceived": {
         "label": "Message Received",
-        "desc": "Pipeline entry point. Every message starts here"
+        "desc": "The pipeline entry point. Each posted message flows from here to the next node"
       },
       "Rule": {
         "label": "Rule",
-        "desc": "Evaluates natural-language rules"
+        "desc": "Evaluates against your natural-language rules and passes the result to the next node"
       },
       "Condition": {
         "label": "Condition",
-        "desc": "Branches on channel/category/user/role/join age"
+        "desc": "Branches into match / no-match based on channel/category/user/role/join age"
       },
       "TimeWindowCondition": {
         "label": "Time Window",
-        "desc": "Branches based on the time of day"
+        "desc": "Branches into match / no-match based on whether now falls in the given time window"
       },
       "ParallelStart": {
         "label": "Parallel Start",
-        "desc": "Start of parallel processing"
+        "desc": "Runs several branches at once from here; they rejoin at Parallel End"
       },
       "ParallelEnd": {
         "label": "Parallel End",
-        "desc": "Join point of parallel processing"
+        "desc": "Waits for all branches from Parallel Start, then merges into one and continues"
       },
       "SummaryReport": {
         "label": "Summary Report",
-        "desc": "Outputs the verdict as a report (1CC)"
+        "desc": "Sends the verdict so far to the log channel as a report (1CC)"
       },
       "HistorySummarizer": {
         "label": "History Summarizer",
-        "desc": "Summarizes conversation history"
+        "desc": "Summarizes recent conversation history so downstream AI nodes have context"
       },
       "ReviewQueue": {
         "label": "Review Queue",
-        "desc": "Adds to a human review queue"
+        "desc": "Adds to a human moderator review queue instead of auto-punishing"
       },
       "AntiRaid": {
         "label": "Anti-Raid",
-        "desc": "Detects mass joins/posts in a short window (0CC)"
+        "desc": "Detects mass joins/posts in a short window and branches match / no-match (0CC)"
       },
       "RegexBlock": {
         "label": "Regex Block",
-        "desc": "Blocks invites, scams and custom patterns (0CC)"
+        "desc": "Checks invites, scams and custom regex patterns and branches match / no-match (0CC)"
       },
       "TextFilter": {
         "label": "Text Filter",
-        "desc": "Mechanical checks such as mention count (0CC)"
+        "desc": "Branches match / no-match on mechanical rules such as mention count (0CC)"
       },
       "ThreatDb": {
         "label": "Threat DB",
-        "desc": "Matches against a known threat database (0CC)"
+        "desc": "Matches against a known threat database and branches match / no-match (0CC)"
       },
       "Screen": {
         "label": "Screen",
-        "desc": "Lightweight AI first-pass screening (0CC)"
+        "desc": "Lightweight AI first pass; branches match / no-match so only suspects go to downstream LLMs (0CC)"
       },
       "LiteLlm": {
         "label": "Lite LLM",
-        "desc": "Lite LLM judging safe/gray/violation (1CC)"
+        "desc": "A lightweight AI (Gemini) reads the content and routes it to safe/gray/violation (1CC)"
       },
       "DetailLlm": {
         "label": "Detail LLM",
-        "desc": "Detailed high-accuracy LLM judgment (3CC)"
+        "desc": "A high-accuracy AI (Gemini) judges in detail including prior history, branching match / no-match (3CC)"
       },
       "Confidence": {
         "label": "Confidence",
-        "desc": "Branches on a confidence threshold (1CC)"
+        "desc": "Compares the latest verdict's confidence to a threshold and branches match / no-match (1CC)"
       },
       "AdvancedLlm": {
         "label": "Advanced LLM",
-        "desc": "Judges with the most advanced LLM"
+        "desc": "A high-accuracy AI (Gemini) produces a verdict and passes it straight to the next node (3CC)"
       },
       "ActionPolicy": {
         "label": "Action Policy",
-        "desc": "Decides the policy for actions to take"
+        "desc": "Decides which punishment to take based on the verdict so far and passes it on"
       },
       "ExecuteAction": {
         "label": "Execute Action",
-        "desc": "Executes the decided actions together"
+        "desc": "Executes the punishments decided by Action Policy together"
       },
       "MessageDelete": {
         "label": "Message Delete",
@@ -504,23 +551,23 @@
       },
       "Timeout": {
         "label": "Timeout",
-        "desc": "Times out the user for a period"
+        "desc": "Times out (mutes) the target user for the given period"
       },
       "Kick": {
         "label": "Kick",
-        "desc": "Kicks the user from the server"
+        "desc": "Kicks the target user from the server"
       },
       "Ban": {
         "label": "Ban",
-        "desc": "Bans the user"
+        "desc": "Bans the target user. You can also set how far back to delete their messages"
       },
       "Warn": {
         "label": "Warn",
-        "desc": "Sends a warning to the user"
+        "desc": "Records and notifies a warning to the target user"
       },
       "MessageSend": {
         "label": "Message Send",
-        "desc": "Sends a message"
+        "desc": "Sends a message with the given content to the channel"
       }
     },
     "unsavedChanges": "Unsaved changes",

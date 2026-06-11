@@ -478,6 +478,12 @@
     }
   },
   "manage": {
+    "warn": {
+      "cannot_warn_self": "❌ You cannot warn yourself or a bot.",
+      "dm_title": "⚠️ Warning",
+      "dm_body": "You have received a warning from the moderators of **{guildName}**.\n**Reason:** {reason}\n\nPlease review the server rules.",
+      "success": "✅ Recorded a warning for <@{userId}>.\n**Reason:** {reason}"
+    },
     "clear": {
       "confirm_description": "This message and all messages after it will be deleted.",
       "error": {

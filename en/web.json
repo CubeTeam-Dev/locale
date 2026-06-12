@@ -347,6 +347,8 @@
     "advancedLaneSectionDesc": "Configure detailed settings for next-gen AI moderation (advanced mode)",
     "naturalLanguageRulesLabel": "Natural Language Rules",
     "naturalLanguageRulesDesc": "Describe server-specific moderation rules in plain language. The AI will understand and apply them during evaluation",
+    "naturalLanguageRulesSurcharge": "Rules add +{cc} CC per judgment based on length (+1 CC per 500 characters)",
+    "naturalLanguageRulesNoSurcharge": "No additional CC — no rules set",
     "naturalLanguageRulesPlaceholder": "e.g.\n- No political or religious debates\n- No content inappropriate for users under 18\n- Remove insulting remarks directed at other users",
     "advancedViolationStorageLabel": "Advanced Violation Storage",
     "advancedViolationStorageDesc": "AI classifies and stores violation reasons in detail. Useful for richer moderation logs, but consumes 2 CC per violation",

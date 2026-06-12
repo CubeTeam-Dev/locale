@@ -478,6 +478,12 @@
     }
   },
   "manage": {
+    "warn": {
+      "cannot_warn_self": "❌ 自分自身または Bot に警告を送ることはできません。",
+      "dm_title": "⚠️ 警告",
+      "dm_body": "**{guildName}** のモデレーターから警告を受けました。\n**理由:** {reason}\n\nサーバーのルールを確認してください。",
+      "success": "✅ <@{userId}> に警告を記録しました。\n**理由:** {reason}"
+    },
     "clear": {
       "confirm_description": "これより後のメッセージが削除されます。",
       "error": {

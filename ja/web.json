@@ -308,6 +308,8 @@
   "aimod": {
     "title": "AI モデレーション",
     "desc": "AI によるチャットの自動監視・対応を設定します",
+    "logChannelLabel": "ログチャンネル",
+    "logChannelDesc": "AIモデレーションのログやレビュー通知を送信するチャンネルを指定します",
     "statusNotSet": "未設定",
     "statusRunning": "実行中",
     "statusStopped": "停止中",

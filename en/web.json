@@ -308,6 +308,8 @@
   "aimod": {
     "title": "AI Moderation",
     "desc": "Configure automatic chat monitoring and response by AI",
+    "logChannelLabel": "Log Channel",
+    "logChannelDesc": "Specify the channel to send AI moderation logs and review notices",
     "statusNotSet": "Not configured",
     "statusRunning": "Running",
     "statusStopped": "Stopped",

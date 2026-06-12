@@ -308,6 +308,8 @@
   "aimod": {
     "title": "AI モデレーション",
     "desc": "AI によるチャットの自動監視・対応を設定します",
+    "logChannelLabel": "ログチャンネル",
+    "logChannelDesc": "AIモデレーションのログやレビュー通知を送信するチャンネルを指定します",
     "statusNotSet": "未設定",
     "statusRunning": "実行中",
     "statusStopped": "停止中",
@@ -347,6 +349,8 @@
     "advancedLaneSectionDesc": "次世代 AI モデレーション（advanced モード）の詳細設定を行います",
     "naturalLanguageRulesLabel": "自然言語ルール",
     "naturalLanguageRulesDesc": "このサーバー固有のモデレーションルールを自然言語で記述します。AI がルールを理解し、判定に反映します",
+    "naturalLanguageRulesSurcharge": "ルールの長さにより判定1回あたり +{cc}CC が追加されます（500文字ごとに +1CC）",
+    "naturalLanguageRulesNoSurcharge": "ルール未設定のため追加CCはありません",
     "naturalLanguageRulesPlaceholder": "例:\n- 政治・宗教の議論は禁止\n- 18歳未満に不適切なコンテンツを送ってはならない\n- 他のユーザーへの侮辱的な発言は削除する",
     "advancedViolationStorageLabel": "高度な違反保存",
     "advancedViolationStorageDesc": "AI が違反理由を分類して保存します。モデレーションログの詳細化に役立ちますが、1CC/件 のクレジットを消費します",

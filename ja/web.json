@@ -232,6 +232,36 @@
       "joins": "参加",
       "leaves": "退出",
       "netChange": "純増減"
+    },
+    "moderationMetrics": {
+      "title": "AI モデレーション",
+      "screened": "スクリーニング総数",
+      "actions": "アクション実行数",
+      "detections": "検出数",
+      "range7": "7日間",
+      "range30": "30日間",
+      "categoryTitle": "上位カテゴリ",
+      "timeseriesTitle": "日別検出数",
+      "noData": "データがありません",
+      "empty": "モデレーションの記録はまだありません",
+      "error": "モデレーション指標の読み込みに失敗しました",
+      "categories": {
+        "harassment": "嫌がらせ",
+        "harassment/threatening": "嫌がらせ（脅迫）",
+        "hate": "差別的表現",
+        "hate/threatening": "差別的表現（脅迫）",
+        "sexual": "性的",
+        "sexual/minors": "性的（未成年）",
+        "violence": "暴力",
+        "violence/graphic": "暴力（描写）",
+        "self-harm": "自傷",
+        "self-harm/intent": "自傷（意図）",
+        "self-harm/instructions": "自傷（手段）",
+        "illicit": "違法行為",
+        "illicit/violent": "違法行為（暴力）",
+        "spam": "スパム",
+        "other": "その他"
+      }
     }
   },
   "general": {
@@ -394,7 +424,45 @@
     "cfgDetailLlmLabel": "詳細LLM分析",
     "cfgDetailLlmDesc": "前科を含めた高精度な詳細AI分析を有効にします（CC消費が増えます）",
     "cfgOn": "オン",
-    "cfgOff": "オフ"
+    "cfgOff": "オフ",
+    "detections": {
+      "title": "最近の検出",
+      "desc": "AI モデレーションが検出した最新のメッセージ",
+      "empty": "まだ検出はありません",
+      "error": "検出の読み込みに失敗しました",
+      "filterAll": "すべて",
+      "confidence": "信頼度",
+      "action": "アクション",
+      "reason": "理由",
+      "viewMessage": "メッセージを表示",
+      "sourceAuto": "AI",
+      "sourceManual": "手動",
+      "user": "ユーザー",
+      "justNow": "たった今",
+      "minutesAgo": "{n}分前",
+      "hoursAgo": "{n}時間前",
+      "daysAgo": "{n}日前",
+      "page": "ページ",
+      "of": "/",
+      "total": "件",
+      "categories": {
+        "harassment": "嫌がらせ",
+        "harassment/threatening": "嫌がらせ（脅迫）",
+        "hate": "差別的表現",
+        "hate/threatening": "差別的表現（脅迫）",
+        "sexual": "性的",
+        "sexual/minors": "性的（未成年）",
+        "violence": "暴力",
+        "violence/graphic": "暴力（描写）",
+        "self-harm": "自傷",
+        "self-harm/intent": "自傷（意図）",
+        "self-harm/instructions": "自傷（手段）",
+        "illicit": "違法行為",
+        "illicit/violent": "違法行為（暴力）",
+        "spam": "スパム",
+        "other": "その他"
+      }
+    }
   },
   "aimodEditor": {
     "title": "ノードエディター",
@@ -581,7 +649,54 @@
     "loadTemplate": "標準テンプレートを読み込む",
     "searchPlaceholder": "ノードを検索...",
     "unsavedTooltip": "未保存の変更があります",
-    "deleteEdge": "エッジを削除"
+    "deleteEdge": "エッジを削除",
+    "test": {
+      "open": "テスト実行",
+      "title": "テスト実行",
+      "subtitle": "現在のパイプライン（未保存の変更を含む）にサンプルメッセージを流し、各ノードの判定をトレースします",
+      "inputLabel": "サンプルメッセージ",
+      "inputPlaceholder": "テストするメッセージを入力（例: 「今すぐ参加 https://discord.gg/...」）",
+      "charCount": "{count} / {max}",
+      "run": "実行",
+      "running": "実行中...",
+      "rerun": "もう一度実行",
+      "clear": "クリア",
+      "close": "閉じる",
+      "emptyHint": "サンプルメッセージを入力して実行すると、各ノードがどう判定するかを確認できます。",
+      "noTrace": "実行されたノードはありません",
+      "traceTitle": "トレース",
+      "stepLabel": "ステップ {n}",
+      "branchTaken": "分岐: {branch}",
+      "result": "結果: {result}",
+      "llmCalled": "LLM",
+      "duration": "{ms}ms",
+      "wouldExecute": "実行予定: {actions}",
+      "verdict": {
+        "label": "判定",
+        "confidence": "確信度 {percent}%",
+        "severity": "深刻度 {severity}",
+        "categories": "カテゴリ",
+        "reason": "理由"
+      },
+      "finalVerdict": "最終判定",
+      "noFinalVerdict": "最終判定なし",
+      "footer": {
+        "llmCalls": "LLM呼び出し",
+        "estimatedCost": "推定コスト",
+        "cost": "{cc}CC",
+        "charged": "課金あり",
+        "free": "無料（課金なし）",
+        "freeRemaining": "本日の無料実行残り: {count}回"
+      },
+      "errors": {
+        "title": "テスト実行に失敗しました",
+        "noFunds": "本日の無料テスト回数を使い切り、Cubeクレジットも不足しています。クレジットを追加するか、明日もう一度お試しください。",
+        "forbidden": "このサーバーでテストを実行する権限がありません。",
+        "botMissing": "Botがまだこのサーバーに参加していません。Botを招待してからテストを実行してください。",
+        "noConfig": "AIモデレーションがまだ設定されていません。ノードを1つ以上追加してからお試しください。",
+        "generic": "テスト実行中に問題が発生しました。もう一度お試しください。"
+      }
+    }
   },
   "subscription": {
     "title": "サブスクリプション",

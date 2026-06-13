@@ -884,6 +884,9 @@
       "user": "User",
       "author": "Author",
       "deleted_by": "Deleted By",
+      "deleted_by_moderation": "Cube (Auto Moderation)",
+      "deleted_by_moderation_with_reason": "Cube (Auto Moderation) — {reason}",
+      "deleted_by_unknown_self": "Unknown (possibly self-deleted)",
       "kicked_by": "Kicked By",
       "banned_by": "Banned By",
       "unbanned_by": "Unbanned By",
@@ -1112,6 +1115,18 @@
       "default_reason": "Automod Action",
       "failed_title": "⚠️ Moderation Action Failed",
       "failed_body": "**User:** <@{userId}> ({userTag})\n**Attempted action(s):** {actions}\n**Reason:** {reason}\n\nThe action could not be performed because the target has administrator permission or a role higher than the bot. Please handle this manually.",
+      "v2_target": "**User:** <@{userId}>\n`{userTag}`",
+      "v2_actions": "**⚡ Action(s):** {actions}",
+      "v2_failed_actions": "**⚡ Attempted action(s):** {actions}",
+      "v2_reason": "**📝 Reason:** {reason}",
+      "v2_confidence": "**🎯 Confidence:** `{gauge}`",
+      "v2_severity": "**🔥 Severity:** `{gauge}`",
+      "v2_categories": "**🏷️ Categories:** {categories}",
+      "v2_triggers": "**🚦 Triggered rules:** {triggers}",
+      "v2_executor": "**👮 Executor:** <@{executorId}>",
+      "v2_jump": "[📨 Jump to message]({url})",
+      "btn_jump": "📨 Jump to message",
+      "v2_failed_hint": "-# Auto-moderation could not act because the target has administrator permission or a role higher than the bot. Please handle this manually using the buttons below.",
       "btn_ban": "BAN",
       "btn_kick": "Kick",
       "btn_unquarantine": "Release",
@@ -1126,13 +1141,39 @@
     "ai_lane": {
       "review": {
         "title": "🤖 AI Moderation — Review Required",
-        "author": "**Target:** <@{userId}> ({userTag})",
+        "author": "**Target:** <@{userId}>\n`{userTag}`",
         "verdict": "**Verdict:** {label} (confidence {confidence}%)",
-        "categories": "**Categories:** {categories}",
-        "reason": "**Reason:** {reason}",
-        "jump": "[Jump to message]({url})",
+        "verdict_label": "**⚖️ Verdict:** {label}",
+        "confidence": "**🎯 Confidence:** `{gauge}`",
+        "severity": "**🔥 Severity:** `{gauge}`",
+        "categories": "**🏷️ Categories:** {categories}",
+        "triggers": "**🚦 Triggered rules:** {triggers}",
+        "reason": "**📝 Reason:** {reason}",
+        "jump": "[📨 Jump to message]({url})",
+        "btn_jump": "📨 Jump to message",
         "label_gray": "Gray",
         "label_violation": "Violation"
+      },
+      "categories": {
+        "harassment": "Harassment",
+        "hate": "Hate",
+        "sexual": "Sexual",
+        "violence": "Violence",
+        "self_harm": "Self-harm",
+        "spam": "Spam",
+        "scam_phishing": "Scam / Phishing",
+        "advertising": "Advertising",
+        "nsfw": "NSFW",
+        "server_rule": "Server rule violation"
+      },
+      "pipeline_stage": {
+        "omni": "Primary screening (Omni)",
+        "lite_llm": "Lite LLM verdict",
+        "detail_llm": "Detailed LLM verdict",
+        "heuristic": "Heuristic verdict"
+      },
+      "pipeline": {
+        "summary": "-# ⚙️ Pipeline: verdict finalized at {stage}"
       }
     },
     "warn": {
@@ -1267,7 +1308,15 @@
       "ANTINUKE_ROLE_CREATE": "Mass role creation",
       "ANTINUKE_WEBHOOK_CREATE": "Mass webhook creation",
       "ANTINUKE_BAN_KICK": "Mass member ban/kick",
-      "ANTINUKE_ROLE_GRANT": "Granted dangerous permissions to a role"
+      "ANTINUKE_ROLE_GRANT": "Granted dangerous permissions to a role",
+      "AI_HARASSMENT": "AI Detection: Harassment",
+      "AI_HATE": "AI Detection: Hate Speech",
+      "AI_SEXUAL": "AI Detection: Sexual Content",
+      "AI_VIOLENCE": "AI Detection: Violence",
+      "AI_SELF_HARM": "AI Detection: Self-harm",
+      "AI_SCAM_PHISHING": "AI Detection: Scam / Phishing",
+      "AI_SERVER_RULE": "AI Detection: Server Rule Violation",
+      "AI_SPAM": "AI Detection: Spam"
     },
     "legacy_automod": {
       "category": {
@@ -1297,6 +1346,7 @@
         "action_deleted": "Deleted",
         "action_none": "None",
         "jump": "[Jump to message]({url})",
+        "btn_jump": "📨 Jump to message",
         "btn_delete": "Delete Message",
         "btn_warn": "Send Warning"
       },

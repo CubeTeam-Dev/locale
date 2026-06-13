@@ -686,7 +686,8 @@
         "cost": "{cc}CC",
         "charged": "課金あり",
         "free": "無料（課金なし）",
-        "freeRemaining": "本日の無料実行残り: {count}回"
+        "freeRemaining": "本日の無料実行残り: {count}回",
+        "partialShortfall": "残高不足のため一部の判定をスキップしました"
       },
       "errors": {
         "title": "テスト実行に失敗しました",

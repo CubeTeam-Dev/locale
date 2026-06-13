@@ -884,6 +884,9 @@
       "user": "ユーザー",
       "author": "送信者",
       "deleted_by": "削除者",
+      "deleted_by_moderation": "Cube（自動モデレーション）",
+      "deleted_by_moderation_with_reason": "Cube（自動モデレーション）— {reason}",
+      "deleted_by_unknown_self": "不明（自己削除の可能性）",
       "kicked_by": "キック実行者",
       "banned_by": "BAN実行者",
       "unbanned_by": "BAN解除者",
@@ -1122,6 +1125,7 @@
       "v2_triggers": "**🚦 発火ルール:** {triggers}",
       "v2_executor": "**👮 実行者:** <@{executorId}>",
       "v2_jump": "[📨 対象メッセージへ移動]({url})",
+      "btn_jump": "📨 対象メッセージへ移動",
       "v2_failed_hint": "-# 対象が管理者権限を持っている、またはBotより上位のロールを持っているため自動処罰できませんでした。下のボタンから手動で対応してください。",
       "btn_ban": "BAN",
       "btn_kick": "キック",
@@ -1146,6 +1150,7 @@
         "triggers": "**🚦 発火ルール:** {triggers}",
         "reason": "**📝 理由:** {reason}",
         "jump": "[📨 メッセージへ移動]({url})",
+        "btn_jump": "📨 対象メッセージへ移動",
         "label_gray": "グレー",
         "label_violation": "違反"
       },
@@ -1341,6 +1346,7 @@
         "action_deleted": "削除",
         "action_none": "なし",
         "jump": "[メッセージへ移動]({url})",
+        "btn_jump": "📨 対象メッセージへ移動",
         "btn_delete": "メッセージ削除",
         "btn_warn": "警告を送信"
       },

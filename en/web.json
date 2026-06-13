@@ -686,7 +686,8 @@
         "cost": "{cc}CC",
         "charged": "Charged",
         "free": "Free (no charge)",
-        "freeRemaining": "Free runs left today: {count}"
+        "freeRemaining": "Free runs left today: {count}",
+        "partialShortfall": "Some checks were skipped due to insufficient credits"
       },
       "errors": {
         "title": "Test run failed",

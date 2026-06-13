@@ -1112,6 +1112,17 @@
       "default_reason": "自動モデレーションによる処罰",
       "failed_title": "⚠️ モデレーション実行失敗",
       "failed_body": "**対象:** <@{userId}> ({userTag})\n**試行アクション:** {actions}\n**理由:** {reason}\n\n対象が管理者権限を持っている、またはBotより上位のロールを持っているため、アクションを実行できませんでした。手動で対応してください。",
+      "v2_target": "**対象:** <@{userId}>\n`{userTag}`",
+      "v2_actions": "**⚡ 実施アクション:** {actions}",
+      "v2_failed_actions": "**⚡ 試行アクション:** {actions}",
+      "v2_reason": "**📝 理由:** {reason}",
+      "v2_confidence": "**🎯 信頼度:** `{gauge}`",
+      "v2_severity": "**🔥 深刻度:** `{gauge}`",
+      "v2_categories": "**🏷️ カテゴリ:** {categories}",
+      "v2_triggers": "**🚦 発火ルール:** {triggers}",
+      "v2_executor": "**👮 実行者:** <@{executorId}>",
+      "v2_jump": "[📨 対象メッセージへ移動]({url})",
+      "v2_failed_hint": "-# 対象が管理者権限を持っている、またはBotより上位のロールを持っているため自動処罰できませんでした。下のボタンから手動で対応してください。",
       "btn_ban": "BAN",
       "btn_kick": "キック",
       "btn_unquarantine": "隔離解除",
@@ -1126,13 +1137,38 @@
     "ai_lane": {
       "review": {
         "title": "🤖 AIモデレーション 要確認",
-        "author": "**対象:** <@{userId}> ({userTag})",
+        "author": "**対象:** <@{userId}>\n`{userTag}`",
         "verdict": "**判定:** {label}（信頼度 {confidence}%）",
-        "categories": "**カテゴリ:** {categories}",
-        "reason": "**理由:** {reason}",
-        "jump": "[メッセージへ移動]({url})",
+        "verdict_label": "**⚖️ 判定:** {label}",
+        "confidence": "**🎯 信頼度:** `{gauge}`",
+        "severity": "**🔥 深刻度:** `{gauge}`",
+        "categories": "**🏷️ カテゴリ:** {categories}",
+        "triggers": "**🚦 発火ルール:** {triggers}",
+        "reason": "**📝 理由:** {reason}",
+        "jump": "[📨 メッセージへ移動]({url})",
         "label_gray": "グレー",
         "label_violation": "違反"
+      },
+      "categories": {
+        "harassment": "嫌がらせ",
+        "hate": "ヘイト",
+        "sexual": "性的",
+        "violence": "暴力",
+        "self_harm": "自傷",
+        "spam": "スパム",
+        "scam_phishing": "詐欺・フィッシング",
+        "advertising": "宣伝・広告",
+        "nsfw": "NSFW",
+        "server_rule": "サーバールール違反"
+      },
+      "pipeline_stage": {
+        "omni": "一次スクリーニング（Omni）",
+        "lite_llm": "軽量LLM判定",
+        "detail_llm": "詳細LLM判定",
+        "heuristic": "ヒューリスティック判定"
+      },
+      "pipeline": {
+        "summary": "-# ⚙️ パイプライン: {stage} で判定が確定しました"
       }
     },
     "warn": {
@@ -1267,7 +1303,15 @@
       "ANTINUKE_ROLE_CREATE": "ロールの大量作成",
       "ANTINUKE_WEBHOOK_CREATE": "Webhookの大量作成",
       "ANTINUKE_BAN_KICK": "メンバーの大量BAN／キック",
-      "ANTINUKE_ROLE_GRANT": "ロールへの危険な権限の付与"
+      "ANTINUKE_ROLE_GRANT": "ロールへの危険な権限の付与",
+      "AI_HARASSMENT": "AI検知: 嫌がらせ",
+      "AI_HATE": "AI検知: ヘイト",
+      "AI_SEXUAL": "AI検知: 性的コンテンツ",
+      "AI_VIOLENCE": "AI検知: 暴力",
+      "AI_SELF_HARM": "AI検知: 自傷",
+      "AI_SCAM_PHISHING": "AI検知: 詐欺・フィッシング",
+      "AI_SERVER_RULE": "AI検知: サーバールール違反",
+      "AI_SPAM": "AI検知: スパム"
     },
     "legacy_automod": {
       "category": {

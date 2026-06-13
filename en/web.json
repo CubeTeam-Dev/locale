@@ -232,6 +232,36 @@
       "joins": "Joins",
       "leaves": "Leaves",
       "netChange": "Net Change"
+    },
+    "moderationMetrics": {
+      "title": "AI Moderation",
+      "screened": "Messages Screened",
+      "actions": "Actions Taken",
+      "detections": "Detections",
+      "range7": "7 days",
+      "range30": "30 days",
+      "categoryTitle": "Top Categories",
+      "timeseriesTitle": "Daily Detections",
+      "noData": "No data available",
+      "empty": "No moderation activity yet",
+      "error": "Failed to load moderation metrics",
+      "categories": {
+        "harassment": "Harassment",
+        "harassment/threatening": "Harassment (Threatening)",
+        "hate": "Hate",
+        "hate/threatening": "Hate (Threatening)",
+        "sexual": "Sexual",
+        "sexual/minors": "Sexual (Minors)",
+        "violence": "Violence",
+        "violence/graphic": "Violence (Graphic)",
+        "self-harm": "Self-harm",
+        "self-harm/intent": "Self-harm (Intent)",
+        "self-harm/instructions": "Self-harm (Instructions)",
+        "illicit": "Illicit",
+        "illicit/violent": "Illicit (Violent)",
+        "spam": "Spam",
+        "other": "Other"
+      }
     }
   },
   "general": {
@@ -394,7 +424,45 @@
     "cfgDetailLlmLabel": "Detailed LLM analysis",
     "cfgDetailLlmDesc": "Enable high-accuracy detailed AI analysis including prior history (increases CC cost)",
     "cfgOn": "On",
-    "cfgOff": "Off"
+    "cfgOff": "Off",
+    "detections": {
+      "title": "Recent Detections",
+      "desc": "Latest messages flagged by AI moderation",
+      "empty": "No detections yet",
+      "error": "Failed to load detections",
+      "filterAll": "All",
+      "confidence": "Confidence",
+      "action": "Action",
+      "reason": "Reason",
+      "viewMessage": "View message",
+      "sourceAuto": "AI",
+      "sourceManual": "Manual",
+      "user": "User",
+      "justNow": "Just now",
+      "minutesAgo": "{n}m ago",
+      "hoursAgo": "{n}h ago",
+      "daysAgo": "{n}d ago",
+      "page": "Page",
+      "of": "of",
+      "total": "detections",
+      "categories": {
+        "harassment": "Harassment",
+        "harassment/threatening": "Harassment (Threatening)",
+        "hate": "Hate",
+        "hate/threatening": "Hate (Threatening)",
+        "sexual": "Sexual",
+        "sexual/minors": "Sexual (Minors)",
+        "violence": "Violence",
+        "violence/graphic": "Violence (Graphic)",
+        "self-harm": "Self-harm",
+        "self-harm/intent": "Self-harm (Intent)",
+        "self-harm/instructions": "Self-harm (Instructions)",
+        "illicit": "Illicit",
+        "illicit/violent": "Illicit (Violent)",
+        "spam": "Spam",
+        "other": "Other"
+      }
+    }
   },
   "aimodEditor": {
     "title": "Node Editor",
@@ -581,7 +649,55 @@
     "loadTemplate": "Load standard template",
     "searchPlaceholder": "Search nodes...",
     "unsavedTooltip": "You have unsaved changes",
-    "deleteEdge": "Delete edge"
+    "deleteEdge": "Delete edge",
+    "test": {
+      "open": "Test run",
+      "title": "Test run",
+      "subtitle": "Run a sample message through the current pipeline (unsaved changes included) and trace each node",
+      "inputLabel": "Sample message",
+      "inputPlaceholder": "Type a message to test, e.g. \"Join now https://discord.gg/...\"",
+      "charCount": "{count} / {max}",
+      "run": "Run",
+      "running": "Running...",
+      "rerun": "Run again",
+      "clear": "Clear",
+      "close": "Close",
+      "emptyHint": "Enter a sample message and press Run to see how each node judges it.",
+      "noTrace": "No nodes were executed",
+      "traceTitle": "Trace",
+      "stepLabel": "Step {n}",
+      "branchTaken": "Branch: {branch}",
+      "result": "Result: {result}",
+      "llmCalled": "LLM",
+      "duration": "{ms}ms",
+      "wouldExecute": "Would run: {actions}",
+      "verdict": {
+        "label": "Verdict",
+        "confidence": "Confidence {percent}%",
+        "severity": "Severity {severity}",
+        "categories": "Categories",
+        "reason": "Reason"
+      },
+      "finalVerdict": "Final verdict",
+      "noFinalVerdict": "No final verdict",
+      "footer": {
+        "llmCalls": "LLM calls",
+        "estimatedCost": "Est. cost",
+        "cost": "{cc}CC",
+        "charged": "Charged",
+        "free": "Free (no charge)",
+        "freeRemaining": "Free runs left today: {count}",
+        "partialShortfall": "Some checks were skipped due to insufficient credits"
+      },
+      "errors": {
+        "title": "Test run failed",
+        "noFunds": "Free test runs for today are used up and you don't have enough Cube Credit. Add credits or try again tomorrow.",
+        "forbidden": "You don't have permission to run a test on this server.",
+        "botMissing": "The bot isn't in this server yet. Invite the bot before running a test.",
+        "noConfig": "AI moderation isn't set up yet. Add at least one node and try again.",
+        "generic": "Something went wrong while running the test. Please try again."
+      }
+    }
   },
   "subscription": {
     "title": "Subscription",

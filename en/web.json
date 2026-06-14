@@ -384,6 +384,8 @@
     "naturalLanguageRulesPlaceholder": "e.g.\n- No political or religious debates\n- No content inappropriate for users under 18\n- Remove insulting remarks directed at other users",
     "advancedViolationStorageLabel": "Advanced Violation Storage",
     "advancedViolationStorageDesc": "AI classifies and stores violation reasons in detail. Useful for richer moderation logs, but consumes 2 CC per violation",
+    "modLogCompactLabel": "Compact Log",
+    "modLogCompactDesc": "Show moderator logs as a concise one-line entry. When off (default), logs are shown in detail with thumbnails and confidence gauges",
     "nodeEditorLinkLabel": "Node Editor",
     "nodeEditorLinkDesc": "Visually build and edit the moderation pipeline with nodes",
     "nodeEditorLockedTooltip": "The node editor is available on a higher plan (NODE_EDITOR)",

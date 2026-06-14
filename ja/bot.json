@@ -1125,6 +1125,9 @@
       "v2_triggers": "**🚦 発火ルール:** {triggers}",
       "v2_executor": "**👮 実行者:** <@{executorId}>",
       "v2_jump": "[📨 対象メッセージへ移動]({url})",
+      "compact_line": "🚨 <@{userId}> ・ ⚡ {actions}",
+      "compact_category": "🏷️ {category}",
+      "compact_confidence": "🎯 {percent}%",
       "btn_jump": "📨 対象メッセージへ移動",
       "v2_failed_hint": "-# 対象が管理者権限を持っている、またはBotより上位のロールを持っているため自動処罰できませんでした。下のボタンから手動で対応してください。",
       "btn_ban": "BAN",
@@ -1178,7 +1181,11 @@
     },
     "warn": {
       "dm_title": "⚠️ 警告",
-      "dm_body": "**{guildName}** の自動モデレーションにより警告を受けました。サーバーのルールを確認してください。"
+      "dm_body": "**{guildName}** の自動モデレーションにより警告を受けました。サーバーのルールを確認してください。",
+      "v2_body": "**{guildName}** の自動モデレーションにより警告を受けました。",
+      "v2_reason": "**📝 理由:** {reason}",
+      "v2_categories": "**🏷️ カテゴリ:** {categories}",
+      "v2_guide": "-# サーバーのルールを今一度ご確認ください。違反が続くと、より重い措置が取られる場合があります。"
     },
     "notify_owner": {
       "dm_title": "🛡️ Anti-Nuke 検知（オーナー通知）",
@@ -1199,14 +1206,18 @@
     "appeal_dm": {
       "quarantine_title": "⚠️ 隔離（Quarantine）が適用されました",
       "timeout_title": "⚠️ タイムアウトが適用されました",
-      "body": "**サーバー:** {guildName}\n**理由:** {reason}\n\n自動モデレーションにより {label} が適用されました。誤検知と思われる場合は、下のボタンから異議申し立てができます。",
+      "body": "自動モデレーションにより **{label}** が適用されました。\n\n**🏠 サーバー:** {guildName}\n**📝 理由:** {reason}\n\n-# 誤検知と思われる場合は、下のボタンから異議申し立てができます。",
       "quarantine_label": "隔離（Quarantine）",
       "timeout_label": "タイムアウト",
       "btn_appeal": "異議申し立て"
     },
     "notify": {
       "channel_title": "🚨 自動モデレーション",
-      "channel_body": "<@{userId}> に対して処罰を実施しました。\n**処罰:** {action}\n**理由:** {reason}"
+      "channel_body": "<@{userId}> に対して処罰を実施しました。\n**処罰:** {action}\n**理由:** {reason}",
+      "v2_target": "**👤 対象:** <@{userId}>",
+      "v2_action": "**⚡ 処罰:** {action}",
+      "v2_reason": "**📝 理由:** {reason}",
+      "v2_categories": "**🏷️ カテゴリ:** {categories}"
     },
     "appeal_modal": {
       "title": "異議申し立て",

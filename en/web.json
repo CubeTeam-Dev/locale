@@ -697,7 +697,8 @@
         "forbidden": "You don't have permission to run a test on this server.",
         "botMissing": "The bot isn't in this server yet. Invite the bot before running a test.",
         "noConfig": "AI moderation isn't set up yet. Add at least one node and try again.",
-        "generic": "Something went wrong while running the test. Please try again."
+        "generic": "Something went wrong while running the test. Please try again.",
+        "unavailable": "The bot is temporarily unavailable. Please try again in a moment."
       }
     }
   },

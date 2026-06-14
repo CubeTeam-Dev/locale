@@ -1125,6 +1125,9 @@
       "v2_triggers": "**🚦 Triggered rules:** {triggers}",
       "v2_executor": "**👮 Executor:** <@{executorId}>",
       "v2_jump": "[📨 Jump to message]({url})",
+      "compact_line": "🚨 <@{userId}> ・ ⚡ {actions}",
+      "compact_category": "🏷️ {category}",
+      "compact_confidence": "🎯 {percent}%",
       "btn_jump": "📨 Jump to message",
       "v2_failed_hint": "-# Auto-moderation could not act because the target has administrator permission or a role higher than the bot. Please handle this manually using the buttons below.",
       "btn_ban": "BAN",
@@ -1178,7 +1181,11 @@
     },
     "warn": {
       "dm_title": "⚠️ Warning",
-      "dm_body": "You have received a warning from **{guildName}**'s auto-moderation. Please review the server rules."
+      "dm_body": "You have received a warning from **{guildName}**'s auto-moderation. Please review the server rules.",
+      "v2_body": "You have received a warning from **{guildName}**'s auto-moderation.",
+      "v2_reason": "**📝 Reason:** {reason}",
+      "v2_categories": "**🏷️ Categories:** {categories}",
+      "v2_guide": "-# Please review the server rules. Repeated violations may result in stronger action."
     },
     "notify_owner": {
       "dm_title": "🛡️ Anti-Nuke Detected (Owner Notification)",
@@ -1199,14 +1206,18 @@
     "appeal_dm": {
       "quarantine_title": "⚠️ Quarantine Applied",
       "timeout_title": "⚠️ Timeout Applied",
-      "body": "**Server:** {guildName}\n**Reason:** {reason}\n\nAuto-moderation has applied a {label} to your account. If you believe this is a false positive, you can submit an appeal using the button below.",
+      "body": "Auto-moderation has applied a **{label}** to your account.\n\n**🏠 Server:** {guildName}\n**📝 Reason:** {reason}\n\n-# If you believe this is a false positive, you can submit an appeal using the button below.",
       "quarantine_label": "Quarantine",
       "timeout_label": "Timeout",
       "btn_appeal": "Submit Appeal"
     },
     "notify": {
       "channel_title": "🚨 Auto Moderation",
-      "channel_body": "Applied punishment to <@{userId}>.\n**Action:** {action}\n**Reason:** {reason}"
+      "channel_body": "Applied punishment to <@{userId}>.\n**Action:** {action}\n**Reason:** {reason}",
+      "v2_target": "**👤 Target:** <@{userId}>",
+      "v2_action": "**⚡ Action:** {action}",
+      "v2_reason": "**📝 Reason:** {reason}",
+      "v2_categories": "**🏷️ Categories:** {categories}"
     },
     "appeal_modal": {
       "title": "Submit Appeal",

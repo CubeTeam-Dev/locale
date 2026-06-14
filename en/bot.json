@@ -884,6 +884,9 @@
       "user": "User",
       "author": "Author",
       "deleted_by": "Deleted By",
+      "deleted_by_moderation": "Cube (Auto Moderation)",
+      "deleted_by_moderation_with_reason": "Cube (Auto Moderation) — {reason}",
+      "deleted_by_unknown_self": "Unknown (possibly self-deleted)",
       "kicked_by": "Kicked By",
       "banned_by": "Banned By",
       "unbanned_by": "Unbanned By",
@@ -1122,6 +1125,7 @@
       "v2_triggers": "**🚦 Triggered rules:** {triggers}",
       "v2_executor": "**👮 Executor:** <@{executorId}>",
       "v2_jump": "[📨 Jump to message]({url})",
+      "btn_jump": "📨 Jump to message",
       "v2_failed_hint": "-# Auto-moderation could not act because the target has administrator permission or a role higher than the bot. Please handle this manually using the buttons below.",
       "btn_ban": "BAN",
       "btn_kick": "Kick",
@@ -1146,6 +1150,7 @@
         "triggers": "**🚦 Triggered rules:** {triggers}",
         "reason": "**📝 Reason:** {reason}",
         "jump": "[📨 Jump to message]({url})",
+        "btn_jump": "📨 Jump to message",
         "label_gray": "Gray",
         "label_violation": "Violation"
       },
@@ -1341,6 +1346,7 @@
         "action_deleted": "Deleted",
         "action_none": "None",
         "jump": "[Jump to message]({url})",
+        "btn_jump": "📨 Jump to message",
         "btn_delete": "Delete Message",
         "btn_warn": "Send Warning"
       },

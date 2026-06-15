@@ -1158,7 +1158,21 @@
         "jump": "[📨 メッセージへ移動]({url})",
         "btn_jump": "📨 対象メッセージへ移動",
         "label_gray": "グレー",
-        "label_violation": "違反"
+        "label_violation": "違反",
+        "recommended": "**🤖 Recommended policy action:** {actions}",
+        "btn_apply": "Apply",
+        "btn_reject": "Reject (false positive)",
+        "btn_override": "Other action",
+        "no_data": "Pending review data not found (it may have expired or already been handled).",
+        "applied": "✅ <@{executorId}> applied the recommended action to <@{userId}>.",
+        "apply_failed": "Failed to apply the recommended action to <@{userId}>.",
+        "rejected": "🚫 <@{executorId}> rejected the verdict for <@{userId}> as a false positive.",
+        "reject_failed": "Failed to reject for <@{userId}>.",
+        "override_prompt": "Select another action to apply.",
+        "override_placeholder": "Select an action",
+        "override_invalid": "An invalid action was selected.",
+        "overridden": "✅ <@{executorId}> applied **{action}** to <@{userId}>.",
+        "override_failed": "Failed to apply the action to <@{userId}>."
       },
       "categories": {
         "harassment": "嫌がらせ",

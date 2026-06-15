@@ -1124,6 +1124,8 @@
       "v2_categories": "**🏷️ Categories:** {categories}",
       "v2_triggers": "**🚦 Triggered rules:** {triggers}",
       "v2_executor": "**👮 Executor:** <@{executorId}>",
+      "v2_message": "**📄 Target message:**\n{content}",
+      "v2_message_empty": "**📄 Target message:** -# (no text content; attachment only)",
       "v2_jump": "[📨 Jump to message]({url})",
       "compact_line": "🚨 <@{userId}> ・ ⚡ {actions}",
       "compact_category": "🏷️ {category}",

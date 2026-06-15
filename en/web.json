@@ -498,6 +498,7 @@
     "validation": {
       "errorNoEntry": "A MessageReceived node is required",
       "errorMultipleEntry": "Only one input node is allowed",
+      "errorCycle": "Cannot save: the pipeline contains a cycle (it would cause an infinite loop)",
       "warningDisconnected": "There are disconnected nodes"
     },
     "fields": {
@@ -536,7 +537,9 @@
       "delete_message": "Delete message range",
       "delete_message_hint": "How far back to delete messages on ban (e.g. 1d). Empty deletes nothing",
       "content": "Content",
-      "content_hint": "The body of the message to send"
+      "content_hint": "The body of the message to send",
+      "deniedActions": "Denied actions (denylist)",
+      "deniedActions_hint": "Actions listed here are excluded right before execution, even if the AI or policy decides to take them. Leave empty to keep the default behavior. Valid keys: QUARANTINE, TIMEOUT_24H, TIMEOUT_1H, TIMEOUT_30M, TIMEOUT_10M, TIMEOUT_5M, DELETE_MESSAGE, WARN, SEND_TO_REVIEW_QUEUE, ADD_SUSPICION_LEVEL_1, NOTIFY_OWNER, MARK_COHORT_SUSPICION_LV2, UNQUARANTINE"
     },
     "nodes": {
       "MessageReceived": {

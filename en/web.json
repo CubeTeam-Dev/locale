@@ -699,6 +699,15 @@
         "noConfig": "AI moderation isn't set up yet. Add at least one node and try again.",
         "generic": "Something went wrong while running the test. Please try again.",
         "unavailable": "The bot is temporarily unavailable. Please try again in a moment."
+      },
+      "actionsTitle": "Actions in production",
+      "noActions": "No actions (safe)",
+      "actions": {
+        "message.delete": "Delete message",
+        "member.timeout": "Timeout",
+        "member.kick": "Kick",
+        "member.ban": "Ban",
+        "warn": "Warn"
       }
     }
   },

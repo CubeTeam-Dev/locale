@@ -1124,6 +1124,8 @@
       "v2_categories": "**🏷️ カテゴリ:** {categories}",
       "v2_triggers": "**🚦 発火ルール:** {triggers}",
       "v2_executor": "**👮 実行者:** <@{executorId}>",
+      "v2_message": "**📄 対象メッセージ:**\n{content}",
+      "v2_message_empty": "**📄 対象メッセージ:** -# (本文なし・添付のみ)",
       "v2_jump": "[📨 対象メッセージへ移動]({url})",
       "compact_line": "🚨 <@{userId}> ・ ⚡ {actions}",
       "compact_category": "🏷️ {category}",

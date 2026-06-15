@@ -699,6 +699,15 @@
         "noConfig": "AIモデレーションがまだ設定されていません。ノードを1つ以上追加してからお試しください。",
         "generic": "テスト実行中に問題が発生しました。もう一度お試しください。",
         "unavailable": "Botが一時的に応答していません。しばらくしてからもう一度お試しください。"
+      },
+      "actionsTitle": "本番で実行されるアクション",
+      "noActions": "アクションなし（safe）",
+      "actions": {
+        "message.delete": "メッセージ削除",
+        "member.timeout": "タイムアウト",
+        "member.kick": "キック",
+        "member.ban": "BAN",
+        "warn": "警告"
       }
     }
   },

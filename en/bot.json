@@ -1119,6 +1119,7 @@
       "v2_actions": "**⚡ Action(s):** {actions}",
       "v2_failed_actions": "**⚡ Attempted action(s):** {actions}",
       "v2_reason": "**📝 Reason:** {reason}",
+      "v2_suppressed": "**🛑 Suppressed by policy:** {actions}",
       "v2_confidence": "**🎯 Confidence:** `{gauge}`",
       "v2_severity": "**🔥 Severity:** `{gauge}`",
       "v2_categories": "**🏷️ Categories:** {categories}",

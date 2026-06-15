@@ -1119,6 +1119,7 @@
       "v2_actions": "**⚡ 実施アクション:** {actions}",
       "v2_failed_actions": "**⚡ 試行アクション:** {actions}",
       "v2_reason": "**📝 理由:** {reason}",
+      "v2_suppressed": "**🛑 ポリシーにより抑制:** {actions}",
       "v2_confidence": "**🎯 信頼度:** `{gauge}`",
       "v2_severity": "**🔥 深刻度:** `{gauge}`",
       "v2_categories": "**🏷️ カテゴリ:** {categories}",

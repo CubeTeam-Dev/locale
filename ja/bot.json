@@ -1158,7 +1158,21 @@
         "jump": "[📨 メッセージへ移動]({url})",
         "btn_jump": "📨 対象メッセージへ移動",
         "label_gray": "グレー",
-        "label_violation": "違反"
+        "label_violation": "違反",
+        "recommended": "**🤖 ポリシー推奨アクション:** {actions}",
+        "btn_apply": "適用",
+        "btn_reject": "却下（誤検知）",
+        "btn_override": "別アクション",
+        "no_data": "このレビューの保留データが見つかりませんでした（有効期限切れ、または既に処理済みの可能性があります）。",
+        "applied": "✅ <@{executorId}> が <@{userId}> に推奨アクションを適用しました。",
+        "apply_failed": "<@{userId}> への推奨アクション適用に失敗しました。",
+        "rejected": "🚫 <@{executorId}> が <@{userId}> の判定を誤検知として却下しました。",
+        "reject_failed": "<@{userId}> の却下処理に失敗しました。",
+        "override_prompt": "適用する別のアクションを選択してください。",
+        "override_placeholder": "アクションを選択",
+        "override_invalid": "無効なアクションが選択されました。",
+        "overridden": "✅ <@{executorId}> が <@{userId}> に **{action}** を適用しました。",
+        "override_failed": "<@{userId}> へのアクション適用に失敗しました。"
       },
       "categories": {
         "harassment": "嫌がらせ",

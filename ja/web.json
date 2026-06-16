@@ -435,6 +435,9 @@
     "enforcement_auto_lowrisk_desc": "明白な低リスクのみ自動で処罰し、それ以外はレビューに回します",
     "enforcement_auto_full_name": "完全自動執行",
     "enforcement_auto_full_desc": "ポリシー判定どおりに自動執行します（信頼ユーザーは常にレビュー）",
+    "aiActiveLabel": "AI モデレーションを有効化",
+    "aiActiveDesc": "高度なモードの AI 判定を実行します。OFF にすると高度なモードを選んでいてもボットは判定を実行しません",
+    "aiActiveOffWarning": "現在 OFF のため、高度なモードを選んでいてもボットは判定を実行しません",
     "detections": {
       "title": "最近の検出",
       "desc": "AI モデレーションが検出した最新のメッセージ",

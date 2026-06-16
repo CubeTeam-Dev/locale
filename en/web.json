@@ -435,6 +435,9 @@
     "enforcement_auto_lowrisk_desc": "Auto-punish only clear low-risk cases; everything else goes to review",
     "enforcement_auto_full_name": "Full auto enforcement",
     "enforcement_auto_full_desc": "Enforce automatically per policy verdict (trusted users always go to review)",
+    "aiActiveLabel": "Enable AI moderation",
+    "aiActiveDesc": "Runs AI verdicts for the advanced lane. When OFF, the bot will not run any verdicts even if advanced mode is selected",
+    "aiActiveOffWarning": "Currently OFF, so the bot will not run any verdicts even if advanced mode is selected",
     "detections": {
       "title": "Recent Detections",
       "desc": "Latest messages flagged by AI moderation",

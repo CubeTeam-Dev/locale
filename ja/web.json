@@ -438,6 +438,8 @@
     "aiActiveLabel": "AI モデレーションを有効化",
     "aiActiveDesc": "高度なモードの AI 判定を実行します。OFF にすると高度なモードを選んでいてもボットは判定を実行しません",
     "aiActiveOffWarning": "現在 OFF のため、高度なモードを選んでいてもボットは判定を実行しません",
+    "imageModerationLabel": "画像解析（AI による画像内容の判定）",
+    "imageModerationDesc": "OFF にするとテキストのみ解析し、画像は AI に送りません（CC 節約）",
     "detections": {
       "title": "最近の検出",
       "desc": "AI モデレーションが検出した最新のメッセージ",
@@ -755,6 +757,39 @@
     "buy": "クレジットを購入",
     "history": "取引履歴",
     "noHistory": "取引履歴がありません",
+    "spent": "消費合計 (過去{days}日)",
+    "spentAi": "AIモデレーション (過去{days}日)",
+    "cc": "{amount} CC",
+    "charts": {
+      "usageTrend": "消費推移",
+      "byCategory": "カテゴリ別内訳",
+      "balanceTrend": "残高推移",
+      "daily": "日次",
+      "weekly": "週次",
+      "noData": "消費データがありません",
+      "consumed": "消費",
+      "balance": "残高"
+    },
+    "filter": {
+      "label": "絞り込み",
+      "all": "すべて",
+      "ai": "AIモデレーション",
+      "purchase": "購入",
+      "other": "その他"
+    },
+    "category": {
+      "ai_screen": "AIスクリーニング",
+      "ai_lite": "AI判定 (Lite)",
+      "ai_detail": "AI判定 (Detail)",
+      "ai_advanced": "AI判定 (Advanced)",
+      "ai_violation": "違反分類",
+      "purchase": "購入",
+      "subscription": "サブスク",
+      "admin": "付与",
+      "manual": "手動調整",
+      "refund": "返金",
+      "other": "その他"
+    },
     "lots": {
       "title": "有効期限",
       "noLots": "アクティブなクレジットロットがありません",

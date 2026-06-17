@@ -438,6 +438,8 @@
     "aiActiveLabel": "Enable AI moderation",
     "aiActiveDesc": "Runs AI verdicts for the advanced lane. When OFF, the bot will not run any verdicts even if advanced mode is selected",
     "aiActiveOffWarning": "Currently OFF, so the bot will not run any verdicts even if advanced mode is selected",
+    "imageModerationLabel": "Image analysis (AI judges image contents)",
+    "imageModerationDesc": "When OFF, only text is analyzed and images are not sent to the AI (saves CC)",
     "detections": {
       "title": "Recent Detections",
       "desc": "Latest messages flagged by AI moderation",
@@ -755,6 +757,39 @@
     "buy": "Buy Credits",
     "history": "Transaction History",
     "noHistory": "No transaction history",
+    "spent": "Spent (last {days}d)",
+    "spentAi": "AI Moderation (last {days}d)",
+    "cc": "{amount} CC",
+    "charts": {
+      "usageTrend": "Consumption Trend",
+      "byCategory": "Consumption by Category",
+      "balanceTrend": "Balance Trend",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "noData": "No consumption data",
+      "consumed": "Consumed",
+      "balance": "Balance"
+    },
+    "filter": {
+      "label": "Filter",
+      "all": "All",
+      "ai": "AI Moderation",
+      "purchase": "Purchase",
+      "other": "Other"
+    },
+    "category": {
+      "ai_screen": "AI Screening",
+      "ai_lite": "AI Judgment (Lite)",
+      "ai_detail": "AI Judgment (Detail)",
+      "ai_advanced": "AI Judgment (Advanced)",
+      "ai_violation": "Violation Classification",
+      "purchase": "Purchase",
+      "subscription": "Subscription",
+      "admin": "Grant",
+      "manual": "Manual Adjustment",
+      "refund": "Refund",
+      "other": "Other"
+    },
     "lots": {
       "title": "Expiry",
       "noLots": "No active credit lots",

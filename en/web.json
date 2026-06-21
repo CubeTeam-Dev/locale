@@ -177,7 +177,8 @@
     "messages": "Messages",
     "workflow": "Workflow",
     "automod": "Moderation",
-    "activityLog": "Activity Log"
+    "activityLog": "Activity Log",
+    "analytics": "Analytics"
   },
   "featureGate": {
     "title": "This feature is not available",
@@ -644,7 +645,7 @@
       },
       "ActionPolicy": {
         "label": "Action Policy",
-        "desc": "Decides which punishment to take based on the verdict so far and passes it on"
+        "desc": "Determines the punishment policy based on the verdict so far"
       },
       "ExecuteAction": {
         "label": "Execute Action",
@@ -719,7 +720,7 @@
         "cost": "{cc}CC",
         "charged": "Charged",
         "free": "Free (no charge)",
-        "freeRemaining": "Free runs left today: {count}",
+        "freeRemaining": "Free CC left today: {cc}",
         "partialShortfall": "Some checks were skipped due to insufficient credits"
       },
       "errors": {
@@ -2423,6 +2424,58 @@
       "audit_log_channel_set": "Set audit log channel",
       "guild_settings_updated": "Updated server settings",
       "moderation_settings_updated": "Updated moderation settings"
+    }
+  },
+  "analytics": {
+    "title": "Moderation Analytics",
+    "rangePicker": {
+      "7d": "Last 7 days",
+      "30d": "Last 30 days"
+    },
+    "flow": {
+      "title": "Flow Analysis",
+      "totalExecutions": "Total Executions",
+      "nodeType": "Node",
+      "entered": "Entered",
+      "passed": "Passed",
+      "passRate": "Pass Rate",
+      "noData": "No data available"
+    },
+    "verdict": {
+      "title": "Verdict Distribution",
+      "safe": "Safe",
+      "gray": "Gray",
+      "violation": "Violation"
+    },
+    "category": {
+      "title": "Category Distribution"
+    },
+    "ccUsage": {
+      "title": "CC Usage",
+      "totalCc": "Total CC",
+      "date": "Date",
+      "cc": "CC",
+      "byNodeType": "By Node Type"
+    },
+    "userStats": {
+      "title": "Top Violating Users",
+      "userId": "User ID",
+      "violations": "Violations",
+      "categories": "Categories",
+      "lastViolation": "Last Violation",
+      "noUsers": "No users found",
+      "viewDetails": "View Details"
+    },
+    "userViolations": {
+      "title": "Violation Log",
+      "back": "Back",
+      "ruleType": "Rule",
+      "reason": "Reason",
+      "action": "Action",
+      "content": "Content",
+      "noViolations": "No violation logs",
+      "retentionNote": "Your current plan ({plan}) shows the last {days} days",
+      "page": "Page {page} of {total}"
     }
   }
 }

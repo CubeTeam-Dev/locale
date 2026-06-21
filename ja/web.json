@@ -177,7 +177,8 @@
     "messages": "メッセージ送信",
     "workflow": "ワークフロー",
     "automod": "統合モデレーション",
-    "activityLog": "操作ログ"
+    "activityLog": "操作ログ",
+    "analytics": "アナリティクス"
   },
   "featureGate": {
     "title": "この機能はご利用いただけません",
@@ -644,7 +645,7 @@
       },
       "ActionPolicy": {
         "label": "アクションポリシー",
-        "desc": "ここまでの判定をもとに、実行すべき処罰の方針を決めて次へ渡します"
+        "desc": "ここまでの判定をもとに、実行すべき処罰の方針を決めます"
       },
       "ExecuteAction": {
         "label": "アクション実行",
@@ -719,7 +720,7 @@
         "cost": "{cc}CC",
         "charged": "課金あり",
         "free": "無料（課金なし）",
-        "freeRemaining": "本日の無料実行残り: {count}回",
+        "freeRemaining": "本日の無料枠残り: {cc} CC",
         "partialShortfall": "残高不足のため一部の判定をスキップしました"
       },
       "errors": {
@@ -2422,6 +2423,58 @@
       "audit_log_channel_set": "監査ログチャンネルを設定",
       "guild_settings_updated": "サーバー設定を更新",
       "moderation_settings_updated": "モデレーション設定を更新"
+    }
+  },
+  "analytics": {
+    "title": "モデレーション アナリティクス",
+    "rangePicker": {
+      "7d": "過去7日",
+      "30d": "過去30日"
+    },
+    "flow": {
+      "title": "フロー分析",
+      "totalExecutions": "総実行数",
+      "nodeType": "ノード",
+      "entered": "通過",
+      "passed": "パス",
+      "passRate": "パス率",
+      "noData": "データがありません"
+    },
+    "verdict": {
+      "title": "判定分布",
+      "safe": "安全",
+      "gray": "グレー",
+      "violation": "違反"
+    },
+    "category": {
+      "title": "カテゴリ分布"
+    },
+    "ccUsage": {
+      "title": "CC 消費量",
+      "totalCc": "合計 CC",
+      "date": "日付",
+      "cc": "CC",
+      "byNodeType": "ノード別"
+    },
+    "userStats": {
+      "title": "違反ユーザー ランキング",
+      "userId": "ユーザー ID",
+      "violations": "違反数",
+      "categories": "カテゴリ",
+      "lastViolation": "最終違反",
+      "noUsers": "該当なし",
+      "viewDetails": "詳細を見る"
+    },
+    "userViolations": {
+      "title": "違反ログ",
+      "back": "戻る",
+      "ruleType": "ルール",
+      "reason": "理由",
+      "action": "アクション",
+      "content": "内容",
+      "noViolations": "違反ログはありません",
+      "retentionNote": "現在のプラン ({plan}) では過去 {days} 日分を表示可能です",
+      "page": "ページ {page} / {total}"
     }
   }
 }

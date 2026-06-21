@@ -551,8 +551,23 @@
       "delete_message_hint": "BAN時にさかのぼって削除するメッセージの範囲（例: 1d）。空欄で削除しません",
       "content": "本文",
       "content_hint": "送信するメッセージの本文",
-      "deniedActions": "許可しないアクション (denylist)",
-      "deniedActions_hint": "ここに列挙したアクションは、AI やポリシーが決定しても実行直前に除外されます。空欄なら従来どおりの挙動です。有効なキー: QUARANTINE, TIMEOUT_24H, TIMEOUT_1H, TIMEOUT_30M, TIMEOUT_10M, TIMEOUT_5M, DELETE_MESSAGE, WARN, SEND_TO_REVIEW_QUEUE, ADD_SUSPICION_LEVEL_1, NOTIFY_OWNER, MARK_COHORT_SUSPICION_LV2, UNQUARANTINE"
+      "deniedActions": "除外するアクション",
+      "deniedActions_hint": "選択したアクションは実行されません"
+    },
+    "actionKeys": {
+      "QUARANTINE": "隔離",
+      "TIMEOUT_24H": "24h停止",
+      "TIMEOUT_1H": "1h停止",
+      "TIMEOUT_30M": "30m停止",
+      "TIMEOUT_10M": "10m停止",
+      "TIMEOUT_5M": "5m停止",
+      "DELETE_MESSAGE": "メッセージ削除",
+      "WARN": "警告",
+      "SEND_TO_REVIEW_QUEUE": "レビュー送信",
+      "ADD_SUSPICION_LEVEL_1": "疑惑Lv1",
+      "NOTIFY_OWNER": "オーナー通知",
+      "MARK_COHORT_SUSPICION_LV2": "疑惑Lv2",
+      "UNQUARANTINE": "隔離解除"
     },
     "nodes": {
       "MessageReceived": {
@@ -719,13 +734,14 @@
       "actionsTitle": "本番で実行されるアクション",
       "noActions": "アクションなし（safe）",
       "actions": {
-        "message.delete": "メッセージ削除",
-        "member.timeout": "タイムアウト",
-        "member.kick": "キック",
-        "member.ban": "BAN",
+        "message_delete": "メッセージ削除",
+        "member_timeout": "タイムアウト",
+        "member_kick": "キック",
+        "member_ban": "BAN",
         "warn": "警告"
       }
-    }
+    },
+    "mobileAddNode": "ノードを追加"
   },
   "subscription": {
     "title": "サブスクリプション",

@@ -438,6 +438,8 @@
     "aiActiveLabel": "Enable AI moderation",
     "aiActiveDesc": "Runs AI verdicts for the advanced lane. When OFF, the bot will not run any verdicts even if advanced mode is selected",
     "aiActiveOffWarning": "Currently OFF, so the bot will not run any verdicts even if advanced mode is selected",
+    "imageModerationLabel": "Image analysis (AI judges image contents)",
+    "imageModerationDesc": "When OFF, only text is analyzed and images are not sent to the AI (saves CC)",
     "detections": {
       "title": "Recent Detections",
       "desc": "Latest messages flagged by AI moderation",
@@ -549,8 +551,23 @@
       "delete_message_hint": "How far back to delete messages on ban (e.g. 1d). Empty deletes nothing",
       "content": "Content",
       "content_hint": "The body of the message to send",
-      "deniedActions": "Denied actions (denylist)",
-      "deniedActions_hint": "Actions listed here are excluded right before execution, even if the AI or policy decides to take them. Leave empty to keep the default behavior. Valid keys: QUARANTINE, TIMEOUT_24H, TIMEOUT_1H, TIMEOUT_30M, TIMEOUT_10M, TIMEOUT_5M, DELETE_MESSAGE, WARN, SEND_TO_REVIEW_QUEUE, ADD_SUSPICION_LEVEL_1, NOTIFY_OWNER, MARK_COHORT_SUSPICION_LV2, UNQUARANTINE"
+      "deniedActions": "Excluded actions",
+      "deniedActions_hint": "Selected actions will not be executed"
+    },
+    "actionKeys": {
+      "QUARANTINE": "Quarantine",
+      "TIMEOUT_24H": "Timeout 24h",
+      "TIMEOUT_1H": "Timeout 1h",
+      "TIMEOUT_30M": "Timeout 30m",
+      "TIMEOUT_10M": "Timeout 10m",
+      "TIMEOUT_5M": "Timeout 5m",
+      "DELETE_MESSAGE": "Delete Message",
+      "WARN": "Warn",
+      "SEND_TO_REVIEW_QUEUE": "Send to Review",
+      "ADD_SUSPICION_LEVEL_1": "Suspicion Lv1",
+      "NOTIFY_OWNER": "Notify Owner",
+      "MARK_COHORT_SUSPICION_LV2": "Suspicion Lv2",
+      "UNQUARANTINE": "Unquarantine"
     },
     "nodes": {
       "MessageReceived": {
@@ -717,13 +734,14 @@
       "actionsTitle": "Actions in production",
       "noActions": "No actions (safe)",
       "actions": {
-        "message.delete": "Delete message",
-        "member.timeout": "Timeout",
-        "member.kick": "Kick",
-        "member.ban": "Ban",
+        "message_delete": "Delete message",
+        "member_timeout": "Timeout",
+        "member_kick": "Kick",
+        "member_ban": "Ban",
         "warn": "Warn"
       }
-    }
+    },
+    "mobileAddNode": "Add node"
   },
   "subscription": {
     "title": "Subscription",
@@ -755,6 +773,39 @@
     "buy": "Buy Credits",
     "history": "Transaction History",
     "noHistory": "No transaction history",
+    "spent": "Spent (last {days}d)",
+    "spentAi": "AI Moderation (last {days}d)",
+    "cc": "{amount} CC",
+    "charts": {
+      "usageTrend": "Consumption Trend",
+      "byCategory": "Consumption by Category",
+      "balanceTrend": "Balance Trend",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "noData": "No consumption data",
+      "consumed": "Consumed",
+      "balance": "Balance"
+    },
+    "filter": {
+      "label": "Filter",
+      "all": "All",
+      "ai": "AI Moderation",
+      "purchase": "Purchase",
+      "other": "Other"
+    },
+    "category": {
+      "ai_screen": "AI Screening",
+      "ai_lite": "AI Judgment (Lite)",
+      "ai_detail": "AI Judgment (Detail)",
+      "ai_advanced": "AI Judgment (Advanced)",
+      "ai_violation": "Violation Classification",
+      "purchase": "Purchase",
+      "subscription": "Subscription",
+      "admin": "Grant",
+      "manual": "Manual Adjustment",
+      "refund": "Refund",
+      "other": "Other"
+    },
     "lots": {
       "title": "Expiry",
       "noLots": "No active credit lots",

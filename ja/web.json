@@ -1681,7 +1681,7 @@
       "config": "設定",
       "match": "✓ 一致",
       "unmatch": "✗ 不一致",
-      "errorHandle": "エラー",
+      "errorTrigger": "エラー",
       "triggers": {
         "member_join": {
           "label": "メンバー参加",

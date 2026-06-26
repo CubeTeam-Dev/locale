@@ -478,6 +478,35 @@
         "spam": "スパム",
         "other": "その他"
       }
+    },
+    "logs": {
+      "title": "モデレーションログ",
+      "desc": "AIモデレーションの実行ログを確認します",
+      "backToSettings": "設定に戻る",
+      "filters": "フィルター",
+      "clearFilters": "クリア",
+      "filterAction": "アクション",
+      "filterActionPlaceholder": "例: delete, warn",
+      "filterStatus": "ステータス",
+      "filterStatusAll": "すべて",
+      "filterNodeType": "ノードタイプ",
+      "filterNodeTypePlaceholder": "例: screen, llm",
+      "statusCompleted": "完了",
+      "statusFailed": "失敗",
+      "statusSkipped": "スキップ",
+      "statusPending": "保留中",
+      "error": "ログの読み込みに失敗しました",
+      "empty": "ログはありません",
+      "confidence": "信頼度",
+      "cost": "コスト",
+      "reason": "理由",
+      "logId": "ログID",
+      "messageRef": "メッセージ参照",
+      "nodeId": "ノードID",
+      "nodeType": "ノードタイプ",
+      "actionParams": "アクションパラメータ",
+      "pipelineTrace": "パイプライントレース",
+      "pageLabel": "ページ"
     }
   },
   "aimodEditor": {
@@ -513,7 +542,8 @@
       "errorNoEntry": "MessageReceived ノードが必要です",
       "errorMultipleEntry": "入力ノードは1つだけ配置できます",
       "errorCycle": "循環があるため保存できません（無限ループの原因になります）",
-      "warningDisconnected": "未接続のノードがあります"
+      "warningDisconnected": "未接続のノードがあります",
+      "errorMultipleOnError": "エラーハンドラーノードは1つだけ配置できます"
     },
     "fields": {
       "channel": "チャンネル",
@@ -674,6 +704,10 @@
       "MessageSend": {
         "label": "メッセージ送信",
         "desc": "指定した本文のメッセージをチャンネルに送信します"
+      },
+      "OnError": {
+        "label": "エラーハンドラー",
+        "desc": "ノードの実行中にエラーが発生した場合に、ここから処理を続行します。DMやメッセージ送信ノードと繋いでエラー通知に使えます"
       }
     },
     "unsavedChanges": "未保存の変更",

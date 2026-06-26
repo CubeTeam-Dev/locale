@@ -478,6 +478,35 @@
         "spam": "Spam",
         "other": "Other"
       }
+    },
+    "logs": {
+      "title": "Moderation Logs",
+      "desc": "View AI moderation execution logs",
+      "backToSettings": "Back to settings",
+      "filters": "Filters",
+      "clearFilters": "Clear",
+      "filterAction": "Action",
+      "filterActionPlaceholder": "e.g. delete, warn",
+      "filterStatus": "Status",
+      "filterStatusAll": "All",
+      "filterNodeType": "Node type",
+      "filterNodeTypePlaceholder": "e.g. screen, llm",
+      "statusCompleted": "Completed",
+      "statusFailed": "Failed",
+      "statusSkipped": "Skipped",
+      "statusPending": "Pending",
+      "error": "Failed to load logs",
+      "empty": "No logs yet",
+      "confidence": "Confidence",
+      "cost": "Cost",
+      "reason": "Reason",
+      "logId": "Log ID",
+      "messageRef": "Message ref",
+      "nodeId": "Node ID",
+      "nodeType": "Node type",
+      "actionParams": "Action parameters",
+      "pipelineTrace": "Pipeline trace",
+      "pageLabel": "Page"
     }
   },
   "aimodEditor": {
@@ -513,7 +542,8 @@
       "errorNoEntry": "A MessageReceived node is required",
       "errorMultipleEntry": "Only one input node is allowed",
       "errorCycle": "Cannot save: the pipeline contains a cycle (it would cause an infinite loop)",
-      "warningDisconnected": "There are disconnected nodes"
+      "warningDisconnected": "There are disconnected nodes",
+      "errorMultipleOnError": "Only one error handler node is allowed"
     },
     "fields": {
       "channel": "Channel",
@@ -674,6 +704,10 @@
       "MessageSend": {
         "label": "Message Send",
         "desc": "Sends a message with the given content to the channel"
+      },
+      "OnError": {
+        "label": "Error Handler",
+        "desc": "Continues from here when a node throws an error during execution. Connect to DM/message nodes for error notifications"
       }
     },
     "unsavedChanges": "Unsaved changes",

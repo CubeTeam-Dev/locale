@@ -1681,7 +1681,7 @@
       "config": "Config",
       "match": "✓ Match",
       "unmatch": "✗ No Match",
-      "errorHandle": "Error",
+      "errorTrigger": "Error",
       "triggers": {
         "member_join": {
           "label": "Member Join",

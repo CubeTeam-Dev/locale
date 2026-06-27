@@ -2038,7 +2038,8 @@
       "spamPatterns": "スパムパターン",
       "economy": "エコノミー",
       "features": "フィーチャーフラグ",
-      "testGroups": "テストグループ"
+      "testGroups": "テストグループ",
+      "aiStats": "AI統計"
     },
     "dashboard": {
       "title": "システム状況",
@@ -2510,6 +2511,30 @@
       "noViolations": "違反ログはありません",
       "retentionNote": "現在のプラン ({plan}) では過去 {days} 日分を表示可能です",
       "page": "ページ {page} / {total}"
+    },
+    "aiStats": {
+      "title": "AIモデレーション統計",
+      "desc": "ワークフローノードの到達率とトークン消費量",
+      "guildIdPlaceholder": "Guild ID を入力",
+      "search": "検索",
+      "period": "期間",
+      "days7": "7日間",
+      "days30": "30日間",
+      "days90": "90日間",
+      "totalMessages": "処理メッセージ数",
+      "reachRate": "到達率",
+      "tokenUsage": "トークン消費量",
+      "inputTokens": "入力トークン",
+      "outputTokens": "出力トークン",
+      "thinkingTokens": "思考トークン",
+      "totalTokens": "合計トークン",
+      "screen": "Screen",
+      "lite": "LiteLLM",
+      "detail": "DetailLLM",
+      "noData": "データがありません。Guild IDを入力して検索してください。",
+      "loading": "読み込み中...",
+      "dailyTrend": "日別推移",
+      "nodeBreakdown": "ノード別内訳"
     }
   }
 }

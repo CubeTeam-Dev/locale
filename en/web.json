@@ -582,6 +582,8 @@
       "delete_message_hint": "How far back to delete messages on ban (e.g. 1d). Empty deletes nothing",
       "content": "Content",
       "content_hint": "The body of the message to send",
+      "enableDynamicContext": "Dynamic Context Expansion",
+      "enableDynamicContext_hint": "When AI determines more context is needed, fetches additional messages and re-analyzes (+5CC)",
       "deniedActions": "Excluded actions",
       "deniedActions_hint": "Selected actions will not be executed"
     },
@@ -668,10 +670,6 @@
       "Confidence": {
         "label": "Confidence",
         "desc": "Compares the latest verdict's confidence to a threshold and branches match / no-match (2CC)"
-      },
-      "AdvancedLlm": {
-        "label": "Advanced LLM",
-        "desc": "A high-accuracy AI (Gemini) produces a verdict and passes it straight to the next node (5CC)"
       },
       "ActionPolicy": {
         "label": "Action Policy",

@@ -781,7 +781,11 @@
       "invalid_format": "❌ Invalid time format. Example: 5s, 2m, 1h",
       "blacklisted": "❌ You are blacklisted.",
       "no_permission": "❌ This command requires {permission} permission.",
-      "no_available": "❌ This command/feature is not available."
+      "no_available": "❌ This command/feature is not available.",
+      "missing_permissions": "❌ The bot is missing required permissions. Please check your server settings.",
+      "missing_access": "❌ The bot cannot access this channel. Please check the channel permissions.",
+      "unknown_message": "❌ The target message was not found. It may have already been deleted.",
+      "cannot_send_dm": "❌ Cannot send a DM to this user. They may have DMs disabled."
     },
     "yes": "Yes",
     "no": "No",

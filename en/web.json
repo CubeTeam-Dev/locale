@@ -2183,6 +2183,30 @@
       "deleteBtn": "Delete User",
       "deleteOk": "User data deleted",
       "deleteFail": "Failed to delete user"
+    },
+    "aiStats": {
+      "title": "AI Moderation Stats",
+      "desc": "Workflow node reach rates and token consumption",
+      "guildIdPlaceholder": "Enter Guild ID",
+      "search": "Search",
+      "period": "Period",
+      "days7": "7 days",
+      "days30": "30 days",
+      "days90": "90 days",
+      "totalMessages": "Messages Processed",
+      "reachRate": "Reach Rate",
+      "tokenUsage": "Token Usage",
+      "inputTokens": "Input Tokens",
+      "outputTokens": "Output Tokens",
+      "thinkingTokens": "Thinking Tokens",
+      "totalTokens": "Total Tokens",
+      "screen": "Screen",
+      "lite": "LiteLLM",
+      "detail": "DetailLLM",
+      "noData": "No data. Enter a Guild ID and search.",
+      "loading": "Loading...",
+      "dailyTrend": "Daily Trend",
+      "nodeBreakdown": "Node Breakdown"
     }
   },
   "automod": {
@@ -2510,30 +2534,6 @@
       "noViolations": "No violation logs",
       "retentionNote": "Your current plan ({plan}) shows the last {days} days",
       "page": "Page {page} of {total}"
-    },
-    "aiStats": {
-      "title": "AI Moderation Stats",
-      "desc": "Workflow node reach rates and token consumption",
-      "guildIdPlaceholder": "Enter Guild ID",
-      "search": "Search",
-      "period": "Period",
-      "days7": "7 days",
-      "days30": "30 days",
-      "days90": "90 days",
-      "totalMessages": "Messages Processed",
-      "reachRate": "Reach Rate",
-      "tokenUsage": "Token Usage",
-      "inputTokens": "Input Tokens",
-      "outputTokens": "Output Tokens",
-      "thinkingTokens": "Thinking Tokens",
-      "totalTokens": "Total Tokens",
-      "screen": "Screen",
-      "lite": "LiteLLM",
-      "detail": "DetailLLM",
-      "noData": "No data. Enter a Guild ID and search.",
-      "loading": "Loading...",
-      "dailyTrend": "Daily Trend",
-      "nodeBreakdown": "Node Breakdown"
     }
   }
 }

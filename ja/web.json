@@ -582,6 +582,8 @@
       "delete_message_hint": "BAN時にさかのぼって削除するメッセージの範囲（例: 1d）。空欄で削除しません",
       "content": "本文",
       "content_hint": "送信するメッセージの本文",
+      "enableDynamicContext": "動的コンテキスト拡張",
+      "enableDynamicContext_hint": "AIが文脈不足と判断した場合、追加メッセージを取得して再分析します（+5CC）",
       "deniedActions": "除外するアクション",
       "deniedActions_hint": "選択したアクションは実行されません"
     },
@@ -668,10 +670,6 @@
       "Confidence": {
         "label": "確信度分岐",
         "desc": "直近のAI判定の確信度をしきい値と比較し、しきい値以上かで一致/不一致へ分岐します (1CC)"
-      },
-      "AdvancedLlm": {
-        "label": "高度LLM",
-        "desc": "高精度AI(Gemini)が判定結果を作り、後続ノードへそのまま渡します (3CC)"
       },
       "ActionPolicy": {
         "label": "アクションポリシー",

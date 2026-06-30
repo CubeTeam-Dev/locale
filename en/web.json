@@ -2195,7 +2195,7 @@
     "aiStats": {
       "title": "AI Moderation Stats",
       "desc": "Real AI moderation usage, CC, estimated provider cost, and profitability",
-      "guildIdPlaceholder": "Enter Guild ID",
+      "guildIdPlaceholder": "Guild ID (blank for overall stats)",
       "scopeLabel": "Scope",
       "scopeGlobal": "Overall",
       "scopeGuild": "Guild-specific",
@@ -2237,7 +2237,7 @@
       "detail": "DetailLLM",
       "confidence": "Confidence",
       "classify": "Classify",
-      "noData": "No data. Select a scope and search.",
+      "noData": "No data. Guild ID is optional; leave it blank and search to show overall stats.",
       "loading": "Loading...",
       "dailyTrend": "Daily Trend",
       "nodeBreakdown": "Node Breakdown"

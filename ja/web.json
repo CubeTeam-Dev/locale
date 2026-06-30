@@ -2195,7 +2195,7 @@
     "aiStats": {
       "title": "AIモデレーション統計",
       "desc": "AIモデレーションの実利用・CC・推定原価・採算",
-      "guildIdPlaceholder": "Guild ID を入力",
+      "guildIdPlaceholder": "Guild ID（空欄で全体統計）",
       "scopeLabel": "表示範囲",
       "scopeGlobal": "全体",
       "scopeGuild": "Guild指定",
@@ -2237,7 +2237,7 @@
       "detail": "詳細LLM",
       "confidence": "Confidence",
       "classify": "Classify",
-      "noData": "データがありません。表示範囲を選択して検索してください。",
+      "noData": "データがありません。Guild ID は任意です。空欄で検索すると全体統計を表示します。",
       "loading": "読み込み中...",
       "dailyTrend": "日別推移",
       "nodeBreakdown": "ノード別内訳"

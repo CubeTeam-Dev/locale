@@ -2234,7 +2234,24 @@
       "noData": "No data. Enter a Guild ID and search.",
       "loading": "Loading...",
       "dailyTrend": "Daily Trend",
-      "nodeBreakdown": "Node Breakdown"
+      "nodeBreakdown": "Node Breakdown",
+      "laneMessages": "Default / Workflow",
+      "estimatedCc": "Estimated CC",
+      "avgCcPerMessage": "Avg CC / Message",
+      "paidBonusFreeCc": "Paid / Bonus / Free CC",
+      "consumedCc": "Consumed CC",
+      "billableCc": "Consumed CC",
+      "paidCc": "Paid CC",
+      "bonusCc": "Bonus CC",
+      "freeCc": "Free CC",
+      "providerCost": "Provider Cost",
+      "grossProfit": "Gross Profit",
+      "grossMargin": "Gross Margin",
+      "ccUsage": "CC Usage",
+      "avgTokens": "Avg Tokens",
+      "summaryNote": "Average tokens/message: {avgTokens}. Estimated revenue from paid CC only: {revenue}.",
+      "unmeasured": "Unmeasured",
+      "unmeasuredCostNote": "Some provider costs are unmeasured, so gross profit and margin are N/A."
     }
   },
   "automod": {

@@ -2234,7 +2234,24 @@
       "noData": "データがありません。Guild IDを入力して検索してください。",
       "loading": "読み込み中...",
       "dailyTrend": "日別推移",
-      "nodeBreakdown": "ノード別内訳"
+      "nodeBreakdown": "ノード別内訳",
+      "laneMessages": "Default / Workflow",
+      "estimatedCc": "推定CC",
+      "avgCcPerMessage": "平均CC / メッセージ",
+      "paidBonusFreeCc": "有償 / ボーナス / 無料CC",
+      "consumedCc": "消費CC",
+      "billableCc": "消費CC",
+      "paidCc": "有償CC",
+      "bonusCc": "ボーナスCC",
+      "freeCc": "無料CC",
+      "providerCost": "プロバイダー原価",
+      "grossProfit": "粗利",
+      "grossMargin": "粗利率",
+      "ccUsage": "CC使用量",
+      "avgTokens": "平均トークン",
+      "summaryNote": "平均トークン/メッセージ: {avgTokens}。推定売上は有償CCのみから算出: {revenue}。",
+      "unmeasured": "未計測",
+      "unmeasuredCostNote": "一部のプロバイダー原価が未計測のため、粗利と粗利率は N/A です。"
     }
   },
   "automod": {

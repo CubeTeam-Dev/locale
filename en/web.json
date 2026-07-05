@@ -554,6 +554,17 @@
       "warningDisconnected": "There are disconnected nodes",
       "errorMultipleOnError": "Only one error handler node is allowed"
     },
+    "resetConfirm": {
+      "title": "Reset to default template?",
+      "message": "Your current edits will be discarded and replaced with the standard template. Nothing is saved until you press Save.",
+      "confirm": "Reset",
+      "cancel": "Cancel"
+    },
+    "connectivity": {
+      "title": "Disconnected nodes",
+      "message": "{count, plural, one {# node isn't connected to the pipeline and won't run.} other {# nodes aren't connected to the pipeline and won't run.}}",
+      "badgeTooltip": "Not connected to the pipeline"
+    },
     "fields": {
       "channel": "Channel",
       "channel_hint": "Channels to target. Leave empty to target all channels",
@@ -722,6 +733,7 @@
     "emptyTitle": "No nodes yet",
     "emptyDesc": "Drag nodes from the palette or start from a template",
     "loadTemplate": "Load standard template",
+    "resetToDefault": "Reset to default",
     "searchPlaceholder": "Search nodes...",
     "unsavedTooltip": "You have unsaved changes",
     "deleteEdge": "Delete edge",

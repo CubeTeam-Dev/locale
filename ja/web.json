@@ -554,6 +554,17 @@
       "warningDisconnected": "未接続のノードがあります",
       "errorMultipleOnError": "エラーハンドラーノードは1つだけ配置できます"
     },
+    "resetConfirm": {
+      "title": "デフォルト構成に戻しますか？",
+      "message": "現在の編集内容は破棄され、標準テンプレートに置き換わります。保存ボタンを押すまで保存はされません。",
+      "confirm": "リセット",
+      "cancel": "キャンセル"
+    },
+    "connectivity": {
+      "title": "未接続のノード",
+      "message": "{count, plural, other {# 個のノードがパイプラインに接続されておらず、実行されません。}}",
+      "badgeTooltip": "パイプラインに接続されていません"
+    },
     "fields": {
       "channel": "チャンネル",
       "channel_hint": "対象とするチャンネル。空欄ですべてのチャンネルが対象になります",
@@ -722,6 +733,7 @@
     "emptyTitle": "ノードがありません",
     "emptyDesc": "パレットからノードをドラッグするか、テンプレートから始めてください",
     "loadTemplate": "標準テンプレートを読み込む",
+    "resetToDefault": "デフォルトに戻す",
     "searchPlaceholder": "ノードを検索...",
     "unsavedTooltip": "未保存の変更があります",
     "deleteEdge": "エッジを削除",

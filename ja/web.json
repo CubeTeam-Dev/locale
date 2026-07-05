@@ -744,6 +744,9 @@
       "branchTaken": "分岐: {branch}",
       "result": "結果: {result}",
       "llmCalled": "LLM",
+      "llmFailed": "AI呼び出し失敗",
+      "llmFailedHint": "AI呼び出しが完了しませんでした（safe判定ではなく、結果を取得できていません）。",
+      "incompleteWarning": "一部のAI判定を実行できませんでした（結果は不完全です）。",
       "duration": "{ms}ms",
       "wouldExecute": "実行予定: {actions}",
       "verdict": {

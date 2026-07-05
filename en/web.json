@@ -744,6 +744,9 @@
       "branchTaken": "Branch: {branch}",
       "result": "Result: {result}",
       "llmCalled": "LLM",
+      "llmFailed": "AI call failed",
+      "llmFailedHint": "The AI call could not complete (not a \"safe\" verdict — the result is unavailable).",
+      "incompleteWarning": "Some AI evaluations could not run — the results are incomplete.",
       "duration": "{ms}ms",
       "wouldExecute": "Would run: {actions}",
       "verdict": {

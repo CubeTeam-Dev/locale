@@ -2522,7 +2522,22 @@
     "scheduleLevelLowDesc": "Only email-verified accounts",
     "scheduleLevelMediumDesc": "Only accounts registered on Discord for more than 5 minutes",
     "scheduleLevelHighDesc": "Only accounts in this server for more than 10 minutes",
-    "scheduleLevelVeryHighDesc": "Only phone-verified accounts"
+    "scheduleLevelVeryHighDesc": "Only phone-verified accounts",
+    "tierRoutingSection": "Tiered Log Routing",
+    "tierRoutingDesc": "Route moderation logs to different channels and ping roles based on severity tier",
+    "tierRoutingFallbackNote": "Tiers left without a channel fall back to the default log channel above.",
+    "tier_safe_name": "Safe",
+    "tier_safe_desc": "Safety confirmations and observation logs",
+    "tier_violation_name": "Violation",
+    "tier_violation_desc": "Detected rule violations",
+    "tier_critical_name": "Critical",
+    "tier_critical_desc": "Repeated unresolved or severe incidents",
+    "tierChannelLabel": "Log Channel",
+    "tierChannelFallback": "Default log channel",
+    "tierMentionRolesLabel": "Mention Roles",
+    "tierAddMentionRole": "Add role...",
+    "mentionCooldownLabel": "Mention Cooldown (minutes)",
+    "mentionCooldownHint": "Minimum interval between role mentions for the same tier (1-1440)."
   },
   "accountSecurity": {
     "title": "Security",

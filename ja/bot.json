@@ -1142,7 +1142,10 @@
       "btn_unquarantine": "隔離解除",
       "btn_untimeout": "タイムアウト解除",
       "btn_false_positive": "誤検知として解除",
-      "btn_confirm_spam": "スパム確認"
+      "btn_confirm_spam": "スパム確認",
+      "tier_thread_safe": "🟩 安全確認ログ {date}",
+      "tier_thread_violation": "🟨 違反ログ {date}",
+      "tier_thread_critical": "🟥 重大警告ログ {date}"
     },
     "review_queue": {
       "title": "🔍 要審査（グレーゾーン）",

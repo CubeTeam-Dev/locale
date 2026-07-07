@@ -385,8 +385,8 @@
     "naturalLanguageRulesNoSurcharge": "ルール未設定のため追加CCはありません",
     "naturalLanguageRulesPlaceholder": "例:\n- 政治・宗教の議論は禁止\n- 18歳未満に不適切なコンテンツを送ってはならない\n- 他のユーザーへの侮辱的な発言は削除する",
     "advancedViolationStorageLabel": "高度な違反保存",
-    "advancedViolationStorageDesc": "AI が違反理由を分類して保存します。モデレーションログの詳細化に役立ちますが、1CC/件 のクレジットを消費します",
-    "modLogCompactLabel": "コンパクトなログ",
+    "advancedViolationStorageDesc": "AI が違反理由を分類して保存します。モデレーションログの詳細化に役立ちますが、2CC/件 のクレジットを消費します",
+    "modLogCompactLabel": "コンパクトログ",
     "modLogCompactDesc": "モデレーターログを簡潔な1行表示にします。オフ（既定）では、サムネイルや信頼度ゲージを含む詳細表示になります",
     "nodeEditorLinkLabel": "ノードエディター",
     "nodeEditorLinkDesc": "パイプラインをノードで視覚的に構築・編集します",
@@ -540,8 +540,8 @@
     },
     "handles": {
       "next": "次へ",
-      "true": "一致",
-      "false": "不一致",
+      "true": "該当",
+      "false": "非該当",
       "safe": "安全",
       "gray": "グレー",
       "violation": "違反",
@@ -603,17 +603,17 @@
       "content": "本文",
       "content_hint": "送信するメッセージの本文",
       "enableDynamicContext": "動的コンテキスト拡張",
-      "enableDynamicContext_hint": "AIが文脈不足と判断した場合、追加メッセージを取得して再分析します（+5CC）",
+      "enableDynamicContext_hint": "AIが文脈不足と判断した場合、追加メッセージを取得して再分析します",
       "deniedActions": "除外するアクション",
       "deniedActions_hint": "選択したアクションは実行されません"
     },
     "actionKeys": {
       "QUARANTINE": "隔離",
       "TIMEOUT_24H": "24h停止",
-      "TIMEOUT_1H": "1時間タイムアウト",
-      "TIMEOUT_30M": "30分間タイムアウト",
-      "TIMEOUT_10M": "10分間タイムアウト",
-      "TIMEOUT_5M": "5分間タイムアウト",
+      "TIMEOUT_1H": "1h停止",
+      "TIMEOUT_30M": "30m停止",
+      "TIMEOUT_10M": "10m停止",
+      "TIMEOUT_5M": "5m停止",
       "DELETE_MESSAGE": "メッセージ削除",
       "WARN": "警告",
       "SEND_TO_REVIEW_QUEUE": "レビュー送信",
@@ -649,7 +649,7 @@
       },
       "SummaryReport": {
         "label": "サマリーレポート",
-        "desc": "ここまでの判定結果をまとめてログチャンネルにレポートとして送ります (1CC)"
+        "desc": "ここまでの判定結果をまとめてログチャンネルにレポートとして送ります"
       },
       "HistorySummarizer": {
         "label": "履歴要約",
@@ -661,35 +661,35 @@
       },
       "AntiRaid": {
         "label": "アンチレイド",
-        "desc": "短時間の大量参加・投稿を検知し、レイドかどうかで一致/不一致へ分岐します (0CC)"
+        "desc": "短時間の大量参加・投稿を検知し、レイドかどうかで該当/非該当へ分岐します"
       },
       "RegexBlock": {
         "label": "正規表現ブロック",
-        "desc": "招待リンク・詐欺・カスタムパターンに該当するかを正規表現で判定し、一致/不一致へ分岐します (0CC)"
+        "desc": "招待リンク・詐欺・カスタムパターンに該当するかを正規表現で判定し、該当/非該当へ分岐します"
       },
       "TextFilter": {
         "label": "テキストフィルター",
-        "desc": "メンション数などの機械的な条件に違反するかで、一致/不一致へ分岐します (0CC)"
+        "desc": "メンション数などの機械的な条件に違反するかで、該当/非該当へ分岐します"
       },
       "ThreatDb": {
         "label": "脅威DB",
-        "desc": "既知の脅威データベースと照合し、ヒットするかで一致/不一致へ分岐します (0CC)"
+        "desc": "既知の脅威データベースと照合し、ヒットするかで該当/非該当へ分岐します"
       },
       "Screen": {
         "label": "スクリーニング",
-        "desc": "軽量AIで一次判定し、違反の疑いがあるかで一致/不一致へ分岐します。疑わしいものだけを下流のLLMへ流せます (0CC)"
+        "desc": "軽量AIで一次判定し、違反の疑いがあるかで該当/非該当へ分岐します。疑わしいものだけを下流のLLMへ流せます"
       },
       "LiteLlm": {
         "label": "軽量LLM",
-        "desc": "軽量AI(Gemini)が内容を読み、safe/gray/violation のいずれかの結果に振り分けて分岐します (1CC)"
+        "desc": "軽量AI(Gemini)が内容を読み、safe/gray/violation のいずれかの結果に振り分けて分岐します"
       },
       "DetailLlm": {
         "label": "詳細LLM",
-        "desc": "前科を含めて高精度AI(Gemini)が詳しく判定し、違反かどうかで一致/不一致へ分岐します (3CC)"
+        "desc": "前科を含めて高精度AI(Gemini)が詳しく判定し、違反と判定したかどうかで分岐します"
       },
       "Confidence": {
         "label": "確信度分岐",
-        "desc": "直近のAI判定の確信度をしきい値と比較し、しきい値以上かで一致/不一致へ分岐します (1CC)"
+        "desc": "直近のAI判定の確信度をしきい値と比較し、しきい値以上かで該当/非該当へ分岐します"
       },
       "ActionPolicy": {
         "label": "アクションポリシー",
@@ -755,7 +755,7 @@
       "stepLabel": "ステップ {n}",
       "branchTaken": "分岐: {branch}",
       "result": "結果: {result}",
-      "llmCalled": "自然言語処理モデル",
+      "llmCalled": "LLM",
       "llmFailed": "AI呼び出し失敗",
       "llmFailedHint": "AI呼び出しが完了しませんでした（safe判定ではなく、結果を取得できていません）。",
       "incompleteWarning": "一部のAI判定を実行できませんでした（結果は不完全です）。",
@@ -1503,7 +1503,7 @@
     "addEmbed": "Embedを追加",
     "addActionRow": "Action Row を追加",
     "actionRow": {
-      "rowN": "アクション行{n}",
+      "rowN": "Action Row {n}",
       "typeButtons": "ボタン",
       "typeSelect": "セレクトメニュー",
       "addButton": "ボタンを追加",
@@ -1713,7 +1713,9 @@
       "webhookRegenerateTitle": "URLを再生成",
       "webhookRegenerateConfirm": "Webhook URLを再生成すると、現在のURLは無効になります。続行しますか？",
       "webhookUrlCopied": "コピーしました",
-      "webhookUrlDesc": "このURLにPOSTリクエストを送るとワークフローが起動します。JSONボディは '{{webhook.payload.key}}' で参照できます。"
+      "webhookUrlDesc": "このURLにPOSTリクエストを送るとワークフローが起動します。JSONボディは '{{webhook.payload.key}}' で参照できます。",
+      "webhookRegenerateTitle": "URLを再生成",
+      "webhookRegenerateConfirm": "Webhook URLを再生成すると、現在のURLは無効になります。続行しますか？"
     },
     "nodes": {
       "trigger": "トリガー",
@@ -1970,11 +1972,11 @@
       "buttonCustomIdHint": "内部識別子（英数字・ハイフン）",
       "buttonCustomIdPlaceholder": "例: confirm-btn",
       "buttonModeCustomId": "カスタムID",
-      "buttonModeLinked": "ワークフローを連携する",
+      "buttonModeLinked": "ワークフロー連携",
       "buttonModeContinue": "続けて実行",
       "buttonModeContinueHint": "このボタンが押されると、同じワークフローの続きが実行されます。'{{button.label}}' と '{{button.index}}' で押されたボタンを判別できます。",
-      "buttonLinkedWorkflow": "ワークフローを連携しました",
-      "buttonLinkedWorkflowHint": "ボタンがクリックされたときに実行するワークフロー",
+      "buttonLinkedWorkflow": "連携するワークフロー",
+      "buttonLinkedWorkflowHint": "ボタンを押したときに実行されるワークフロー",
       "buttonLinkedWorkflowPlaceholder": "ワークフローを選択...",
       "buttonLinkedWorkflowNone": "ワークフローが見つかりませんでした。",
       "buttonStyle": "スタイル",
@@ -2062,7 +2064,7 @@
     "duplicateError": "複製に失敗しました"
   },
   "admin": {
-    "title": "Cube 管理者",
+    "title": "Cube Admin",
     "loggedInAs": "ログイン中",
     "exitAdmin": "ダッシュボードへ戻る",
     "cancel": "キャンセル",
@@ -2126,7 +2128,7 @@
       "syncOk": "{synced}件同期しました（エラー: {errors}件）",
       "syncFail": "同期に失敗しました",
       "cancelAtEnd": "期間終了時にキャンセル",
-      "syncUserPlaceholder": "ユーザーID",
+      "syncUserPlaceholder": "User ID",
       "confirmSyncUser": "ユーザー {userId} のサブスクリプション情報を同期しますか？"
     },
     "blacklist": {
@@ -2523,6 +2525,7 @@
     "scheduleLevelMediumDesc": "Discord登録から5分以上経過したアカウントのみ",
     "scheduleLevelHighDesc": "サーバー参加から10分以上経過したアカウントのみ",
     "scheduleLevelVeryHighDesc": "電話番号認証済みのアカウントのみ",
+    "unknownUser": "不明",
     "tierRoutingSection": "重要度別ログルーティング",
     "tierRoutingDesc": "重要度ティアに応じてモデレーションログの送信先チャンネルとメンションロールを振り分けます",
     "tierRoutingFallbackNote": "チャンネル未設定のティアは、上のデフォルトログチャンネルにフォールバックします。",

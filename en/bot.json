@@ -1142,7 +1142,10 @@
       "btn_unquarantine": "Release",
       "btn_untimeout": "Remove Timeout",
       "btn_false_positive": "False Positive",
-      "btn_confirm_spam": "Confirm Spam"
+      "btn_confirm_spam": "Confirm Spam",
+      "tier_thread_safe": "🟩 Safe Log {date}",
+      "tier_thread_violation": "🟨 Violation Log {date}",
+      "tier_thread_critical": "🟥 Critical Log {date}"
     },
     "review_queue": {
       "title": "🔍 Review Required (Gray Zone)",

@@ -782,10 +782,10 @@
       "blacklisted": "❌ ブラックリストに登録されています。",
       "no_permission": "❌ このコマンドを実行するには {permission} 権限が必要です。",
       "no_available": "❌ このコマンド/機能は利用できません。",
-      "missing_permissions": "❌ The bot is missing required permissions. Please check your server settings.",
-      "missing_access": "❌ The bot cannot access this channel. Please check the channel permissions.",
-      "unknown_message": "❌ The target message was not found. It may have already been deleted.",
-      "cannot_send_dm": "❌ Cannot send a DM to this user. They may have DMs disabled."
+      "missing_permissions": "❌ Botに必要な権限がありません。サーバーの設定をご確認ください。",
+      "missing_access": "❌ Botがこのチャンネルにアクセスできません。チャンネルの権限設定をご確認ください。",
+      "unknown_message": "❌ 対象のメッセージが見つかりません。既に削除された可能性があります。",
+      "cannot_send_dm": "❌ このユーザーにDMを送信できません。DMが無効になっている可能性があります。"
     },
     "yes": "はい",
     "no": "いいえ",
@@ -1142,7 +1142,10 @@
       "btn_unquarantine": "隔離解除",
       "btn_untimeout": "タイムアウト解除",
       "btn_false_positive": "誤検知として解除",
-      "btn_confirm_spam": "スパム確認"
+      "btn_confirm_spam": "スパム確認",
+      "tier_thread_safe": "🟩 安全確認ログ {date}",
+      "tier_thread_violation": "🟨 違反ログ {date}",
+      "tier_thread_critical": "🟥 重大警告ログ {date}"
     },
     "review_queue": {
       "title": "🔍 要審査（グレーゾーン）",

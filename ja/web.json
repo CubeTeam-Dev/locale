@@ -351,9 +351,9 @@
     "legacyAiDesc": "omni-moderationのスコアを基に自動でレポート・削除を行います",
     "legacyAiLogChannelLabel": "ログチャンネル",
     "legacyAiReportScoreLabel": "レポートスコア閾値",
-    "legacyAiReportScoreDesc": "低いほど敏感に検知し、ログに通知します",
+    "legacyAiReportScoreDesc": "このスコア以上でログに報告します（0〜1）",
     "legacyAiDeleteScoreLabel": "削除スコア閾値",
-    "legacyAiDeleteScoreDesc": "この値を超えたメッセージを自動削除します（通知の値以上を推奨）",
+    "legacyAiDeleteScoreDesc": "このスコア以上でメッセージを自動削除します（0〜1、レポート以上推奨）",
     "legacyAiScoreRecommend": "削除スコアはレポートスコア以上を推奨します",
     "legacyAiBypassChannelsLabel": "バイパスチャンネル",
     "legacyAiBypassChannelsDesc": "このチャンネルのメッセージはAIモデレーションをスキップします",
@@ -385,8 +385,8 @@
     "naturalLanguageRulesNoSurcharge": "ルール未設定のため追加CCはありません",
     "naturalLanguageRulesPlaceholder": "例:\n- 政治・宗教の議論は禁止\n- 18歳未満に不適切なコンテンツを送ってはならない\n- 他のユーザーへの侮辱的な発言は削除する",
     "advancedViolationStorageLabel": "高度な違反保存",
-    "advancedViolationStorageDesc": "AI が違反理由を分類して保存します。モデレーションログの詳細化に役立ちますが、2CC/件 のクレジットを消費します",
-    "modLogCompactLabel": "コンパクトログ",
+    "advancedViolationStorageDesc": "AI が違反理由を分類して保存します。モデレーションログの詳細化に役立ちますが、1CC/件 のクレジットを消費します",
+    "modLogCompactLabel": "コンパクトなログ",
     "modLogCompactDesc": "モデレーターログを簡潔な1行表示にします。オフ（既定）では、サムネイルや信頼度ゲージを含む詳細表示になります",
     "nodeEditorLinkLabel": "ノードエディター",
     "nodeEditorLinkDesc": "パイプラインをノードで視覚的に構築・編集します",
@@ -540,8 +540,8 @@
     },
     "handles": {
       "next": "次へ",
-      "true": "該当",
-      "false": "非該当",
+      "true": "一致",
+      "false": "不一致",
       "safe": "安全",
       "gray": "グレー",
       "violation": "違反",
@@ -592,9 +592,9 @@
       "max_mentions_hint": "1メッセージあたりのメンションがこの数を超えると違反と判定します",
       "sensitivity": "感度",
       "sensitivity_hint": "スクリーニングの感度。high ほど多くのメッセージを違反候補として下流に流します",
-      "threshold": "確信度しきい値",
+      "threshold": "閾値",
       "threshold_hint": "直近の判定の確信度がこの値以上なら true 側へ分岐します",
-      "message": "対象メッセージ",
+      "message": "メッセージ",
       "message_hint": "操作対象のメッセージ。current で現在のメッセージを指します",
       "duration": "期間",
       "duration_hint": "処罰の期間（例: 1h, 1d）。空欄で無期限になります",
@@ -603,17 +603,17 @@
       "content": "本文",
       "content_hint": "送信するメッセージの本文",
       "enableDynamicContext": "動的コンテキスト拡張",
-      "enableDynamicContext_hint": "AIが文脈不足と判断した場合、追加メッセージを取得して再分析します",
-      "deniedActions": "除外するアクション",
-      "deniedActions_hint": "選択したアクションは実行されません"
+      "enableDynamicContext_hint": "AIが文脈不足と判断した場合、追加メッセージを取得して再分析します（+5CC）",
+      "deniedActions": "許可しないアクション (denylist)",
+      "deniedActions_hint": "ここに列挙したアクションは、AI やポリシーが決定しても実行直前に除外されます。空欄なら従来どおりの挙動です。有効なキー: QUARANTINE, TIMEOUT_24H, TIMEOUT_1H, TIMEOUT_30M, TIMEOUT_10M, TIMEOUT_5M, DELETE_MESSAGE, WARN, SEND_TO_REVIEW_QUEUE, ADD_SUSPICION_LEVEL_1, NOTIFY_OWNER, MARK_COHORT_SUSPICION_LV2, UNQUARANTINE"
     },
     "actionKeys": {
       "QUARANTINE": "隔離",
       "TIMEOUT_24H": "24h停止",
-      "TIMEOUT_1H": "1h停止",
-      "TIMEOUT_30M": "30m停止",
-      "TIMEOUT_10M": "10m停止",
-      "TIMEOUT_5M": "5m停止",
+      "TIMEOUT_1H": "1時間タイムアウト",
+      "TIMEOUT_30M": "30分間タイムアウト",
+      "TIMEOUT_10M": "10分間タイムアウト",
+      "TIMEOUT_5M": "5分間タイムアウト",
       "DELETE_MESSAGE": "メッセージ削除",
       "WARN": "警告",
       "SEND_TO_REVIEW_QUEUE": "レビュー送信",
@@ -649,7 +649,7 @@
       },
       "SummaryReport": {
         "label": "サマリーレポート",
-        "desc": "ここまでの判定結果をまとめてログチャンネルにレポートとして送ります"
+        "desc": "ここまでの判定結果をまとめてログチャンネルにレポートとして送ります (1CC)"
       },
       "HistorySummarizer": {
         "label": "履歴要約",
@@ -661,43 +661,43 @@
       },
       "AntiRaid": {
         "label": "アンチレイド",
-        "desc": "短時間の大量参加・投稿を検知し、レイドかどうかで該当/非該当へ分岐します"
+        "desc": "短時間の大量参加・投稿を検知し、レイドかどうかで一致/不一致へ分岐します (0CC)"
       },
       "RegexBlock": {
         "label": "正規表現ブロック",
-        "desc": "招待リンク・詐欺・カスタムパターンに該当するかを正規表現で判定し、該当/非該当へ分岐します"
+        "desc": "招待リンク・詐欺・カスタムパターンに該当するかを正規表現で判定し、一致/不一致へ分岐します (0CC)"
       },
       "TextFilter": {
         "label": "テキストフィルター",
-        "desc": "メンション数などの機械的な条件に違反するかで、該当/非該当へ分岐します"
+        "desc": "メンション数などの機械的な条件に違反するかで、一致/不一致へ分岐します (0CC)"
       },
       "ThreatDb": {
         "label": "脅威DB",
-        "desc": "既知の脅威データベースと照合し、ヒットするかで該当/非該当へ分岐します"
+        "desc": "既知の脅威データベースと照合し、ヒットするかで一致/不一致へ分岐します (0CC)"
       },
       "Screen": {
         "label": "スクリーニング",
-        "desc": "軽量AIで一次判定し、違反の疑いがあるかで該当/非該当へ分岐します。疑わしいものだけを下流のLLMへ流せます"
+        "desc": "軽量AIで一次判定し、違反の疑いがあるかで一致/不一致へ分岐します。疑わしいものだけを下流のLLMへ流せます (0CC)"
       },
       "LiteLlm": {
         "label": "軽量LLM",
-        "desc": "軽量AI(Gemini)が内容を読み、safe/gray/violation のいずれかの結果に振り分けて分岐します"
+        "desc": "軽量AI(Gemini)が内容を読み、safe/gray/violation のいずれかの結果に振り分けて分岐します (1CC)"
       },
       "DetailLlm": {
         "label": "詳細LLM",
-        "desc": "前科を含めて高精度AI(Gemini)が詳しく判定し、違反と判定したかどうかで分岐します"
+        "desc": "前科を含めて高精度AI(Gemini)が詳しく判定し、違反かどうかで一致/不一致へ分岐します (3CC)"
       },
       "Confidence": {
         "label": "確信度分岐",
-        "desc": "直近のAI判定の確信度をしきい値と比較し、しきい値以上かで該当/非該当へ分岐します"
+        "desc": "直近のAI判定の確信度をしきい値と比較し、しきい値以上かで一致/不一致へ分岐します (1CC)"
       },
       "ActionPolicy": {
         "label": "アクションポリシー",
-        "desc": "ここまでの判定をもとに、実行すべき処罰の方針を決めます"
+        "desc": "ここまでの判定をもとに、実行すべき処罰の方針を決めて次へ渡します"
       },
       "ExecuteAction": {
         "label": "アクション実行",
-        "desc": "アクションポリシーで決まった処罰をまとめて実行します"
+        "desc": "決定されたアクションをまとめて実行します"
       },
       "MessageDelete": {
         "label": "メッセージ削除",
@@ -705,23 +705,23 @@
       },
       "Timeout": {
         "label": "タイムアウト",
-        "desc": "対象ユーザーを指定期間タイムアウト（発言不可）にします"
+        "desc": "ユーザーを一定期間タイムアウトします"
       },
       "Kick": {
         "label": "キック",
-        "desc": "対象ユーザーをサーバーからキックします"
+        "desc": "ユーザーをサーバーからキックします"
       },
       "Ban": {
         "label": "BAN",
-        "desc": "対象ユーザーをBANします。過去メッセージの削除範囲も指定できます"
+        "desc": "ユーザーをBANします"
       },
       "Warn": {
         "label": "警告",
-        "desc": "対象ユーザーに警告を記録・通知します"
+        "desc": "ユーザーに警告を送ります"
       },
       "MessageSend": {
         "label": "メッセージ送信",
-        "desc": "指定した本文のメッセージをチャンネルに送信します"
+        "desc": "メッセージを送信します"
       },
       "OnError": {
         "label": "エラーハンドラー",
@@ -755,7 +755,7 @@
       "stepLabel": "ステップ {n}",
       "branchTaken": "分岐: {branch}",
       "result": "結果: {result}",
-      "llmCalled": "LLM",
+      "llmCalled": "自然言語処理モデル",
       "llmFailed": "AI呼び出し失敗",
       "llmFailedHint": "AI呼び出しが完了しませんでした（safe判定ではなく、結果を取得できていません）。",
       "incompleteWarning": "一部のAI判定を実行できませんでした（結果は不完全です）。",
@@ -776,7 +776,7 @@
         "cost": "{cc}CC",
         "charged": "課金あり",
         "free": "無料（課金なし）",
-        "freeRemaining": "本日の無料枠残り: {cc} CC",
+        "freeRemaining": "本日の無料実行残り: {count}回",
         "partialShortfall": "残高不足のため一部の判定をスキップしました"
       },
       "errors": {
@@ -905,7 +905,7 @@
     "buyCC": "Cubeクレジットを購入",
     "buyCCPlan": "{name} を購入",
     "buyPlan": "{plan} プランを購入",
-    "ccNote": "クレジットは付与（購入）日から1年間有効です",
+    "ccNote": "クレジットは購入日から180日間有効です",
     "prepaidNotice": "本クレジットは資金決済法上の前払式支払手段です。有効期限は付与（発行）から1年です。",
     "prepaidLink": "前払式支払手段に関する表示",
     "linkToServer": "サーバーに連携",
@@ -949,8 +949,8 @@
       "月1回のAIチューニングサポート",
       "優先サポート"
     ],
-    "confirmTitle": "ご購入内容の最終確認",
-    "confirmDesc": "以下の内容をご確認のうえ、購入手続きへお進みください。",
+    "confirmTitle": "{plan} プランを購入しますか？",
+    "confirmDesc": "月額 ¥{price} が請求されます。いつでもキャンセルできます。",
     "confirmPlanLabel": "プラン",
     "confirmPriceLabel": "金額（税込）",
     "confirmCycleMonthly": "月額 ¥{price} ／ 毎月自動更新",
@@ -976,7 +976,7 @@
     "consentParentalLabel": "保護者から購入の許可を得ています",
     "consentMinorNotice": "18歳未満の方は、保護者の同意が必要です。",
     "consentUnderageError": "申し訳ありませんが、13歳未満の方はご購入いただけません。",
-    "consentDataNote": "入力された生年月日は年齢確認および保護者同意の記録のためにのみ使用され、当チームが保管します。Stripe等の決済代行会社には提供されません。",
+    "consentDataNote": "入力された生年月日は年齢確認のためにのみ使用され、決済処理のためStripeと共有されます。",
     "consentContinue": "同意して続ける",
     "consentSubmitting": "確認中..."
   },
@@ -1503,7 +1503,7 @@
     "addEmbed": "Embedを追加",
     "addActionRow": "Action Row を追加",
     "actionRow": {
-      "rowN": "Action Row {n}",
+      "rowN": "アクション行{n}",
       "typeButtons": "ボタン",
       "typeSelect": "セレクトメニュー",
       "addButton": "ボタンを追加",
@@ -1713,9 +1713,7 @@
       "webhookRegenerateTitle": "URLを再生成",
       "webhookRegenerateConfirm": "Webhook URLを再生成すると、現在のURLは無効になります。続行しますか？",
       "webhookUrlCopied": "コピーしました",
-      "webhookUrlDesc": "このURLにPOSTリクエストを送るとワークフローが起動します。JSONボディは '{{webhook.payload.key}}' で参照できます。",
-      "webhookRegenerateTitle": "URLを再生成",
-      "webhookRegenerateConfirm": "Webhook URLを再生成すると、現在のURLは無効になります。続行しますか？"
+      "webhookUrlDesc": "このURLにPOSTリクエストを送るとワークフローが起動します。JSONボディは '{{webhook.payload.key}}' で参照できます。"
     },
     "nodes": {
       "trigger": "トリガー",
@@ -1972,11 +1970,11 @@
       "buttonCustomIdHint": "内部識別子（英数字・ハイフン）",
       "buttonCustomIdPlaceholder": "例: confirm-btn",
       "buttonModeCustomId": "カスタムID",
-      "buttonModeLinked": "ワークフロー連携",
+      "buttonModeLinked": "ワークフローを連携する",
       "buttonModeContinue": "続けて実行",
       "buttonModeContinueHint": "このボタンが押されると、同じワークフローの続きが実行されます。'{{button.label}}' と '{{button.index}}' で押されたボタンを判別できます。",
-      "buttonLinkedWorkflow": "連携するワークフロー",
-      "buttonLinkedWorkflowHint": "ボタンを押したときに実行されるワークフロー",
+      "buttonLinkedWorkflow": "ワークフローを連携しました",
+      "buttonLinkedWorkflowHint": "ボタンがクリックされたときに実行するワークフロー",
       "buttonLinkedWorkflowPlaceholder": "ワークフローを選択...",
       "buttonLinkedWorkflowNone": "ワークフローが見つかりませんでした。",
       "buttonStyle": "スタイル",
@@ -2064,7 +2062,7 @@
     "duplicateError": "複製に失敗しました"
   },
   "admin": {
-    "title": "Cube Admin",
+    "title": "Cube 管理者",
     "loggedInAs": "ログイン中",
     "exitAdmin": "ダッシュボードへ戻る",
     "cancel": "キャンセル",
@@ -2128,7 +2126,7 @@
       "syncOk": "{synced}件同期しました（エラー: {errors}件）",
       "syncFail": "同期に失敗しました",
       "cancelAtEnd": "期間終了時にキャンセル",
-      "syncUserPlaceholder": "User ID",
+      "syncUserPlaceholder": "ユーザーID",
       "confirmSyncUser": "ユーザー {userId} のサブスクリプション情報を同期しますか？"
     },
     "blacklist": {
@@ -2258,7 +2256,7 @@
     "aiStats": {
       "title": "AIモデレーション統計",
       "desc": "AIモデレーションの実利用・CC・推定原価・採算",
-      "guildIdPlaceholder": "Guild ID（空欄で全体統計）",
+      "guildIdPlaceholder": "Guild ID を入力",
       "scopeLabel": "表示範囲",
       "scopeGlobal": "全体",
       "scopeGuild": "Guild指定",
@@ -2300,7 +2298,7 @@
       "detail": "詳細LLM",
       "confidence": "Confidence",
       "classify": "Classify",
-      "noData": "データがありません。Guild ID は任意です。空欄で検索すると全体統計を表示します。",
+      "noData": "データがありません。表示範囲を選択して検索してください。",
       "loading": "読み込み中...",
       "dailyTrend": "日別推移",
       "nodeBreakdown": "ノード別内訳"
@@ -2399,10 +2397,10 @@
     "setupBtn": "セットアップ",
     "requesting": "処理中...",
     "setupDone": "完了",
-    "discordRegistered": "Discordと同期済み",
-    "discordNotRegistered": "Discord未同期",
-    "discordRegisterBtn": "Discordと同期",
-    "discordRegistering": "同期中...",
+    "discordRegistered": "Discord登録済み",
+    "discordNotRegistered": "Discord未登録",
+    "discordRegisterBtn": "Discordに登録",
+    "discordRegistering": "登録中...",
     "ruleMentionSpam": "メンションスパム",
     "ruleMentionSpamDesc": "@user / @role / @here / @everyone のメンションをheatとして加算",
     "ruleInviteLink": "招待リンク",
@@ -2413,8 +2411,8 @@
     "ruleCharSpamDesc": "同一文字の連続・Zalgoテキストを検知",
     "ruleUrlScan": "URLスキャン",
     "ruleUrlScanDesc": "短縮URL展開 → Safe Browsing APIで悪意あるURLを検知",
-    "ruleImageHash": "スパム画像ブロック",
-    "ruleImageHashDesc": "Cubeのスパム・NSFW画像データベースと照合し、一致した画像を自動削除します",
+    "ruleImageHash": "画像ハッシュ",
+    "ruleImageHashDesc": "既知スパム・NSFW画像の照合（pHash）",
     "ruleCrossChannel": "クロスチャンネル",
     "ruleCrossChannelDesc": "短時間に複数チャンネルへの類似投稿を検知",
     "rulePhishing": "フィッシング",
@@ -2486,8 +2484,8 @@
     "scheduleScheduleType": "スケジュール種別",
     "scheduleTimeRange": "毎日繰り返し（時間帯）",
     "scheduleDateRange": "一回限り（期間指定）",
-    "scheduleStartTime": "開始時刻 (JST)",
-    "scheduleEndTime": "終了時刻 (JST)",
+    "scheduleStartTime": "開始時刻 (UTC)",
+    "scheduleEndTime": "終了時刻 (UTC)",
     "scheduleStartDate": "開始日時",
     "scheduleEndDate": "終了日時",
     "scheduleSecurityLevel": "認証レベル",
@@ -2525,7 +2523,6 @@
     "scheduleLevelMediumDesc": "Discord登録から5分以上経過したアカウントのみ",
     "scheduleLevelHighDesc": "サーバー参加から10分以上経過したアカウントのみ",
     "scheduleLevelVeryHighDesc": "電話番号認証済みのアカウントのみ",
-    "unknownUser": "不明",
     "tierRoutingSection": "重要度別ログルーティング",
     "tierRoutingDesc": "重要度ティアに応じてモデレーションログの送信先チャンネルとメンションロールを振り分けます",
     "tierRoutingFallbackNote": "チャンネル未設定のティアは、上のデフォルトログチャンネルにフォールバックします。",

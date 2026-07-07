@@ -540,8 +540,8 @@
     },
     "handles": {
       "next": "Next",
-      "true": "Match",
-      "false": "No match",
+      "true": "Yes",
+      "false": "No",
       "safe": "Safe",
       "gray": "Gray",
       "violation": "Violation",
@@ -603,7 +603,7 @@
       "content": "Content",
       "content_hint": "The body of the message to send",
       "enableDynamicContext": "Dynamic Context Expansion",
-      "enableDynamicContext_hint": "When AI determines more context is needed, fetches additional messages and re-analyzes (+5CC)",
+      "enableDynamicContext_hint": "When AI determines more context is needed, fetches additional messages and re-analyzes",
       "deniedActions": "Excluded actions",
       "deniedActions_hint": "Selected actions will not be executed"
     },
@@ -649,7 +649,7 @@
       },
       "SummaryReport": {
         "label": "Summary Report",
-        "desc": "Sends the verdict so far to the log channel as a report (1CC)"
+        "desc": "Sends the verdict so far to the log channel as a report"
       },
       "HistorySummarizer": {
         "label": "History Summarizer",
@@ -661,35 +661,35 @@
       },
       "AntiRaid": {
         "label": "Anti-Raid",
-        "desc": "Detects mass joins/posts in a short window and branches match / no-match (0CC)"
+        "desc": "Detects mass joins/posts in a short window and branches match / no-match"
       },
       "RegexBlock": {
         "label": "Regex Block",
-        "desc": "Checks invites, scams and custom regex patterns and branches match / no-match (0CC)"
+        "desc": "Checks invites, scams and custom regex patterns and branches match / no-match"
       },
       "TextFilter": {
         "label": "Text Filter",
-        "desc": "Branches match / no-match on mechanical rules such as mention count (0CC)"
+        "desc": "Branches match / no-match on mechanical rules such as mention count"
       },
       "ThreatDb": {
         "label": "Threat DB",
-        "desc": "Matches against a known threat database and branches match / no-match (0CC)"
+        "desc": "Matches against a known threat database and branches match / no-match"
       },
       "Screen": {
         "label": "Screen",
-        "desc": "Lightweight AI first pass; branches match / no-match so only suspects go to downstream LLMs (0CC)"
+        "desc": "Lightweight AI first pass; branches match / no-match so only suspects go to downstream LLMs"
       },
       "LiteLlm": {
         "label": "Lite LLM",
-        "desc": "A lightweight AI (Gemini) reads the content and routes it to safe/gray/violation (2CC)"
+        "desc": "A lightweight AI (Gemini) reads the content and routes it to safe/gray/violation"
       },
       "DetailLlm": {
         "label": "Detail LLM",
-        "desc": "A high-accuracy AI (Gemini) judges in detail including prior history, branching match / no-match (5CC)"
+        "desc": "A high-accuracy AI (Gemini) judges in detail including prior history, branching match / no-match"
       },
       "Confidence": {
         "label": "Confidence",
-        "desc": "Compares the latest verdict's confidence to a threshold and branches match / no-match (2CC)"
+        "desc": "Compares the latest verdict's confidence to a threshold and branches match / no-match"
       },
       "ActionPolicy": {
         "label": "Action Policy",

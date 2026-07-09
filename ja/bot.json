@@ -427,7 +427,7 @@
       },
       "info": {
         "description": "ユーザーのモデレーションステータス（Heat, Suspicion等）を表示します。",
-        "title": "{user} のモデレーション情報",
+        "title": "{{user}} のモデレーション情報",
         "heat": "現在のHeat",
         "suspicion": "不審者レベル",
         "last_violation": "最終違反日時",
@@ -623,7 +623,7 @@
       "already_exists": "ユーザー <@{userId}> はすでにその状態であるか、処罰をスキップしました。"
     },
     "report": {
-      "self_error": "自分自身やBotを通報することはできません。",
+      "self_error": "自分自身を通報することはできません。",
       "reporter_prefix": "通報者: {moderatorTag} — {reason}",
       "success": "✅ <@{userId}> を通報しました。モデレーターが確認します。",
       "modal_title": "メッセージを通報",
@@ -1139,7 +1139,7 @@
       "v2_failed_hint": "-# 対象が管理者権限を持っている、またはBotより上位のロールを持っているため自動処罰できませんでした。下のボタンから手動で対応してください。",
       "btn_ban": "BAN",
       "btn_kick": "キック",
-      "btn_unquarantine": "隔離解除",
+      "btn_unquarantine": "誤検知（隔離解除）",
       "btn_untimeout": "タイムアウト解除",
       "btn_false_positive": "誤検知として解除",
       "btn_confirm_spam": "スパム確認",
@@ -1154,15 +1154,15 @@
     "ai_lane": {
       "review": {
         "title": "🤖 AIモデレーション 要確認",
-        "author": "**対象:** <@{userId}>\n`{userTag}`",
+        "author": "**対象:** <@{userId}> ({userTag})",
         "verdict": "**判定:** {label}（信頼度 {confidence}%）",
         "verdict_label": "**⚖️ 判定:** {label}",
         "confidence": "**🎯 信頼度:** `{gauge}`",
         "severity": "**🔥 深刻度:** `{gauge}`",
-        "categories": "**🏷️ カテゴリ:** {categories}",
+        "categories": "**カテゴリ:** {categories}",
         "triggers": "**🚦 発火ルール:** {triggers}",
-        "reason": "**📝 理由:** {reason}",
-        "jump": "[📨 メッセージへ移動]({url})",
+        "reason": "**理由:** {reason}",
+        "jump": "[メッセージへ移動]({url})",
         "btn_jump": "📨 対象メッセージへ移動",
         "label_gray": "グレー",
         "label_violation": "違反",
@@ -1212,8 +1212,8 @@
       "v2_guide": "-# サーバーのルールを今一度ご確認ください。違反が続くと、より重い措置が取られる場合があります。"
     },
     "notify_owner": {
-      "dm_title": "🛡️ Anti-Nuke 検知（オーナー通知）",
-      "dm_body": "**サーバー:** {guildName}\n**対象:** <@{userId}> ({userTag})\n**理由:** {reason}\n**適用アクション:** {action}\n\nAnti-Nuke が破壊的な操作を検知しました。誤検知でないか手動でご確認ください。",
+      "dm_title": "⚠️ 管理者通知",
+      "dm_body": "**サーバー:** {guildName}\n**対象:** <@{userId}> ({userTag})\n**理由:** {reason}\n\nこのユーザーは信頼スコアが高いため24時間タイムアウトを適用しました。手動確認してください。",
       "no_action": "適用できませんでした（手動対応が必要）"
     },
     "scheduled_security": {
@@ -1230,7 +1230,7 @@
     "appeal_dm": {
       "quarantine_title": "⚠️ 隔離（Quarantine）が適用されました",
       "timeout_title": "⚠️ タイムアウトが適用されました",
-      "body": "自動モデレーションにより **{label}** が適用されました。\n\n**🏠 サーバー:** {guildName}\n**📝 理由:** {reason}\n\n-# 誤検知と思われる場合は、下のボタンから異議申し立てができます。",
+      "body": "**サーバー:** {guildName}\n\n自動モデレーションにより {label} が適用されました。誤検知と思われる場合は、下のボタンから異議申し立てができます。",
       "quarantine_label": "隔離（Quarantine）",
       "timeout_label": "タイムアウト",
       "btn_appeal": "異議申し立て"

@@ -776,7 +776,7 @@
         "cost": "{cc}CC",
         "charged": "Charged",
         "free": "Free (no charge)",
-        "freeRemaining": "Free CC left today: {cc}",
+        "freeRemaining": "Free CC left this month: {cc}",
         "partialShortfall": "Some checks were skipped due to insufficient credits"
       },
       "errors": {
@@ -1084,6 +1084,12 @@
     "subscription": {
       "title": "Subscription",
       "desc": "Expand your server's features with a monthly plan"
+    },
+    "sizeGuide": {
+      "lite": "Ideal for servers with up to ~200 messages/day",
+      "basic": "Ideal for servers with up to ~500 messages/day",
+      "pro": "Ideal for servers with up to ~1,000 messages/day",
+      "note": "These are rough estimates for a typical server. Actual usage varies with how active your server is, the volume of images, and your rule settings."
     },
     "cc": {
       "title": "Cube Credit",

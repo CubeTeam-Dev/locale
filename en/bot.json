@@ -1243,6 +1243,37 @@
       "v2_reason": "**📝 Reason:** {reason}",
       "v2_categories": "**🏷️ Categories:** {categories}"
     },
+    "attribution": {
+      "footer": "-# 🧊 Protected by cube — https://cubeteam.app"
+    },
+    "ai_digest": {
+      "title": "🧊 **Weekly Moderation Report** ・{range}",
+      "messages_monitored": "## {count} messages monitored",
+      "summary_line": "🚨 Detected {detected} ・ 🔨 Actions {actions} ・ 👀 Review {review}",
+      "category_heading": "Category Breakdown",
+      "category_row": "{label}  {bar} {count}",
+      "cc_paid": "💳 CC used {consumed} ・ remaining {remaining}",
+      "cc_free": "💳 {percent}% of monthly free quota used",
+      "dashboard_button": "📊 View details on dashboard"
+    },
+    "antiraid_summary": {
+      "title": "Raid Lockdown Report",
+      "blocked_count": "### Blocked {count} accounts",
+      "duration_line": "⏱️ Detection to convergence: **{duration}**",
+      "action_breakdown": "🔨 {breakdown}",
+      "reasons_line": "🧠 Detection basis: {reasons}",
+      "timeline": {
+        "detected": "`{time}` 🔍 Suspicious joins detected",
+        "lockdown": "`{time}` 🔒 Lockdown activated",
+        "tally": "`{time}` 🔨 Actions tallied",
+        "converged": "`{time}` ✅ Converged"
+      },
+      "reasons": {
+        "account_age": "Recently created account",
+        "no_avatar": "No avatar set",
+        "join_rate": "High-volume join burst"
+      }
+    },
     "appeal_modal": {
       "title": "Submit Appeal",
       "reason_label": "Reason for Appeal",

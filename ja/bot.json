@@ -1243,6 +1243,37 @@
       "v2_reason": "**📝 理由:** {reason}",
       "v2_categories": "**🏷️ カテゴリ:** {categories}"
     },
+    "attribution": {
+      "footer": "-# 🧊 Protected by cube — https://cubeteam.app"
+    },
+    "ai_digest": {
+      "title": "🧊 **今週のモデレーションレポート** ・{range}",
+      "messages_monitored": "## {count} メッセージを監視",
+      "summary_line": "🚨 検知 {detected} ・ 🔨 処罰 {actions} ・ 👀 レビュー {review}",
+      "category_heading": "カテゴリ内訳",
+      "category_row": "{label}　{bar} {count}",
+      "cc_paid": "💳 CC 消費 {consumed} ・ 残 {remaining}",
+      "cc_free": "💳 今月の無料枠 {percent}% 消化",
+      "dashboard_button": "📊 詳細をダッシュボードで"
+    },
+    "antiraid_summary": {
+      "title": "レイド鎮圧レポート",
+      "blocked_count": "### {count}アカウントをブロック",
+      "duration_line": "⏱️ 検知から収束まで **{duration}**",
+      "action_breakdown": "🔨 {breakdown}",
+      "reasons_line": "🧠 検知根拠: {reasons}",
+      "timeline": {
+        "detected": "`{time}` 🔍 異常な参加を検知",
+        "lockdown": "`{time}` 🔒 ロックダウン発動",
+        "tally": "`{time}` 🔨 処罰を集計",
+        "converged": "`{time}` ✅ 収束"
+      },
+      "reasons": {
+        "account_age": "アカウント作成日が新しい",
+        "no_avatar": "アバター未設定",
+        "join_rate": "短時間の大量参加"
+      }
+    },
     "appeal_modal": {
       "title": "異議申し立て",
       "reason_label": "申し立ての理由",

@@ -388,6 +388,8 @@
     "advancedViolationStorageDesc": "AI classifies and stores violation reasons in detail. Useful for richer moderation logs, but consumes 2 CC per violation",
     "modLogCompactLabel": "Compact Log",
     "modLogCompactDesc": "Show moderator logs as a concise one-line entry. When off (default), logs are shown in detail with thumbnails and confidence gauges",
+    "aiDigestEnabledLabel": "Weekly Digest",
+    "aiDigestEnabledDesc": "Automatically post a summary of last week's moderation activity to the mod log every Monday",
     "nodeEditorLinkLabel": "Node Editor",
     "nodeEditorLinkDesc": "Visually build and edit the moderation pipeline with nodes",
     "nodeEditorLockedTooltip": "The node editor is available on a higher plan (NODE_EDITOR)",

@@ -388,6 +388,8 @@
     "advancedViolationStorageDesc": "AI が違反理由を分類して保存します。モデレーションログの詳細化に役立ちますが、1CC/件 のクレジットを消費します",
     "modLogCompactLabel": "コンパクトなログ",
     "modLogCompactDesc": "モデレーターログを簡潔な1行表示にします。オフ（既定）では、サムネイルや信頼度ゲージを含む詳細表示になります",
+    "aiDigestEnabledLabel": "週次ダイジェスト",
+    "aiDigestEnabledDesc": "毎週月曜に先週のモデレーション実績を mod-log へ自動配信します",
     "nodeEditorLinkLabel": "ノードエディター",
     "nodeEditorLinkDesc": "パイプラインをノードで視覚的に構築・編集します",
     "nodeEditorLockedTooltip": "ノードエディターは上位プラン (NODE_EDITOR) で利用できます",
@@ -776,7 +778,7 @@
         "cost": "{cc}CC",
         "charged": "課金あり",
         "free": "無料（課金なし）",
-        "freeRemaining": "本日の無料実行残り: {count}回",
+        "freeRemaining": "今月の無料枠残り: {cc} CC",
         "partialShortfall": "残高不足のため一部の判定をスキップしました"
       },
       "errors": {
@@ -1084,6 +1086,12 @@
     "subscription": {
       "title": "サブスクリプション",
       "desc": "月額プランでサーバーの機能を拡張"
+    },
+    "sizeGuide": {
+      "lite": "目安: 〜200メッセージ/日のサーバー",
+      "basic": "目安: 〜500メッセージ/日のサーバー",
+      "pro": "目安: 〜1,000メッセージ/日のサーバー",
+      "note": "目安は平均的なサーバーの場合です。実際の消費はサーバーの活発さ・画像の量・ルール設定により変動します。"
     },
     "cc": {
       "title": "Cubeクレジット",

@@ -1152,6 +1152,9 @@
       "body": "**Target:** <@{userId}> ({userTag})\n**Reason:** {reason}\n\nAutomatic detection confidence was low. Please review this case manually."
     },
     "ai_lane": {
+      "support_crisis": {
+        "notice": "This is not a warning or punishment. If you are in crisis, please do not face it alone—reach out to someone you trust or a local crisis service. If you are in immediate danger, contact your local emergency services now."
+      },
       "review": {
         "title": "🤖 AI Moderation — Review Required",
         "author": "**Target:** <@{userId}>\n`{userTag}`",

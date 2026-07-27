@@ -795,7 +795,7 @@
       "seconds": "秒",
       "hours": "時間"
     },
-    "terms_no_agree": "このBotを使用するには、サービス利用規約とプライバシーポリシーに同意する必要があります。\n\nサービス利用規約: https://cubeteam.app/terms\nプライバシーポリシー: https://cubeteam.app/privacy-policy",
+    "terms_no_agree": "このBotを使用するには、サービス利用規約とプライバシーポリシーに同意する必要があります。\n\nサービス利用規約: https://cubeteam.app/terms\nプライバシーポリシー: https://cubeteam.app/privacy",
     "terms_agreed_success": "利用規約に同意しました。",
     "terms_agreed_error": "利用規約に同意できませんでした。",
     "terms_agree_button": "規約に同意します"

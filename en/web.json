@@ -876,6 +876,7 @@
       },
       "balance": "Balance",
       "expiresAt": "Expires",
+      "noExpiry": "No expiry",
       "daysLeft": "Expires in {days} days",
       "expiresToday": "Expires today"
     }
@@ -909,8 +910,8 @@
     "buyCC": "Buy Cube Credit",
     "buyCCPlan": "Buy {name}",
     "buyPlan": "Buy {plan} plan",
-    "ccNote": "Credits are valid for 1 year from the grant (purchase) date",
-    "prepaidNotice": "These credits are prepaid payment instruments under the Payment Services Act. They are valid for 1 year from issuance (grant).",
+    "ccNote": "Only credits newly purchased after this policy takes effect do not expire. Existing credits keep the expiry shown on each lot.",
+    "prepaidNotice": "Purchased credits are prepaid payment instruments under the Payment Services Act. Only credits newly purchased after this policy takes effect do not expire; existing credits keep the expiry shown on each lot. No expiry does not mean an unlimited refund period.",
     "prepaidLink": "Prepaid Payment Instruments Disclosure",
     "linkToServer": "Link to server",
     "monthly": "Monthly",
@@ -920,6 +921,10 @@
     "unavailable": "Unavailable",
     "plansError": "Failed to load plans",
     "error": "An error occurred. Please try again",
+    "monthlyCc": "{cc} CC/month",
+    "messageEstimate": "About {messages} messages",
+    "estimateDisclaimer": "This is an estimate based on the latest benchmark average of about 2.5 CC per message and is not guaranteed. Actual usage varies with content, settings, images, natural-language rules, Detail escalation, and other factors.",
+    "bonus": "Bonus",
     "freeFeatures": [
       "7-day moderation logs",
       "Unlimited AutoPurge",
@@ -928,14 +933,14 @@
     ],
     "liteFeatures": [
       "Everything in Free",
-      "6,500 Cube Credit per month",
+      "4,500 Cube Credit per month",
       "30-day moderation logs",
       "RoleKeeper (Unlimited retention)",
       "Priority support"
     ],
     "basicFeatures": [
       "Everything in Lite",
-      "15,000 Cube Credit per month",
+      "10,000 Cube Credit per month",
       "Custom Bot Profile",
       "Advanced AutoMod",
       "180-day moderation logs",
@@ -945,7 +950,7 @@
     ],
     "proFeatures": [
       "Everything in Basic",
-      "30,000 Cube Credit per month",
+      "22,000 Cube Credit per month",
       "Advanced AntiRaid",
       "Unlimited moderation logs",
       "Moderation logs CSV Export",
@@ -1053,7 +1058,7 @@
     "resumeAutoRenew": "Resume auto-renewal",
     "cancelLabel": "Cancel subscription",
     "cancelConfirmTitle": "Stop auto-renewal?",
-    "cancelConfirmDesc": "Your subscription will be canceled at the end of the current period. You can continue using it until then.",
+    "cancelConfirmDesc": "Your subscription will end after the current period. You can keep using its granted credits until then; unused credits from this subscription expire when it ends.",
     "cancelConfirmBtn": "Stop",
     "keepSubscription": "Keep subscription",
     "changePlan": "Change Plan",
@@ -1080,20 +1085,16 @@
     "perMonth": "/mo",
     "oneTime": "One-time",
     "bonus": "Bonus",
+    "messageEstimate": "About {messages} messages",
+    "estimateDisclaimer": "This is an estimate based on the latest benchmark average of about 2.5 CC per message and is not guaranteed. Actual usage varies with content, settings, images, natural-language rules, Detail escalation, and other factors.",
     "buyBtn": "Buy Now",
     "footerNote": "For questions, see our",
     "footerLink": "Refund Policy",
-    "expiryNote": "Purchased credits (prepaid payment instruments) are valid for 1 year from issuance (grant). For details, see",
+    "expiryNote": "Only credits newly purchased after this policy takes effect do not expire; existing credits keep their lot expiry. Subscription credits roll over for one month (up to two monthly grants) and expire when the subscription ends. No expiry does not mean an unlimited refund period. For details, see",
     "prepaidLink": "Prepaid Payment Instruments Disclosure",
     "subscription": {
       "title": "Subscription",
       "desc": "Expand your server's features with a monthly plan"
-    },
-    "sizeGuide": {
-      "lite": "Ideal for servers with up to ~200 messages/day",
-      "basic": "Ideal for servers with up to ~500 messages/day",
-      "pro": "Ideal for servers with up to ~1,000 messages/day",
-      "note": "These are rough estimates for a typical server. Actual usage varies with how active your server is, the volume of images, and your rule settings."
     },
     "cc": {
       "title": "Cube Credit",
@@ -1107,14 +1108,14 @@
     ],
     "liteFeatures": [
       "Everything in Free",
-      "6,500 Cube Credit per month",
+      "4,500 Cube Credit per month",
       "30-day moderation logs",
       "RoleKeeper (Unlimited retention)",
       "Priority support"
     ],
     "basicFeatures": [
       "Everything in Lite",
-      "15,000 Cube Credit per month",
+      "10,000 Cube Credit per month",
       "Custom Bot Profile",
       "Advanced AutoMod",
       "180-day moderation logs",
@@ -1124,7 +1125,7 @@
     ],
     "proFeatures": [
       "Everything in Basic",
-      "30,000 Cube Credit per month",
+      "22,000 Cube Credit per month",
       "Advanced AntiRaid",
       "Unlimited moderation logs",
       "Moderation logs CSV Export",

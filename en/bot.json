@@ -1301,7 +1301,13 @@
       "not_in_server": "User <@{userId}> is no longer in the server.",
       "success": "Successfully unquarantined user <@{userId}> and restored roles.",
       "failed": "Failed to unquarantine user <@{userId}>.",
-      "already_exists": "User <@{userId}> is not currently quarantined."
+      "already_exists": "User <@{userId}> is not currently quarantined.",
+      "reasons": {
+        "manual": "Manual unquarantine by moderator",
+        "false_positive": "Unquarantined after a false-positive determination",
+        "pow_gate": "Join-time quarantine released after successful PoW Gate verification",
+        "system": "Unquarantined by the system"
+      }
     },
     "mod_untimeout": {
       "success": "Successfully removed timeout for user <@{userId}>.",
@@ -1333,7 +1339,8 @@
       "not_needed": "Verification is not required.",
       "link_reply": "Please verify using the following link (**valid for 10 minutes**):\n{verifyUrl}",
       "log_title": "Verification Complete (PoW Gate)",
-      "log_body": "User: <@{userId}> ({userTag})\n**Time:** <t:{timestamp}:F>"
+      "log_body": "User: <@{userId}> ({userTag})\n**Time:** <t:{timestamp}:F>",
+      "log_idempotency_marker": "-# Delivery key: `{idempotencyKey}`"
     },
     "actions": {
       "QUARANTINE": "Quarantine",

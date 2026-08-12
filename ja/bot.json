@@ -1301,7 +1301,13 @@
       "not_in_server": "ユーザー <@{userId}> はすでにサーバーにいません。",
       "success": "ユーザー <@{userId}> の隔離を解除し、ロールを復元しました。",
       "failed": "ユーザー <@{userId}> の隔離解除に失敗しました。",
-      "already_exists": "ユーザー <@{userId}> は現在隔離されていません。"
+      "already_exists": "ユーザー <@{userId}> は現在隔離されていません。",
+      "reasons": {
+        "manual": "モデレーターによる手動隔離解除",
+        "false_positive": "誤検知判定による隔離解除",
+        "pow_gate": "PoW Gate認証成功による参加時隔離解除",
+        "system": "システムによる隔離解除"
+      }
     },
     "mod_untimeout": {
       "success": "ユーザー <@{userId}> のタイムアウトを解除しました。",
@@ -1333,7 +1339,8 @@
       "not_needed": "認証は不要です。",
       "link_reply": "以下のリンクから認証してください（**10分間有効**）:\n{verifyUrl}",
       "log_title": "認証完了 (PoW Gate)",
-      "log_body": "ユーザー: <@{userId}> ({userTag})\n**日時:** <t:{timestamp}:F>"
+      "log_body": "ユーザー: <@{userId}> ({userTag})\n**日時:** <t:{timestamp}:F>",
+      "log_idempotency_marker": "-# 配信キー: `{idempotencyKey}`"
     },
     "actions": {
       "QUARANTINE": "隔離（Quarantine）",

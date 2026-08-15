@@ -2325,7 +2325,13 @@
       "confirmDelete": "Delete all data for {name}? This cannot be undone.",
       "deleteBtn": "Delete User",
       "deleteOk": "User data deleted",
-      "deleteFail": "Failed to delete user"
+      "deleteFail": "Failed to delete user",
+      "confirmRefreshGuilds": "Refresh {name}'s guild data from Discord?",
+      "refreshGuildsBtn": "Refresh Guilds",
+      "refreshGuildsOk": "Refreshed {count} guilds",
+      "refreshGuildsReauthRequired": "The user needs to sign in to Discord again",
+      "refreshGuildsRateLimited": "Guild refresh is limited to once per minute",
+      "refreshGuildsUnavailable": "Could not reach Discord. Please try again later"
     },
     "aiStats": {
       "title": "AI Moderation Stats",

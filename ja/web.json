@@ -2325,7 +2325,13 @@
       "confirmDelete": "{name} の全データを削除しますか？この操作は取り消せません。",
       "deleteBtn": "ユーザー削除",
       "deleteOk": "ユーザーデータを削除しました",
-      "deleteFail": "削除に失敗しました"
+      "deleteFail": "削除に失敗しました",
+      "confirmRefreshGuilds": "{name} のギルド情報をDiscordから再同期しますか？",
+      "refreshGuildsBtn": "ギルドを再同期",
+      "refreshGuildsOk": "{count}件のギルドを再同期しました",
+      "refreshGuildsReauthRequired": "ユーザーのDiscord再ログインが必要です",
+      "refreshGuildsRateLimited": "再同期は1分に1回までです",
+      "refreshGuildsUnavailable": "Discordとの通信に失敗しました。時間をおいて再試行してください"
     },
     "aiStats": {
       "title": "AIモデレーション統計",
